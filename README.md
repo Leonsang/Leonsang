@@ -1,7 +1,7 @@
 # 👋 ¡Hola! Soy Erick Manuel Sang Cifuentes
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Data+Engineer+%7C+Cloud+Architect;Building+Robust+Data+Pipelines;Transforming+Data+into+Insights;AWS+%7C+Azure+%7C+GCP+Expert" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Data+Engineer+%7C+Data+Specialist;Building+Robust+Data+Pipelines;Transforming+Data+into+Insights;AWS+%7C+Azure+%7C+GCP+Expert" alt="Typing SVG" />
 </div>
 
 <div align="center">
