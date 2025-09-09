@@ -1,0 +1,36 @@
+site_name: 'Erick Sang Data Engineering Docs'
+theme:
+  name: 'material'
+plugins:
+  - search
+  - mkdocs-jupyter
+nav:
+  - Home: index.md
+  - Notebooks: notebooks.md
+  - Topics:
+      - Data Engineering: data-engineering.md
+      - Cloud: cloud.md
+      - Python: python.md
+      - SQL: sql.md
+      - Airflow: airflow.md
+      - Databricks: databricks.md
+      - BI & Visualization: bi.md
+      - Kafka: kafka.md
+      - dbt: dbt.md
+      - Spark: spark.md
+      - Others: others.md
+repo_url: 'https://github.com/Leonsang/Leonsang'
+repo_name: 'Leonsang/Leonsang'
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/esangc
+    - icon: fontawesome/brands/github
+      link: https://github.com/Leonsang
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ericksang
