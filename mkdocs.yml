@@ -1,8 +1,8 @@
 site_name: 'Erick Sang Data Engineering Docs'
 theme:
   name: 'material'
-  logo: assets/images/logo.png
-  favicon: assets/images/favicon.png
+  logo: docs/assets/images/logo.png
+  favicon: docs/assets/images/favicon.png
   palette:
     - scheme: default
       primary: teal
