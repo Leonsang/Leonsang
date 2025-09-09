@@ -63,4 +63,45 @@ graph TD;
 
 ---
 
+# Otros Temas y Herramientas
+
+> "El ecosistema data engineering evoluciona constantemente."
+
+---
+
+## 🧰 Herramientas y Temas Relevantes
+
+- **Airbyte:** Ingesta de datos open source, alternativa a Fivetran y Talend.
+- **Prefect:** Orquestación moderna, fácil integración con cloud y Python.
+- **Luigi:** Orquestador de workflows por Spotify, robusto y flexible.
+- **Terraform:** Infraestructura como código para despliegue cloud.
+- **Great Expectations:** Validación y calidad de datos automatizada.
+- **Vault:** Gestión de secretos y credenciales.
+- **Open Policy Agent:** Gobernanza y control de acceso.
+
+---
+
+## 💡 Buenas Prácticas
+
+!!! tip "Explora y experimenta"
+    Prueba nuevas herramientas y comparte tus hallazgos con la comunidad.
+
+!!! info "Automatiza la infraestructura"
+    Usa IaC (Infrastructure as Code) para reproducibilidad y escalabilidad.
+
+!!! success "Contribuye a open source"
+    Participa en proyectos, reporta bugs y comparte mejoras.
+
+---
+
+## 📚 Recursos
+
+- [Awesome Data Engineering](https://github.com/igorbarinov/awesome-data-engineering)
+- [Awesome Open Source](https://github.com/awesome-selfhosted/awesome-selfhosted)
+- [Prefect Documentation](https://docs.prefect.io/)
+- [Airbyte Documentation](https://docs.airbyte.com/)
+- [Terraform Docs](https://www.terraform.io/docs/index.html)
+
+---
+
 ¿Quieres saber más sobre arquitecturas Big Data o ver ejemplos prácticos? ¡Explora los notebooks y recursos del sitio!
