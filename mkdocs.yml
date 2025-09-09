@@ -1,6 +1,27 @@
 site_name: 'Erick Sang Data Engineering Docs'
 theme:
   name: 'material'
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  palette:
+    - scheme: default
+      primary: teal
+      accent: lime
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - content.code.annotate
+    - content.tabs.link
 plugins:
   - search
   - mkdocs-jupyter
