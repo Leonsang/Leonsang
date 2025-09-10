@@ -53,13 +53,13 @@ nav:
       - 23_Dynamic_Static_Resource_Allocation: spark-notebooks/23_Dynamic_Static_Resource_Allocation.ipynb
       - 24_Skewness_And_Salting: spark-notebooks/24_Skewness_And_Salting.ipynb
       - Notas: spark-notebooks/notes.md
-    - Avanzados:
-      - Auto Loader Normal Schema Evolution: advanced-notebooks/Auto Loader  Normal Schema Evolution.ipynb
-      - Auto Loader Rescue Mode: advanced-notebooks/Auto Loader rescue mode.ipynb
-      - Column Level Masking: advanced-notebooks/Column Level Masking.ipynb
-      - Delta Live Tables: advanced-notebooks/Delta Live Tables.ipynb
-      - User Defined Functions: advanced-notebooks/User Defined Functions.ipynb
-      - Working with JSON: advanced-notebooks/Working with JSON.ipynb
+      - Avanzados:
+          - Auto Loader Normal Schema Evolution: advanced-notebooks/Auto Loader  Normal Schema Evolution.ipynb
+          - Auto Loader Rescue Mode: advanced-notebooks/Auto Loader rescue mode.ipynb
+          - Column Level Masking: advanced-notebooks/Column Level Masking.ipynb
+          - Delta Live Tables: advanced-notebooks/Delta Live Tables.ipynb
+          - User Defined Functions: advanced-notebooks/User Defined Functions.ipynb
+          - Working with JSON: advanced-notebooks/Working with JSON.ipynb
   - Kafka:
     - Introducción: kafka/README.md
   - Others: others.md
@@ -76,5 +76,3 @@ markdown_extensions:
   - footnotes
   - meta
   - tables
-toc:
-  permalink: true
