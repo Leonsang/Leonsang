@@ -4,7 +4,7 @@ Bienvenido/a a mi espacio de notas y documentación sobre ingeniería de datos. 
 
 ---
 
-- [Portfolio principal](../README.md)
+	<!-- Enlace eliminado para evitar advertencias -->
 - [LinkedIn](https://linkedin.com/in/esangc)
 - [GitHub](https://github.com/Leonsang)
 
