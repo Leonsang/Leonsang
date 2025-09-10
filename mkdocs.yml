@@ -2,48 +2,57 @@ site_name: 'Erick Sang Data Engineering Docs'
 theme:
   name: material
   features:
-  - navigation.tabs
-  - navigation.top
-  - navigation.instant
-  - search.highlight
-  - search.suggest
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
 nav:
   - Home: index.md
-  - Topics:
-    - Data Engineering: data-engineering.md
-    - Cloud: cloud.md
-    - Python: python.md
-    - SQL: sql.md
-    - Airflow: airflow.md
-    - Databricks: databricks.md
-    - BI & Visualization: bi.md
-    - Kafka: kafka.md
-    - dbt: dbt.md
-    - Spark: spark.md
-    - Others: others.md
-  - Notebooks:
-    - Introducción: notebooks.md
-    - Spark:
-      - 00_Installing_Spark: spark/00_Installing_Spark.ipynb
-      - 02_TransformationsPtII: spark/02_TransformationsPtII.ipynb
-      - 03_TransformationsPtIII: spark/03_TransformationsPtIII.ipynb
-      - 04_Strings_Dates: spark/04_Strings_Dates.ipynb
-      - 05_Union_UnionAll_Aggregations: spark/05_Union_UnionAll_Aggregations.ipynb
-      - 06_Window_Functions: spark/06_Window_Functions.ipynb
-      - 07_Repartitioning_Coalesce_Joins: spark/07_Repartitioning_Coalesce_Joins.ipynb
-      - 08_ReadFormats_HandlingErronousRecords: spark/08_ReadFormats_HandlingErronousRecords.ipynb
-      - 09_ComplexFileFormats: spark/09_ComplexFileFormats.ipynb
-      - 10_Working_With_Json_Data: spark/10_Working_With_Json_Data.ipynb
-      - 11_Writing_Data_Spark: spark/11_Writing_Data_Spark.ipynb
-      - 12_Spark_UDFs: spark/12_Spark_UDFs.ipynb
-      - 13_Spark_DAG_UI: spark/13_Spark_DAG_UI.ipynb
-      - 14_OptimizingShuffles: spark/14_OptimizingShuffles.ipynb
-      - 16_Cache_Persist_Techniques: spark/16_Cache_Persist_Techniques.ipynb
-      - 21_BroadCastVariables_Accumulators: spark/21_BroadCastVariables_Accumulators.ipynb
-      - 22_Join_Optimizations: spark/22_Join_Optimizations.ipynb
-      - 22_Join_Optimizations_Pt2: spark/22_Join_Optimizations_Pt2.ipynb
-      - 23_Dynamic_Static_Resource_Allocation: spark/23_Dynamic_Static_Resource_Allocation.ipynb
-      - 24_Skewness_And_Salting: spark/24_Skewness_And_Salting.ipynb
+  - Data Engineering: data-engineering.md
+  - Cloud: cloud.md
+  - Python: python.md
+  - SQL: sql.md
+  - Airflow: airflow.md
+  - Databricks: databricks.md
+  - BI & Visualization: bi.md
+  - dbt: dbt.md
+  - Spark:
+      - Introducción: notebooks.md
+      - 00_Installing_Spark: spark-notebooks/00_Installing_Spark.ipynb
+      - 02_TransformationsPtII: spark-notebooks/02_TransformationsPtII.ipynb
+      - 03_TransformationsPtIII: spark-notebooks/03_TransformationsPtIII.ipynb
+      - 04_Strings_Dates: spark-notebooks/04_Strings_Dates.ipynb
+      - 05_Union_UnionAll_Aggregations: spark-notebooks/05_Union_UnionAll_Aggregations.ipynb
+      - 06_Window_Functions: spark-notebooks/06_Window_Functions.ipynb
+      - 07_Repartitioning_Coalesce_Joins: spark-notebooks/07_Repartitioning_Coalesce_Joins.ipynb
+      - 08_ReadFormats_HandlingErronousRecords: spark-notebooks/08_ReadFormats_HandlingErronousRecords.ipynb
+      - 09_ComplexFileFormats: spark-notebooks/09_ComplexFileFormats.ipynb
+      - 10_Working_With_Json_Data: spark-notebooks/10_Working_With_Json_Data.ipynb
+      - 11_Writing_Data_Spark: spark-notebooks/11_Writing_Data_Spark.ipynb
+      - 12_Spark_UDFs: spark-notebooks/12_Spark_UDFs.ipynb
+      - 13_Spark_DAG_UI: spark-notebooks/13_Spark_DAG_UI.ipynb
+      - 14_OptimizingShuffles: spark-notebooks/14_OptimizingShuffles.ipynb
+      - 16_Cache_Persist_Techniques: spark-notebooks/16_Cache_Persist_Techniques.ipynb
+      - 21_BroadCastVariables_Accumulators: spark-notebooks/21_BroadCastVariables_Accumulators.ipynb
+      - 22_Join_Optimizations: spark-notebooks/22_Join_Optimizations.ipynb
+      - 22_Join_Optimizations_Pt2: spark-notebooks/22_Join_Optimizations_Pt2.ipynb
+      - 23_Dynamic_Static_Resource_Allocation: spark-notebooks/23_Dynamic_Static_Resource_Allocation.ipynb
+      - 24_Skewness_And_Salting: spark-notebooks/24_Skewness_And_Salting.ipynb
+      - Notas: spark-notebooks/notes.md
     - Avanzados:
       - Auto Loader Normal Schema Evolution: advanced-notebooks/Auto Loader  Normal Schema Evolution.ipynb
       - Auto Loader Rescue Mode: advanced-notebooks/Auto Loader rescue mode.ipynb
@@ -51,6 +60,9 @@ nav:
       - Delta Live Tables: advanced-notebooks/Delta Live Tables.ipynb
       - User Defined Functions: advanced-notebooks/User Defined Functions.ipynb
       - Working with JSON: advanced-notebooks/Working with JSON.ipynb
+  - Kafka:
+    - Introducción: kafka/README.md
+  - Others: others.md
   - Azure Data Factory:
     - Escenarios: ADF_scenarios.md
 markdown_extensions:
