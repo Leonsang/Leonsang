@@ -1,0 +1,2070 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>Spark: Procesamiento Distribuido de Datos - Erick Sang Data Engineering Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spark-procesamiento-distribuido-de-datos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Erick Sang Data Engineering Docs" class="md-header__button md-logo" aria-label="Erick Sang Data Engineering Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Erick Sang Data Engineering Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Spark: Procesamiento Distribuido de Datos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../data-engineering/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Data Engineering
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cloud/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cloud
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../python/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Python
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sql/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SQL
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../airflow/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Airflow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../databricks/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Databricks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bi/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  BI & Visualization
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../dbt/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  dbt
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../notebooks/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/00_Installing_Spark.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 00_Installing_Spark
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/02_TransformationsPtII.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 02_TransformationsPtII
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/03_TransformationsPtIII.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 03_TransformationsPtIII
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/04_Strings_Dates.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 04_Strings_Dates
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/05_Union_UnionAll_Aggregations.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 05_Union_UnionAll_Aggregations
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/06_Window_Functions.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 06_Window_Functions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/07_Repartitioning_Coalesce_Joins.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 07_Repartitioning_Coalesce_Joins
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/08_ReadFormats_HandlingErronousRecords.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 08_ReadFormats_HandlingErronousRecords
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/09_ComplexFileFormats.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 09_ComplexFileFormats
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/10_Working_With_Json_Data.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 10_Working_With_Json_Data
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/11_Writing_Data_Spark.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 11_Writing_Data_Spark
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/12_Spark_UDFs.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 12_Spark_UDFs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/13_Spark_DAG_UI.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 13_Spark_DAG_UI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/14_OptimizingShuffles.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 14_OptimizingShuffles
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/16_Cache_Persist_Techniques.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 16_Cache_Persist_Techniques
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/21_BroadCastVariables_Accumulators.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 21_BroadCastVariables_Accumulators
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/22_Join_Optimizations.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 22_Join_Optimizations
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/22_Join_Optimizations_Pt2.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 22_Join_Optimizations_Pt2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/23_Dynamic_Static_Resource_Allocation.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 23_Dynamic_Static_Resource_Allocation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/24_Skewness_And_Salting.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - 24_Skewness_And_Salting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../spark-notebooks/notes/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - Notas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-notebooks/Auto%20Loader%20%20Normal%20Schema%20Evolution.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - Auto Loader Normal Schema Evolution
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-notebooks/Auto%20Loader%20rescue%20mode.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - Auto Loader Rescue Mode
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-notebooks/Column%20Level%20Masking.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - Column Level Masking
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-notebooks/Delta%20Live%20Tables.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - Delta Live Tables
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-notebooks/User%20Defined%20Functions.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - User Defined Functions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-notebooks/Working%20with%20JSON.ipynb" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Spark - Working with JSON
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../kafka/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Kafka
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../others/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Others
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ADF_scenarios/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Azure Data Factory
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Erick Sang Data Engineering Docs" class="md-nav__button md-logo" aria-label="Erick Sang Data Engineering Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Erick Sang Data Engineering Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../airflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Airflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../databricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Databricks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BI & Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/00_Installing_Spark.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 00_Installing_Spark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/02_TransformationsPtII.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 02_TransformationsPtII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/03_TransformationsPtIII.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 03_TransformationsPtIII
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/04_Strings_Dates.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 04_Strings_Dates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/05_Union_UnionAll_Aggregations.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 05_Union_UnionAll_Aggregations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/06_Window_Functions.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 06_Window_Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/07_Repartitioning_Coalesce_Joins.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 07_Repartitioning_Coalesce_Joins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/08_ReadFormats_HandlingErronousRecords.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 08_ReadFormats_HandlingErronousRecords
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/09_ComplexFileFormats.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 09_ComplexFileFormats
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/10_Working_With_Json_Data.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 10_Working_With_Json_Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/11_Writing_Data_Spark.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 11_Writing_Data_Spark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/12_Spark_UDFs.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 12_Spark_UDFs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/13_Spark_DAG_UI.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 13_Spark_DAG_UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/14_OptimizingShuffles.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 14_OptimizingShuffles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/16_Cache_Persist_Techniques.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 16_Cache_Persist_Techniques
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/21_BroadCastVariables_Accumulators.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 21_BroadCastVariables_Accumulators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/22_Join_Optimizations.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 22_Join_Optimizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/22_Join_Optimizations_Pt2.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 22_Join_Optimizations_Pt2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/23_Dynamic_Static_Resource_Allocation.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 23_Dynamic_Static_Resource_Allocation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/24_Skewness_And_Salting.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - 24_Skewness_And_Salting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spark-notebooks/notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - Notas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-notebooks/Auto%20Loader%20%20Normal%20Schema%20Evolution.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - Auto Loader Normal Schema Evolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-notebooks/Auto%20Loader%20rescue%20mode.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - Auto Loader Rescue Mode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-notebooks/Column%20Level%20Masking.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - Column Level Masking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-notebooks/Delta%20Live%20Tables.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - Delta Live Tables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-notebooks/User%20Defined%20Functions.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - User Defined Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-notebooks/Working%20with%20JSON.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spark - Working with JSON
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kafka/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kafka
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../others/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Others
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ADF_scenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Azure Data Factory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-apache-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ ¿Qué es Apache Spark?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Componentes Clave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Buenas Prácticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-etl-con-pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Ejemplo de ETL con PySpark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Recursos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="spark-procesamiento-distribuido-de-datos">Spark: Procesamiento Distribuido de Datos</h1>
+<blockquote>
+<p>"Spark permite procesar grandes volúmenes de datos de forma rápida y escalable."</p>
+</blockquote>
+<hr />
+<h2 id="que-es-apache-spark">⚡ ¿Qué es Apache Spark?</h2>
+<p>Apache Spark es un motor open source para procesamiento distribuido de datos, ideal para ETL, machine learning y análisis avanzado en grandes volúmenes de información.</p>
+<hr />
+<h2 id="componentes-clave">🛠️ Componentes Clave</h2>
+<ul>
+<li><strong>Spark SQL:</strong> Consultas y transformaciones con SQL.</li>
+<li><strong>DataFrames:</strong> Estructuras tabulares para manipulación eficiente.</li>
+<li><strong>Spark Streaming:</strong> Procesamiento de datos en tiempo real.</li>
+<li><strong>MLlib:</strong> Machine learning distribuido.</li>
+<li><strong>GraphX:</strong> Análisis de grafos.</li>
+<li><strong>PySpark:</strong> API en Python para Spark.</li>
+</ul>
+<hr />
+<h2 id="buenas-practicas">💡 Buenas Prácticas</h2>
+<div class="admonition tip">
+<p class="admonition-title">Optimiza el uso de memoria</p>
+<p>Usa particiones, persistencia y evita acciones innecesarias.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Divide el procesamiento en etapas</p>
+<p>Encadena transformaciones y acciones para mayor eficiencia.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Monitorea y ajusta recursos</p>
+<p>Configura el cluster y revisa el Spark UI para identificar cuellos de botella.</p>
+</div>
+<hr />
+<h2 id="ejemplo-de-etl-con-pyspark">📝 Ejemplo de ETL con PySpark</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparkSession</span>
+<span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s1">&#39;categoria&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="recursos">📚 Recursos</h2>
+<ul>
+<li><a href="https://spark.apache.org/docs/latest/">Spark Documentation</a></li>
+<li><a href="https://github.com/awesome-spark/awesome-spark">Awesome Spark</a></li>
+<li><a href="https://spark.apache.org/docs/latest/api/python/">PySpark API Reference</a></li>
+<li><a href="https://docs.databricks.com/spark/latest/index.html">Databricks Spark Guide</a></li>
+</ul>
+<hr />
+<p>¿Quieres ver ejemplos avanzados o notebooks embebidos? ¡Explora la sección Notebooks!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
