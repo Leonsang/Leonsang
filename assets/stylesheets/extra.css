@@ -544,13 +544,81 @@
   }
 }
 
-/* Dark mode adjustments for hero */
-[data-md-color-scheme="slate"] .feature-card {
+/* Knowledge Areas Sections */
+.knowledge-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.area-section {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.area-section:hover {
+  border-color: var(--md-primary-fg-color--light);
+  box-shadow: 0 4px 12px rgba(63, 81, 181, 0.1);
+}
+
+.area-section h3 {
+  margin: 0 0 1rem 0;
+  color: var(--md-primary-fg-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--md-primary-fg-color--light);
+  padding-bottom: 0.5rem;
+}
+
+.area-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.area-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.area-item strong {
+  color: var(--md-default-fg-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.area-item span {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for knowledge areas */
+@media screen and (max-width: 768px) {
+  .knowledge-areas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .area-section {
+    padding: 1.25rem;
+  }
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .feature-card,
+[data-md-color-scheme="slate"] .area-section {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-[data-md-color-scheme="slate"] .feature-card:hover {
+[data-md-color-scheme="slate"] .feature-card:hover,
+[data-md-color-scheme="slate"] .area-section:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: var(--md-primary-fg-color);
 }
