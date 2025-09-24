@@ -69,6 +69,10 @@
          <lastmod>2025-09-24</lastmod>
     </url>
     <url>
+         <loc>https://leonsang.github.io/advanced-notebooks/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
          <loc>https://leonsang.github.io/advanced-notebooks/Auto%20Loader%20%20Normal%20Schema%20Evolution/</loc>
          <lastmod>2025-09-24</lastmod>
     </url>
@@ -93,6 +97,162 @@
          <lastmod>2025-09-24</lastmod>
     </url>
     <url>
+         <loc>https://leonsang.github.io/azure/00-Azure_Integration_Databricks/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/01-Azure_Portal_Subscriptions_ResourceGroups/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/02-Azure_CLI_Scenarios/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/03-Azure_Powershell_Scenarios/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/05-Azure_ARM_Templates/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/06-Azure_Bicep_Templates/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/07-Azure_Databricks_UC_Creation/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/14-Overview_Of_Azure_Storage/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/20-Azure_RBAC_ACL/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/24-Azure_Types_Of_Storage/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/25-Azure_Storage_Replication_Strategies/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/26-Soft_Delete_PITR_Azure_Storage/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/28-Azure_Shared_Access_Signature/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/29-Azure_Lifetime_Management_Policies/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/34-EventGrid_Integration_Azure/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/azure/adf/scenario-based-pipelines/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/07-Databricks_UC_Introduction/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/08-Databricks_Managed_External_Tables_Hive/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/08-UC_External_Location_Storage_Credentials/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/09-Databricks_Managed_Location_Catalog_Schema_Level/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/10-CTAS_Deep_Clone_Shallow_Clone_Databricks/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/11-RBAC_Custom_Roles_ServicePrincipals/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/12-Deletion_Vectors_Delta_lake/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/13-Liquid_Clustering_Delta_Lake/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/14-Concurrency_Liquid_Clustering/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/16-Blob_Storage_Fundamentals/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/17_Copy_Into_Databricks/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/18-AutoLoader_Databricks/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/19-ADLS_Gen2_Overview/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/21-Intro_Databricks_Lakeflow_Declarative_Pipelines/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/22-DLT_Batch_Vs_Streaming_Workloads/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/23-DLT_Data_Storage_Checkpoints/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/27-Databricks_Secret_Scopes/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/30-Databricks_ControlPlane_DataPlane/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/31-Spark_Architecture_YARN/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/32-Databricks_DLT_Code_Walkthrough/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/33-Spark_Driver_OOM/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/35-Databricks_Serverless_Compute/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://leonsang.github.io/databricks/internals/36-Databricks_Warehouses/</loc>
+         <lastmod>2025-09-24</lastmod>
+    </url>
+    <url>
          <loc>https://leonsang.github.io/gcp/dataflow-streaming/</loc>
          <lastmod>2025-09-24</lastmod>
     </url>
@@ -110,34 +270,6 @@
     </url>
     <url>
          <loc>https://leonsang.github.io/kafka/</loc>
-         <lastmod>2025-09-24</lastmod>
-    </url>
-    <url>
-         <loc>https://leonsang.github.io/notebooks-internos/</loc>
-         <lastmod>2025-09-24</lastmod>
-    </url>
-    <url>
-         <loc>https://leonsang.github.io/notebooks-internos/Auto%20Loader%20%20Normal%20Schema%20Evolution/</loc>
-         <lastmod>2025-09-24</lastmod>
-    </url>
-    <url>
-         <loc>https://leonsang.github.io/notebooks-internos/Auto%20Loader%20rescue%20mode/</loc>
-         <lastmod>2025-09-24</lastmod>
-    </url>
-    <url>
-         <loc>https://leonsang.github.io/notebooks-internos/Column%20Level%20Masking/</loc>
-         <lastmod>2025-09-24</lastmod>
-    </url>
-    <url>
-         <loc>https://leonsang.github.io/notebooks-internos/Delta%20Live%20Tables/</loc>
-         <lastmod>2025-09-24</lastmod>
-    </url>
-    <url>
-         <loc>https://leonsang.github.io/notebooks-internos/User%20Defined%20Functions/</loc>
-         <lastmod>2025-09-24</lastmod>
-    </url>
-    <url>
-         <loc>https://leonsang.github.io/notebooks-internos/Working%20with%20JSON/</loc>
          <lastmod>2025-09-24</lastmod>
     </url>
     <url>
