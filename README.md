@@ -18,7 +18,14 @@
   </p>
 
   <p>
-    <a href="https://Leonsang.github.io/Leonsang/" target="_blank"><img src="https://img.shields.io/badge/Knowledge%20Base-00ff41?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Knowledge Base"></a>
+    <strong>📚 Base de Conocimiento | Knowledge Base</strong><br>
+    Este repositorio contiene mi base de conocimiento personal con ejemplos prácticos, tutoriales y documentación sobre Data Engineering, Cloud Computing, DevOps y Analytics. Aquí encontrarás notebooks de Spark, configuraciones de Kafka, workflows de Airflow, documentación de AWS/Azure/GCP y mucho más.<br><br>
+    This repository contains my personal knowledge base with practical examples, tutorials and documentation about Data Engineering, Cloud Computing, DevOps and Analytics. Here you'll find Spark notebooks, Kafka configurations, Airflow workflows, AWS/Azure/GCP documentation and much more.
+  </p>
+
+  <p>
+    <a href="https://Leonsang.github.io/Leonsang/" target="_blank"><img src="https://img.shields.io/badge/Knowledge%20Base%20Site-00ff41?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Knowledge Base"></a>
+    <a href="./docs/" target="_blank"><img src="https://img.shields.io/badge/Browse%20Docs-1f77b4?style=for-the-badge&logo=gitbook&logoColor=white" alt="Browse Docs"></a>
   </p>
 
   <img src="https://komarev.com/ghpvc/?username=Leonsang&color=00ff41&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
