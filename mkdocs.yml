@@ -1,0 +1,257 @@
+nav:
+  - Inicio: index.md
+
+  # Data & Analytics
+  - Data Engineering:
+    - Fundamentos: data-engineering.md
+    - Apache Spark: spark.md
+    - Spark Internals: spark-internals.md
+    - Databricks: databricks.md
+    - Streaming: streaming-architecture.md
+    - Apache Kafka: kafka.md
+    - Kafka Ecosystem: kafka/README.md
+    - Apache Airflow: airflow.md
+    - dbt: dbt.md
+
+  - Data Analysis:
+    - Python: python.md
+    - SQL: sql.md
+    - BI & Analytics: bi.md
+
+  # Development & DevOps
+  - Programación:
+    - Python Avanzado: python.md
+    - Best Practices: others.md
+
+  - DevOps & Cloud:
+    - Cloud Computing: cloud.md
+    - Microsoft Fabric: microsoft-fabric.md
+    - Google Cloud:
+      - Cloud Shell: gcp/gcs-shell.md
+      - BigQuery: gcp/gcp-bigquery.md
+      - Dataflow: gcp/dataflow-streaming.md
+    - Azure:
+      - Fundamentos: azure/01-Azure_Portal_Subscriptions_ResourceGroups.md
+      - CLI & PowerShell: azure/02-Azure_CLI_Scenarios.md
+      - ARM & Bicep: azure/05-Azure_ARM_Templates.md
+      - Storage:
+        - Overview: azure/14-Overview_Of_Azure_Storage.md
+        - ADLS Gen2: databricks/internals/19-ADLS_Gen2_Overview.md
+        - Storage Types: azure/24-Azure_Types_Of_Storage.md
+        - Replication: azure/25-Azure_Storage_Replication_Strategies.md
+        - Lifecycle: azure/29-Azure_Lifetime_Management_Policies.md
+      - Security:
+        - RBAC: azure/20-Azure_RBAC_ACL.md
+        - SAS: azure/28-Azure_Shared_Access_Signature.md
+      - Data Factory:
+        - Scenarios: ADF_scenarios.md
+        - Activities: azure/adf/activities-pipelines/
+        - Scenarios: azure/adf/scenario-based-pipelines/
+
+  - Databricks Platform:
+    - Fundamentos: databricks.md
+    - Unity Catalog:
+      - Introducción: databricks/internals/07-Databricks_UC_Introduction.md
+      - External Tables: databricks/internals/08-Databricks_Managed_External_Tables_Hive.md
+      - Storage Credentials: databricks/internals/08-UC_External_Location_Storage_Credentials.md
+      - Catalog Schema: databricks/internals/09-Databricks_Managed_Location_Catalog_Schema_Level.md
+    - Delta Lake:
+      - Cloning: databricks/internals/10-CTAS_Deep_Clone_Shallow_Clone_Databricks.md
+      - Deletion Vectors: databricks/internals/12-Deletion_Vectors_Delta_lake.md
+      - Liquid Clustering: databricks/internals/13-Liquid_Clustering_Delta_Lake.md
+      - Concurrency: databricks/internals/14-Concurrency_Liquid_Clustering.md
+    - Data Loading:
+      - Copy Into: databricks/internals/17_Copy_Into_Databricks.md
+      - Auto Loader: databricks/internals/18-AutoLoader_Databricks.md
+    - Delta Live Tables:
+      - Introducción: databricks/internals/21-Intro_Databricks_Lakeflow_Declarative_Pipelines.md
+      - Batch vs Streaming: databricks/internals/22-DLT_Batch_Vs_Streaming_Workloads.md
+      - Storage: databricks/internals/23-DLT_Data_Storage_Checkpoints.md
+      - Code Examples: databricks/internals/32-Databricks_DLT_Code_Walkthrough.md
+    - Plataforma:
+      - Arquitectura: databricks/internals/30-Databricks_ControlPlane_DataPlane.md
+      - Secrets: databricks/internals/27-Databricks_Secret_Scopes.md
+      - Serverless: databricks/internals/35-Databricks_Serverless_Compute.md
+      - Warehouses: databricks/internals/36-Databricks_Warehouses.md
+    - Spark Internals:
+      - YARN Architecture: databricks/internals/31-Spark_Architecture_YARN.md
+      - Driver OOM: databricks/internals/33-Spark_Driver_OOM.md
+
+  # Notebooks & Experimentos
+  - Spark Notebooks:
+    - Introducción: notebooks.md
+    - Instalación: spark-notebooks/00_Installing_Spark.ipynb
+    - Transformaciones II: spark-notebooks/02_TransformationsPtII.ipynb
+    - Transformaciones III: spark-notebooks/03_TransformationsPtIII.ipynb
+    - Strings y Fechas: spark-notebooks/04_Strings_Dates.ipynb
+    - Union y Agregaciones: spark-notebooks/05_Union_UnionAll_Aggregations.ipynb
+    - Window Functions: spark-notebooks/06_Window_Functions.ipynb
+    - Joins y Particiones: spark-notebooks/07_Repartitioning_Coalesce_Joins.ipynb
+    - Formatos de Datos: spark-notebooks/08_ReadFormats_HandlingErronousRecords.ipynb
+    - Formatos Complejos: spark-notebooks/09_ComplexFileFormats.ipynb
+    - Trabajo con JSON: spark-notebooks/10_Working_With_Json_Data.ipynb
+    - Escritura de Datos: spark-notebooks/11_Writing_Data_Spark.ipynb
+    - UDFs: spark-notebooks/12_Spark_UDFs.ipynb
+    - DAG UI: spark-notebooks/13_Spark_DAG_UI.ipynb
+    - Optimización Shuffles: spark-notebooks/14_OptimizingShuffles.ipynb
+    - Cache y Persist: spark-notebooks/16_Cache_Persist_Techniques.ipynb
+    - Variables Broadcast: spark-notebooks/21_BroadCastVariables_Accumulators.ipynb
+    - Optimización Joins I: spark-notebooks/22_Join_Optimizations.ipynb
+    - Optimización Joins II: spark-notebooks/22_Join_Optimizations_Pt2.ipynb
+    - Recursos Dinámicos: spark-notebooks/23_Dynamic_Static_Resource_Allocation.ipynb
+    - Skewness y Salting: spark-notebooks/24_Skewness_And_Salting.ipynb
+    - Mis Notas: spark-notebooks/notes.md
+
+  - Notebooks Avanzados:
+    - Auto Loader Evolution: advanced-notebooks/Auto Loader  Normal Schema Evolution.ipynb
+    - Auto Loader Rescue: advanced-notebooks/Auto Loader rescue mode.ipynb
+    - Column Level Masking: advanced-notebooks/Column Level Masking.ipynb
+    - Delta Live Tables: advanced-notebooks/Delta Live Tables.ipynb
+    - User Defined Functions: advanced-notebooks/User Defined Functions.ipynb
+    - Working with JSON: advanced-notebooks/Working with JSON.ipynb
+
+site_name: Base de Conocimiento - Erick Sang
+site_description: Repositorio personal de aprendizajes sobre Data, Desarrollo, DevOps y Tecnología
+site_author: Erick Sang
+site_url: https://leonsang.github.io
+
+repo_name: leonsang/leonsang
+repo_url: https://github.com/leonsang/leonsang
+
+theme:
+  name: material
+  language: es
+  features:
+    # Navegación
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+
+    # Tabla de contenidos
+    - toc.follow
+    - toc.integrate
+
+    # Búsqueda
+    - search.highlight
+    - search.suggest
+    - search.share
+
+    # Contenido
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+
+  palette:
+    # Modo claro (predeterminado) - esquema Material original
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+
+    # Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  icon:
+    logo: material/database
+    repo: fontawesome/brands/github
+
+  favicon: assets/images/favicon.png
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/leonsang
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/erick-sang
+
+  generator: false
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: es
+  # - minify:
+  #     minify_html: true
+  # - git-revision-date-localized:
+  #     type: date
+  #     locale: es
+  - mkdocs-jupyter:
+      execute: false
+      allow_errors: false
+      ignore_h1_titles: true
+      show_input: true
+      show_output: true
+      no_input: false
+      include_requirejs: true
+      include_source: true
+      theme: dark
+      kernel_name: python3
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: Contenido
+  - tables
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
