@@ -77,6 +77,15 @@ nav:
       - YARN Architecture: databricks/internals/31-Spark_Architecture_YARN.md
       - Driver OOM: databricks/internals/33-Spark_Driver_OOM.md
 
+  - Cursos:
+    - SENA · IA en integración de datos:
+      - Presentación: cursos/sena-ia-integracion-datos/index.md
+      - AA1-EV01 Mapa mental: cursos/sena-ia-integracion-datos/aa1-ev01-mapa-mental.md
+      - AA1-EV02 Guía de estudio: cursos/sena-ia-integracion-datos/aa1-ev02-guia-estudio.md
+      - AA2-EV01 Informe de prompts: cursos/sena-ia-integracion-datos/aa2-ev01-informe-prompts.md
+      - AA2-EV02 Foro de modelado: cursos/sena-ia-integracion-datos/aa2-ev02-foro-modelado.md
+      - AA2-EV03 Power BI: cursos/sena-ia-integracion-datos/aa2-ev03-powerbi.md
+
   # Notebooks & Experimentos
   - Spark Notebooks:
     - Introducción: notebooks.md
