@@ -638,3 +638,5 @@
   color: var(--md-default-fg-color--light);
   text-transform: uppercase;
 }
+/* Respuestas literales de IA en las evidencias del curso SENA */
+.respuesta-ia { border-left: 4px solid var(--md-primary-fg-color); padding: 0 1rem; margin: 1rem 0; background: var(--md-code-bg-color); }
