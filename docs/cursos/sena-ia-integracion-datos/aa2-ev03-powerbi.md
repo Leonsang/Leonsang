@@ -87,7 +87,9 @@ Dos páginas con segmentaciones sincronizadas (categoría, canal, segmento y tri
 ventas mensuales con la recta de tendencia y barras por categoría y segmento, y una página de detalle con una
 matriz por producto, ventas por ciudad y ticket mediano por día de la semana.
 
+![powerbi-detalle-y-estadistica.png](archivos/powerbi-detalle-y-estadistica.png)
 
+![powerbi-resumen-de-ventas.png](archivos/powerbi-resumen-de-ventas.png)
 
 ## Hallazgos
 
