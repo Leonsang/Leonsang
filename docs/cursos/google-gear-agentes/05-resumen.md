@@ -12,11 +12,10 @@ Repaso de la ruta:
 
 **Siguiente paso sugerido:** otras rutas de la serie **GEAR** (desarrollo, despliegue y escalamiento de agentes, p. ej. con ADK y Agent Platform).
 
-**Para recordar (toda la ruta)**
-
-- Agente = modelo (cerebro) + herramientas (manos) + organización (bucle percibir-pensar-actuar-verificar) + memoria/contexto.
-- Usar agentes solo cuando hay varios pasos, adaptación, razonamiento y acciones externas.
-- Ecosistema Google: Gemini Enterprise (usuarios/empleados), Agentes conversacionales y CX Agent Studio (clientes), ADK + Gemini Enterprise Agent Platform + Agent Runtime (desarrolladores), MCP para herramientas.
+!!! tip "Para recordar (toda la ruta)"
+    - Agente = modelo (cerebro) + herramientas (manos) + organización (bucle percibir-pensar-actuar-verificar) + memoria/contexto.
+    - Usar agentes solo cuando hay varios pasos, adaptación, razonamiento y acciones externas.
+    - Ecosistema Google: Gemini Enterprise (usuarios/empleados), Agentes conversacionales y CX Agent Studio (clientes), ADK + Gemini Enterprise Agent Platform + Agent Runtime (desarrolladores), MCP para herramientas.
 
 ![Ruta completada](evidencias/05-ruta-completada.jpg)
 

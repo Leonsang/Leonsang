@@ -33,10 +33,9 @@ La IA pasa de "responder preguntas" a ser una red de **socios activos** que hace
 
 **Caso Zebra Technologies (video).** Ante la escasez proyectada de trabajadores de primera línea, Zebra lanzó *Zebra Companion* (con Gemini) para retail, con cuatro agentes: **conocimiento** (procedimientos/SOP de la tienda), **merchandising** (estanterías listas), **ventas asistidas** y **dispositivos** (interoperabilidad y soporte). Combina voz, visión y contexto con tecnología *wearable*.
 
-**Para recordar**
-
-- Mapear cada agente a un KPI evita que se quede en "caso hipotético".
-- Seis categorías: cliente, empleado, creatividad, código, datos, seguridad.
+!!! tip "Para recordar"
+    - Mapear cada agente a un KPI evita que se quede en "caso hipotético".
+    - Seis categorías: cliente, empleado, creatividad, código, datos, seguridad.
 
 ## Desarrollo de agentes con Google Cloud
 
@@ -62,11 +61,10 @@ Google ofrece una **pila de IA unificada** con rutas según el perfil:
 - Recorridos no lineales y multicanal que cambian de tema sin perder contexto → **CX Agent Studio**.
 - Lógica personalizada en código y despliegue en Google Cloud → **Agent Platform + ADK + Agent Runtime**.
 
-**Para recordar**
-
-- ADK = framework open source, code-first (SDK de Python) para multiagente.
-- Agent Platform = ciclo de vida completo + runtime administrado.
-- La elección depende de **quién construye** y **cuánto control** se necesita.
+!!! tip "Para recordar"
+    - ADK = framework open source, code-first (SDK de Python) para multiagente.
+    - Agent Platform = ciclo de vida completo + runtime administrado.
+    - La elección depende de **quién construye** y **cuánto control** se necesita.
 
 ## Acerca de Gemini Enterprise
 
@@ -81,10 +79,9 @@ Gemini Enterprise es el **asistente inteligente y centro de comando** del trabaj
 
 **Flujo:** Instrucción → Gemini Enterprise (Asistente, Búsqueda, Acciones + Agentes) ⇄ almacenes de datos y sistemas externos → Respuesta.
 
-**Para recordar**
-
-- Propósito principal: conectar el conocimiento de toda la organización y ponerlo al servicio del empleado, con acciones sobre sus herramientas.
-- Cuatro familias de agentes: Google, sin código, pro-code, terceros.
+!!! tip "Para recordar"
+    - Propósito principal: conectar el conocimiento de toda la organización y ponerlo al servicio del empleado, con acciones sobre sus herramientas.
+    - Cuatro familias de agentes: Google, sin código, pro-code, terceros.
 
 ## Cuestionario
 

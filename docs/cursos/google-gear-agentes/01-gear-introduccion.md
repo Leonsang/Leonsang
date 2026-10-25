@@ -11,7 +11,6 @@ Curso de bienvenida (10 min) de la ruta. Enlace: <https://www.skills.google/path
 - Esta ruta de nivel principiante cubre: qué es un agente y cómo razona y actúa; su arquitectura; en qué se diferencia de una API de LLM; su impacto en el negocio; cómo Gemini Enterprise permite crear y organizar agentes; y cómo conectar fuentes de datos a una app de Gemini Enterprise.
 - Requisitos: aprobar los cuestionarios con nota para recibir créditos; para la **insignia de habilidad** hay que completar el lab (simulado) y su cuestionario.
 
-**Para recordar**
-
-- GEAR es la serie de rutas de Google para agentes empresariales; esta es la primera (fundamentos).
-- Orden: Conceptos básicos → Agentes empresariales → Primera app de Gemini Enterprise → Resumen.
+!!! tip "Para recordar"
+    - GEAR es la serie de rutas de Google para agentes empresariales; esta es la primera (fundamentos).
+    - Orden: Conceptos básicos → Agentes empresariales → Primera app de Gemini Enterprise → Resumen.

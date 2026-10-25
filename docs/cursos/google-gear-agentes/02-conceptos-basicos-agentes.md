@@ -18,9 +18,8 @@ Objetivos del curso:
 - Reconocer casos de uso en atención al cliente, marketing e investigación.
 - Diferenciar agentes de chatbots tradicionales.
 
-**Para recordar**
-
-- Los agentes son la siguiente etapa: de "aconsejar" a "ejecutar".
+!!! tip "Para recordar"
+    - Los agentes son la siguiente etapa: de "aconsejar" a "ejecutar".
 
 ## Introducción a los agentes de IA
 
@@ -59,12 +58,11 @@ Objetivos del curso:
 - **Agente secundario (sub-agente)**: el principal delega subtareas especializadas, pasando solo el contexto necesario (p. ej. extracción de datos de facturas).
 - **Organizador / router**: un agente inicial detecta la intención y enruta al agente más apto; el reto es identificar bien la intención y hacerlo rápido.
 
-**Para recordar**
-
-- Agente = modelo + herramientas + memoria/organización, funcionando en bucle.
-- De reglas reactivas a objetivos autónomos; de generar texto a integrar sistemas.
-- MCP estandariza cómo los agentes descubren y usan herramientas.
-- Patrones: único, sub-agente, organizador/router.
+!!! tip "Para recordar"
+    - Agente = modelo + herramientas + memoria/organización, funcionando en bucle.
+    - De reglas reactivas a objetivos autónomos; de generar texto a integrar sistemas.
+    - MCP estandariza cómo los agentes descubren y usan herramientas.
+    - Patrones: único, sub-agente, organizador/router.
 
 ## Abstracción de agentes
 
@@ -82,9 +80,8 @@ Problema: los LLM nos dan buenos consejos, pero **la ejecución sigue siendo nue
 
 **Verificación de conocimientos:** lo que separa a un agente de un LLM con llamadas a funciones es la **operación autónoma y proactiva orientada a objetivos** (no solo usar herramientas).
 
-**Para recordar**
-
-- De reactivo a proactivo; de aislado a integrado (mantiene estado); de asesor a ejecutor; de estático a adaptativo.
+!!! tip "Para recordar"
+    - De reactivo a proactivo; de aislado a integrado (mantiene estado); de asesor a ejecutor; de estático a adaptativo.
 
 ## Cómo funcionan los agentes
 
@@ -102,10 +99,9 @@ Todas las capacidades salen de **tres pilares**: (analogía del auto: motor, rue
 
 Sin esta arquitectura terminas con miles de líneas de `if-then-else` frágiles para cada caso ("¿y si Sara está ocupada?").
 
-**Para recordar**
-
-- Modelo = inteligencia, herramientas = capacidad, organización = proceso que los une.
-- El poder está en **encadenar** varias llamadas a herramientas y adaptarse con la retroalimentación.
+!!! tip "Para recordar"
+    - Modelo = inteligencia, herramientas = capacidad, organización = proceso que los une.
+    - El poder está en **encadenar** varias llamadas a herramientas y adaptarse con la retroalimentación.
 
 ## Los agentes en acción
 
@@ -126,10 +122,9 @@ Ejemplos fuertes: respuesta automática a incidentes de producción (analizar lo
 | **Administrar (gobernar)** | Agent Registry (catálogo de agentes, herramientas y servidores MCP), Agent Identity, Agent Gateway (políticas sobre llamadas a herramientas), políticas de contenido, análisis de amenazas de IA, AI Content Detection API |
 | **Optimizar** | Evaluación de agentes (AutoRaters multi-turno, evaluación en línea), simulación con personajes sintéticos, observabilidad/trazas, optimización de instrucciones |
 
-**Para recordar**
-
-- Agentes para razonamiento + adaptación + varios pasos; automatización clásica para lo simple y determinístico.
-- Considerar latencia, costo y complejidad; empezar simple.
+!!! tip "Para recordar"
+    - Agentes para razonamiento + adaptación + varios pasos; automatización clásica para lo simple y determinístico.
+    - Considerar latencia, costo y complejidad; empezar simple.
 
 ## Conclusión del curso
 
@@ -139,11 +134,10 @@ Modelos mentales:
 - **Agente = modelo + herramientas + organización** (cocinero, utensilios y proceso de pedir-planificar-cocinar-servir).
 - Usa un agente si hay varios pasos, adaptación, razonamiento y acciones externas.
 
-**Para recordar**
-
-- Los agentes no son chatbots: perciben, razonan y actúan.
-- Las herramientas son los "superpoderes"; la autonomía orientada a objetivos es la característica definitoria.
-- No todo necesita un agente.
+!!! tip "Para recordar"
+    - Los agentes no son chatbots: perciben, razonan y actúan.
+    - Las herramientas son los "superpoderes"; la autonomía orientada a objetivos es la característica definitoria.
+    - No todo necesita un agente.
 
 ## Cuestionario
 

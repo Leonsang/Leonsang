@@ -34,11 +34,10 @@ Objetivo: crear una app de Gemini Enterprise, conectarle varios almacenes de dat
 - **Deep Research**: investigación exhaustiva (incluye cientos de sitios externos); genera un plan editable y luego un informe completo + resumen en audio.
 - **NotebookLM**: cuaderno con fuentes propias (Docs, URLs, YouTube, texto, archivos). Responde **solo con base en las fuentes cargadas**; permite guardar respuestas como notas y, en **Studio**, generar audio, video, mapas mentales e informes (ej. resumen en video "Marketing en cifras").
 
-**Para recordar**
-
-- Orden de configuración: crear app → **identidad** → almacenes de datos → compartir URL.
-- Gemini Enterprise hereda permisos de la fuente; no expone documentos privados.
-- Herramienta según la tarea: pregunta rápida → asistente; ideas → Idea Generation; investigación amplia → Deep Research; análisis de un conjunto cerrado de fuentes → NotebookLM.
+!!! tip "Para recordar"
+    - Orden de configuración: crear app → **identidad** → almacenes de datos → compartir URL.
+    - Gemini Enterprise hereda permisos de la fuente; no expone documentos privados.
+    - Herramienta según la tarea: pregunta rápida → asistente; ideas → Idea Generation; investigación amplia → Deep Research; análisis de un conjunto cerrado de fuentes → NotebookLM.
 
 ## Cuestionario del módulo
 

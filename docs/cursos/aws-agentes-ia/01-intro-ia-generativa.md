@@ -5,10 +5,6 @@ Curso de AWS Skill Builder *Introduction to Generative AI – Art of the Possibl
 !!! info "Estructura del curso"
     10 lecciones en tres bloques: **Introducción a la IA generativa** (lecciones 2-5), **Importancia de la IA generativa** (6-8) y **Cierre** (9-10).
 
-## Cómo usar este curso
-
-Lección de orientación: explica la navegación del reproductor (menú lateral, botones de avance entre lecciones, marcas de completado). No tiene contenido técnico.
-
 ## Información general de ML
 
 **Idea central:** la IA generativa es una rama del *machine learning* (ML) que crea contenido nuevo (texto, imágenes, código, audio, video) a partir de la entrada del usuario.
@@ -23,12 +19,11 @@ Lección de orientación: explica la navegación del reproductor (menú lateral,
     - Los **LLM** predicen la siguiente palabra según su posición y contexto en la oración, y así generan contenido.
 - **¿Por qué ahora?** Grandes inversiones en tres frentes: equipos más grandes, cómputo y disposición para apostar por ideas ambiciosas.
 
-**Para recordar**
-
-- ML = aprender patrones de datos históricos para predecir sobre datos nuevos.
-- IA generativa ⊂ deep learning ⊂ ML ⊂ IA.
-- FM: un modelo preentrenado, muchas tareas; LLM: predicción de la siguiente palabra.
-- Ejemplo de app generativa: Amazon Q Developer sugiere código en tiempo real.
+!!! tip "Para recordar"
+    - ML = aprender patrones de datos históricos para predecir sobre datos nuevos.
+    - IA generativa ⊂ deep learning ⊂ ML ⊂ IA.
+    - FM: un modelo preentrenado, muchas tareas; LLM: predicción de la siguiente palabra.
+    - Ejemplo de app generativa: Amazon Q Developer sugiere código en tiempo real.
 
 ## Conceptos básicos de IA generativa
 
@@ -50,10 +45,9 @@ La IA generativa crea contenido nuevo (conversaciones, historias, imágenes, vid
 3. Adaptar de forma eficiente modelos preentrenados a casos de negocio.
 4. Ganar productividad mediante automatización (ej. marketing hace pruebas A/B de imágenes de producto en minutos; desarrolladores generan código repetitivo e integraciones con API usando Q Developer).
 
-**Para recordar**
-
-- La IA generativa aporta valor en experiencia del cliente, productividad, creatividad y operaciones.
-- QuickSight + IA generativa = historias de datos a partir de preguntas en lenguaje natural (útil para mi trabajo en BI).
+!!! tip "Para recordar"
+    - La IA generativa aporta valor en experiencia del cliente, productividad, creatividad y operaciones.
+    - QuickSight + IA generativa = historias de datos a partir de preguntas en lenguaje natural (útil para mi trabajo en BI).
 
 ## Casos prácticos de IA generativa
 
@@ -76,10 +70,9 @@ Se estima que cerca de dos tercios de las ocupaciones en EE. UU. se verán poten
 2. **Escena:** módulos de NLP resuelven pronombres (ella → la sirena) para ubicar bien los elementos visuales.
 3. **Música:** una biblioteca de pistas se combina automáticamente; un modelo texto-a-voz estima la duración y un modelo paralingüístico mide el tono (tranquilo↔emocionante, triste↔feliz).
 
-**Para recordar**
-
-- Cada industria tiene casos concretos; los datos sintéticos aparecen en finanzas y operaciones.
-- Un producto generativo real suele encadenar varios modelos especializados (planificar → generar → ajustar).
+!!! tip "Para recordar"
+    - Cada industria tiene casos concretos; los datos sintéticos aparecen en finanzas y operaciones.
+    - Un producto generativo real suele encadenar varios modelos especializados (planificar → generar → ajustar).
 
 ## IA generativa en AWS
 
@@ -97,11 +90,10 @@ AWS organiza su oferta de IA generativa en **tres capas**:
 - En el reto de productividad de la versión preliminar: **27 %** más probabilidad de completar la tarea y **57 %** más rápido.
 - Accenture reporta hasta **30 %** menos esfuerzo de desarrollo (incorporación de personas, código estándar, lenguajes nuevos, detección de vulnerabilidades).
 
-**Para recordar**
-
-- Cómputo (Inferentia/Trainium) → construir (SageMaker/JumpStart) → consumir FM (Bedrock).
-- Bedrock = la vía más eficiente para crear y escalar apps generativas sin preentrenar un FM propio.
-- Q Developer = productividad del desarrollador dentro del IDE.
+!!! tip "Para recordar"
+    - Cómputo (Inferentia/Trainium) → construir (SageMaker/JumpStart) → consumir FM (Bedrock).
+    - Bedrock = la vía más eficiente para crear y escalar apps generativas sin preentrenar un FM propio.
+    - Q Developer = productividad del desarrollador dentro del IDE.
 
 ## IA generativa en la práctica
 
@@ -116,11 +108,10 @@ Escenario guiado con videos cortos: **AnyCompany**, marca de calzado, lanza un n
 | 5 | **Generación de código** | Con Amazon Q Developer, un script de Python que sube datos de sentimiento a un bucket de **Amazon S3** |
 | 6 | **Pregunta y respuesta** | Chatbot del sitio, ajustado con el catálogo y la base de clientes, que responde el número de seguimiento de un pedido |
 
-**Para recordar**
-
-- Un mismo FM sirve a investigación, marketing, ingeniería y servicio al cliente en un solo lanzamiento.
-- El modelo conserva el contexto de la conversación dentro de una sesión.
-- Para responder con datos propios (pedidos, catálogo) el modelo se ajusta o se conecta a esas fuentes.
+!!! tip "Para recordar"
+    - Un mismo FM sirve a investigación, marketing, ingeniería y servicio al cliente en un solo lanzamiento.
+    - El modelo conserva el contexto de la conversación dentro de una sesión.
+    - Para responder con datos propios (pedidos, catálogo) el modelo se ajusta o se conecta a esas fuentes.
 
 ## Implementando la IA generativa en pequeñas empresas
 
@@ -138,10 +129,9 @@ La IA permite a las pymes competir con organizaciones más grandes.
 
 **Soluciones de muestra de AWS:** QnABot en AWS, detección de fraude con procesamiento inteligente de documentos, creador de aplicaciones de IA generativa, IDP acelerado y recomendaciones de e-commerce con Amazon Bedrock.
 
-**Para recordar**
-
-- Caso de uso → estrategia de datos → herramientas. Sin datos de calidad no hay IA útil (¡mi terreno como ingeniero de datos!).
-- La búsqueda generativa interpreta la intención detrás de consultas vagas.
+!!! tip "Para recordar"
+    - Caso de uso → estrategia de datos → herramientas. Sin datos de calidad no hay IA útil (¡mi terreno como ingeniero de datos!).
+    - La búsqueda generativa interpreta la intención detrás de consultas vagas.
 
 ## Consideraciones éticas de la IA generativa
 
@@ -167,19 +157,14 @@ La IA permite a las pymes competir con organizaciones más grandes.
 
 **Responsabilidad compartida:** equipos diversos, pruebas robustas, reportes transparentes, y revisar lo que se ingresa al modelo para no filtrar información confidencial ni propiedad intelectual.
 
-**Para recordar**
-
-- Alucinación ≠ toxicidad: una es falsedad plausible, la otra contenido dañino.
-- El sesgo entra por los datos y se amplifica sin juicio humano.
-- Nunca pegar datos confidenciales o personales en un modelo sin evaluar el riesgo.
+!!! tip "Para recordar"
+    - Alucinación ≠ toxicidad: una es falsedad plausible, la otra contenido dañino.
+    - El sesgo entra por los datos y se amplifica sin juicio humano.
+    - Nunca pegar datos confidenciales o personales en un modelo sin evaluar el riesgo.
 
 ## Más información
 
 Recursos oficiales enlazados: IA generativa en AWS, Amazon Bedrock, AWS Trainium, AWS Inferentia, **IA agéntica de Amazon** (puente hacia el resto de la ruta) y Amazon SageMaker AI.
-
-## Contáctenos
-
-Canal para reportar errores del curso vía soporte de AWS Training & Certification. Sin contenido técnico.
 
 ---
 
