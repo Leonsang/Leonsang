@@ -103,3 +103,11 @@ Curso de AWS Skill Builder *Fundamentos de Inteligencia Artificial Generativa en
     - La responsabilidad es **compartida** entre el proveedor del modelo y quien despliega la app.
     - Pista para la prueba: «documentar casos de uso y limitaciones de un servicio» → **AI Service Cards** (transparencia).
     - Pista para la prueba: la IA responsable aplica en **cada etapa** del ciclo de vida, no solo al final.
+
+---
+
+## Evidencia
+
+Curso marcado como **Completado** en la ruta el 2026-10-24 (progreso de la ruta: 44,44 %).
+
+![Ruta IA sin Límites al 44 %](evidencias/ruta-ia-sin-limites-progreso-44.jpg)
