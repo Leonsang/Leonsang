@@ -85,6 +85,16 @@ nav:
       - AA2-EV01 Informe de prompts: cursos/sena-ia-integracion-datos/aa2-ev01-informe-prompts.md
       - AA2-EV02 Foro de modelado: cursos/sena-ia-integracion-datos/aa2-ev02-foro-modelado.md
       - AA2-EV03 Power BI: cursos/sena-ia-integracion-datos/aa2-ev03-powerbi.md
+    - AWS Entrena · IA sin Límites:
+      - Progreso de la ruta: cursos/aws-agentes-ia/index.md
+      - 01 Introducción a la IA generativa: cursos/aws-agentes-ia/01-intro-ia-generativa.md
+    - Google Skills · GEAR Agentes:
+      - Progreso de la ruta: cursos/google-gear-agentes/index.md
+      - 01 Introducción GEAR: cursos/google-gear-agentes/01-gear-introduccion.md
+      - 02 Conceptos básicos de agentes: cursos/google-gear-agentes/02-conceptos-basicos-agentes.md
+      - 03 Agentes empresariales: cursos/google-gear-agentes/03-agentes-empresariales.md
+      - 04 Primera app Gemini Enterprise: cursos/google-gear-agentes/04-primera-app-gemini-enterprise.md
+      - 05 Resumen: cursos/google-gear-agentes/05-resumen.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
