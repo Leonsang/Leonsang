@@ -94,7 +94,7 @@ nav:
       - 05 IA responsable: cursos/aws-agentes-ia/05-ia-responsable.md
       - 06 Fundamentos de la ingeniería de peticiones: cursos/aws-agentes-ia/06-fundamentos-ingenieria-peticiones.md
       - 07 Ingeniería de peticiones con Claude: cursos/aws-agentes-ia/07-ingenieria-peticiones-claude.md
-      - 08 Taller: la era de los agentes de IA: cursos/aws-agentes-ia/08-taller-agentes-ia.md
+      - "08 Taller: la era de los agentes de IA": cursos/aws-agentes-ia/08-taller-agentes-ia.md
     - Google Skills · GEAR Agentes:
       - Progreso de la ruta: cursos/google-gear-agentes/index.md
       - 01 Introducción GEAR: cursos/google-gear-agentes/01-gear-introduccion.md
