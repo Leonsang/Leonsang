@@ -13,7 +13,7 @@ Apuntes de la formación gratuita de **AWS Entrena Bogotá** (plataforma bogota.
 | 5 | Responsible Artificial Intelligence Practices (Español LATAM) | 1 h | ✅ Completado | 2026-10-24 | [Ver apuntes](05-ia-responsable.md) |
 | 6 | Essentials of Prompt Engineering (Español LATAM) | 1 h | ✅ Completado | 2026-10-25 | [Ver apuntes](06-fundamentos-ingenieria-peticiones.md) |
 | 7 | Fundamentals of Prompt Engineering with Claude (Español LATAM) | 1 h | ✅ Completado | 2026-10-25 | [Ver apuntes](07-ingenieria-peticiones-claude.md) |
-| 8 | Taller en vivo: Agentes de IA – Lizandra Arza Pérez (evento) | 1 h | Pendiente | — | — |
-| 9 | Prueba Conocimientos – IA Sin Límites (evaluación) | 45 min | Pendiente | — | — |
+| 8 | Taller en vivo: Agentes de IA – Lizandra Arza Pérez (grabación) | 1 h | ✅ Completado | 2026-10-25 | [Notas](08-taller-agentes-ia.md) |
+| 9 | Prueba Conocimientos – IA Sin Límites (evaluación) | 45 min | ✅ Completado | 2026-10-25 | — |
 
 ![Progreso de la ruta IA sin Límites](evidencias/ruta-ia-sin-limites-progreso-78.jpg)
