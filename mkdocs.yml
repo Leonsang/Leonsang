@@ -99,6 +99,27 @@ nav:
       - 03 Agentes empresariales: cursos/google-gear-agentes/03-agentes-empresariales.md
       - 04 Primera app Gemini Enterprise: cursos/google-gear-agentes/04-primera-app-gemini-enterprise.md
       - 05 Resumen: cursos/google-gear-agentes/05-resumen.md
+    - Google Skills · GEAR ADK:
+      - Progreso de la ruta: cursos/google-gear-adk/index.md
+      - 01 Bienvenida – Desarrolla agentes con el Kit de desarrollo de agentes (ADK): cursos/google-gear-adk/01-bienvenida.md
+      - 02 Crea tu primer agente con el Kit de desarrollo de agentes (ADK): cursos/google-gear-adk/02-primer-agente-adk.md
+      - 04 Optimiza el comportamiento de los agentes: cursos/google-gear-adk/04-optimiza-comportamiento.md
+      - 05 Controla la memoria y el estado de los agentes: cursos/google-gear-adk/05-memoria-y-estado.md
+      - 06 Agrega capacidades de agente con herramientas: cursos/google-gear-adk/06-herramientas.md
+      - 07 Conclusión – Desarrolla agentes con el ADK: cursos/google-gear-adk/07-conclusion.md
+    - Google Skills · GEAR Producción:
+      - Progreso de la ruta: cursos/google-gear-produccion/index.md
+      - 01 Bienvenida – Implementa agentes listos para producción: cursos/google-gear-produccion/01-bienvenida.md
+      - 02 Crea e implementa agentes en producción: cursos/google-gear-produccion/02-crea-e-implementa-agentes-en-produccion.md
+      - 03 Implementa tu primer agente: cursos/google-gear-produccion/03-implementa-tu-primer-agente.md
+      - 05 Cierre – Implementa agentes listos para producción: cursos/google-gear-produccion/05-cierre.md
+    - Google Skills · GEAR Escala empresarial:
+      - Progreso de la ruta: cursos/google-gear-escala/index.md
+      - 01 Bienvenida – Escala agentes en toda la empresa: cursos/google-gear-escala/01-bienvenida.md
+      - 02 Agentes de IA generativa – transforma tu organización: cursos/google-gear-escala/02-agentes-ia-generativa-transforma-tu-organizacion.md
+      - 03 IA centrada en los humanos: cursos/google-gear-escala/03-ia-centrada-en-humanos.md
+      - 04 Organiza flujos de trabajo de varios agentes con Gemini Enterprise: cursos/google-gear-escala/04-organiza-flujos-multiagente-gemini-enterprise.md
+      - 05 Resumen – Escala agentes en toda la empresa: cursos/google-gear-escala/05-resumen.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
