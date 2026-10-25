@@ -4772,10 +4772,12 @@ Enlace: <a href="https://www.skills.google/paths/3546/course_templates/1562">htt
 <li>Reconocer casos de uso en atención al cliente, marketing e investigación.</li>
 <li>Diferenciar agentes de chatbots tradicionales.</li>
 </ul>
-<p><strong>Para recordar</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Para recordar</p>
 <ul>
 <li>Los agentes son la siguiente etapa: de "aconsejar" a "ejecutar".</li>
 </ul>
+</div>
 <h2 id="introduccion-a-los-agentes-de-ia">Introducción a los agentes de IA<a class="headerlink" href="#introduccion-a-los-agentes-de-ia" title="Permanent link">&para;</a></h2>
 <p><strong>Definición.</strong> Un agente de IA es un sistema de software que usa IA (normalmente un modelo de lenguaje) para cumplir un objetivo en nombre de un usuario: percibe su entorno mediante entradas y herramientas y actúa sobre él. A diferencia de un chatbot basado en reglas, se orienta a la <strong>acción autónoma</strong> y puede ser proactivo.</p>
 <p><strong>Lo que lo distingue de un modelo solo:</strong></p>
@@ -4832,13 +4834,15 @@ Enlace: <a href="https://www.skills.google/paths/3546/course_templates/1562">htt
 <li><strong>Agente secundario (sub-agente)</strong>: el principal delega subtareas especializadas, pasando solo el contexto necesario (p. ej. extracción de datos de facturas).</li>
 <li><strong>Organizador / router</strong>: un agente inicial detecta la intención y enruta al agente más apto; el reto es identificar bien la intención y hacerlo rápido.</li>
 </ul>
-<p><strong>Para recordar</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Para recordar</p>
 <ul>
 <li>Agente = modelo + herramientas + memoria/organización, funcionando en bucle.</li>
 <li>De reglas reactivas a objetivos autónomos; de generar texto a integrar sistemas.</li>
 <li>MCP estandariza cómo los agentes descubren y usan herramientas.</li>
 <li>Patrones: único, sub-agente, organizador/router.</li>
 </ul>
+</div>
 <h2 id="abstraccion-de-agentes">Abstracción de agentes<a class="headerlink" href="#abstraccion-de-agentes" title="Permanent link">&para;</a></h2>
 <p>Problema: los LLM nos dan buenos consejos, pero <strong>la ejecución sigue siendo nuestra</strong> (brecha entre saber y hacer). Un agente no es "un LLM con herramientas pegadas"; es otra abstracción: mantiene contexto, planifica y toma la iniciativa.</p>
 <p><strong>Ejemplo de la chaqueta</strong></p>
@@ -4870,10 +4874,12 @@ Enlace: <a href="https://www.skills.google/paths/3546/course_templates/1562">htt
 </table>
 <p><strong>Problemas "de agente":</strong> procesos de varios pasos (informes de gastos), entornos cambiantes (reservas de viaje con precios y cupos variables), monitoreo continuo ("reserva cuando el vuelo baje de X"), coordinación entre múltiples sistemas (organizar un evento).</p>
 <p><strong>Verificación de conocimientos:</strong> lo que separa a un agente de un LLM con llamadas a funciones es la <strong>operación autónoma y proactiva orientada a objetivos</strong> (no solo usar herramientas).</p>
-<p><strong>Para recordar</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Para recordar</p>
 <ul>
 <li>De reactivo a proactivo; de aislado a integrado (mantiene estado); de asesor a ejecutor; de estático a adaptativo.</li>
 </ul>
+</div>
 <h2 id="como-funcionan-los-agentes">Cómo funcionan los agentes<a class="headerlink" href="#como-funcionan-los-agentes" title="Permanent link">&para;</a></h2>
 <p>Todas las capacidades salen de <strong>tres pilares</strong>: (analogía del auto: motor, ruedas y dirección).</p>
 <ol>
@@ -4892,11 +4898,13 @@ Enlace: <a href="https://www.skills.google/paths/3546/course_templates/1562">htt
 <li><strong>Organización (orquestación) – el proceso.</strong> Ciclo <strong>percibir → pensar → actuar → verificar</strong> que se repite hasta lograr el objetivo. Se apoya en marcos de razonamiento como <strong>ReAct</strong>, <strong>cadena de pensamiento (CoT)</strong> y <strong>árbol de pensamiento (ToT)</strong>.</li>
 </ol>
 <p>Sin esta arquitectura terminas con miles de líneas de <code>if-then-else</code> frágiles para cada caso ("¿y si Sara está ocupada?").</p>
-<p><strong>Para recordar</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Para recordar</p>
 <ul>
 <li>Modelo = inteligencia, herramientas = capacidad, organización = proceso que los une.</li>
 <li>El poder está en <strong>encadenar</strong> varias llamadas a herramientas y adaptarse con la retroalimentación.</li>
 </ul>
+</div>
 <h2 id="los-agentes-en-accion">Los agentes en acción<a class="headerlink" href="#los-agentes-en-accion" title="Permanent link">&para;</a></h2>
 <p><strong>Cuándo SÍ usar un agente:</strong> comportamiento orientado a objetivos, razonamiento de varios pasos con acciones externas, resolución adaptativa ante variaciones, integración entre varios sistemas.</p>
 <p>Ejemplos fuertes: respuesta automática a incidentes de producción (analizar logs, revisar despliegues, crear tickets, revertir, avisar), análisis competitivo (buscar, extraer, sintetizar y citar), informes ejecutivos diarios programados.</p>
@@ -4929,11 +4937,13 @@ Enlace: <a href="https://www.skills.google/paths/3546/course_templates/1562">htt
 </tr>
 </tbody>
 </table>
-<p><strong>Para recordar</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Para recordar</p>
 <ul>
 <li>Agentes para razonamiento + adaptación + varios pasos; automatización clásica para lo simple y determinístico.</li>
 <li>Considerar latencia, costo y complejidad; empezar simple.</li>
 </ul>
+</div>
 <h2 id="conclusion-del-curso">Conclusión del curso<a class="headerlink" href="#conclusion-del-curso" title="Permanent link">&para;</a></h2>
 <p>Modelos mentales:</p>
 <ul>
@@ -4941,12 +4951,14 @@ Enlace: <a href="https://www.skills.google/paths/3546/course_templates/1562">htt
 <li><strong>Agente = modelo + herramientas + organización</strong> (cocinero, utensilios y proceso de pedir-planificar-cocinar-servir).</li>
 <li>Usa un agente si hay varios pasos, adaptación, razonamiento y acciones externas.</li>
 </ul>
-<p><strong>Para recordar</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Para recordar</p>
 <ul>
 <li>Los agentes no son chatbots: perciben, razonan y actúan.</li>
 <li>Las herramientas son los "superpoderes"; la autonomía orientada a objetivos es la característica definitoria.</li>
 <li>No todo necesita un agente.</li>
 </ul>
+</div>
 <h2 id="cuestionario">Cuestionario<a class="headerlink" href="#cuestionario" title="Permanent link">&para;</a></h2>
 <p>Resultado: <strong>100 %</strong> (mínimo 75 %) · insignia de finalización <strong>Agent Fundamentals</strong>.</p>
 <ul>
