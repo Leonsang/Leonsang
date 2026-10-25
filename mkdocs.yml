@@ -88,6 +88,9 @@ nav:
     - AWS Entrena · IA sin Límites:
       - Progreso de la ruta: cursos/aws-agentes-ia/index.md
       - 01 Introducción a la IA generativa: cursos/aws-agentes-ia/01-intro-ia-generativa.md
+      - 02 AI-Driven Development Lifecycle: cursos/aws-agentes-ia/02-ai-dlc.md
+      - 03 Desarrollo de proyectos de IA generativa: cursos/aws-agentes-ia/03-desarrollo-proyectos-ia-generativa.md
+      - 04 Fundamentos de IA generativa en AWS: cursos/aws-agentes-ia/04-fundamentos-ia-generativa-aws.md
     - Google Skills · GEAR Agentes:
       - Progreso de la ruta: cursos/google-gear-agentes/index.md
       - 01 Introducción GEAR: cursos/google-gear-agentes/01-gear-introduccion.md
