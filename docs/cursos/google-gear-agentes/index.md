@@ -24,10 +24,6 @@ Primera ruta de la serie **Gemini Enterprise Agent Ready (GEAR)**. Da una base s
 - **Enterprise Agents and Use Cases** (finalización)
 - **Create Your First Gemini Enterprise Application** (insignia de habilidad · Introductory)
 
-!!! warning "Pendiente"
-    - Compartir las insignias en **Credly** requiere aceptar un consentimiento de datos: hacerlo manualmente si se desea.
-    - Las encuestas de opinión de cada curso son opcionales y no se respondieron.
-
 ## Evidencias
 
 ![Ruta completada](evidencias/05-ruta-completada.jpg)

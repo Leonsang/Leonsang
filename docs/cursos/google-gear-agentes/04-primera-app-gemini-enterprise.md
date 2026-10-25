@@ -4,9 +4,6 @@ Curso con **insignia de habilidad** (1 h, introductorio). Enlace: <https://www.s
 
 **Contenido:** Lección "Crea tu primera aplicación de Gemini Enterprise" (simulación práctica + video demostrativo) · Cuestionario del módulo · Insignia de habilidad.
 
-!!! note "Lab simulado, no un lab real"
-    En esta versión el "lab" es una **simulación interactiva** dentro del navegador (con video y transcripción como alternativa accesible). No usa créditos ni una cuenta temporal de Google Cloud, así que se pudo completar sin iniciar ningún lab real.
-
 ---
 
 ## Crea tu primera aplicación de Gemini Enterprise
@@ -66,5 +63,3 @@ Obtenida: **Create Your First Gemini Enterprise Application** (Skill Badge · In
 
 ![Insignia de habilidad](evidencias/04-insignia-habilidad-gemini-enterprise.jpg)
 
-!!! warning "Pendiente para Erick"
-    La página de la credencial ofrece compartir la insignia en **Credly**, lo que requiere aceptar el consentimiento para enviar nombre y correo a Credly. No se aceptó: si quieres publicarla en Credly/LinkedIn, hazlo tú desde la página de la insignia.
