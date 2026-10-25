@@ -11,9 +11,9 @@ Apuntes de la formación gratuita de **AWS Entrena Bogotá** (plataforma bogota.
 | 3 | Desarrollo de Proyectos de IA Generativa (Español LATAM) | 1 h | ✅ Completado | 2026-10-24 | [Ver apuntes](03-desarrollo-proyectos-ia-generativa.md) |
 | 4 | Fundamentos de Inteligencia Artificial Generativa en AWS | 1 h 30 min | ✅ Completado | 2026-10-24 | [Ver apuntes](04-fundamentos-ia-generativa-aws.md) |
 | 5 | Responsible Artificial Intelligence Practices (Español LATAM) | 1 h | ✅ Completado | 2026-10-24 | [Ver apuntes](05-ia-responsable.md) |
-| 6 | Essentials of Prompt Engineering (Español LATAM) | 1 h | Pendiente | — | — |
-| 7 | Fundamentals of Prompt Engineering with Claude (Español LATAM) | 1 h | Pendiente | — | — |
+| 6 | Essentials of Prompt Engineering (Español LATAM) | 1 h | ✅ Completado | 2026-10-25 | [Ver apuntes](06-fundamentos-ingenieria-peticiones.md) |
+| 7 | Fundamentals of Prompt Engineering with Claude (Español LATAM) | 1 h | ✅ Completado | 2026-10-25 | [Ver apuntes](07-ingenieria-peticiones-claude.md) |
 | 8 | Taller en vivo: Agentes de IA – Lizandra Arza Pérez (evento) | 1 h | Pendiente | — | — |
 | 9 | Prueba Conocimientos – IA Sin Límites (evaluación) | 45 min | Pendiente | — | — |
 
-![Progreso de la ruta IA sin Límites](evidencias/ruta-ia-sin-limites-progreso-44.jpg)
+![Progreso de la ruta IA sin Límites](evidencias/ruta-ia-sin-limites-progreso-78.jpg)

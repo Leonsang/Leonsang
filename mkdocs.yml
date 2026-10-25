@@ -92,6 +92,8 @@ nav:
       - 03 Desarrollo de proyectos de IA generativa: cursos/aws-agentes-ia/03-desarrollo-proyectos-ia-generativa.md
       - 04 Fundamentos de IA generativa en AWS: cursos/aws-agentes-ia/04-fundamentos-ia-generativa-aws.md
       - 05 IA responsable: cursos/aws-agentes-ia/05-ia-responsable.md
+      - 06 Fundamentos de la ingeniería de peticiones: cursos/aws-agentes-ia/06-fundamentos-ingenieria-peticiones.md
+      - 07 Ingeniería de peticiones con Claude: cursos/aws-agentes-ia/07-ingenieria-peticiones-claude.md
     - Google Skills · GEAR Agentes:
       - Progreso de la ruta: cursos/google-gear-agentes/index.md
       - 01 Introducción GEAR: cursos/google-gear-agentes/01-gear-introduccion.md
