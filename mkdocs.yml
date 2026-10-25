@@ -120,6 +120,19 @@ nav:
       - 03 IA centrada en los humanos: cursos/google-gear-escala/03-ia-centrada-en-humanos.md
       - 04 Organiza flujos de trabajo de varios agentes con Gemini Enterprise: cursos/google-gear-escala/04-organiza-flujos-multiagente-gemini-enterprise.md
       - 05 Resumen – Escala agentes en toda la empresa: cursos/google-gear-escala/05-resumen.md
+    - Google Skills · GEAR Multiagente:
+      - Progreso de la ruta: cursos/google-gear-multiagente/index.md
+      - 01 Bienvenida – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/01-bienvenida.md
+      - 02 Crea sistemas multiagente colaborativos con el ADK y el MCP: cursos/google-gear-multiagente/02-sistemas-multiagente-colaborativos-adk-mcp.md
+      - 04 Build Agent Skills with Google: cursos/google-gear-multiagente/04-build-agent-skills-with-google.md
+      - 06 Conclusión – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/06-conclusion.md
+    - Google Skills · GEAR Gobierno y seguridad:
+      - Progreso de la ruta: cursos/google-gear-gobierno-seguridad/index.md
+      - 01 Bienvenida – Administra y protege agentes empresariales: cursos/google-gear-gobierno-seguridad/01-bienvenida.md
+      - 02 Agentes de IA empresariales seguros: cursos/google-gear-gobierno-seguridad/02-agentes-ia-empresariales-seguros.md
+      - 03 Google Cloud Agent Governance and Security: cursos/google-gear-gobierno-seguridad/03-agent-governance-and-security.md
+      - 04 Model Armor – protege las implementaciones de IA: cursos/google-gear-gobierno-seguridad/04-model-armor.md
+      - 06 Conclusión – Administra y protege agentes empresariales: cursos/google-gear-gobierno-seguridad/06-conclusion.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
