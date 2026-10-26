@@ -137,6 +137,14 @@ nav:
       - 03 Google Cloud Agent Governance and Security: cursos/google-gear-gobierno-seguridad/03-agent-governance-and-security.md
       - 04 Model Armor – protege las implementaciones de IA: cursos/google-gear-gobierno-seguridad/04-model-armor.md
       - 06 Conclusión – Administra y protege agentes empresariales: cursos/google-gear-gobierno-seguridad/06-conclusion.md
+    - "MongoDB University · Getting Started with MongoDB Atlas":
+      - Progreso del curso: cursos/mongodb-atlas/index.md
+      - 01 Fundamentos de MongoDB: cursos/mongodb-atlas/01-fundamentos-mongodb.md
+      - 02 Arquitectura de MongoDB: cursos/mongodb-atlas/02-arquitectura-mongodb.md
+      - 03 Visión general de MongoDB Atlas: cursos/mongodb-atlas/03-vision-general-atlas.md
+      - 04 Desplegar un cluster en Atlas: cursos/mongodb-atlas/04-desplegar-cluster-atlas.md
+      - 05 Explorar la interfaz de Atlas: cursos/mongodb-atlas/05-explorar-interfaz-atlas.md
+      - 06 Conclusión y repaso: cursos/mongodb-atlas/06-conclusion.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
