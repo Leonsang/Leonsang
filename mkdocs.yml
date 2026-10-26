@@ -154,6 +154,12 @@ nav:
         - "03.3 Gestionar bases, colecciones y documentos en Atlas": cursos/mongodb-python-path/03-document-model/03-gestionar-datos-en-atlas.md
         - "03.4 Relaciones entre datos": cursos/mongodb-python-path/03-document-model/04-relaciones-de-datos.md
         - "03.5 Embeber y referenciar": cursos/mongodb-python-path/03-document-model/05-embeber-y-referenciar.md
+      - "Unidad 4 · Connecting to a MongoDB Database Using the MongoDB Shell":
+        - Resumen de la unidad: cursos/mongodb-python-path/04-mongodb-shell/index.md
+        - "04.1 Connection strings de MongoDB": cursos/mongodb-python-path/04-mongodb-shell/01-connection-strings.md
+        - "04.2 Instalar mongosh y conectarse": cursos/mongodb-python-path/04-mongodb-shell/02-instalar-y-conectar-mongosh.md
+        - "04.3 Resolver errores de conexión": cursos/mongodb-python-path/04-mongodb-shell/03-resolver-errores-de-conexion.md
+        - "04.4 Usar el MongoDB Shell": cursos/mongodb-python-path/04-mongodb-shell/04-usar-mongosh.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:

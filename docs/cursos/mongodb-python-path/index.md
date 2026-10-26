@@ -9,7 +9,7 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 | 1 | Start Here - Intro to MongoDB (optativa) | Pendiente | — | — |
 | 2 | Getting Started with MongoDB Atlas | Completado | 5 cuestionarios, 10/10 | [Ver apuntes](../mongodb-atlas/index.md) |
 | 3 | MongoDB and the Document Model | Completado | 5 cuestionarios, 10/10 | [Ver apuntes](03-document-model/index.md) |
-| 4 | Connecting to a MongoDB Database Using the MongoDB Shell | Pendiente | — | — |
+| 4 | Connecting to a MongoDB Database Using the MongoDB Shell | Completado | 4 cuestionarios, 8/8 | [Ver apuntes](04-mongodb-shell/index.md) |
 | 5 | Connecting to MongoDB in Python | Pendiente | — | — |
 | 6 | CRUD Operations in MongoDB | Pendiente | — | — |
 | 7 | MongoDB CRUD Operations in Python | Pendiente | — | — |
@@ -22,5 +22,5 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 
 ## Avance
 
-- Unidades completadas: **2 de 13**.
+- Unidades completadas: **3 de 13**.
 - Todos los cuestionarios aprobados al 100 %.
