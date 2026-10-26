@@ -170,6 +170,11 @@ nav:
         - "06.1 Operaciones CRUD": cursos/mongodb-python-path/06-crud-mongodb/01-operaciones-crud.md
         - "06.2 Diseñar consultas efectivas": cursos/mongodb-python-path/06-crud-mongodb/02-consultas-efectivas.md
         - "06.3 Modificar los resultados de una consulta": cursos/mongodb-python-path/06-crud-mongodb/03-modificar-resultados.md
+      - "Unidad 7 · MongoDB CRUD Operations in Python":
+        - Resumen de la unidad: cursos/mongodb-python-path/07-crud-python/index.md
+        - "07.1 Documentos BSON en Python": cursos/mongodb-python-path/07-crud-python/01-documentos-bson-en-python.md
+        - "07.2 CRUD con PyMongo": cursos/mongodb-python-path/07-crud-python/02-crud-con-pymongo.md
+        - "07.3 Transacciones multidocumento en Python": cursos/mongodb-python-path/07-crud-python/03-transacciones-en-python.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
