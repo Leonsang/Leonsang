@@ -6,7 +6,7 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 
 | # | Unidad | Estado | Resultado | Apuntes |
 |---|---|---|---|---|
-| 1 | Start Here - Intro to MongoDB (optativa) | Pendiente | — | — |
+| 1 | Start Here - Intro to MongoDB (optativa) | Completado | Unidad al 100 % | — |
 | 2 | Getting Started with MongoDB Atlas | Completado | 5 cuestionarios, 10/10 | [Ver apuntes](../mongodb-atlas/index.md) |
 | 3 | MongoDB and the Document Model | Completado | 5 cuestionarios, 10/10 | [Ver apuntes](03-document-model/index.md) |
 | 4 | Connecting to a MongoDB Database Using the MongoDB Shell | Completado | 4 cuestionarios, 8/8 | [Ver apuntes](04-mongodb-shell/index.md) |
@@ -18,10 +18,10 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 | 10 | MongoDB Aggregation in Python | Completado | 3 cuestionarios, 6/6 | [Ver apuntes](10-aggregation-python/index.md) |
 | 11 | MongoDB Transactions (optativa) | Completado | 3 cuestionarios, 6/6 | [Ver apuntes](11-transactions/index.md) |
 | 12 | Introduction to Atlas Search (optativa) | Completado | 6 cuestionarios, 12/12 | [Ver apuntes](12-atlas-search/index.md) |
-| 13 | Associate Developer Exam Python (optativa) | Pendiente | — | — |
+| 13 | Associate Developer Exam Python (optativa) | Pendiente | Examen de certificación (53 preguntas, 75 min, con supervisión en línea) | — |
 
 ## Avance
 
-- Unidades completadas: **10 de 13** (más la unidad 8 en curso).
-- Todos los cuestionarios aprobados al 100 %.
+- Unidades completadas: **11 de 13**, según el panel de MongoDB University. La unidad 8 está en curso.
+- Cuestionarios: todas las unidades cerraron con 100 % de aciertos.
 - Insignia obtenida: **MongoDB Skill · CRUD Operations** (Credly), Skill Check 10/10.
