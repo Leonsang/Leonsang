@@ -199,6 +199,7 @@ nav:
       - "01 AI 2041 (ideas del libro)": cursos/ubits-futuro-ia/01-ai-2041.md
       - "02 El misterio de la inteligencia artificial": cursos/ubits-futuro-ia/02-misterio-ia.md
       - "03 Humanización e inteligencia artificial": cursos/ubits-futuro-ia/03-humanizacion-ia.md
+      - "04 La tecnología: ¿reemplazo o futuro?": cursos/ubits-futuro-ia/04-tecnologia-reemplazo-futuro.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
