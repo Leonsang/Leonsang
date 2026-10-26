@@ -13,7 +13,7 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 | 5 | Connecting to MongoDB in Python | Completado | 3 cuestionarios, 6/6 | [Ver apuntes](05-python-connection/index.md) |
 | 6 | CRUD Operations in MongoDB | Completado | Skill Check 10/10 + insignia Credly | [Ver apuntes](06-crud-mongodb/index.md) |
 | 7 | MongoDB CRUD Operations in Python | Completado | 6 cuestionarios, 12/12 | [Ver apuntes](07-crud-python/index.md) |
-| 8 | Indexing Design Fundamentals | Pendiente | — | — |
+| 8 | Indexing Design Fundamentals | En curso | Videos completos. Skill Check: Pendiente | [Ver apuntes](08-indexing/index.md) |
 | 9 | MongoDB Aggregation | Pendiente | — | — |
 | 10 | MongoDB Aggregation in Python | Pendiente | — | — |
 | 11 | MongoDB Transactions (optativa) | Pendiente | — | — |
