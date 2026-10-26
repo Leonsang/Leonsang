@@ -194,6 +194,10 @@ nav:
         - Resumen de la unidad: cursos/mongodb-python-path/12-atlas-search/index.md
         - "12.1 Fundamentos de Atlas Search, mapeos y tipos de datos": cursos/mongodb-python-path/12-atlas-search/01-indices-y-mapeos.md
         - "12.2 Operadores de $search y facets": cursos/mongodb-python-path/12-atlas-search/02-operadores-y-facets.md
+    - "UBITS · Explorando el futuro con la inteligencia artificial":
+      - Progreso de la ruta: cursos/ubits-futuro-ia/index.md
+      - "01 AI 2041 (ideas del libro)": cursos/ubits-futuro-ia/01-ai-2041.md
+      - "02 El misterio de la inteligencia artificial": cursos/ubits-futuro-ia/02-misterio-ia.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
