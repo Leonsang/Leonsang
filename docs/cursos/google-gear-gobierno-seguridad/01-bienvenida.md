@@ -20,3 +20,6 @@ Temas de la ruta:
 !!! tip "Para recordar"
     - Gobierno de agentes = identidad + perímetro + filtros de contenido + monitoreo.
     - Pista: Model Armor filtra lo que entra al modelo y lo que sale de él; Agent Gateway controla el tráfico saliente del agente.
+
+![Curso completado](evidencias/01-bienvenida-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

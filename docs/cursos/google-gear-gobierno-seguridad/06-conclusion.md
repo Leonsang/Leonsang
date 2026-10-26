@@ -20,3 +20,6 @@ Repaso de la ruta, la última de la serie GEAR:
 !!! tip "Para recordar"
     - Agentes listos para la empresa = identidad + gateway + filtros semánticos + perímetro + observabilidad.
     - Pista: nunca expongas credenciales, verifica la entrada y la salida, y contén el entorno de ejecución.
+
+![Curso completado](evidencias/06-conclusion-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

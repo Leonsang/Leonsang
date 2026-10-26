@@ -15,3 +15,6 @@ Repaso de la ruta:
 !!! tip "Para recordar"
     - Escalar agentes = casos de negocio claros + personas en el centro + orquestación multiagente en una sola plataforma.
     - Pista: Gemini Enterprise es el punto de entrada de los empleados a los agentes de la empresa.
+
+![Curso completado](evidencias/05-resumen-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

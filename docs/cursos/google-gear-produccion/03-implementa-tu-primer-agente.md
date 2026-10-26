@@ -98,6 +98,32 @@ Cloud Run es la alternativa cuando necesitas **UI web** (`--with_ui`), un **cont
     - `--with_ui` despliega una interfaz web para probar el agente desde el navegador.
     - Pista: la ventaja de Agent Engine para agentes ADK estándar es que configura las sesiones solo y es más simple.
 
+## Ejemplo práctico: agente meteorológico en Cloud Run
+
+1. **Crear el agente.** Crea la carpeta `weather_agent_cloud_run/`, define en `agent.py` un `LlmAgent` (modelo Flash, nombre, descripción e instrucción) y en `__init__.py` pon `from .agent import root_agent`.
+2. **Implementar:**
+
+    ```bash
+    export GOOGLE_CLOUD_PROJECT="mi-proyecto"
+    export GOOGLE_CLOUD_LOCATION="us-central1"
+    adk deploy cloud_run --project=$GOOGLE_CLOUD_PROJECT --region=$GOOGLE_CLOUD_LOCATION \
+      --service_name=weather-agent --with_ui weather_agent_cloud_run/
+    ```
+
+    El comando construye el contenedor, lo despliega y devuelve una URL `https://weather-agent-….run.app`.
+
+3. **Probar:**
+    - Con `--with_ui`, la URL abre una interfaz de chat parecida a `adk web` que se puede compartir con el equipo.
+    - Por API: `POST $SERVICE_URL/api/query` con `{"input": "..."}`, usando `curl` o `requests` en Python.
+
+**Sesiones:** Cloud Run **no** configura el servicio de sesiones automáticamente, a diferencia de Agent Engine. Para que persistan en producción hay que crear `VertexAiSessionService(project=..., location=...)` en el agente.
+
+**El mismo código sirve en ambas plataformas;** solo cambia el comando de despliegue.
+
+!!! tip "Para recordar"
+    - Cloud Run conviene para UI web, contenedores propios o infraestructura Cloud Run existente; Agent Engine, para agentes ADK estándar con sesiones y memoria automáticas.
+    - Pista: en Cloud Run, la persistencia de sesiones se configura a mano con `VertexAiSessionService`.
+
 ## Cuestionarios
 
 Cuatro cuestionarios de módulo: **100 %** en todos (mínimo 50 %).

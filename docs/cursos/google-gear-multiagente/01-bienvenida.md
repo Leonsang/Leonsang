@@ -18,3 +18,6 @@ Esta ruta pasa del diseño de **una sola instrucción** a la **orquestación de 
 !!! tip "Para recordar"
     - ADK = construir y coordinar agentes; MCP = conectar agentes con herramientas y datos; A2A = conectar agentes entre sí.
     - Pista: los créditos del curso exigen aprobar los cuestionarios con calificación.
+
+![Curso completado](evidencias/01-bienvenida-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

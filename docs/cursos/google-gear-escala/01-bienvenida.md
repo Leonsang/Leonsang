@@ -17,3 +17,6 @@ Temas:
 !!! tip "Para recordar"
     - Escalar agentes no es solo tecnología: es estrategia + personas + gobierno.
     - Pista: la ruta combina visión de liderazgo (cursos 1–2) con práctica en Gemini Enterprise (curso 3).
+
+![Curso completado](evidencias/01-bienvenida-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

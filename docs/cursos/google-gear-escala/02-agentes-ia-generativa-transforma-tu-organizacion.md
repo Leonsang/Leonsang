@@ -178,6 +178,24 @@ Ejemplo: un asesor financiero compara informes de inversión, añade notas del c
     - Impacto = métricas → datos → iteración.
     - Pista: la IA cambia rápido; la estrategia debe ser clara pero flexible.
 
+## Guía de estudio (resumen del curso)
+
+| Tema | Ideas clave |
+|---|---|
+| **Tipos de agentes** | **Determinísticos**: rutas y acciones predefinidas. **Generativos**: se definen en lenguaje natural con LLM y conversan de forma más natural |
+| **Bucle de razonamiento** | **ReAct** (razonar y actuar), **CoT** (ejemplos con pasos intermedios) y **meta-prompting**, donde el modelo genera, modifica o interpreta otras instrucciones |
+| **Herramientas** | Extensiones (servicios externos vía API), funciones (acciones concretas), almacenes de datos (acceso a información) y complementos (nuevas habilidades e integraciones) |
+| **RAG en 4 pasos** | 1) Recuperar con herramientas → 2) Mejorar la instrucción con lo recuperado → 3) Generar la respuesta → 4) *(opcional)* Iterar la recuperación |
+| **Customer Engagement Suite** | Agentes conversacionales, Agent Assist y estadísticas de conversación, integrables con el **CCaaS** de Google |
+| **Búsqueda y empleados** | Vertex AI Search (búsqueda y recomendaciones) y Gemini Enterprise (antes Agentspace) para agentes internos sobre los datos de la empresa |
+| **Estrategia** | Visión clara → priorizar casos de uso → invertir en capacidades → gestionar el cambio → medir el valor → IA responsable |
+
+Para experimentar con la API de Gemini: Google AI Studio y Vertex AI Studio.
+
+!!! tip "Para recordar"
+    - Agente = modelo + bucle de razonamiento + herramientas; puede ser determinístico o generativo.
+    - Pista: el paso 4 de RAG (iterar) es opcional y permite buscar de nuevo si falta información.
+
 ## Cuestionarios
 
 | Cuestionario | Resultado | Ideas clave |

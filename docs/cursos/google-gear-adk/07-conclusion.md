@@ -18,3 +18,6 @@ Repaso de lo construido en la ruta:
 !!! tip "Para recordar"
     - Del prototipo a producción: instrucciones claras + salidas estructuradas + estado bien acotado + herramientas con buen docstring y manejo de errores.
     - Pista: ante cualquier capacidad nueva, el orden de decisión es integrada → servidor MCP → función personalizada.
+
+![Curso completado](evidencias/07-conclusion-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

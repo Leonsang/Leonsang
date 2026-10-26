@@ -15,3 +15,6 @@ Repaso de la ruta:
 !!! tip "Para recordar"
     - Producción = arquitectura multiagente clara + despliegue administrado + estado/memoria persistentes + seguridad y observabilidad.
     - Pista: A2A conecta agentes entre sí; MCP conecta agentes con herramientas y datos.
+
+![Curso completado](evidencias/05-cierre-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

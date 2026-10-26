@@ -17,3 +17,6 @@ Temas de la ruta:
 !!! tip "Para recordar"
     - Producción = arquitectura multiagente bien jerarquizada + hosting adecuado + estado de sesión + protocolos abiertos (MCP, A2A).
     - Pista: las rutas GEAR son colecciones curadas de cursos sobre un tema de agentes.
+
+![Curso completado](evidencias/01-bienvenida-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

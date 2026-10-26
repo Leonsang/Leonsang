@@ -135,3 +135,8 @@ El **crítico** verifica cada afirmación en la web (con veredicto y fuentes) y 
 !!! tip "Para recordar"
     - `SequentialAgent` ejecuta sus `sub_agents` en orden; si falta uno, la canalización queda incompleta.
     - Pista: crítico = verifica y cita fuentes; revisor = corrige el texto.
+
+**Insignia de habilidad:** *Engineer AI Agents with Agent Development Kit (ADK)*.
+
+![Insignia de habilidad obtenida](evidencias/03-insignia-habilidad-ingenieria-agentes-adk.jpg)
+*Figura: curso finalizado con la insignia de habilidad.*

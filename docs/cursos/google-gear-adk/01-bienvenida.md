@@ -21,3 +21,6 @@ Temas transversales: flujos de trabajo basados en grafos, memoria persistente, e
     - ADK = framework open source de Google para crear agentes (Python y Java).
     - La ruta va de lo básico (un agente) a capacidades reales: comportamiento, memoria/estado y herramientas.
     - Pista: cada curso añade una pieza de la fórmula *agente = modelo + herramientas + organización*.
+
+![Curso completado](evidencias/01-bienvenida-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*

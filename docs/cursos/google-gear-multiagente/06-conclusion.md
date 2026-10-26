@@ -16,3 +16,6 @@ Repaso de la ruta:
 !!! tip "Para recordar"
     - Alto rendimiento = jerarquía clara de agentes + herramientas vía MCP + skills portátiles + colaboración A2A.
     - Pista: ADK construye, MCP conecta herramientas, A2A conecta agentes y Agents CLI despliega.
+
+![Curso completado](evidencias/06-conclusion-completado.jpg)
+*Figura: el curso aparece como completado en Google Skills.*
