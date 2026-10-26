@@ -180,6 +180,10 @@ nav:
         - "08.1 Introducción a los índices": cursos/mongodb-python-path/08-indexing/01-fundamentos-indices.md
         - "08.2 Orden de las claves (ESR) y tamaño del índice": cursos/mongodb-python-path/08-indexing/02-orden-y-tamano-de-indices.md
         - "08.3 Crear, gestionar y probar índices con explain()": cursos/mongodb-python-path/08-indexing/03-crear-y-probar-indices.md
+      - "Unidad 9 · MongoDB Aggregation":
+        - Resumen de la unidad: cursos/mongodb-python-path/09-aggregation/index.md
+        - "09.1 Introducción a la agregación": cursos/mongodb-python-path/09-aggregation/01-introduccion-agregacion.md
+        - "09.2 Etapas del pipeline de agregación": cursos/mongodb-python-path/09-aggregation/02-etapas-del-pipeline.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:

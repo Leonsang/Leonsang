@@ -14,7 +14,7 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 | 6 | CRUD Operations in MongoDB | Completado | Skill Check 10/10 + insignia Credly | [Ver apuntes](06-crud-mongodb/index.md) |
 | 7 | MongoDB CRUD Operations in Python | Completado | 6 cuestionarios, 12/12 | [Ver apuntes](07-crud-python/index.md) |
 | 8 | Indexing Design Fundamentals | En curso | Videos completos. Skill Check: Pendiente | [Ver apuntes](08-indexing/index.md) |
-| 9 | MongoDB Aggregation | Pendiente | — | — |
+| 9 | MongoDB Aggregation | Completado | 5 cuestionarios, 10/10 | [Ver apuntes](09-aggregation/index.md) |
 | 10 | MongoDB Aggregation in Python | Pendiente | — | — |
 | 11 | MongoDB Transactions (optativa) | Pendiente | — | — |
 | 12 | Introduction to Atlas Search (optativa) | Pendiente | — | — |
@@ -22,6 +22,6 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 
 ## Avance
 
-- Unidades completadas: **6 de 13**.
+- Unidades completadas: **7 de 13** (más la unidad 8 en curso).
 - Todos los cuestionarios aprobados al 100 %.
 - Insignia obtenida: **MongoDB Skill · CRUD Operations** (Credly), Skill Check 10/10.
