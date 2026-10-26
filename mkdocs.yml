@@ -175,7 +175,7 @@ nav:
         - "07.1 Documentos BSON en Python": cursos/mongodb-python-path/07-crud-python/01-documentos-bson-en-python.md
         - "07.2 CRUD con PyMongo": cursos/mongodb-python-path/07-crud-python/02-crud-con-pymongo.md
         - "07.3 Transacciones multidocumento en Python": cursos/mongodb-python-path/07-crud-python/03-transacciones-en-python.md
-      - "Unidad 8 · Indexing Design Fundamentals":
+      - "Unidad 8 · Indexing Design Fundamentals (insignia)":
         - Resumen de la unidad: cursos/mongodb-python-path/08-indexing/index.md
         - "08.1 Introducción a los índices": cursos/mongodb-python-path/08-indexing/01-fundamentos-indices.md
         - "08.2 Orden de las claves (ESR) y tamaño del índice": cursos/mongodb-python-path/08-indexing/02-orden-y-tamano-de-indices.md
