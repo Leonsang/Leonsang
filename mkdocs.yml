@@ -145,6 +145,15 @@ nav:
       - 04 Desplegar un cluster en Atlas: cursos/mongodb-atlas/04-desplegar-cluster-atlas.md
       - 05 Explorar la interfaz de Atlas: cursos/mongodb-atlas/05-explorar-interfaz-atlas.md
       - 06 Conclusión y repaso: cursos/mongodb-atlas/06-conclusion.md
+    - "MongoDB University · MongoDB Python Developer Path":
+      - Progreso de la ruta: cursos/mongodb-python-path/index.md
+      - "Unidad 3 · MongoDB and the Document Model":
+        - Resumen de la unidad: cursos/mongodb-python-path/03-document-model/index.md
+        - "03.1 Visión general del modelo de documentos": cursos/mongodb-python-path/03-document-model/01-vision-general-modelo-documentos.md
+        - "03.2 Tipos de datos en MongoDB": cursos/mongodb-python-path/03-document-model/02-tipos-de-datos.md
+        - "03.3 Gestionar bases, colecciones y documentos en Atlas": cursos/mongodb-python-path/03-document-model/03-gestionar-datos-en-atlas.md
+        - "03.4 Relaciones entre datos": cursos/mongodb-python-path/03-document-model/04-relaciones-de-datos.md
+        - "03.5 Embeber y referenciar": cursos/mongodb-python-path/03-document-model/05-embeber-y-referenciar.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
