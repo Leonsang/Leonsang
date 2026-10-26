@@ -165,6 +165,11 @@ nav:
         - "05.1 Bibliotecas cliente de MongoDB para Python": cursos/mongodb-python-path/05-python-connection/01-drivers-python.md
         - "05.2 Conectar una aplicación Python a Atlas": cursos/mongodb-python-path/05-python-connection/02-conectar-atlas-desde-python.md
         - "05.3 Resolver problemas de conexión en Python": cursos/mongodb-python-path/05-python-connection/03-resolver-conexion-en-python.md
+      - "Unidad 6 · CRUD Operations in MongoDB (insignia)":
+        - Resumen de la unidad: cursos/mongodb-python-path/06-crud-mongodb/index.md
+        - "06.1 Operaciones CRUD": cursos/mongodb-python-path/06-crud-mongodb/01-operaciones-crud.md
+        - "06.2 Diseñar consultas efectivas": cursos/mongodb-python-path/06-crud-mongodb/02-consultas-efectivas.md
+        - "06.3 Modificar los resultados de una consulta": cursos/mongodb-python-path/06-crud-mongodb/03-modificar-resultados.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
