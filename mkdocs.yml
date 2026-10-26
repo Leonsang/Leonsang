@@ -198,6 +198,7 @@ nav:
       - Progreso de la ruta: cursos/ubits-futuro-ia/index.md
       - "01 AI 2041 (ideas del libro)": cursos/ubits-futuro-ia/01-ai-2041.md
       - "02 El misterio de la inteligencia artificial": cursos/ubits-futuro-ia/02-misterio-ia.md
+      - "03 Humanización e inteligencia artificial": cursos/ubits-futuro-ia/03-humanizacion-ia.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
