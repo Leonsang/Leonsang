@@ -200,6 +200,7 @@ nav:
       - "02 El misterio de la inteligencia artificial": cursos/ubits-futuro-ia/02-misterio-ia.md
       - "03 Humanización e inteligencia artificial": cursos/ubits-futuro-ia/03-humanizacion-ia.md
       - "04 La tecnología: ¿reemplazo o futuro?": cursos/ubits-futuro-ia/04-tecnologia-reemplazo-futuro.md
+      - "05 Creatividad e inteligencia artificial": cursos/ubits-futuro-ia/05-creatividad-ia.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
