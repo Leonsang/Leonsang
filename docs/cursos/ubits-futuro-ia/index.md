@@ -14,9 +14,9 @@ Ruta de aprendizaje de UBITS (nivel básico, ~338 min) para entender los concept
 | 4 | La tecnología: ¿Reemplazo o futuro? | Podcast | En curso | Episodio completo (33 %) | [04 · Reemplazo o futuro](04-tecnologia-reemplazo-futuro.md) |
 | 5 | Creatividad e inteligencia artificial | Podcast | En curso | Episodio completo (33 %) | [05 · Creatividad](05-creatividad-ia.md) |
 | 6 | Inteligencia Artificial y ética | Podcast | En curso | Episodio completo (33 %) | [06 · IA y ética](06-ia-etica.md) |
-| 7 | Comandos para potenciar tus prompts en ChatGPT | Curso | Pendiente | — | — |
+| 7 | Comandos para potenciar tus prompts en ChatGPT | Curso | En curso | Prueba final 100 % (8/8) · 78 % | [07 · Comandos ChatGPT](07-comandos-prompts-chatgpt.md) |
 
-**Progreso:** 1 de 7 completados (14 %) · 5 en curso.
+**Progreso:** 1 de 7 completados (14 %) · 6 en curso (contenidos vistos, falta cerrar cada ítem).
 
 ## Mapa de conceptos
 
@@ -35,4 +35,8 @@ graph TD
     Futuro --> Empleo[Empleo y recapacitación]
     Futuro --> Salud[Salud y bienestar]
     Futuro --> Etica[Ética y regulación]
+    IA --> Uso[Uso práctico]
+    Uso --> Crea[Creatividad e ideas]
+    Uso --> Prompts[Prompts y comandos de ChatGPT]
+    Uso --> Humano[Humano en el circuito]
 ```

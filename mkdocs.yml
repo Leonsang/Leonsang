@@ -202,6 +202,7 @@ nav:
       - "04 La tecnología: ¿reemplazo o futuro?": cursos/ubits-futuro-ia/04-tecnologia-reemplazo-futuro.md
       - "05 Creatividad e inteligencia artificial": cursos/ubits-futuro-ia/05-creatividad-ia.md
       - "06 Inteligencia artificial y ética": cursos/ubits-futuro-ia/06-ia-etica.md
+      - "07 Comandos para potenciar tus prompts en ChatGPT": cursos/ubits-futuro-ia/07-comandos-prompts-chatgpt.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
