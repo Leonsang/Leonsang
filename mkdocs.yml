@@ -160,6 +160,11 @@ nav:
         - "04.2 Instalar mongosh y conectarse": cursos/mongodb-python-path/04-mongodb-shell/02-instalar-y-conectar-mongosh.md
         - "04.3 Resolver errores de conexión": cursos/mongodb-python-path/04-mongodb-shell/03-resolver-errores-de-conexion.md
         - "04.4 Usar el MongoDB Shell": cursos/mongodb-python-path/04-mongodb-shell/04-usar-mongosh.md
+      - "Unidad 5 · Connecting to MongoDB in Python":
+        - Resumen de la unidad: cursos/mongodb-python-path/05-python-connection/index.md
+        - "05.1 Bibliotecas cliente de MongoDB para Python": cursos/mongodb-python-path/05-python-connection/01-drivers-python.md
+        - "05.2 Conectar una aplicación Python a Atlas": cursos/mongodb-python-path/05-python-connection/02-conectar-atlas-desde-python.md
+        - "05.3 Resolver problemas de conexión en Python": cursos/mongodb-python-path/05-python-connection/03-resolver-conexion-en-python.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
