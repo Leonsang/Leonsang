@@ -4351,6 +4351,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ejemplo-practico-agente-meteorologico-en-cloud-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo práctico: agente meteorológico en Cloud Run
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#cuestionarios" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6269,6 +6280,35 @@ Enlace: <a href="https://www.skills.google/paths/3802/course_templates/1639">htt
 <ul>
 <li><code>--with_ui</code> despliega una interfaz web para probar el agente desde el navegador.</li>
 <li>Pista: la ventaja de Agent Engine para agentes ADK estándar es que configura las sesiones solo y es más simple.</li>
+</ul>
+</div>
+<h2 id="ejemplo-practico-agente-meteorologico-en-cloud-run">Ejemplo práctico: agente meteorológico en Cloud Run<a class="headerlink" href="#ejemplo-practico-agente-meteorologico-en-cloud-run" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Crear el agente.</strong> Crea la carpeta <code>weather_agent_cloud_run/</code>, define en <code>agent.py</code> un <code>LlmAgent</code> (modelo Flash, nombre, descripción e instrucción) y en <code>__init__.py</code> pon <code>from .agent import root_agent</code>.</li>
+<li>
+<p><strong>Implementar:</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_CLOUD_PROJECT</span><span class="o">=</span><span class="s2">"mi-proyecto"</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_CLOUD_LOCATION</span><span class="o">=</span><span class="s2">"us-central1"</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>adk<span class="w"> </span>deploy<span class="w"> </span>cloud_run<span class="w"> </span>--project<span class="o">=</span><span class="nv">$GOOGLE_CLOUD_PROJECT</span><span class="w"> </span>--region<span class="o">=</span><span class="nv">$GOOGLE_CLOUD_LOCATION</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--service_name<span class="o">=</span>weather-agent<span class="w"> </span>--with_ui<span class="w"> </span>weather_agent_cloud_run/
+</span></code></pre></div>
+<p>El comando construye el contenedor, lo despliega y devuelve una URL <code>https://weather-agent-….run.app</code>.</p>
+</li>
+<li>
+<p><strong>Probar:</strong></p>
+<ul>
+<li>Con <code>--with_ui</code>, la URL abre una interfaz de chat parecida a <code>adk web</code> que se puede compartir con el equipo.</li>
+<li>Por API: <code>POST $SERVICE_URL/api/query</code> con <code>{"input": "..."}</code>, usando <code>curl</code> o <code>requests</code> en Python.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Sesiones:</strong> Cloud Run <strong>no</strong> configura el servicio de sesiones automáticamente, a diferencia de Agent Engine. Para que persistan en producción hay que crear <code>VertexAiSessionService(project=..., location=...)</code> en el agente.</p>
+<p><strong>El mismo código sirve en ambas plataformas;</strong> solo cambia el comando de despliegue.</p>
+<div class="admonition tip">
+<p class="admonition-title">Para recordar</p>
+<ul>
+<li>Cloud Run conviene para UI web, contenedores propios o infraestructura Cloud Run existente; Agent Engine, para agentes ADK estándar con sesiones y memoria automáticas.</li>
+<li>Pista: en Cloud Run, la persistencia de sesiones se configura a mano con <code>VertexAiSessionService</code>.</li>
 </ul>
 </div>
 <h2 id="cuestionarios">Cuestionarios<a class="headerlink" href="#cuestionarios" title="Permanent link">&para;</a></h2>
