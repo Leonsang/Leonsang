@@ -184,6 +184,9 @@ nav:
         - Resumen de la unidad: cursos/mongodb-python-path/09-aggregation/index.md
         - "09.1 Introducción a la agregación": cursos/mongodb-python-path/09-aggregation/01-introduccion-agregacion.md
         - "09.2 Etapas del pipeline de agregación": cursos/mongodb-python-path/09-aggregation/02-etapas-del-pipeline.md
+      - "Unidad 10 · MongoDB Aggregation in Python":
+        - Resumen de la unidad: cursos/mongodb-python-path/10-aggregation-python/index.md
+        - "10.1 Pipelines de agregación con PyMongo": cursos/mongodb-python-path/10-aggregation-python/01-agregacion-con-pymongo.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
