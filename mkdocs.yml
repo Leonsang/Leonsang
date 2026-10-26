@@ -187,6 +187,9 @@ nav:
       - "Unidad 10 · MongoDB Aggregation in Python":
         - Resumen de la unidad: cursos/mongodb-python-path/10-aggregation-python/index.md
         - "10.1 Pipelines de agregación con PyMongo": cursos/mongodb-python-path/10-aggregation-python/01-agregacion-con-pymongo.md
+      - "Unidad 11 · MongoDB Transactions (optativa)":
+        - Resumen de la unidad: cursos/mongodb-python-path/11-transactions/index.md
+        - "11.1 Transacciones ACID en MongoDB": cursos/mongodb-python-path/11-transactions/01-transacciones-acid.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
