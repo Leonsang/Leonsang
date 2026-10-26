@@ -190,6 +190,10 @@ nav:
       - "Unidad 11 · MongoDB Transactions (optativa)":
         - Resumen de la unidad: cursos/mongodb-python-path/11-transactions/index.md
         - "11.1 Transacciones ACID en MongoDB": cursos/mongodb-python-path/11-transactions/01-transacciones-acid.md
+      - "Unidad 12 · Introduction to Atlas Search (optativa)":
+        - Resumen de la unidad: cursos/mongodb-python-path/12-atlas-search/index.md
+        - "12.1 Fundamentos de Atlas Search, mapeos y tipos de datos": cursos/mongodb-python-path/12-atlas-search/01-indices-y-mapeos.md
+        - "12.2 Operadores de $search y facets": cursos/mongodb-python-path/12-atlas-search/02-operadores-y-facets.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:

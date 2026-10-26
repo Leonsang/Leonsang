@@ -17,11 +17,11 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 | 9 | MongoDB Aggregation | Completado | 5 cuestionarios, 10/10 | [Ver apuntes](09-aggregation/index.md) |
 | 10 | MongoDB Aggregation in Python | Completado | 3 cuestionarios, 6/6 | [Ver apuntes](10-aggregation-python/index.md) |
 | 11 | MongoDB Transactions (optativa) | Completado | 3 cuestionarios, 6/6 | [Ver apuntes](11-transactions/index.md) |
-| 12 | Introduction to Atlas Search (optativa) | Pendiente | — | — |
+| 12 | Introduction to Atlas Search (optativa) | Completado | 6 cuestionarios, 12/12 | [Ver apuntes](12-atlas-search/index.md) |
 | 13 | Associate Developer Exam Python (optativa) | Pendiente | — | — |
 
 ## Avance
 
-- Unidades completadas: **9 de 13** (más la unidad 8 en curso).
+- Unidades completadas: **10 de 13** (más la unidad 8 en curso).
 - Todos los cuestionarios aprobados al 100 %.
 - Insignia obtenida: **MongoDB Skill · CRUD Operations** (Credly), Skill Check 10/10.
