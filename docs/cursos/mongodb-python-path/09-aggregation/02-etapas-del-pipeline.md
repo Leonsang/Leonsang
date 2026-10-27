@@ -99,7 +99,7 @@ db.zips.aggregate([
 ## Cuestionarios y laboratorios
 
 - Cuestionarios de las lecciones 2 a 5: **2/2 correctas (100 %) en cada uno**. Cubrieron cómo leer la salida de pipelines con `$match` + `$group` y con `$group` + `$sort` (+ `$limit`), la diferencia entre `$set` y `$project`, el resultado de `$count`, y el comportamiento de `$out` con una colección existente.
-- Laboratorios prácticos en Atlas: **Pendiente**.
+- Laboratorios prácticos de las lecciones 2 a 5: **Completado** (ver la sección *Laboratorio*).
 
 ![Resultado del cuestionario de $match y $group](evidencias/02-resultado-quiz.png)
 
@@ -116,3 +116,47 @@ db.zips.aggregate([
 ![Resultado del cuestionario de $out](evidencias/05-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 5 aprobado.*
+
+## Laboratorio
+
+Los cuatro laboratorios usaron la base `bird_data` en mongosh (colecciones `sightings` y `birds`):
+
+```javascript
+// $match + $group: dónde ver más azulejos orientales
+db.sightings.aggregate([
+  { $match: { species_common: "Eastern Bluebird" } },
+  { $group: { _id: "$location.coordinates", number_of_sightings: { $count: {} } } }
+])   // [40, -74] con 3 avistamientos
+
+// $sort + $limit: los 4 primeros ordenando por location.coordinates.1 descendente
+db.sightings.aggregate([
+  { $sort: { "location.coordinates.1": -1 } },
+  { $limit: 4 }
+])
+
+// $project: solo fecha y especie, sin _id
+db.sightings.aggregate([{ $project: { _id: 0, date: 1, species_common: 1 } }])
+
+// $set: agregar el campo class a todos los documentos de la salida
+db.birds.aggregate([{ $set: { class: "bird" } }])
+
+// $match + $count: avistamientos de Eastern Bluebird en 2022
+db.sightings.aggregate([
+  { $match: { species_common: "Eastern Bluebird",
+              date: { $gt: ISODate("2022-01-01T00:00:00.000Z"), $lt: ISODate("2023-01-01T00:00:00.000Z") } } },
+  { $count: "bluebird_sightings_2022" }
+])   // { bluebird_sightings_2022: 5 }
+
+// $out: guardar los avistamientos de 2022 en una colección nueva
+db.sightings.aggregate([
+  { $match: { date: { $gte: ISODate("2022-01-01T00:00:00.000Z"), $lt: ISODate("2023-01-01T00:00:00.000Z") } } },
+  { $out: "sightings_2022" }
+])
+db.sightings_2022.find()
+```
+
+![$match y $group por coordenadas](evidencias/02-lab-match-group.png)
+
+![$match y $count de los avistamientos de 2022](evidencias/02-lab-match-count.png)
+
+![Colección sightings_2022 creada con $out](evidencias/02-lab-out-sightings-2022.png)
