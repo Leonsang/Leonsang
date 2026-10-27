@@ -6905,6 +6905,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#laboratorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8481,7 +8492,7 @@
 <ul>
 <li><em>Match pairs</em> de las propiedades ACID: completado (4/4 parejas correctas).</li>
 <li>Cuestionarios de las lecciones 1 a 3: <strong>2/2 correctas (100 %) en cada uno</strong>. Cubrieron la definición de transacción ACID y cuándo usarla, la atomicidad de las operaciones de uno y varios documentos, y los métodos para completar o cancelar una transacción.</li>
-<li>Laboratorio práctico en Atlas: <strong>Pendiente</strong>.</li>
+<li>Laboratorio práctico de la lección 3: <strong>Completado</strong> (ver la sección <em>Laboratorio</em>).</li>
 </ul>
 <p><img alt="Resultado del cuestionario de la lección 1" src="../evidencias/01-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 1 aprobado.</em></p>
@@ -8489,6 +8500,27 @@
 <p><em>Figura: cuestionario de la lección 2 aprobado.</em></p>
 <p><img alt="Resultado del cuestionario de la lección 3" src="../evidencias/03-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 3 aprobado.</em></p>
+<h2 id="laboratorio">Laboratorio<a class="headerlink" href="#laboratorio" title="Permanent link">&para;</a></h2>
+<p>Laboratorio práctico (<em>Using Transactions in MongoDB</em>): <strong>Completado</strong>. En mongosh, sobre <code>bank.accounts</code> en un replica set, se hicieron dos retos. Cada operación de escritura debe terminar dentro de los 60 segundos que dura la transacción.</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// 1. Transacción confirmada: abrir una cuenta de ahorros y fondearla con 100</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">session</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">getMongo</span><span class="p">().</span><span class="nx">startSession</span><span class="p">()</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">session</span><span class="p">.</span><span class="nx">startTransaction</span><span class="p">()</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">account</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">session</span><span class="p">.</span><span class="nx">getDatabase</span><span class="p">(</span><span class="s1">'bank'</span><span class="p">).</span><span class="nx">getCollection</span><span class="p">(</span><span class="s1">'accounts'</span><span class="p">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nx">account</span><span class="p">.</span><span class="nx">insertOne</span><span class="p">({</span><span class="w"> </span><span class="nx">account_id</span><span class="o">:</span><span class="w"> </span><span class="s1">'MDB454252264'</span><span class="p">,</span><span class="w"> </span><span class="nx">account_holder</span><span class="o">:</span><span class="w"> </span><span class="s1">'Florence Taylor'</span><span class="p">,</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nx">account_type</span><span class="o">:</span><span class="w"> </span><span class="s1">'savings'</span><span class="p">,</span><span class="w"> </span><span class="nx">balance</span><span class="o">:</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span><span class="w"> </span><span class="nx">transfers_complete</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="nx">last_updated</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nx">account</span><span class="p">.</span><span class="nx">updateOne</span><span class="p">({</span><span class="w"> </span><span class="nx">account_id</span><span class="o">:</span><span class="w"> </span><span class="s1">'MDB963134500'</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$inc</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">balance</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="mf">100.00</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nx">session</span><span class="p">.</span><span class="nx">commitTransaction</span><span class="p">()</span><span class="w">          </span><span class="c1">// ambos cambios quedan aplicados juntos</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1">// 2. Transacción cancelada: los cambios se descartan</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">session</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">getMongo</span><span class="p">().</span><span class="nx">startSession</span><span class="p">()</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="nx">session</span><span class="p">.</span><span class="nx">startTransaction</span><span class="p">()</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">account</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">session</span><span class="p">.</span><span class="nx">getDatabase</span><span class="p">(</span><span class="s1">'bank'</span><span class="p">).</span><span class="nx">getCollection</span><span class="p">(</span><span class="s1">'accounts'</span><span class="p">)</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nx">account</span><span class="p">.</span><span class="nx">updateOne</span><span class="p">({</span><span class="w"> </span><span class="nx">account_id</span><span class="o">:</span><span class="w"> </span><span class="s1">'MDB740836066'</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$inc</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">balance</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nx">account</span><span class="p">.</span><span class="nx">updateOne</span><span class="p">({</span><span class="w"> </span><span class="nx">account_id</span><span class="o">:</span><span class="w"> </span><span class="s1">'MDB963134500'</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$inc</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">balance</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="mf">5</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="nx">session</span><span class="p">.</span><span class="nx">abortTransaction</span><span class="p">()</span><span class="w">           </span><span class="c1">// rollback: los saldos vuelven a su valor anterior</span>
+</span></code></pre></div>
+<p><img alt="Transacción confirmada con commitTransaction" src="../evidencias/03-lab-commit-transaccion.png" /></p>
+<p><img alt="Transacción cancelada con abortTransaction" src="../evidencias/03-lab-abort-transaccion.png" /></p>
 
 
 
