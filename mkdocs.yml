@@ -214,6 +214,8 @@ nav:
       - "Claude Code 101": cursos/claude-code-101/index.md
       - "Introduction to Claude Cowork": cursos/claude-cowork/index.md
       - "Introduction to Claude Tag": cursos/claude-tag/index.md
+      - "Claude Code in Action": cursos/claude-code-in-action/index.md
+      - "Claude Platform 101": cursos/claude-platform-101/index.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
