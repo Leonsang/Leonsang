@@ -2,6 +2,8 @@
 
 Cursos gratuitos de Anthropic en [academy.claude.com](https://academy.claude.com/courses) sobre el uso de Claude, Claude Code, MCP, la API y AI Fluency. Cada curso con quiz final entrega una **insignia verificable**.
 
+Lo más práctico de todos los cursos está reunido en **[Tips & Tricks de Claude](claude-tips.md)**.
+
 ## Insignias
 
 | Curso | Lecciones | Estado | Resultado | Notas | Insignia |
@@ -12,8 +14,8 @@ Cursos gratuitos de Anthropic en [academy.claude.com](https://academy.claude.com
 | Introduction to Claude Tag | 11 + quiz | En curso | Lecciones leídas | [Notas](claude-tag/index.md) | — |
 | Claude Platform 101 | 13 + quiz | En curso | Lecciones leídas | [Notas](claude-platform-101/index.md) | — |
 | Claude Code in Action | 9 + quiz | En curso | Lecciones leídas | [Notas](claude-code-in-action/index.md) | — |
-| Introduction to Model Context Protocol | 10 + quiz | Pendiente | — | — | — |
-| Model Context Protocol: Advanced Topics | 11 + quiz | Pendiente | — | — | — |
+| Introduction to Model Context Protocol | 10 + quiz | En curso | Lecciones leídas | [Notas](mcp-intro/index.md) | — |
+| Model Context Protocol: Advanced Topics | 11 + quiz | En curso | Lecciones leídas | [Notas](mcp-advanced/index.md) | — |
 | Deploying Claude Enterprise with Confidence | 14 + quiz | Pendiente | — | — | — |
 | AI Fluency: Framework and Foundations | 14 + quiz | Pendiente | — | — | — |
 | AI Capabilities and Limitations | 13 + quiz | Pendiente | — | — | — |

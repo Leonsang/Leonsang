@@ -205,6 +205,7 @@ nav:
       - "07 Comandos para potenciar tus prompts en ChatGPT": cursos/ubits-futuro-ia/07-comandos-prompts-chatgpt.md
     - "Claude Academy (Anthropic)":
       - Insignias y progreso: cursos/claude-academy.md
+      - "Tips & Tricks de Claude": cursos/claude-tips.md
       - "Claude 101":
         - Progreso e insignia: cursos/claude-101/index.md
         - "01 Conocer a Claude": cursos/claude-101/01-conocer-a-claude.md
@@ -216,6 +217,8 @@ nav:
       - "Introduction to Claude Tag": cursos/claude-tag/index.md
       - "Claude Code in Action": cursos/claude-code-in-action/index.md
       - "Claude Platform 101": cursos/claude-platform-101/index.md
+      - "Introduction to MCP": cursos/mcp-intro/index.md
+      - "MCP: Advanced Topics": cursos/mcp-advanced/index.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
