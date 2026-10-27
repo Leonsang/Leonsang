@@ -5,8 +5,8 @@ Unidad de la ruta *MongoDB Python Developer Path*. Cubre cómo construir pipelin
 | # | Lección | Estado | Resultado | Apuntes |
 |---|---|---|---|---|
 | 1 | Building a MongoDB Aggregation Pipeline in Python Applications | Completado | Cuestionario 2/2 (100 %) | [Ver](01-agregacion-con-pymongo.md) |
-| 2 | Using Aggregation Stages with Python: $match and $group | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Pendiente | [Ver](01-agregacion-con-pymongo.md) |
-| 3 | Using Aggregation Stages with Python: $sort and $project | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Pendiente | [Ver](01-agregacion-con-pymongo.md) |
+| 2 | Using Aggregation Stages with Python: $match and $group | Completado | Cuestionario 2/2 (100 %). Lab: Completado | [Ver](01-agregacion-con-pymongo.md) |
+| 3 | Using Aggregation Stages with Python: $sort and $project | Completado | Cuestionario 2/2 (100 %). Lab: Completado | [Ver](01-agregacion-con-pymongo.md) |
 | — | Conclusion | Completado | Unidad al 100 % | — |
 
 **Resultado de la unidad:** 100 % de avance. 3 cuestionarios aprobados con **6/6** respuestas correctas.

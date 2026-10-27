@@ -90,7 +90,7 @@ results = accounts_collection.aggregate(pipeline)
 ## Cuestionarios y laboratorios
 
 - Cuestionarios de las lecciones 1 a 3: **2/2 correctas (100 %) en cada uno**. Cubrieron para qué sirve el aggregation framework, las etapas como componente del pipeline, cómo armar `$match` y `$group` sobre anuncios de Airbnb, y cómo completar `$sort` y `$project`.
-- Laboratorios prácticos en Atlas: **Pendiente**.
+- Laboratorios prácticos de las lecciones 2 y 3: **Completado** (ver la sección *Laboratorio*).
 
 ![Resultado del cuestionario de la lección 1](evidencias/01-resultado-quiz.png)
 
@@ -103,3 +103,48 @@ results = accounts_collection.aggregate(pipeline)
 ![Resultado del cuestionario de la lección 3](evidencias/03-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 3 aprobado.*
+
+## Laboratorio
+
+Los dos laboratorios trabajaron sobre `bank.accounts` (variable `accounts_collection`) completando los `# TODO` de un script de Python y ejecutándolo en la terminal.
+
+**Lección 2: `$match` y `$group`.** Saldo promedio de las cuentas checking y savings con saldo menor a 1000:
+
+```python
+select_by_balance = {"$match": {"balance": {"$lt": 1000}}}
+separate_by_account_calculate_avg_balance = {
+    "$group": {"_id": "$account_type", "avg_balance": {"$avg": "$balance"}}
+}
+pipeline = [select_by_balance, separate_by_account_calculate_avg_balance]
+results = accounts_collection.aggregate(pipeline)
+# savings ≈ 503.85, checking ≈ 377.94
+```
+
+**Lección 3: `$sort` y `$project`.** Cuentas checking con saldo mayor a 1500, de mayor a menor, mostrando el saldo en dólares y convertido a libras:
+
+```python
+conversion_rate_usd_to_gbp = 1.3
+select_accounts = {"$match": {"account_type": "checking", "balance": {"$gt": 1500}}}
+organize_by_original_balance = {"$sort": {"balance": -1}}
+return_specified_fields = {
+    "$project": {
+        "account_type": 1,
+        "balance": 1,
+        "gbp_balance": {"$divide": ["$balance", conversion_rate_usd_to_gbp]},
+        "_id": 0,
+    }
+}
+pipeline = [select_accounts, organize_by_original_balance, return_specified_fields]
+results = accounts_collection.aggregate(pipeline)
+```
+
+```bash
+cd /lab && python3 app.py          # lección 2
+cd /lab && python3 aggregation.py  # lección 3
+```
+
+![Promedio de saldo por tipo de cuenta](evidencias/01-lab-match-group-python.png)
+
+![Etapas $match, $sort y $project en Python](evidencias/01-lab-sort-project-codigo.png)
+
+![Salida con el saldo convertido a libras](evidencias/01-lab-sort-project-salida.png)
