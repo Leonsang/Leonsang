@@ -64,3 +64,26 @@ Recibe un **filtro** y un documento de **opciones** (poco usado).
     - Top N mayores: `.sort({ campo: -1 }).limit(N)`. `limit` recibe un número.
     - Proyección: segundo argumento de `find()`. 1 incluye, 0 excluye. **No se mezclan, salvo `_id: 0`.**
     - Contar: **`db.coleccion.countDocuments(filtro)`**. No existe `find().countDocuments()`.
+
+## Laboratorio
+
+Laboratorio práctico (*Modify Query Results*): **Completado**. Se trabajó con `sample_supplies.sales` en mongosh:
+
+```javascript
+// Las 3 ventas más recientes de Londres con laptop, backpack o printer paper
+db.sales.find({ "items.name": { $in: ["laptop", "backpack", "printer paper"] },
+                storeLocation: "London" })
+        .sort({ saleDate: -1 })
+        .limit(3)
+
+// Proyección: clientes < 30 años con satisfacción > 3, sin _id
+db.sales.find({ "customer.age": { $lt: 30 }, "customer.satisfaction": { $gt: 3 } },
+              { "customer.satisfaction": 1, "customer.age": 1, storeLocation: 1, saleDate: 1, _id: 0 })
+
+// Contar ventas con cupón en Denver
+db.sales.countDocuments({ storeLocation: "Denver", couponUsed: true })   // 157
+```
+
+![sort y limit sobre las ventas de Londres](evidencias/03-lab-sort-limit.png)
+
+![countDocuments de ventas con cupón en Denver](evidencias/03-lab-countdocuments.png)

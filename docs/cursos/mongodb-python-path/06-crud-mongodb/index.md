@@ -5,8 +5,8 @@ Unidad de la ruta *MongoDB Python Developer Path* (formato *skill badge*). Cubre
 | # | Sección | Estado | Resultado | Apuntes |
 |---|---|---|---|---|
 | 1 | Perform CRUD Operations | Completado | 5 videos | [Ver](01-operaciones-crud.md) |
-| 2 | Design Effective Queries | Completado | 3 videos. Lab en Atlas: Pendiente | [Ver](02-consultas-efectivas.md) |
-| 3 | Modify Query Results | Completado | 3 videos. Lab en Atlas: Pendiente | [Ver](03-modificar-resultados.md) |
+| 2 | Design Effective Queries | Completado | 3 videos. Lab: Completado | [Ver](02-consultas-efectivas.md) |
+| 3 | Modify Query Results | Completado | 3 videos. Lab: Completado | [Ver](03-modificar-resultados.md) |
 | 4 | Skill Check | Completado | **10/10 (100 %)**. Insignia *CRUD Operations in MongoDB* | — |
 
 ## Resultado del Skill Check

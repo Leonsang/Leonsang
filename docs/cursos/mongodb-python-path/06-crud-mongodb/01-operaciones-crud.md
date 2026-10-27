@@ -131,4 +131,30 @@ Los dos reciben un filtro y un objeto de opciones opcional, y devuelven `deleted
 
 ## Laboratorio
 
-Laboratorio práctico en Atlas (*Perform CRUD Operations and Design Effective Queries*): **Pendiente**.
+Laboratorio práctico (*Perform CRUD Operations and Design Effective Queries*): **Completado**. Tuvo cuatro retos en mongosh sobre `sample_analytics.accounts` y `bird_data.birds`:
+
+```javascript
+// Insertar uno y varios documentos
+db.accounts.insertOne({ account_id: 111333, limit: 12000,
+  products: ["Commodity", "Brokerage"], last_updated: new Date() })
+db.accounts.insertMany([
+  { account_id: 678943, limit: 8000, products: ["CurrencyService", "Brokerage", "InvestmentStock"], last_updated: new Date() },
+  { account_id: 321654, limit: 10000, products: ["Commodity", "CurrencyService"], last_updated: new Date() }
+])
+
+// Buscar por igualdad sobre _id
+db.accounts.find({ _id: ObjectId("5ca4bbc7a2dd94ee581623c8") })
+
+// Agregar un campo nuevo con $set y comprobarlo
+db.birds.updateOne({ common_name: "Canada Goose" },
+  { $set: { tags: ["geese", "herbivore", "migration"] } })   // matchedCount: 1, modifiedCount: 1
+db.birds.findOne({ common_name: "Canada Goose" })
+
+// Borrar varios documentos con un filtro de comparación
+db.birds.find({ sightings_count: { $lte: 10 } })        // 3 documentos
+db.birds.deleteMany({ sightings_count: { $lte: 10 } })  // deletedCount: 3
+```
+
+![insertOne e insertMany en accounts](evidencias/01-lab-insertone-insertmany.png)
+
+![updateOne con $set agrega el campo tags](evidencias/01-lab-updateone-set.png)
