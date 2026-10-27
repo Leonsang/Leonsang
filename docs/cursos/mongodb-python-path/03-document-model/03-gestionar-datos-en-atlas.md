@@ -65,7 +65,15 @@ En la barra **Filter** se escriben pares campo-valor y se pulsa **Apply** (o Ent
 ## Cuestionario y laboratorio
 
 - Cuestionario: **2/2 correctas (100 %)**. Las preguntas cubrieron cómo hacer una consulta simple en Atlas y los pasos para insertar un documento.
-- Laboratorio práctico en Atlas: **Pendiente**.
+- Laboratorio práctico en Atlas: **Completado**. Se creó la base `mflix_merchandise` con la colección `swag`, se insertó un documento con `insertOne()` y se recuperó con `findOne()`:
+
+```javascript
+db.swag.insertOne({ item: "mflix trucker cap", msrp: 41.99, manufacturer: "Old Era Caps",
+  colors: ["Red", "White", "Black"], adjustable: true })
+db.swag.findOne({ item: "mflix trucker cap" })
+```
+
+![Inserción y consulta del documento en mongosh](evidencias/03-lab-insert-findone.png)
 
 ![Resultado del cuestionario de la lección 3](evidencias/03-resultado-quiz.png)
 

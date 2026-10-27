@@ -6,7 +6,7 @@ Unidad de la ruta *MongoDB Python Developer Path* (1,25 h). Cubre la estructura 
 |---|---|---|---|---|
 | 1 | Overview of the Document Model | Completado | Cuestionario 2/2 (100 %) | [Ver](01-vision-general-modelo-documentos.md) |
 | 2 | Data Types in MongoDB | Completado | Cuestionario 2/2 (100 %) | [Ver](02-tipos-de-datos.md) |
-| 3 | Managing Databases, Collections, and Documents in Atlas | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Pendiente | [Ver](03-gestionar-datos-en-atlas.md) |
+| 3 | Managing Databases, Collections, and Documents in Atlas | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Completado | [Ver](03-gestionar-datos-en-atlas.md) |
 | 4 | Data Relationships | Completado | Cuestionario 2/2 (100 %) | [Ver](04-relaciones-de-datos.md) |
 | 5 | Embedding and Referencing | Completado | Cuestionario 2/2 (100 %) | [Ver](05-embeber-y-referenciar.md) |
 | — | Conclusion | Completado | Unidad al 100 % | — |
