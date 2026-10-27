@@ -88,7 +88,41 @@ Al guardar y salir, la nueva versión de la función queda cargada en la sesión
 ## Cuestionario y laboratorio
 
 - Cuestionario: **2/2 correctas (100 %)**. Las preguntas cubrieron las formas de usar funciones JavaScript en mongosh y el primer paso para configurar un editor externo.
-- Laboratorio práctico en Atlas: **Pendiente**.
+- Laboratorio práctico: **Completado**.
+
+### Laboratorio
+
+El laboratorio tuvo cuatro retos en mongosh:
+
+```javascript
+// 1. Insertar y recuperar un documento en sample_mflix.movies
+db.movies.insertOne({ title: "Free Guy", genres: ["Comedy", "Action", "Adventure"],
+  runtime: 115, rated: "PG-13", year: 2021, type: "movie" })
+db.movies.findOne({ title: "Free Guy" })
+
+// 2. Función JavaScript en el ámbito global del shell
+const randomMovie = () => db.movies.aggregate([{ $sample: { size: 1 } }]).toArray();
+randomMovie()
+
+// 3. Script externo /lab/connectAndInsert.js
+//    línea 2:  db = db.getSiblingDB("sample_analytics")
+//    línea 38: print(result)   // resultado de insertMany() en customers
+load("/lab/connectAndInsert.js")
+
+// 4. Editor externo para comandos largos
+config.get("editor")            // null
+config.set("editor", "nano")
+edit                            // se escribe el comando en nano, Ctrl+X, Y, Enter
+db.transactions.updateOne({ account_id: 443178 },
+  { $push: { transactions: { date: new Date(), amount: Math.floor(Math.random() * 1000),
+    transaction_code: Math.random() < 0.5 ? "buy" : "sell", symbol: "test",
+    price: "100.00", total: "1337.10" } } })
+// { acknowledged: true, matchedCount: 1, modifiedCount: 1 }
+```
+
+![insertOne y findOne en mongosh](evidencias/04-lab-insertar-y-buscar.png)
+
+![Comando editado con nano y ejecutado](evidencias/04-lab-editar-comando.png)
 
 ![Resultado del cuestionario de la lección 4](evidencias/04-resultado-quiz.png)
 

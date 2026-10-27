@@ -58,7 +58,29 @@ Una aplicación debe usar **una sola instancia de `MongoClient`** durante toda s
 ## Cuestionario y laboratorio
 
 - Cuestionario: **2/2 correctas (100 %)**. Las preguntas cubrieron qué partes del connection string hay que reemplazar y cuántos MongoClient debe tener una aplicación.
-- Laboratorio práctico en Atlas: **Pendiente**.
+- Laboratorio práctico en Atlas: **Completado**.
+
+### Laboratorio
+
+Se completó el archivo `connect.py` para que el `MongoClient` use la variable con el connection string del cluster `myAtlasClusterEDU` y se listaron las bases de datos:
+
+```python
+from pymongo import MongoClient
+
+# Connection string del cluster (en un proyecto real va en una variable de entorno)
+MONGODB_URI = "mongodb+srv://<usuario>:<clave>@myatlasclusteredu.xxxxx.mongodb.net"
+
+client = MongoClient(MONGODB_URI)
+
+for db_name in client.list_database_names():
+    print(db_name)
+```
+
+```bash
+python3 connect.py   # sample_analytics, sample_mflix, sample_training, ... admin, local
+```
+
+![Bases de datos del cluster listadas desde Python](evidencias/02-lab-listar-bases.png)
 
 ![Resultado del cuestionario de la lección 2](evidencias/02-resultado-quiz.png)
 

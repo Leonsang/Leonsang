@@ -5,9 +5,9 @@ Unidad de la ruta *MongoDB Python Developer Path*. Cubre los connection strings,
 | # | Lección | Estado | Resultado | Apuntes |
 |---|---|---|---|---|
 | 1 | Using MongoDB Connection Strings | Completado | Cuestionario 2/2 (100 %) | [Ver](01-connection-strings.md) |
-| 2 | Installing and Connecting to the MongoDB Shell | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Pendiente | [Ver](02-instalar-y-conectar-mongosh.md) |
+| 2 | Installing and Connecting to the MongoDB Shell | Completado | Cuestionario 2/2 (100 %). Lab: Completado | [Ver](02-instalar-y-conectar-mongosh.md) |
 | 3 | Troubleshooting Connection Errors | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Pendiente | [Ver](03-resolver-errores-de-conexion.md) |
-| 4 | Using the MongoDB Shell | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Pendiente | [Ver](04-usar-mongosh.md) |
+| 4 | Using the MongoDB Shell | Completado | Cuestionario 2/2 (100 %). Lab: Completado | [Ver](04-usar-mongosh.md) |
 | — | Conclusion | Completado | Unidad al 100 % | — |
 
 **Resultado de la unidad:** 100 % de avance. 4 cuestionarios aprobados con **8/8** respuestas correctas.

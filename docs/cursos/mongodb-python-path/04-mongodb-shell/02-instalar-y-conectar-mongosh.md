@@ -60,7 +60,27 @@ mongosh --version
 ## Cuestionario y laboratorio
 
 - Cuestionario: **2/2 correctas (100 %)**. Las preguntas cubrieron cómo conectarse a una instancia local en otro puerto y dónde está el connection string de Atlas.
-- Laboratorio práctico en Atlas: **Pendiente**.
+- Laboratorio práctico: **Completado**.
+
+### Laboratorio
+
+En un contenedor Ubuntu 24.04 (*noble*) se instaló mongosh desde el repositorio oficial de MongoDB y luego se usó para conectarse a una instancia local con la base `sample_mflix`:
+
+```bash
+gpg --version                                   # gnupg ya instalado
+wget -qO- https://www.mongodb.org/static/pgp/server-9.asc | ...   # importa la clave pública del repositorio
+cat /etc/os-release                             # VERSION_CODENAME=noble
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/9.0 multiverse"   | tee /etc/apt/sources.list.d/mongodb-org-9.0.list
+apt update
+apt install -y mongodb-mongosh
+mongosh --version                               # 2.14.0
+
+mongosh "mongodb://<usuario>:<clave>@localhost:27017/sample_mflix?directConnection=true&authSource=admin"
+show dbs                                        # sample_mflix  19.00 MiB
+exit
+```
+
+![Instalación de mongosh y verificación de la versión](evidencias/02-lab-instalar-mongosh.png)
 
 ![Resultado del cuestionario de la lección 2](evidencias/02-resultado-quiz.png)
 

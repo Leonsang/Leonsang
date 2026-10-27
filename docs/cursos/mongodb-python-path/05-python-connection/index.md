@@ -5,7 +5,7 @@ Unidad de la ruta *MongoDB Python Developer Path*. Cubre los drivers oficiales d
 | # | Lección | Estado | Resultado | Apuntes |
 |---|---|---|---|---|
 | 1 | Using MongoDB Python Client Libraries | Completado | Cuestionario 2/2 (100 %) | [Ver](01-drivers-python.md) |
-| 2 | Connecting to an Atlas Cluster in Python Applications | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Pendiente | [Ver](02-conectar-atlas-desde-python.md) |
+| 2 | Connecting to an Atlas Cluster in Python Applications | Completado | Cuestionario 2/2 (100 %). Lab en Atlas: Completado | [Ver](02-conectar-atlas-desde-python.md) |
 | 3 | Troubleshooting a MongoDB Connection in Python Applications | Completado | Cuestionario 2/2 (100 %) | [Ver](03-resolver-conexion-en-python.md) |
 | — | Conclusion | Completado | Unidad al 100 % | — |
 
