@@ -5982,6 +5982,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Cuestionario y laboratorio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#laboratorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -8462,8 +8479,23 @@
 <h2 id="cuestionario-y-laboratorio">Cuestionario y laboratorio<a class="headerlink" href="#cuestionario-y-laboratorio" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Cuestionario: <strong>2/2 correctas (100 %)</strong>. Las preguntas cubrieron qué partes del connection string hay que reemplazar y cuántos MongoClient debe tener una aplicación.</li>
-<li>Laboratorio práctico en Atlas: <strong>Pendiente</strong>.</li>
+<li>Laboratorio práctico en Atlas: <strong>Completado</strong>.</li>
 </ul>
+<h3 id="laboratorio">Laboratorio<a class="headerlink" href="#laboratorio" title="Permanent link">&para;</a></h3>
+<p>Se completó el archivo <code>connect.py</code> para que el <code>MongoClient</code> use la variable con el connection string del cluster <code>myAtlasClusterEDU</code> y se listaron las bases de datos:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pymongo</span><span class="w"> </span><span class="kn">import</span> <span class="n">MongoClient</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Connection string del cluster (en un proyecto real va en una variable de entorno)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">MONGODB_URI</span> <span class="o">=</span> <span class="s2">"mongodb+srv://&lt;usuario&gt;:&lt;clave&gt;@myatlasclusteredu.xxxxx.mongodb.net"</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">client</span> <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="n">MONGODB_URI</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">for</span> <span class="n">db_name</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">list_database_names</span><span class="p">():</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">db_name</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python3<span class="w"> </span>connect.py<span class="w">   </span><span class="c1"># sample_analytics, sample_mflix, sample_training, ... admin, local</span>
+</span></code></pre></div>
+<p><img alt="Bases de datos del cluster listadas desde Python" src="../evidencias/02-lab-listar-bases.png" /></p>
 <p><img alt="Resultado del cuestionario de la lección 2" src="../evidencias/02-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 2 aprobado.</em></p>
 

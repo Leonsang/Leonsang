@@ -5836,6 +5836,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Cuestionario y laboratorio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#laboratorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -8484,8 +8501,36 @@
 <h2 id="cuestionario-y-laboratorio">Cuestionario y laboratorio<a class="headerlink" href="#cuestionario-y-laboratorio" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Cuestionario: <strong>2/2 correctas (100 %)</strong>. Las preguntas cubrieron las formas de usar funciones JavaScript en mongosh y el primer paso para configurar un editor externo.</li>
-<li>Laboratorio práctico en Atlas: <strong>Pendiente</strong>.</li>
+<li>Laboratorio práctico: <strong>Completado</strong>.</li>
 </ul>
+<h3 id="laboratorio">Laboratorio<a class="headerlink" href="#laboratorio" title="Permanent link">&para;</a></h3>
+<p>El laboratorio tuvo cuatro retos en mongosh:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// 1. Insertar y recuperar un documento en sample_mflix.movies</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">db</span><span class="p">.</span><span class="nx">movies</span><span class="p">.</span><span class="nx">insertOne</span><span class="p">({</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">"Free Guy"</span><span class="p">,</span><span class="w"> </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Comedy"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Action"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Adventure"</span><span class="p">],</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nx">runtime</span><span class="o">:</span><span class="w"> </span><span class="mf">115</span><span class="p">,</span><span class="w"> </span><span class="nx">rated</span><span class="o">:</span><span class="w"> </span><span class="s2">"PG-13"</span><span class="p">,</span><span class="w"> </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">2021</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">"movie"</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nx">db</span><span class="p">.</span><span class="nx">movies</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">"Free Guy"</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1">// 2. Función JavaScript en el ámbito global del shell</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">randomMovie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">movies</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([{</span><span class="w"> </span><span class="nx">$sample</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}]).</span><span class="nx">toArray</span><span class="p">();</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nx">randomMovie</span><span class="p">()</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1">// 3. Script externo /lab/connectAndInsert.js</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1">//    línea 2:  db = db.getSiblingDB("sample_analytics")</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1">//    línea 38: print(result)   // resultado de insertMany() en customers</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="nx">load</span><span class="p">(</span><span class="s2">"/lab/connectAndInsert.js"</span><span class="p">)</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c1">// 4. Editor externo para comandos largos</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">"editor"</span><span class="p">)</span><span class="w">            </span><span class="c1">// null</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="nx">config</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">"editor"</span><span class="p">,</span><span class="w"> </span><span class="s2">"nano"</span><span class="p">)</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="nx">edit</span><span class="w">                            </span><span class="c1">// se escribe el comando en nano, Ctrl+X, Y, Enter</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="nx">db</span><span class="p">.</span><span class="nx">transactions</span><span class="p">.</span><span class="nx">updateOne</span><span class="p">({</span><span class="w"> </span><span class="nx">account_id</span><span class="o">:</span><span class="w"> </span><span class="mf">443178</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$push</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">transactions</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">date</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">(),</span><span class="w"> </span><span class="nx">amount</span><span class="o">:</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1000</span><span class="p">),</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">    </span><span class="nx">transaction_code</span><span class="o">:</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">"buy"</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">"sell"</span><span class="p">,</span><span class="w"> </span><span class="nx">symbol</span><span class="o">:</span><span class="w"> </span><span class="s2">"test"</span><span class="p">,</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">    </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="s2">"100.00"</span><span class="p">,</span><span class="w"> </span><span class="nx">total</span><span class="o">:</span><span class="w"> </span><span class="s2">"1337.10"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="c1">// { acknowledged: true, matchedCount: 1, modifiedCount: 1 }</span>
+</span></code></pre></div>
+<p><img alt="insertOne y findOne en mongosh" src="../evidencias/04-lab-insertar-y-buscar.png" /></p>
+<p><img alt="Comando editado con nano y ejecutado" src="../evidencias/04-lab-editar-comando.png" /></p>
 <p><img alt="Resultado del cuestionario de la lección 4" src="../evidencias/04-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 4 aprobado.</em></p>
 
