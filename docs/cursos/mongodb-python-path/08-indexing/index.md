@@ -10,10 +10,10 @@ Unidad de la ruta *MongoDB Python Developer Path* (formato *skill badge*). Cubre
 | 4 | Index Size | Completado | [Ver](02-orden-y-tamano-de-indices.md) |
 | 5 | Creating Indexes | Completado | [Ver](03-crear-y-probar-indices.md) |
 | 6 | Testing Indexes with Explain() | Completado | [Ver](03-crear-y-probar-indices.md) |
-| 7 | Lab: Indexing Design Fundamentals (Atlas) | Pendiente | — |
+| 7 | Lab: Indexing Design Fundamentals | Completado | [Ver](03-crear-y-probar-indices.md#laboratorio) |
 | 8 | Skill Check (insignia de Credly) | Completado | 10/10 (100 %) |
 
-**Estado de la unidad:** Completado. Skill Check **10/10 (100 %)**: Apply Indexing Best Practices 7/7, Measure Index Performance 1/1 y Optimize Indexes for Performance 2/2. Se obtuvo la insignia **MongoDB Skill · Indexing Design Fundamentals** de Credly. El laboratorio de Atlas queda Pendiente.
+**Estado de la unidad:** Completado. Skill Check **10/10 (100 %)**: Apply Indexing Best Practices 7/7, Measure Index Performance 1/1 y Optimize Indexes for Performance 2/2. Se obtuvo la insignia **MongoDB Skill · Indexing Design Fundamentals** de Credly. El laboratorio práctico también quedó Completado.
 
 ![Skill Check aprobado con 10/10 e insignia Indexing Design Fundamentals](evidencias/08-skill-check-insignia.jpg)
 

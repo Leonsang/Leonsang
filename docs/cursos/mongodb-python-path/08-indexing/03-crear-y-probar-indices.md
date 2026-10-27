@@ -73,3 +73,46 @@ db.messages.find({ userId: "user505", timestamp: {...} }, { _id: 0, userId: 1, t
     - Antes de borrar un índice, **`hideIndex()`** para medir el impacto.
     - `explain("executionStats")`: busca **IXSCAN** frente a COLLSCAN y una relación **docsExamined ≈ nReturned**.
     - **Consulta cubierta** = filtro y proyección dentro del índice, con `_id: 0`. Examina 0 documentos.
+
+## Laboratorio
+
+Laboratorio práctico (*Indexing Strategies*): **Completado**. Se trabajó en mongosh sobre la colección `LeafyBank.messages` en dos retos.
+
+**1. Optimizar un índice compuesto con ESR.** La consulta filtra por `userId` (igualdad), un rango de `timestamp` y ordena por `timestamp`. El índice existente `{ userId, category, timestamp }` obligaba a un `SORT` en memoria (92 claves examinadas para 71 documentos). Al reordenar las claves a igualdad → orden → rango el `SORT` desaparece:
+
+```javascript
+db.messages.getIndexes()
+load('/lab/queries.js')                       // define la variable filter
+let explainOutput = db.messages.find(filter).sort({ timestamp: -1 }).explain('executionStats')
+printRelevantStats(explainOutput)             // FETCH > SORT > IXSCAN, 92 keys / 71 docs
+
+db.messages.hideIndex('userId_1_category_1_timestamp_1')
+db.messages.createIndex({ userId: 1, timestamp: 1, category: 1 })
+explainOutput = db.messages.find(filter).sort({ timestamp: -1 }).explain('executionStats')
+printRelevantStats(explainOutput)             // FETCH > IXSCAN, 71 keys / 71 docs, sin SORT
+db.messages.dropIndex('userId_1_category_1_timestamp_1')
+```
+
+**2. Reducir el tamaño con el orden de claves y un índice parcial.** Hay 6996 mensajes leídos y 3004 sin leer. El índice con `isRead` primero ocupa menos (mejor compresión de prefijos) y el parcial, que solo indexa los no leídos, ocupa menos de la mitad:
+
+```javascript
+db.messages.createIndex({ userId: 1, isRead: 1 })     // 118784 bytes
+db.messages.createIndex({ isRead: 1, userId: 1 })     // 114688 bytes
+db.messages.hideIndex('userId_1_isRead_1')
+db.messages.hideIndex('isRead_1_userId_1')
+db.messages.createIndex({ isRead: 1, userId: 1 },
+  { partialFilterExpression: { isRead: false }, name: 'partial_isRead_userId' })   // 49152 bytes
+db.messages.stats().indexSizes
+
+// Consulta cubierta: PROJECTION_COVERED sobre IXSCAN del índice parcial
+db.messages.find({ userId: 'user505', isRead: false }, { userId: 1, isRead: 1, _id: 0 })
+           .explain('executionStats').queryPlanner.winningPlan
+db.messages.dropIndex('userId_1_isRead_1')
+db.messages.dropIndex('isRead_1_userId_1')
+```
+
+![Plan con SORT en memoria antes de reordenar el índice](evidencias/07-lab-explain-sort-en-memoria.png)
+
+![Plan sin SORT con el índice userId_1_timestamp_1_category_1](evidencias/07-lab-explain-indice-esr.png)
+
+![Tamaño de los índices y del índice parcial](evidencias/07-lab-indice-parcial.png)
