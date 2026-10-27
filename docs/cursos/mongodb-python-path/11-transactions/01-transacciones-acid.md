@@ -69,7 +69,7 @@ session.abortTransaction()      // revierte: el estado vuelve al original (no mu
 
 - *Match pairs* de las propiedades ACID: completado (4/4 parejas correctas).
 - Cuestionarios de las lecciones 1 a 3: **2/2 correctas (100 %) en cada uno**. Cubrieron la definición de transacción ACID y cuándo usarla, la atomicidad de las operaciones de uno y varios documentos, y los métodos para completar o cancelar una transacción.
-- Laboratorio práctico en Atlas: **Pendiente**.
+- Laboratorio práctico de la lección 3: **Completado** (ver la sección *Laboratorio*).
 
 ![Resultado del cuestionario de la lección 1](evidencias/01-resultado-quiz.png)
 
@@ -82,3 +82,30 @@ session.abortTransaction()      // revierte: el estado vuelve al original (no mu
 ![Resultado del cuestionario de la lección 3](evidencias/03-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 3 aprobado.*
+
+## Laboratorio
+
+Laboratorio práctico (*Using Transactions in MongoDB*): **Completado**. En mongosh, sobre `bank.accounts` en un replica set, se hicieron dos retos. Cada operación de escritura debe terminar dentro de los 60 segundos que dura la transacción.
+
+```javascript
+// 1. Transacción confirmada: abrir una cuenta de ahorros y fondearla con 100
+const session = db.getMongo().startSession()
+session.startTransaction()
+const account = session.getDatabase('bank').getCollection('accounts')
+account.insertOne({ account_id: 'MDB454252264', account_holder: 'Florence Taylor',
+  account_type: 'savings', balance: 100.0, transfers_complete: [], last_updated: new Date() })
+account.updateOne({ account_id: 'MDB963134500' }, { $inc: { balance: -100.00 } })
+session.commitTransaction()          // ambos cambios quedan aplicados juntos
+
+// 2. Transacción cancelada: los cambios se descartan
+const session = db.getMongo().startSession()
+session.startTransaction()
+const account = session.getDatabase('bank').getCollection('accounts')
+account.updateOne({ account_id: 'MDB740836066' }, { $inc: { balance: 100 } })
+account.updateOne({ account_id: 'MDB963134500' }, { $inc: { balance: -5 } })
+session.abortTransaction()           // rollback: los saldos vuelven a su valor anterior
+```
+
+![Transacción confirmada con commitTransaction](evidencias/03-lab-commit-transaccion.png)
+
+![Transacción cancelada con abortTransaction](evidencias/03-lab-abort-transaccion.png)
