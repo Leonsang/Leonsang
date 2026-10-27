@@ -203,12 +203,17 @@ nav:
       - "05 Creatividad e inteligencia artificial": cursos/ubits-futuro-ia/05-creatividad-ia.md
       - "06 Inteligencia artificial y ética": cursos/ubits-futuro-ia/06-ia-etica.md
       - "07 Comandos para potenciar tus prompts en ChatGPT": cursos/ubits-futuro-ia/07-comandos-prompts-chatgpt.md
-    - "Claude Academy · Claude 101":
-      - Progreso e insignia: cursos/claude-101/index.md
-      - "01 Conocer a Claude": cursos/claude-101/01-conocer-a-claude.md
-      - "02 Proyectos, artefactos y skills": cursos/claude-101/02-proyectos-artefactos-skills.md
-      - "03 Conectores, Enterprise Search y Research": cursos/claude-101/03-conectores-research.md
-      - "04 Casos de uso y superficies": cursos/claude-101/04-casos-de-uso-y-superficies.md
+    - "Claude Academy (Anthropic)":
+      - Insignias y progreso: cursos/claude-academy.md
+      - "Claude 101":
+        - Progreso e insignia: cursos/claude-101/index.md
+        - "01 Conocer a Claude": cursos/claude-101/01-conocer-a-claude.md
+        - "02 Proyectos, artefactos y skills": cursos/claude-101/02-proyectos-artefactos-skills.md
+        - "03 Conectores, Enterprise Search y Research": cursos/claude-101/03-conectores-research.md
+        - "04 Casos de uso y superficies": cursos/claude-101/04-casos-de-uso-y-superficies.md
+      - "Claude Code 101": cursos/claude-code-101/index.md
+      - "Introduction to Claude Cowork": cursos/claude-cowork/index.md
+      - "Introduction to Claude Tag": cursos/claude-tag/index.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
