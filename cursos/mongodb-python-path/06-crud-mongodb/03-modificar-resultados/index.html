@@ -6164,6 +6164,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#laboratorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8444,6 +8455,23 @@
 <li>Contar: <strong><code>db.coleccion.countDocuments(filtro)</code></strong>. No existe <code>find().countDocuments()</code>.</li>
 </ul>
 </div>
+<h2 id="laboratorio">Laboratorio<a class="headerlink" href="#laboratorio" title="Permanent link">&para;</a></h2>
+<p>Laboratorio práctico (<em>Modify Query Results</em>): <strong>Completado</strong>. Se trabajó con <code>sample_supplies.sales</code> en mongosh:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Las 3 ventas más recientes de Londres con laptop, backpack o printer paper</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sales</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="w"> </span><span class="s2">"items.name"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$in</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"laptop"</span><span class="p">,</span><span class="w"> </span><span class="s2">"backpack"</span><span class="p">,</span><span class="w"> </span><span class="s2">"printer paper"</span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">                </span><span class="nx">storeLocation</span><span class="o">:</span><span class="w"> </span><span class="s2">"London"</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="p">.</span><span class="nx">sort</span><span class="p">({</span><span class="w"> </span><span class="nx">saleDate</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="p">.</span><span class="nx">limit</span><span class="p">(</span><span class="mf">3</span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1">// Proyección: clientes &lt; 30 años con satisfacción &gt; 3, sin _id</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sales</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="w"> </span><span class="s2">"customer.age"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$lt</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="s2">"customer.satisfaction"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$gt</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">              </span><span class="p">{</span><span class="w"> </span><span class="s2">"customer.satisfaction"</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"customer.age"</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">storeLocation</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">saleDate</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1">// Contar ventas con cupón en Denver</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sales</span><span class="p">.</span><span class="nx">countDocuments</span><span class="p">({</span><span class="w"> </span><span class="nx">storeLocation</span><span class="o">:</span><span class="w"> </span><span class="s2">"Denver"</span><span class="p">,</span><span class="w"> </span><span class="nx">couponUsed</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">})</span><span class="w">   </span><span class="c1">// 157</span>
+</span></code></pre></div>
+<p><img alt="sort y limit sobre las ventas de Londres" src="../evidencias/03-lab-sort-limit.png" /></p>
+<p><img alt="countDocuments de ventas con cupón en Denver" src="../evidencias/03-lab-countdocuments.png" /></p>
 
 
 
