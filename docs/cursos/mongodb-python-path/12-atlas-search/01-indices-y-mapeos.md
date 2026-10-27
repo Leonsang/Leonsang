@@ -82,3 +82,72 @@ Lecciones 1 a 3: **2/2 correctas (100 %) en cada una**. Cubrieron el proceso de 
 ![Resultado del cuestionario de la lección 3](evidencias/03-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 3 aprobado.*
+
+## Laboratorio
+
+Laboratorios prácticos de las lecciones 2 y 3: **Completado**. Se trabajó sobre `sample_mflix.movies` en una implementación local de Atlas (mongosh, editor y Atlas CLI).
+
+**Lección 2: mapeos estáticos y dinámicos.** Tres retos:
+
+```javascript
+// 1. Índice estático sobre plot y title (/lab/createIndex.js)
+const indexDefinition = {
+  mappings: { dynamic: false, fields: { plot: { type: "string" }, title: { type: "string" } } },
+};
+db.movies.createSearchIndex("plot_title_idx", indexDefinition);
+db.movies.getSearchIndexes("plot_title_idx")          // status: 'READY'
+db.movies.aggregate([
+  { $search: { index: "plot_title_idx", text: { query: "The Lion King", path: "title" } } },
+  { $project: { title: 1, year: 1, plot: 1 } }, { $limit: 1 }
+])
+
+// 2. Un campo fuera del mapeo estático (cast) no devuelve nada; con un índice dinámico sí
+db.movies.createSearchIndex("movies_dynamic", { mappings: { dynamic: true } })
+db.movies.aggregate([
+  { $search: { index: "movies_dynamic", text: { query: "Al Pacino", path: "cast" } } },
+  { $project: { title: 1, year: 1, plot: 1 } }, { $limit: 1 }
+])
+
+// 3. Mapeo mixto: title estático y tomatoes dinámico (subdocumento de estructura variable)
+const indexDefinition = {
+  mappings: {
+    dynamic: false,
+    fields: { title: { type: "string" }, tomatoes: { type: "document", dynamic: true } },
+  },
+};
+db.movies.aggregate([
+  { $search: { index: "title_tomatoes_index", range: { path: "tomatoes.viewer.rating", gte: 4 } } },
+  { $project: { title: 1, "tomatoes.viewer.rating": 1, _id: 0 } }, { $limit: 3 }
+])
+```
+
+**Lección 3: campos con varios tipos.** El campo `released` es `date` en unos documentos y `string` en otros. Con el índice que solo lo mapea como `date`, la búsqueda de `1999-03-31` devuelve 2 documentos; al mapearlo con ambos tipos aparece también *The Matrix* (fecha guardada como texto):
+
+```json
+{
+  "name": "released_multi_type",
+  "collectionName": "movies",
+  "database": "sample_mflix",
+  "definition": {
+    "mappings": {
+      "dynamic": false,
+      "fields": { "released": [ { "type": "date" }, { "type": "string" } ] }
+    }
+  }
+}
+```
+
+```bash
+atlas local search indexes create --deploymentName myLocalRs1 --file /lab/search_index.json --watch
+```
+
+```javascript
+// query.js: compound.should con text (string) y equals (date) sobre released
+load('/lab/query.js')   // 3 películas estrenadas el 1999-03-31
+```
+
+![Índice estático plot_title_idx en estado READY](evidencias/02-lab-indice-estatico.png)
+
+![Búsqueda por cast con el índice dinámico](evidencias/02-lab-indice-dinamico.png)
+
+![released mapeado como date y string devuelve 3 películas](evidencias/03-lab-released-multi-type.png)

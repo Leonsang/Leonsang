@@ -96,7 +96,7 @@ db.movies.aggregate([{ $searchMeta: { index: "genresFacetedIndex",
 ## Cuestionarios y laboratorios
 
 - Lecciones 4 a 6: **2/2 correctas (100 %) en cada una**. Cubrieron cuándo usar `text` o `equals`, el comportamiento y el puntaje de `near`, y los tipos para facets.
-- Laboratorios prácticos en Atlas: **Pendiente**.
+- Laboratorios prácticos de las lecciones 5 y 6: **Completado** (ver la sección *Laboratorio*).
 
 ![Resultado del cuestionario de la lección 4](evidencias/04-resultado-quiz.png)
 
@@ -109,3 +109,59 @@ db.movies.aggregate([{ $searchMeta: { index: "genresFacetedIndex",
 ![Resultado del cuestionario de la lección 6](evidencias/06-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 6 aprobado.*
+
+## Laboratorio
+
+Se trabajó sobre `sample_mflix.movies` en una implementación local de Atlas, completando archivos en el editor y ejecutándolos en mongosh.
+
+**Lección 5: `near` y `range`** con el índice `released_index` (campo `released` de tipo `date`):
+
+```javascript
+// near: películas estrenadas cerca del 1984-06-08; pivot de 30 días en milisegundos
+const searchStage = {
+  $search: {
+    index: "released_index",
+    near: { path: "released", origin: ISODate("1984-06-08T00:00:00.000Z"), pivot: 2592000000 },
+  },
+};
+const projectStage = { $project: { _id: 0, title: 1, released: 1, score: { $meta: "searchScore" } } };
+const limitStage = { $limit: 10 };
+db.movies.aggregate([searchStage, projectStage, limitStage])   // el score baja al alejarse de la fecha
+
+// range: estrenos entre 1987-01-01 y antes de 1990-01-01 (gt / lt, sin $)
+const searchStage = {
+  $search: {
+    index: "released_index",
+    range: { path: "released", gt: ISODate("1987-01-01T00:00:00.000Z"), lt: ISODate("1990-01-01T00:00:00.000Z") },
+  },
+};
+```
+
+**Lección 6: facets.** Primero un índice con `languages` como `stringFacet` y `released` como `date`; luego `$searchMeta` con el colector `facet`:
+
+```json
+{ "name": "language_facet_idx", "collectionName": "movies", "database": "sample_mflix",
+  "definition": { "mappings": { "dynamic": false, "fields": {
+    "languages": { "type": "stringFacet" }, "released": { "type": "date" } } } } }
+```
+
+```javascript
+const facetedSearchPipeline = [{
+  $searchMeta: {
+    index: "language_facet_idx",
+    facet: {
+      operator: { range: { path: "released",
+        gte: ISODate("2000-01-01T00:00:00.000Z"), lte: ISODate("2000-01-31T00:00:00.000Z") } },
+      facets: { languageFacet: { type: "string", path: "languages" } },
+    },
+  },
+}];
+db.movies.aggregate(facetedSearchPipeline)
+// count.lowerBound: 60; buckets: English 43, Korean 7, French 6, Japanese 5, ...
+```
+
+![near: estrenos cercanos al 1984-06-08 con su score](evidencias/05-lab-near.png)
+
+![range: estrenos entre 1987 y 1989](evidencias/05-lab-range.png)
+
+![Conteo por idioma con $searchMeta y facet](evidencias/06-lab-facets.png)
