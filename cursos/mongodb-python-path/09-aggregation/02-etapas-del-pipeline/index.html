@@ -6680,6 +6680,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#laboratorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8506,7 +8517,7 @@
 <h2 id="cuestionarios-y-laboratorios">Cuestionarios y laboratorios<a class="headerlink" href="#cuestionarios-y-laboratorios" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Cuestionarios de las lecciones 2 a 5: <strong>2/2 correctas (100 %) en cada uno</strong>. Cubrieron cómo leer la salida de pipelines con <code>$match</code> + <code>$group</code> y con <code>$group</code> + <code>$sort</code> (+ <code>$limit</code>), la diferencia entre <code>$set</code> y <code>$project</code>, el resultado de <code>$count</code>, y el comportamiento de <code>$out</code> con una colección existente.</li>
-<li>Laboratorios prácticos en Atlas: <strong>Pendiente</strong>.</li>
+<li>Laboratorios prácticos de las lecciones 2 a 5: <strong>Completado</strong> (ver la sección <em>Laboratorio</em>).</li>
 </ul>
 <p><img alt="Resultado del cuestionario de $match y $group" src="../evidencias/02-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 2 aprobado.</em></p>
@@ -8516,6 +8527,43 @@
 <p><em>Figura: cuestionario de la lección 4 aprobado.</em></p>
 <p><img alt="Resultado del cuestionario de $out" src="../evidencias/05-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 5 aprobado.</em></p>
+<h2 id="laboratorio">Laboratorio<a class="headerlink" href="#laboratorio" title="Permanent link">&para;</a></h2>
+<p>Los cuatro laboratorios usaron la base <code>bird_data</code> en mongosh (colecciones <code>sightings</code> y <code>birds</code>):</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// $match + $group: dónde ver más azulejos orientales</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sightings</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$match</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">species_common</span><span class="o">:</span><span class="w"> </span><span class="s2">"Eastern Bluebird"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$group</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="s2">"$location.coordinates"</span><span class="p">,</span><span class="w"> </span><span class="nx">number_of_sightings</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$count</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">])</span><span class="w">   </span><span class="c1">// [40, -74] con 3 avistamientos</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">// $sort + $limit: los 4 primeros ordenando por location.coordinates.1 descendente</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sightings</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$sort</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"location.coordinates.1"</span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$limit</span><span class="o">:</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">])</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1">// $project: solo fecha y especie, sin _id</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sightings</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([{</span><span class="w"> </span><span class="nx">$project</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">_id</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">date</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">species_common</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}])</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c1">// $set: agregar el campo class a todos los documentos de la salida</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="nx">db</span><span class="p">.</span><span class="nx">birds</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([{</span><span class="w"> </span><span class="nx">$set</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kd">class</span><span class="o">:</span><span class="w"> </span><span class="s2">"bird"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}])</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="c1">// $match + $count: avistamientos de Eastern Bluebird en 2022</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sightings</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$match</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">species_common</span><span class="o">:</span><span class="w"> </span><span class="s2">"Eastern Bluebird"</span><span class="p">,</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">              </span><span class="nx">date</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$gt</span><span class="o">:</span><span class="w"> </span><span class="nx">ISODate</span><span class="p">(</span><span class="s2">"2022-01-01T00:00:00.000Z"</span><span class="p">),</span><span class="w"> </span><span class="nx">$lt</span><span class="o">:</span><span class="w"> </span><span class="nx">ISODate</span><span class="p">(</span><span class="s2">"2023-01-01T00:00:00.000Z"</span><span class="p">)</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$count</span><span class="o">:</span><span class="w"> </span><span class="s2">"bluebird_sightings_2022"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="p">])</span><span class="w">   </span><span class="c1">// { bluebird_sightings_2022: 5 }</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="c1">// $out: guardar los avistamientos de 2022 en una colección nueva</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sightings</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$match</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">date</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">$gte</span><span class="o">:</span><span class="w"> </span><span class="nx">ISODate</span><span class="p">(</span><span class="s2">"2022-01-01T00:00:00.000Z"</span><span class="p">),</span><span class="w"> </span><span class="nx">$lt</span><span class="o">:</span><span class="w"> </span><span class="nx">ISODate</span><span class="p">(</span><span class="s2">"2023-01-01T00:00:00.000Z"</span><span class="p">)</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">$out</span><span class="o">:</span><span class="w"> </span><span class="s2">"sightings_2022"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="p">])</span>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="nx">db</span><span class="p">.</span><span class="nx">sightings_2022</span><span class="p">.</span><span class="nx">find</span><span class="p">()</span>
+</span></code></pre></div>
+<p><img alt="$match y $group por coordenadas" src="../evidencias/02-lab-match-group.png" /></p>
+<p><img alt="$match y $count de los avistamientos de 2022" src="../evidencias/02-lab-match-count.png" /></p>
+<p><img alt="Colección sightings_2022 creada con $out" src="../evidencias/02-lab-out-sightings-2022.png" /></p>
 
 
 
