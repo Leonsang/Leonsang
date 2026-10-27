@@ -123,7 +123,7 @@ print("Documentos borrados:", result.deleted_count)
 ## Cuestionarios y laboratorios
 
 - Cuestionarios de las lecciones 2 a 5: **2/2 correctas (100 %) en cada uno**. Cubrieron qué método usar para insertar uno o varios documentos, consultas con `find_one` y `find`, actualizaciones con `update_one` y `update_many`, y borrados con `delete_many` y `delete_one`.
-- Laboratorios prácticos en Atlas: **Pendiente**.
+- Laboratorios prácticos de las lecciones 2 a 5: **Completado** (ver la sección *Laboratorio*).
 
 ![Resultado del cuestionario de inserción](evidencias/02-resultado-quiz.png)
 
@@ -140,3 +140,37 @@ print("Documentos borrados:", result.deleted_count)
 ![Resultado del cuestionario de borrado](evidencias/05-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 5 (borrado) aprobado.*
+
+## Laboratorio
+
+Los cuatro laboratorios (inserción, consulta, actualización y borrado) usaron el mismo esqueleto: un `app.py` que carga `MONGODB_URI` desde `.env`, abre `client["bank"]["accounts"]` y deja una línea `# TODO` para completar. Cada lección tuvo dos retos, uno para un documento y otro para varios:
+
+```python
+# Inserción
+result = accounts.insert_one(new_account)          # result.inserted_id
+result = accounts.insert_many(new_accounts)        # result.inserted_ids -> 2 documentos
+
+# Consulta
+result = accounts.find_one({"_id": ObjectId("62d6e04ecab6d8e1304974ae")})
+cursor = accounts.find({"balance": {"$gt": 4700}}) # se recorre con for
+
+# Actualización
+result = accounts.update_one({"_id": ObjectId("62d6e04ecab6d8e130497482")},
+                             {"$inc": {"balance": 100}})                    # Matched: 1, Modified: 1
+result = accounts.update_many({"account_type": "checking"},
+                              {"$push": {"transfers_complete": "TR413308000"}})  # Matched: 29, Modified: 29
+
+# Borrado
+result = accounts.delete_one({"_id": ObjectId("62d6e04ecab6d8e130497485")})  # deleted_count: 1
+result = accounts.delete_many({"balance": {"$lt": 500}})                     # deleted_count: 3
+```
+
+```bash
+cd /lab && python3 app.py
+```
+
+![insert_many devuelve dos ObjectId](evidencias/02-lab-insert-many.png)
+
+![update_many sobre las cuentas checking](evidencias/02-lab-update-many.png)
+
+![delete_many de cuentas con saldo menor a 500](evidencias/02-lab-delete-many.png)

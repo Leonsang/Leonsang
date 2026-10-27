@@ -71,8 +71,31 @@ client.close()
 ## Cuestionario y laboratorio
 
 - Cuestionario: **2/2 correctas (100 %)**. Las preguntas cubrieron qué pasa cuando falla una operación y qué método inicia, ejecuta y confirma o cancela la transacción.
-- Laboratorio práctico en Atlas: **Pendiente**.
+- Laboratorio práctico: **Completado** (ver la sección *Laboratorio*).
 
 ![Resultado del cuestionario de la lección 6](evidencias/06-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 6 aprobado.*
+
+## Laboratorio
+
+El `app.py` ya traía la función `callback(session, ...)` (resta el monto al emisor con `$inc`, se lo suma al receptor junto con `$push` del ID de transferencia e inserta el documento en `transfers`, todo con `session=session`) y un `callback_wrapper` con los datos de la transferencia. Faltaba abrir la sesión y ejecutar la transacción:
+
+```python
+def callback_wrapper(s):
+    callback(s, transfer_id="TR218721873",
+             account_id_receiver="MDB343652528",
+             account_id_sender="MDB574189300",
+             transfer_amount=100)
+
+with client.start_session() as session:
+    session.with_transaction(callback_wrapper)   # commit si todo sale bien, abort si algo falla
+
+client.close()
+```
+
+Al ejecutar `python3 app.py` se imprime `Transaction successful`.
+
+![Código que abre la sesión y ejecuta la transacción](evidencias/03-lab-codigo-transaccion.png)
+
+![Transacción confirmada](evidencias/03-lab-transaccion-exitosa.png)
