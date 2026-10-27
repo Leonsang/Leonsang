@@ -6343,6 +6343,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#laboratorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratorio
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8524,7 +8535,7 @@
 <h2 id="cuestionarios-y-laboratorios">Cuestionarios y laboratorios<a class="headerlink" href="#cuestionarios-y-laboratorios" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Cuestionarios de las lecciones 2 a 5: <strong>2/2 correctas (100 %) en cada uno</strong>. Cubrieron qué método usar para insertar uno o varios documentos, consultas con <code>find_one</code> y <code>find</code>, actualizaciones con <code>update_one</code> y <code>update_many</code>, y borrados con <code>delete_many</code> y <code>delete_one</code>.</li>
-<li>Laboratorios prácticos en Atlas: <strong>Pendiente</strong>.</li>
+<li>Laboratorios prácticos de las lecciones 2 a 5: <strong>Completado</strong> (ver la sección <em>Laboratorio</em>).</li>
 </ul>
 <p><img alt="Resultado del cuestionario de inserción" src="../evidencias/02-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 2 (inserción) aprobado.</em></p>
@@ -8534,6 +8545,31 @@
 <p><em>Figura: cuestionario de la lección 4 (actualización) aprobado.</em></p>
 <p><img alt="Resultado del cuestionario de borrado" src="../evidencias/05-resultado-quiz.png" /></p>
 <p><em>Figura: cuestionario de la lección 5 (borrado) aprobado.</em></p>
+<h2 id="laboratorio">Laboratorio<a class="headerlink" href="#laboratorio" title="Permanent link">&para;</a></h2>
+<p>Los cuatro laboratorios (inserción, consulta, actualización y borrado) usaron el mismo esqueleto: un <code>app.py</code> que carga <code>MONGODB_URI</code> desde <code>.env</code>, abre <code>client["bank"]["accounts"]</code> y deja una línea <code># TODO</code> para completar. Cada lección tuvo dos retos, uno para un documento y otro para varios:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Inserción</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">insert_one</span><span class="p">(</span><span class="n">new_account</span><span class="p">)</span>          <span class="c1"># result.inserted_id</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">result</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">insert_many</span><span class="p">(</span><span class="n">new_accounts</span><span class="p">)</span>        <span class="c1"># result.inserted_ids -&gt; 2 documentos</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Consulta</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">result</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">find_one</span><span class="p">({</span><span class="s2">"_id"</span><span class="p">:</span> <span class="n">ObjectId</span><span class="p">(</span><span class="s2">"62d6e04ecab6d8e1304974ae"</span><span class="p">)})</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">cursor</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s2">"balance"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"$gt"</span><span class="p">:</span> <span class="mi">4700</span><span class="p">}})</span> <span class="c1"># se recorre con for</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># Actualización</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">result</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">update_one</span><span class="p">({</span><span class="s2">"_id"</span><span class="p">:</span> <span class="n">ObjectId</span><span class="p">(</span><span class="s2">"62d6e04ecab6d8e130497482"</span><span class="p">)},</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>                             <span class="p">{</span><span class="s2">"$inc"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"balance"</span><span class="p">:</span> <span class="mi">100</span><span class="p">}})</span>                    <span class="c1"># Matched: 1, Modified: 1</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">result</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">update_many</span><span class="p">({</span><span class="s2">"account_type"</span><span class="p">:</span> <span class="s2">"checking"</span><span class="p">},</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>                              <span class="p">{</span><span class="s2">"$push"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"transfers_complete"</span><span class="p">:</span> <span class="s2">"TR413308000"</span><span class="p">}})</span>  <span class="c1"># Matched: 29, Modified: 29</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c1"># Borrado</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="n">result</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">delete_one</span><span class="p">({</span><span class="s2">"_id"</span><span class="p">:</span> <span class="n">ObjectId</span><span class="p">(</span><span class="s2">"62d6e04ecab6d8e130497485"</span><span class="p">)})</span>  <span class="c1"># deleted_count: 1</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="n">result</span> <span class="o">=</span> <span class="n">accounts</span><span class="o">.</span><span class="n">delete_many</span><span class="p">({</span><span class="s2">"balance"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"$lt"</span><span class="p">:</span> <span class="mi">500</span><span class="p">}})</span>                     <span class="c1"># deleted_count: 3</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">cd</span><span class="w"> </span>/lab<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python3<span class="w"> </span>app.py
+</span></code></pre></div>
+<p><img alt="insert_many devuelve dos ObjectId" src="../evidencias/02-lab-insert-many.png" /></p>
+<p><img alt="update_many sobre las cuentas checking" src="../evidencias/02-lab-update-many.png" /></p>
+<p><img alt="delete_many de cuentas con saldo menor a 500" src="../evidencias/02-lab-delete-many.png" /></p>
 
 
 
