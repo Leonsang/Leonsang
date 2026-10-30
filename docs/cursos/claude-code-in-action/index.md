@@ -2,7 +2,11 @@
 
 Curso de Anthropic (9 lecciones, ~1 h y un quiz) sobre Claude Code en modo avanzado y sin supervisión: sesiones largas, un CLAUDE.md que se cumpla, skills de verificación, modos de permiso, hooks, rutinas y modo headless, GitHub Actions y Code Review, verificar ejecuciones desatendidas y plugins.
 
-**Estado:** En curso · Lecciones leídas · Quiz final pendiente
+**Estado:** Completado · **Quiz final:** 8/8 (100 %) · **Insignia:** emitida el 29 oct 2026
+
+[Ver insignia verificable](https://academy.claude.com/badges/f3bd2e65-d980-49f9-b6fe-e94e6cef89a5){ .md-button }
+
+![Insignia Claude Code in Action](evidencias/01-insignia-claude-code-in-action.jpg)
 
 ## Sesiones largas
 

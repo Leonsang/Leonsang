@@ -2,7 +2,11 @@
 
 Curso de Anthropic (11 lecciones, ~2,5 h y un quiz) sobre Claude Tag, Claude dentro del workspace de Slack: dónde pedirle trabajo (DM, canal público o privado), cómo aprende (memoria e instrucciones de canal), respuestas sin etiqueta, rutinas programadas y cómo delegarle trabajos continuos.
 
-**Estado:** En curso · Lecciones leídas · Quiz final pendiente
+**Estado:** Completado · **Quiz final:** 10/10 (100 %) · **Insignia:** emitida el 29 oct 2026
+
+[Ver insignia verificable](https://academy.claude.com/badges/92ea68f3-6953-4a01-97c8-174b734019ba){ .md-button }
+
+![Insignia Introduction to Claude Tag](evidencias/01-insignia-claude-tag.jpg)
 
 ## Qué es
 

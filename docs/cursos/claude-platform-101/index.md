@@ -2,7 +2,11 @@
 
 Curso de Anthropic (13 lecciones, ~1,5 h y un quiz) para construir con Claude por API: la plataforma, la primera llamada, elegir modelo, el bucle agéntico, tool use, thinking, herramientas integradas, skills, MCP, gestión de contexto y Managed Agents.
 
-**Estado:** En curso · Lecciones leídas · Quiz final pendiente
+**Estado:** Completado · **Quiz final:** 5/5 (100 %) · **Insignia:** emitida el 29 oct 2026
+
+[Ver insignia verificable](https://academy.claude.com/badges/13627f7a-d344-4f15-ad5a-0c1223b2ead8){ .md-button }
+
+![Insignia Claude Platform 101](evidencias/01-insignia-claude-platform-101.jpg)
 
 ## La plataforma
 

@@ -11,9 +11,9 @@ Lo más práctico de todos los cursos está reunido en **[Tips & Tricks de Claud
 | Claude 101 | 13 + quiz | Completado | Quiz 10/10 | [Notas](claude-101/index.md) | [Ver](https://academy.claude.com/badges/b174b902-e8bf-4f1a-93e3-de9199cbe2de) |
 | Claude Code 101 | 12 + quiz | Completado | Quiz 4/4 | [Notas](claude-code-101/index.md) | [Ver](https://academy.claude.com/badges/ba748ca0-5d7d-41ec-b2d9-b2b900484eb5) |
 | Introduction to Claude Cowork | 14 + quiz | Completado | Quiz 10/10 | [Notas](claude-cowork/index.md) | [Ver](https://academy.claude.com/badges/a950f135-7649-41c4-91c3-2543d898e512) |
-| Introduction to Claude Tag | 11 + quiz | En curso | Lecciones leídas | [Notas](claude-tag/index.md) | — |
-| Claude Platform 101 | 13 + quiz | En curso | Lecciones leídas | [Notas](claude-platform-101/index.md) | — |
-| Claude Code in Action | 9 + quiz | En curso | Lecciones leídas | [Notas](claude-code-in-action/index.md) | — |
+| Introduction to Claude Tag | 11 + quiz | Completado | Quiz 10/10 | [Notas](claude-tag/index.md) | [Ver](https://academy.claude.com/badges/92ea68f3-6953-4a01-97c8-174b734019ba) |
+| Claude Platform 101 | 13 + quiz | Completado | Quiz 5/5 | [Notas](claude-platform-101/index.md) | [Ver](https://academy.claude.com/badges/13627f7a-d344-4f15-ad5a-0c1223b2ead8) |
+| Claude Code in Action | 9 + quiz | Completado | Quiz 8/8 | [Notas](claude-code-in-action/index.md) | [Ver](https://academy.claude.com/badges/f3bd2e65-d980-49f9-b6fe-e94e6cef89a5) |
 | Introduction to Model Context Protocol | 10 + quiz | En curso | Lecciones leídas | [Notas](mcp-intro/index.md) | — |
 | Model Context Protocol: Advanced Topics | 11 + quiz | En curso | Lecciones leídas | [Notas](mcp-advanced/index.md) | — |
 | Deploying Claude Enterprise with Confidence | 14 + quiz | Pendiente | — | — | — |
@@ -24,12 +24,15 @@ Lo más práctico de todos los cursos está reunido en **[Tips & Tricks de Claud
 | Claude with Amazon Bedrock | 65 + 8 quizzes | Pendiente | — | — | — |
 | Claude on Google Cloud | 66 + 9 quizzes | Pendiente | — | — | — |
 
-**Progreso:** 3 de 15 insignias.
+**Progreso:** 6 de 15 insignias.
 
 <div class="grid" markdown>
 
 ![Claude 101](claude-101/evidencias/01-insignia-claude-101.jpg){ width="300" }
 ![Claude Code 101](claude-code-101/evidencias/01-insignia-claude-code-101.jpg){ width="300" }
 ![Claude Cowork](claude-cowork/evidencias/01-insignia-claude-cowork.jpg){ width="300" }
+![Claude Tag](claude-tag/evidencias/01-insignia-claude-tag.jpg){ width="300" }
+![Claude Code in Action](claude-code-in-action/evidencias/01-insignia-claude-code-in-action.jpg){ width="300" }
+![Claude Platform 101](claude-platform-101/evidencias/01-insignia-claude-platform-101.jpg){ width="300" }
 
 </div>
