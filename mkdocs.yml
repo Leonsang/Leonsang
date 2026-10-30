@@ -95,6 +95,11 @@ nav:
       - 06 Fundamentos de la ingeniería de peticiones: cursos/aws-agentes-ia/06-fundamentos-ingenieria-peticiones.md
       - 07 Ingeniería de peticiones con Claude: cursos/aws-agentes-ia/07-ingenieria-peticiones-claude.md
       - "08 Taller: la era de los agentes de IA": cursos/aws-agentes-ia/08-taller-agentes-ia.md
+    - AWS Entrena · Nube para Empresas:
+      - Progreso de la ruta: cursos/aws-nube-empresas/index.md
+      - 01 ¿Qué es la computación en la nube?: cursos/aws-nube-empresas/01-que-es-la-nube.md
+      - 02 Webinar ¿Qué es la Nube de AWS?: cursos/aws-nube-empresas/02-webinar-nube-aws.md
+      - 03 Podcast Súbete a la Nube: cursos/aws-nube-empresas/03-subete-a-la-nube.md
     - Google Skills · GEAR Agentes:
       - Progreso de la ruta: cursos/google-gear-agentes/index.md
       - 01 Introducción GEAR: cursos/google-gear-agentes/01-gear-introduccion.md
