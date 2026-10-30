@@ -18,7 +18,9 @@ Curso oficial de AWS Skill Builder en español (LATAM), unas 12 h 45 min, que se
 | 10 | Monitoreo, cumplimiento y gobernanza | ✅ Completado | 100 % | [Ver apuntes](10-supervision-cumplimiento-gobernanza.md) |
 | 11 | Precios y soporte | ✅ Completado | 100 % | [Ver apuntes](11-precios-soporte.md) |
 | 12 | Migración a la nube de AWS | ✅ Completado | 100 % | [Ver apuntes](12-migracion.md) |
-| 13 | Soluciones bien diseñadas | Pendiente | — | — |
+| 13 | Soluciones bien diseñadas | ✅ Completado | 100 % | [Ver apuntes](13-well-architected.md) |
+
+**Curso completado:** los 13 módulos, todos con 100 % en la evaluación. Cada página abre con una tarjeta de estudio para repasar sin volver a ver los videos.
 
 ## Fuentes y aviso legal
 

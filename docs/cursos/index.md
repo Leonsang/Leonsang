@@ -105,7 +105,7 @@
   <div class="course-card" data-cat="aws">
     <div class="cc-header">
       <span class="cc-badge aws">AWS · Cloud Practitioner</span>
-      <span class="cc-status done">12 de 13 módulos · 100% en evaluaciones</span>
+      <span class="cc-status done">13 de 13 módulos · 100% en evaluaciones</span>
     </div>
     <h3>AWS Cloud Practitioner Essentials</h3>
     <p>Curso oficial de AWS: computación, redes, almacenamiento, bases de datos, IA/ML, seguridad y gobernanza, con tarjetas de estudio y preguntas de cada evaluación.</p>
