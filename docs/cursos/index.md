@@ -9,9 +9,9 @@
 <div class="courses-controls-wrap">
   <input type="text" id="courseSearch" class="courses-search-input" placeholder="🔍 Buscar curso, habilidad o tecnología (ej: Spark, ISO 27001, AWS, MCP, Python, Polars...)" oninput="filterAllCourses()">
   <div class="courses-filter-bar">
-    <button type="button" class="cf-btn active" data-cat="all" onclick="setCategory('all')">Todos (23)</button>
+    <button type="button" class="cf-btn active" data-cat="all" onclick="setCategory('all')">Todos (24)</button>
     <button type="button" class="cf-btn" data-cat="sena" onclick="setCategory('sena')">🏛️ SENA (2)</button>
-    <button type="button" class="cf-btn" data-cat="aws" onclick="setCategory('aws')">☁️ AWS (2)</button>
+    <button type="button" class="cf-btn" data-cat="aws" onclick="setCategory('aws')">☁️ AWS (3)</button>
     <button type="button" class="cf-btn" data-cat="google" onclick="setCategory('google')">🤖 Google GEAR (6)</button>
     <button type="button" class="cf-btn" data-cat="anthropic" onclick="setCategory('anthropic')">🧠 Anthropic & MCP (10)</button>
     <button type="button" class="cf-btn" data-cat="data" onclick="setCategory('data')">🍃 Bases de Datos (2)</button>
@@ -94,6 +94,25 @@
     </div>
     <div class="cc-links">
       <a href="aws-nube-empresas/index.md" class="cc-btn primary">Ver Ruta AWS</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="aws">
+    <div class="cc-header">
+      <span class="cc-badge aws">AWS · Cloud Practitioner</span>
+      <span class="cc-status done">10 de 13 módulos · 100% en evaluaciones</span>
+    </div>
+    <h3>AWS Cloud Practitioner Essentials</h3>
+    <p>Curso oficial de AWS: computación, redes, almacenamiento, bases de datos, IA/ML, seguridad y gobernanza, con tarjetas de estudio y preguntas de cada evaluación.</p>
+    <div class="cc-skills">
+      <span>EC2 & Lambda</span>
+      <span>VPC</span>
+      <span>S3 & RDS</span>
+      <span>IAM</span>
+      <span>CloudWatch</span>
+    </div>
+    <div class="cc-links">
+      <a href="aws-cloud-practitioner/index.md" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
