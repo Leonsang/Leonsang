@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block styles %}
+  {{ super() }}
+  <script>
+    (function() {
+      var p = window.location.pathname;
+      if (p.indexOf('.md') !== -1) {
+        var clean = p.replace(/\/index\.md(\/)?$/i, '/').replace(/\.md(\/)?$/i, '/');
+        if (clean !== p) {
+          window.location.replace(clean + window.location.search + window.location.hash);
+        }
+      }
+    })();
+  </script>
+{% endblock %}
+
+{% block content %}
+<div style="text-align: center; padding: 3.5rem 1rem;">
+  <div style="font-size: 3.5rem; margin-bottom: 1rem;">🧭</div>
+  <h1 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 0.8rem;">Página no encontrada (404)</h1>
+  <p style="font-size: 1.05rem; color: var(--md-default-fg-color--light); max-width: 520px; margin: 0 auto 2rem; line-height: 1.6;">
+    El recurso que buscas ha sido reorganizado dentro de la base de conocimiento o la URL contiene una extensión desactualizada.
+  </p>
+  <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+    <a href="{{ (config.site_url or '') ~ '/' }}" class="md-button md-button--primary">🏠 Inicio</a>
+    <a href="{{ (config.site_url or '') ~ '/cursos/' }}" class="md-button">📚 Hub Central de Cursos</a>
+    <a href="{{ (config.site_url or '') ~ '/humano-conocimiento/' }}" class="md-button">🧠 Mapa 3D Neuro-Cognitivo</a>
+  </div>
+</div>
+{% endblock %}

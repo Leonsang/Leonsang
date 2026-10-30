@@ -307,6 +307,7 @@ repo_url: https://github.com/leonsang/leonsang
 
 theme:
   name: material
+  custom_dir: overrides
   language: es
   features:
     # Navegación
@@ -379,6 +380,9 @@ extra:
 
 extra_css:
   - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/redirect-md.js
 
 plugins:
   - search:

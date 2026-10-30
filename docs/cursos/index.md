@@ -117,7 +117,7 @@
       <span>CloudWatch</span>
     </div>
     <div class="cc-links">
-      <a href="aws-cloud-practitioner/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="aws-cloud-practitioner/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 

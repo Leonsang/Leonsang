@@ -2,7 +2,7 @@
 
 Chuleta práctica que reúne lo más útil de cada curso de Claude Academy, ordenada por herramienta. Crece con cada curso completado; cada sección enlaza a las notas de donde sale.
 
-[Ver insignias y cursos](claude-academy.md){ .md-button }
+[Ver insignias y cursos](../claude-academy/){ .md-button }
 
 ## Claude Code
 
@@ -71,7 +71,7 @@ Chuleta práctica que reúne lo más útil de cada curso de Claude Academy, orde
 - Verificar en proporción a lo que no vi: diff → pruebas como compuerta → segunda opinión en frío.
 - `claude -p` para scripts; `--output-format json --json-schema` + `jq '.structured_output'`; `--resume` con `session_id`; `--bare` para CI reproducible.
 
-Fuentes: [Claude Code 101](claude-code-101/index.md) · [Claude Code in Action](claude-code-in-action/index.md)
+Fuentes: [Claude Code 101](../claude-code-101/) · [Claude Code in Action](../claude-code-in-action/)
 
 ## Prompting (Chat y en general)
 
@@ -82,7 +82,7 @@ Fuentes: [Claude Code 101](claude-code-101/index.md) · [Claude Code in Action](
 - Antes de delegar algo recurrente, probarlo con un caso cuya respuesta ya conozco (**eval casero**).
 - **Proyectos guardan conocimiento, skills ejecutan procesos.** Nombres de archivo descriptivos en el conocimiento del proyecto.
 
-Fuente: [Claude 101](claude-101/index.md)
+Fuente: [Claude 101](../claude-101/)
 
 ## Cowork
 
@@ -94,7 +94,7 @@ Fuente: [Claude 101](claude-101/index.md)
 - `/schedule` después de haber hecho la tarea una vez y validado el resultado; `/setup-claude` para descubrir plugins.
 - Instrucciones globales con las correcciones que repito ("conclusión primero").
 
-Fuente: [Introduction to Claude Cowork](claude-cowork/index.md)
+Fuente: [Introduction to Claude Cowork](../claude-cowork/)
 
 ## Claude Tag (Slack)
 
@@ -104,7 +104,7 @@ Fuente: [Introduction to Claude Cowork](claude-cowork/index.md)
 - `@Claude !scheduled` lista rutinas; `!mute` silencia un hilo.
 - Si varios lugares sirven, **canal público**: otros corrigen y lo aprendido beneficia a todos.
 
-Fuente: [Introduction to Claude Tag](claude-tag/index.md)
+Fuente: [Introduction to Claude Tag](../claude-tag/)
 
 ## API y Claude Platform
 
@@ -117,7 +117,7 @@ Fuente: [Introduction to Claude Tag](claude-tag/index.md)
 - Contexto: just-in-time + compactación del servidor + **prompt caching** + memory tool.
 - Bucles de minutos u horas → **Managed Agents** (agent, environment, session, events).
 
-Fuente: [Claude Platform 101](claude-platform-101/index.md)
+Fuente: [Claude Platform 101](../claude-platform-101/)
 
 ## MCP
 
@@ -127,7 +127,7 @@ Fuente: [Claude Platform 101](claude-platform-101/index.md)
 - Si funciona en stdio y falla en HTTP: revisar `stateless_http` y `json_response`.
 - Sampling traslada el costo del modelo al cliente (servidores públicos).
 
-Fuentes: [Introduction to MCP](mcp-intro/index.md) · [MCP Advanced Topics](mcp-advanced/index.md)
+Fuentes: [Introduction to MCP](../mcp-intro/) · [MCP Advanced Topics](../mcp-advanced/)
 
 !!! tip "Para recordar"
     - Si algo debe pasar **siempre**, es un hook; si lo explico **dos veces**, es una skill; si aplica **siempre como convención**, va en CLAUDE.md.

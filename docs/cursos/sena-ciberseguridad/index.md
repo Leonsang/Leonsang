@@ -83,7 +83,7 @@ Las evidencias se construyeron sobre dos escenarios complementarios de alta rele
       <p>Evalúa en vivo el impacto en CID de Ransomware, Phishing, SQLi y DDoS.</p>
     </div>
   </a>
-  <a href="tablero-interactivo.md#calculadora-interactiva-de-nivel-de-riesgo-5x5" class="cyber-quick-card">
+  <a href="tablero-interactivo/#calculadora-interactiva-de-nivel-de-riesgo-5x5" class="cyber-quick-card">
     <div class="cqc-icon">🧮</div>
     <div class="cqc-content">
       <strong>Calculadora de Riesgo 5×5</strong>
