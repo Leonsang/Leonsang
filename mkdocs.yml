@@ -135,6 +135,7 @@ nav:
         - 09 Seguridad: cursos/aws-cloud-practitioner/09-seguridad.md
         - 10 Supervisión, cumplimiento y gobernanza: cursos/aws-cloud-practitioner/10-supervision-cumplimiento-gobernanza.md
         - 11 Precios y soporte: cursos/aws-cloud-practitioner/11-precios-soporte.md
+        - 12 Migración a la nube: cursos/aws-cloud-practitioner/12-migracion.md
     - "Google Skills · GEAR Agentes":
       - "GEAR Agentes":
         - Progreso de la ruta: cursos/google-gear-agentes/index.md
