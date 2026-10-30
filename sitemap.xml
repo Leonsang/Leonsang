@@ -2,842 +2,842 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://leonsang.github.io/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/ADF_scenarios/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/airflow/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/bi/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cloud/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/data-engineering/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/dbt/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/kafka/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/microsoft-fabric/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/notebooks/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/others/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-internals/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/sql/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/streaming-architecture/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/advanced-notebooks/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/advanced-notebooks/Auto%20Loader%20%20Normal%20Schema%20Evolution/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/advanced-notebooks/Auto%20Loader%20rescue%20mode/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/advanced-notebooks/Column%20Level%20Masking/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/advanced-notebooks/Delta%20Live%20Tables/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/advanced-notebooks/User%20Defined%20Functions/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/advanced-notebooks/Working%20with%20JSON/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/00-Azure_Integration_Databricks/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/01-Azure_Portal_Subscriptions_ResourceGroups/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/02-Azure_CLI_Scenarios/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/03-Azure_Powershell_Scenarios/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/05-Azure_ARM_Templates/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/06-Azure_Bicep_Templates/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/07-Azure_Databricks_UC_Creation/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/14-Overview_Of_Azure_Storage/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/20-Azure_RBAC_ACL/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/24-Azure_Types_Of_Storage/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/25-Azure_Storage_Replication_Strategies/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/26-Soft_Delete_PITR_Azure_Storage/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/28-Azure_Shared_Access_Signature/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/29-Azure_Lifetime_Management_Policies/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/34-EventGrid_Integration_Azure/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/azure/adf/scenario-based-pipelines/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-academy/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-tips/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/01-intro-ia-generativa/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/02-ai-dlc/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/03-desarrollo-proyectos-ia-generativa/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/04-fundamentos-ia-generativa-aws/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/05-ia-responsable/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/06-fundamentos-ingenieria-peticiones/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/07-ingenieria-peticiones-claude/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/aws-agentes-ia/08-taller-agentes-ia/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-101/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-101/01-conocer-a-claude/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-101/02-proyectos-artefactos-skills/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-101/03-conectores-research/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-101/04-casos-de-uso-y-superficies/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-code-101/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-code-in-action/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-cowork/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-platform-101/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/claude-tag/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/01-bienvenida/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/02-primer-agente-adk/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/03-ingenieria-agentes-adk-lab-desafio/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/04-optimiza-comportamiento/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/05-memoria-y-estado/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/06-herramientas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-adk/07-conclusion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-agentes/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-agentes/01-gear-introduccion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-agentes/02-conceptos-basicos-agentes/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-agentes/03-agentes-empresariales/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-agentes/04-primera-app-gemini-enterprise/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-agentes/05-resumen/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-escala/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-escala/01-bienvenida/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-escala/02-agentes-ia-generativa-transforma-tu-organizacion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-escala/03-ia-centrada-en-humanos/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-escala/04-organiza-flujos-multiagente-gemini-enterprise/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-escala/05-resumen/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-gobierno-seguridad/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-gobierno-seguridad/01-bienvenida/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-gobierno-seguridad/02-agentes-ia-empresariales-seguros/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-gobierno-seguridad/03-agent-governance-and-security/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-gobierno-seguridad/04-model-armor/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-gobierno-seguridad/06-conclusion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-multiagente/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-multiagente/01-bienvenida/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-multiagente/02-sistemas-multiagente-colaborativos-adk-mcp/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-multiagente/04-build-agent-skills-with-google/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-multiagente/06-conclusion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-produccion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-produccion/01-bienvenida/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-produccion/02-crea-e-implementa-agentes-en-produccion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-produccion/03-implementa-tu-primer-agente/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/google-gear-produccion/05-cierre/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mcp-advanced/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mcp-intro/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-atlas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-atlas/01-fundamentos-mongodb/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-atlas/02-arquitectura-mongodb/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-atlas/03-vision-general-atlas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-atlas/04-desplegar-cluster-atlas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-atlas/05-explorar-interfaz-atlas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-atlas/06-conclusion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/03-document-model/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/03-document-model/01-vision-general-modelo-documentos/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/03-document-model/02-tipos-de-datos/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/03-document-model/03-gestionar-datos-en-atlas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/03-document-model/04-relaciones-de-datos/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/03-document-model/05-embeber-y-referenciar/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/04-mongodb-shell/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/04-mongodb-shell/01-connection-strings/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/04-mongodb-shell/02-instalar-y-conectar-mongosh/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/04-mongodb-shell/03-resolver-errores-de-conexion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/04-mongodb-shell/04-usar-mongosh/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/05-python-connection/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/05-python-connection/01-drivers-python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/05-python-connection/02-conectar-atlas-desde-python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/05-python-connection/03-resolver-conexion-en-python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/06-crud-mongodb/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/06-crud-mongodb/01-operaciones-crud/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/06-crud-mongodb/02-consultas-efectivas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/06-crud-mongodb/03-modificar-resultados/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/07-crud-python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/07-crud-python/01-documentos-bson-en-python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/07-crud-python/02-crud-con-pymongo/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/07-crud-python/03-transacciones-en-python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/08-indexing/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/08-indexing/01-fundamentos-indices/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/08-indexing/02-orden-y-tamano-de-indices/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/08-indexing/03-crear-y-probar-indices/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/09-aggregation/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/09-aggregation/01-introduccion-agregacion/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/09-aggregation/02-etapas-del-pipeline/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/10-aggregation-python/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/10-aggregation-python/01-agregacion-con-pymongo/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/11-transactions/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/11-transactions/01-transacciones-acid/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/12-atlas-search/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/12-atlas-search/01-indices-y-mapeos/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/mongodb-python-path/12-atlas-search/02-operadores-y-facets/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/aa1-ev01-mapa-mental/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/aa1-ev02-guia-estudio/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/aa2-ev01-informe-prompts/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/aa2-ev02-foro-modelado/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/aa2-ev03-powerbi/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/archivos/01_aplanar_clientes/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/archivos/02_etl_ventas/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/sena-ia-integracion-datos/archivos/generar_datos/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/01-ai-2041/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/02-misterio-ia/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/03-humanizacion-ia/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/04-tecnologia-reemplazo-futuro/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/05-creatividad-ia/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/06-ia-etica/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/cursos/ubits-futuro-ia/07-comandos-prompts-chatgpt/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/07-Databricks_UC_Introduction/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/08-Databricks_Managed_External_Tables_Hive/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/08-UC_External_Location_Storage_Credentials/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/09-Databricks_Managed_Location_Catalog_Schema_Level/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/10-CTAS_Deep_Clone_Shallow_Clone_Databricks/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/11-RBAC_Custom_Roles_ServicePrincipals/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/12-Deletion_Vectors_Delta_lake/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/13-Liquid_Clustering_Delta_Lake/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/14-Concurrency_Liquid_Clustering/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/16-Blob_Storage_Fundamentals/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/17_Copy_Into_Databricks/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/18-AutoLoader_Databricks/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/19-ADLS_Gen2_Overview/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/21-Intro_Databricks_Lakeflow_Declarative_Pipelines/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/22-DLT_Batch_Vs_Streaming_Workloads/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/23-DLT_Data_Storage_Checkpoints/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/27-Databricks_Secret_Scopes/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/30-Databricks_ControlPlane_DataPlane/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/31-Spark_Architecture_YARN/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/32-Databricks_DLT_Code_Walkthrough/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/33-Spark_Driver_OOM/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/35-Databricks_Serverless_Compute/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/databricks/internals/36-Databricks_Warehouses/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/gcp/dataflow-streaming/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/gcp/gcp-bigquery/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/gcp/gcs-shell/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/images/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/kafka/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/00_Installing_Spark/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/02_TransformationsPtII/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/03_TransformationsPtIII/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/04_Strings_Dates/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/05_Union_UnionAll_Aggregations/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/06_Window_Functions/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/07_Repartitioning_Coalesce_Joins/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/08_ReadFormats_HandlingErronousRecords/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/09_ComplexFileFormats/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/10_Working_With_Json_Data/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/11_Writing_Data_Spark/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/12_Spark_UDFs/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/13_Spark_DAG_UI/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/14_OptimizingShuffles/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/16_Cache_Persist_Techniques/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/21_BroadCastVariables_Accumulators/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/22_Join_Optimizations/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/22_Join_Optimizations_Pt2/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/23_Dynamic_Static_Resource_Allocation/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/24_Skewness_And_Salting/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
          <loc>https://leonsang.github.io/spark-notebooks/notes/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-30</lastmod>
     </url>
 </urlset>
