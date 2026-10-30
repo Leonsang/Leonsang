@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humano de Conocimiento 3D · Mapa Neuro-Cognitivo · Erick Sang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+    "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.170.0/examples/jsm/controls/OrbitControls.js"
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #060608;
+    color: #ece4d3;
+    font-family: 'Inter', -apple-system, sans-serif;
+    overflow: hidden;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #canvas-container {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    cursor: grab;
+  }
+  #canvas-container:active { cursor: grabbing; }
+
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* HEADER TOP BAR */
+  #header-bar {
+    position: fixed;
+    top: 18px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .header-tag {
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(14, 14, 20, 0.85);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 30px;
+    padding: 7px 16px;
+    font: 600 11.5px/1 'JetBrains Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #f59e0b;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+  .header-tag .pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 10px #10b981;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.75); }
+  }
+
+  .nav-back-btn {
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(14, 14, 20, 0.85);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 30px;
+    padding: 7px 16px;
+    font: 600 11.5px/1 'JetBrains Mono', monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ece4d3;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease;
+  }
+  .nav-back-btn:hover {
+    border-color: #f59e0b;
+    color: #f59e0b;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(245, 158, 11, 0.25);
+  }
+
+  /* LEGEND (LEFT SIDEBAR) */
+  #legend {
+    position: fixed;
+    left: 20px;
+    top: 72px;
+    bottom: 20px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .legend-box {
+    pointer-events: auto;
+    background: rgba(14, 14, 20, 0.88);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+  }
+  #legend-main {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #legend .kicker {
+    font: 700 11px 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  #zones {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+    flex: 1;
+  }
+  #zones::-webkit-scrollbar { width: 4px; }
+  #zones::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+
+  .zone-item {
+    all: unset;
+    display: grid;
+    grid-template-columns: 12px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .zone-item:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(2px);
+  }
+  .zone-item.active {
+    border-color: var(--z-color, #f59e0b);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4), inset 0 0 12px rgba(255, 255, 255, 0.03);
+  }
+  .zone-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--z-color, #f59e0b);
+    box-shadow: 0 0 10px var(--z-color, #f59e0b);
+    transition: transform 0.2s ease;
+  }
+  .zone-item:hover .zone-dot { transform: scale(1.4); }
+  .zone-text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .zone-title {
+    font: 600 12.5px 'JetBrains Mono', monospace;
+    color: #f8fafc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .zone-sub {
+    font: 400 10.5px 'JetBrains Mono', monospace;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 1px;
+  }
+  .zone-count {
+    font: 600 10.5px 'JetBrains Mono', monospace;
+    color: var(--z-color, #f59e0b);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* CONTROLS BOX */
+  .ctrls-box {
+    pointer-events: auto;
+    background: rgba(14, 14, 20, 0.88);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  }
+  .seg-control {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #0f111a;
+  }
+  .seg-btn {
+    all: unset;
+    flex: 1;
+    text-align: center;
+    padding: 7px 0;
+    font: 600 10.5px 'JetBrains Mono', monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .seg-btn + .seg-btn { border-left: 1px solid rgba(255, 255, 255, 0.12); }
+  .seg-btn:hover { color: #f8fafc; background: rgba(255, 255, 255, 0.06); }
+  .seg-btn.on {
+    background: rgba(245, 158, 11, 0.18);
+    color: #f59e0b;
+    font-weight: 700;
+  }
+
+  .btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .action-btn {
+    all: unset;
+    text-align: center;
+    padding: 8px 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: #11131d;
+    font: 600 10.5px 'JetBrains Mono', monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #f8fafc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .action-btn:hover {
+    border-color: #f59e0b;
+    background: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
+    transform: translateY(-1px);
+  }
+
+  /* DETAIL PANEL (RIGHT SIDEBAR) */
+  #panel {
+    position: fixed;
+    right: 20px;
+    top: 72px;
+    bottom: 20px;
+    width: 420px;
+    background: rgba(14, 14, 20, 0.94);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+    animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  #panel.show { display: flex; }
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(35px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .panel-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 9px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+  .panel-close:hover { color: #ffffff; background: rgba(255, 255, 255, 0.15); }
+
+  #panel .panel-kicker {
+    font: 700 11px 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--z-color, #f59e0b);
+    margin-bottom: 6px;
+  }
+  #panel h2 {
+    font: italic 400 32px/1.12 'Instrument Serif', serif;
+    margin: 4px 0 10px 0;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+  }
+  #panel .meta {
+    font: 500 11.5px 'JetBrains Mono', monospace;
+    color: #cbd5e1;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.14);
+    margin-bottom: 16px;
+    line-height: 1.45;
+  }
+
+  /* BOTÓN DE VIAJE DIRECTO AL DOC/CURSO */
+  .travel-hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: var(--z-color, #f59e0b);
+    color: #000000 !important;
+    text-decoration: none !important;
+    font: 700 12px 'JetBrains Mono', monospace;
+    letter-spacing: 0.04em;
+    margin-bottom: 18px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+  .travel-hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+    filter: brightness(1.1);
+  }
+
+  #panel .anat {
+    font: 400 11.5px/1.6 'JetBrains Mono', monospace;
+    color: #94a3b8;
+    margin-bottom: 16px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 11px 13px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  #panel .note {
+    font: 400 12.5px/1.6 'Inter', sans-serif;
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 3px solid var(--z-color, #f59e0b);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  #panel .note b {
+    display: block;
+    font: 700 11px 'JetBrains Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--z-color, #f59e0b);
+    margin-bottom: 4px;
+  }
+
+  /* SECCIÓN DE LIBROS CLAVE */
+  .books-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 18px;
+  }
+  .books-header {
+    font: 700 11px 'JetBrains Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .book-item {
+    font-size: 12px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    line-height: 1.45;
+  }
+  .book-item strong {
+    color: #f8fafc;
+    display: block;
+  }
+  .book-item span {
+    font-size: 11px;
+    color: #94a3b8;
+  }
+
+  /* SECCIÓN DE LABORATORIOS Y NOTEBOOKS */
+  .labs-card {
+    background: rgba(20, 24, 34, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 18px;
+  }
+  .labs-header {
+    font: 700 11px 'JetBrains Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #10b981;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .lab-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #e2e8f0 !important;
+    text-decoration: none !important;
+    font: 500 11.5px 'JetBrains Mono', monospace;
+    margin-bottom: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.15s ease;
+  }
+  .lab-link:hover {
+    background: rgba(16, 185, 129, 0.15);
+    border-color: #10b981;
+    color: #ffffff !important;
+    transform: translateX(3px);
+  }
+
+  .sub-group { margin-bottom: 16px; }
+  .sub-title {
+    font: 700 11.5px 'JetBrains Mono', monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #f8fafc;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 8px;
+  }
+  .con-list { display: flex; flex-direction: column; gap: 6px; }
+  .con-item {
+    font: 400 12.5px/1.45 'Inter', sans-serif;
+    color: #94a3b8;
+    padding-left: 14px;
+    position: relative;
+    transition: color 0.15s ease;
+  }
+  .con-item::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--z-color, #f59e0b);
+    font-size: 10px;
+  }
+  .con-item:hover { color: #f8fafc; }
+
+  /* 3D FLOATING LABELS */
+  #labels-layer { position: fixed; inset: 0; pointer-events: none; z-index: 5; }
+  .node-label {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    font: 600 11px 'JetBrains Mono', monospace;
+    letter-spacing: 0.04em;
+    color: #f8fafc;
+    background: rgba(14, 14, 20, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    text-shadow: 0 1px 4px #000;
+  }
+  .node-label.visible { opacity: 0.95; }
+  .node-label.highlight {
+    border-color: var(--z-color, #f59e0b);
+    color: var(--z-color, #f59e0b);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+  }
+
+  /* TOOLTIP */
+  #tooltip {
+    position: fixed;
+    z-index: 20;
+    pointer-events: none;
+    background: rgba(14, 14, 20, 0.95);
+    border: 1px solid #f59e0b;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font: 600 11.5px 'JetBrains Mono', monospace;
+    color: #ffffff;
+    display: none;
+    white-space: nowrap;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7);
+  }
+  #tooltip .tip-sub { font-size: 10px; color: #94a3b8; margin-top: 2px; }
+
+  @media (max-width: 860px) {
+    #legend { width: calc(100vw - 40px); bottom: auto; height: 260px; }
+    #panel { width: calc(100vw - 40px); left: 20px; top: auto; bottom: 20px; height: 50vh; }
+  }
+</style>
+</head>
+<body>
+
+<div id="header-bar">
+  <div class="header-tag">
+    <div class="pulse-dot"></div>
+    <span>Humano de Conocimiento · Arquitectura Neuro-Cognitiva · Erick Sang</span>
+  </div>
+  <a href="../" class="nav-back-btn">
+    <span>← Volver a la Base de Conocimiento</span>
+  </a>
+</div>
+
+<div id="canvas-container"></div>
+<div id="labels-layer"></div>
+<div id="tooltip"></div>
+
+<!-- LEGEND (LEFT) -->
+<div id="legend">
+  <div class="legend-box" id="legend-main">
+    <div class="kicker">▸ Zonas Funcionales & Dominios</div>
+    <div id="zones"></div>
+  </div>
+
+  <div class="ctrls-box">
+    <div class="kicker">Corteza Holográfica</div>
+    <div class="seg-control" id="cortex-seg">
+      <button type="button" class="seg-btn on" data-op="0.22">Visible</button>
+      <button type="button" class="seg-btn" data-op="0.06">Tenue</button>
+      <button type="button" class="seg-btn" data-op="0.0">Oculta</button>
+    </div>
+    <div class="btn-grid">
+      <button type="button" class="action-btn" id="btn-autorotate">Giro: On</button>
+      <button type="button" class="action-btn" id="btn-reset">Cerebro</button>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL PANEL (RIGHT) -->
+<aside id="panel">
+  <button type="button" class="panel-close" id="panel-close" title="Cerrar panel">✕</button>
+  <div class="panel-kicker" id="p-kicker">ZONA ANATÓMICA</div>
+  <h2 id="p-title">Lóbulo</h2>
+  <div class="meta" id="p-meta">Especialidad</div>
+
+  <!-- BOTÓN DE VIAJE DIRECTO -->
+  <a href="#" id="p-travel-btn" class="travel-hero-btn" target="_top">
+    <span id="p-travel-text">🚀 Viajar a la Documentación</span>
+    <span>→</span>
+  </a>
+
+  <div class="anat" id="p-anat">Neuroanatomía</div>
+  <div class="note" id="p-note">
+    <b id="p-note-title">Enfoque Clave</b>
+    <span id="p-note-text">Descripción</span>
+  </div>
+
+  <!-- LIBROS RECOMENDADOS -->
+  <div class="books-card" id="p-books-card">
+    <div class="books-header">📖 Libros & Referencias Fundamentales</div>
+    <div id="p-books-list"></div>
+  </div>
+
+  <!-- LABORATORIOS Y NOTEBOOKS -->
+  <div class="labs-card" id="p-labs-card">
+    <div class="labs-header">🧪 Laboratorios & Práctica Hands-on</div>
+    <div id="p-labs-list"></div>
+  </div>
+
+  <div id="p-subs"></div>
+</aside>
+
+<!-- THREE.JS APPLICATION SCRIPT -->
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+// Dynamic Base URL resolution: works seamlessly on file://, GitHub Pages (/Leonsang/), and local dev servers
+function getResolvedSiteRoot() {
+  if (window.location.protocol === 'file:') {
+    return 'https://leonsang.github.io/Leonsang/';
+  }
+  const path = window.location.pathname.toLowerCase();
+  if (path.includes('/leonsang/')) {
+    return '/Leonsang/';
+  }
+  return '../';
+}
+const SITE_ROOT = getResolvedSiteRoot();
+
+/* ==========================================================================
+   DATA MODEL: 8 NEURO-COGNITIVE ZONES WITH BOOKS, LABS & TRAVEL ROUTES
+   ========================================================================== */
+const ZONES = [
+  {
+    id: 'asociacion-ia',
+    name: 'Corteza Prefrontal & IA',
+    subname: 'Agentes Autónomos, Claude & MCP',
+    anat: 'Broadmann 9, 10, 46 (Polo frontal y corteza prefrontal anterolateral). Sede de la metacognición, razonamiento lógico autónomo y metaprompting.',
+    color: '#c084fc',
+    coords: { x: 0, y: 1.4, z: 2.8 },
+    count: 10,
+    travelUrl: 'cursos/google-gear-agentes/',
+    travelText: '🚀 Explorar Ruta Google GEAR Agentes',
+    note: {
+      title: 'Vanguardia en Agentes de IA',
+      text: 'Desarrollo de sistemas multiagente listos para producción, implementación del protocolo estándar Model Context Protocol (MCP) y asistencia técnica terminal con Claude Code.'
+    },
+    books: [
+      {
+        title: 'AI 2041: Ten Visions for Our Future',
+        author: 'Kai-Fu Lee & Chen Qiufan',
+        desc: 'Exploración prospectiva del impacto del aprendizaje profundo, agentes autónomos y gobernanza ética.'
+      },
+      {
+        title: 'Anthropic Metaprompting & XML Architecture Guide',
+        author: 'Anthropic Research',
+        desc: 'Patrones de estructuración XML para eliminar ambigüedad y guiar razonamientos complejos (Chain-of-Thought).'
+      }
+    ],
+    labs: [
+      { name: 'Laboratorio Desafío Google ADK GSP540 (100 pts)', url: 'cursos/google-gear-adk/03-ingenieria-agentes-adk-lab-desafio/' },
+      { name: 'Model Context Protocol: Guía & Servidores', url: 'cursos/mcp-intro/' },
+      { name: 'Claude Code in Action: Terminal Pair-Programming', url: 'cursos/claude-code-in-action/' }
+    ],
+    subs: [
+      {
+        title: 'Model Context Protocol (MCP)',
+        items: [
+          'Protocolo estándar abierto JSON-RPC sobre transporte stdio y HTTP/SSE',
+          'Construcción de Servidores MCP personalizados (DuckDB, Filesystem, APIs)',
+          'Orquestación multi-servidor y control estricto de concurrencia',
+          'Políticas perimetrales de seguridad y mitigación de fugas de contexto'
+        ]
+      },
+      {
+        title: 'Google Agent Development Kit (ADK)',
+        items: [
+          'Insignia de Habilidad GSP540 superada con calificación 100/100',
+          'Arquitectura ReAct (Reasoning + Acting) orquestada con Gemini 1.5 Pro',
+          'Persistencia de memoria contextual y gestión de estado multi-sesión',
+          'Sistemas multiagente colaborativos con división especializada de trabajo'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'frontal-arquitectura',
+    name: 'Lóbulo Frontal',
+    subname: 'Arquitectura Lakehouse & Gobierno',
+    anat: 'Corteza frontal dorsolateral. Centro de toma de decisiones estratégicas, diseño estructural y gobernanza centralizada de datos.',
+    color: '#f59e0b',
+    coords: { x: 0, y: 2.2, z: 1.4 },
+    count: 8,
+    travelUrl: 'data-engineering/',
+    travelText: '🚀 Ver Arquitectura Data Engineering',
+    note: {
+      title: 'Estrategia Arquitectural',
+      text: 'Diseño e implementación de arquitecturas Lakehouse empresariales desacopladas, esquemas Medallion resilientes y gobierno corporativo de datos.'
+    },
+    books: [
+      {
+        title: 'Fundamentals of Data Engineering',
+        author: 'Joe Reis & Matt Housley',
+        desc: 'Ciclo de vida integral de la ingeniería de datos: ingesta, almacenamiento, transformación y servicio con evaluación de trade-offs.'
+      },
+      {
+        title: 'Designing Data-Intensive Applications',
+        author: 'Martin Kleppmann',
+        desc: 'Los principios fundamentales de confiabilidad, escalabilidad y mantenibilidad en sistemas distribuidos.'
+      }
+    ],
+    labs: [
+      { name: 'Arquitectura Medallion en Azure Databricks', url: 'databricks/' },
+      { name: 'Gobernanza Centralizada con Unity Catalog', url: 'databricks/internals/07-Databricks_UC_Introduction/' }
+    ],
+    subs: [
+      {
+        title: 'Arquitectura Medallion & Lakehouse',
+        items: [
+          'Capa Bronze: Ingestión cruda sin mutación y streaming append-only',
+          'Capa Silver: Limpieza, deduplicación, validación de esquemas y conformación',
+          'Capa Gold: Modelos estrella dimensionales agregados listos para analítica'
+        ]
+      },
+      {
+        title: 'Gobernanza con Unity Catalog',
+        items: [
+          'Jerarquía de 3 niveles unificada (Catálogo.Esquema.Tabla)',
+          'Control de acceso granular RBAC a nivel de fila y enmascaramiento de columnas',
+          'Linaje automatizado end-to-end de tablas, pipelines y visualizaciones'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'parietal-compute',
+    name: 'Lóbulo Parietal',
+    subname: 'Spark Internals & Cómputo Distribuido',
+    anat: 'Corteza parietal superior e inferior. Zona de procesamiento matemático masivo, transformaciones de alta concurrencia e integración espacial.',
+    color: '#06b6d4',
+    coords: { x: 0, y: 2.6, z: -0.4 },
+    count: 11,
+    travelUrl: 'spark/',
+    travelText: '🚀 Explorar Apache Spark Internals',
+    note: {
+      title: 'Cómputo a Gran Escala',
+      text: 'Afinamiento y optimización de motores de ejecución distribuida en Databricks y Apache Spark para cargas de petabytes sin cuellos de botella.'
+    },
+    books: [
+      {
+        title: 'Spark: The Definitive Guide',
+        author: 'Bill Chambers & Matei Zaharia',
+        desc: 'La biblia de Apache Spark: Catalyst Optimizer, Whole-Stage Code Generation, DataFrames y Spark SQL.'
+      },
+      {
+        title: 'Learning Spark (2nd Edition)',
+        author: 'Jules Damji et al.',
+        desc: 'Patrones modernos de PySpark, optimizaciones de shuffle y Structured Streaming.'
+      }
+    ],
+    labs: [
+      { name: '24 Spark Notebooks Prácticos (Hands-on)', url: 'spark-notebooks/' },
+      { name: 'Depuración de Spark Driver OOM & Memory Spill', url: 'databricks/internals/33-Spark_Driver_OOM/' },
+      { name: 'Delta Live Tables (DLT) Declarative Pipelines', url: 'databricks/internals/21-Intro_Databricks_Lakeflow_Declarative_Pipelines/' }
+    ],
+    subs: [
+      {
+        title: 'Apache Spark & Internals',
+        items: [
+          'Catalyst Optimizer: Optimización de planes lógicos y físicos de consulta',
+          'Project Tungsten: Generación de código en memoria off-heap',
+          'Gestión de memoria en Spark: Storage vs Execution y depuración de OOM',
+          'Estrategias anti-skew: Adaptive Query Execution (AQE), Salting y Broadcast Joins'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'temporal-storage',
+    name: 'Lóbulo Temporal',
+    subname: 'Data Storage, Delta Lake & NoSQL',
+    anat: 'Corteza temporal medial e hipocampo. Estructura anatómica de almacenamiento a largo plazo, indexación y recuperación consistente de datos.',
+    color: '#10b981',
+    coords: { x: 2.3, y: -0.2, z: 0.5 },
+    count: 9,
+    travelUrl: 'cursos/mongodb-atlas/',
+    travelText: '🚀 Ver Ruta MongoDB & Storage',
+    note: {
+      title: 'Persistencia & Consistencia',
+      text: 'Almacenamiento transaccional de alto rendimiento con garantías ACID, compresión columnar Parquet y modelos de documentos NoSQL.'
+    },
+    books: [
+      {
+        title: 'MongoDB: The Definitive Guide (3rd Edition)',
+        author: 'Shannon Bradshaw & Eoin Brazil',
+        desc: 'Diseño de modelos de documentos BSON, índices compuestos (regla ESR) y pipelines de agregación.'
+      },
+      {
+        title: 'Database Internals',
+        author: 'Alex Petrov',
+        desc: 'Estructuras de almacenamiento distribuido, B-Trees, LSM-Trees y mecanismos de replicación y consenso.'
+      }
+    ],
+    labs: [
+      { name: 'MongoDB Python Developer Path: CRUD & Agregaciones', url: 'cursos/mongodb-python-path/' },
+      { name: 'Delta Lake: Liquid Clustering & Deletion Vectors', url: 'databricks/internals/13-Liquid_Clustering_Delta_Lake/' },
+      { name: 'Azure Storage: Lifecycles & Soft Delete', url: 'azure/29-Azure_Lifetime_Management_Policies/' }
+    ],
+    subs: [
+      {
+        title: 'Delta Lake Internals',
+        items: [
+          'Transacciones ACID completas con Delta Transaction Log (_delta_log)',
+          'Time Travel & Versioning para auditoría y rollback sin downtime',
+          'Liquid Clustering & Deletion Vectors para acelerar escrituras',
+          'Shallow Clone & Deep Clone para entornos de pruebas eficientes'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'sensorial-streaming',
+    name: 'Corteza Sensorial & Motora',
+    subname: 'Streaming en Tiempo Real & Kafka',
+    anat: 'Giro poscentral y corteza somatosensorial. Procesa torrentes continuos de eventos sensoriales con latencias submilisegundo.',
+    color: '#f97316',
+    coords: { x: 0, y: 2.3, z: 0.4 },
+    count: 6,
+    travelUrl: 'kafka/',
+    travelText: '🚀 Explorar Apache Kafka Ecosystem',
+    note: {
+      title: 'Event-Driven Streams',
+      text: 'Arquitecturas de eventos desacopladas para ingesta y procesamiento continuo en tiempo real de transacciones y telemetría.'
+    },
+    books: [
+      {
+        title: 'Kafka: The Definitive Guide (2nd Edition)',
+        author: 'Gwen Shapira, Todd Palino, Rajini Sivaram',
+        desc: 'Arquitectura interna de Kafka: replicación de logs, partition leaders, zero-copy data transfer y consumer groups.'
+      },
+      {
+        title: 'Streaming Systems',
+        author: 'Tyler Akidau, Slava Chernyak, Reuven Lax',
+        desc: 'El modelo formal de streaming: What, Where, When y How (Event Time vs Processing Time, Watermarks).'
+      }
+    ],
+    labs: [
+      { name: 'Arquitectura Streaming & Watermarking', url: 'streaming-architecture/' },
+      { name: 'Google Cloud Dataflow Streaming Pipelines', url: 'gcp/dataflow-streaming/' },
+      { name: 'Azure Event Grid & Integraciones Reactivas', url: 'azure/34-EventGrid_Integration_Azure/' }
+    ],
+    subs: [
+      {
+        title: 'Apache Kafka & Event Brokers',
+        items: [
+          'Diseño de tópicos, particionado estratégico y semántica de entrega Exactly-Once',
+          'Consumer Groups, rebalanceo eficiente y control manual de offsets',
+          'Schema Registry para evolución compatible de esquemas Avro/JSON'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'limbico-seguridad',
+    name: 'Sistema Límbico',
+    subname: 'Ciberdefensa, ISO 27001 & SGSI',
+    anat: 'Amígdala cerebral y corteza cingulada anterior. Núcleo vital de alerta temprana, inmunidad, evaluación de amenazas y preservación de integridad.',
+    color: '#ef4444',
+    coords: { x: 0, y: 0.3, z: 0.1 },
+    count: 8,
+    travelUrl: 'cursos/sena-ciberseguridad/',
+    travelText: '🚀 Abrir Curso SENA Ciberseguridad',
+    note: {
+      title: 'Seguridad Integral',
+      text: 'Gobierno del SGSI bajo ISO/IEC 27001, análisis de riesgos cuantitativo y hardening profundo de infraestructura tecnológica.'
+    },
+    books: [
+      {
+        title: 'ISO/IEC 27001:2022 SGSI Guide',
+        author: 'Organización Internacional de Normalización',
+        desc: 'Requisitos normativos del SGSI, gestión de no conformidades, auditorías internas y controles del Anexo A.'
+      },
+      {
+        title: 'NIST SP 800-30 Rev. 1: Guide for Conducting Risk Assessments',
+        author: 'NIST (National Institute of Standards and Technology)',
+        desc: 'Metodología en 9 pasos para identificar fuentes de amenazas, vulnerabilidades, impacto y cálculo cuantitativo de riesgos.'
+      }
+    ],
+    labs: [
+      { name: '🎮 Simulador de Ciberincidentes & Calculadora 5x5', url: 'cursos/sena-ciberseguridad/tablero-interactivo/' },
+      { name: 'Recetario de Hardening Linux, Nmap & UFW', url: 'cursos/sena-ciberseguridad/trucos-tips-cheatsheet/' },
+      { name: 'Informe Oficial de Valuación de Activos MAGERIT', url: 'cursos/sena-ciberseguridad/aa1-ev01-informe-activos/' }
+    ],
+    subs: [
+      {
+        title: 'Gobierno de Seguridad ISO/IEC 27001:2022',
+        items: [
+          'Implementación del Ciclo PHVA (Planificar, Hacer, Verificar, Actuar)',
+          'Controles del Anexo A: Organizacionales, Personas, Físicos y Tecnológicos',
+          'Políticas de continuidad: BCP (Business Continuity) y DRP (Disaster Recovery)'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'cerebelo-devops',
+    name: 'Cerebelo & Tronco Encefálico',
+    subname: 'Orquestación, DevOps, CI/CD & Cloud',
+    anat: 'Cerebelo y bulbo raquídeo. Controla la estabilidad automática, la sincronía de tareas de fondo y el soporte vital de infraestructura.',
+    color: '#14b8a6',
+    coords: { x: 0, y: -1.7, z: -1.4 },
+    count: 9,
+    travelUrl: 'airflow/',
+    travelText: '🚀 Ver Apache Airflow & Orquestación',
+    note: {
+      title: 'Automatización & Soporte',
+      text: 'Orquestación determinista de pipelines de datos complejos, infraestructura como código y automatización continua de despliegues.'
+    },
+    books: [
+      {
+        title: 'Data Pipelines with Apache Airflow',
+        author: 'Bas P. Harenslak & Julian Rutger de Ruiter',
+        desc: 'Patrones de diseño de DAGs idempotentes, backfilling, custom operators, dynamic task generation y testing.'
+      },
+      {
+        title: 'The Phoenix Project & DevOps Handbook',
+        author: 'Gene Kim, Jez Humble, Patrick Debois, John Willis',
+        desc: 'Las tres vías de DevOps: flujo continuo de valor, ciclos rápidos de retroalimentación y cultura de experimentación.'
+      }
+    ],
+    labs: [
+      { name: '11 Plantillas de Producción Azure Data Factory (ADF)', url: 'azure/adf/activities-pipelines/' },
+      { name: 'Escenarios Reales ADF con Logic Apps & SQL', url: 'ADF_scenarios/' },
+      { name: 'Despliegues con ARM Templates & Azure Bicep', url: 'azure/05-Azure_ARM_Templates/' }
+    ],
+    subs: [
+      {
+        title: 'Apache Airflow & Orquestación',
+        items: [
+          'Diseño de DAGs idempotentes con dependencias complejas y TaskGroups',
+          'Uso de Custom Hooks, Operators y Sensors en entornos Astronomer CLI',
+          'Manejo de reintentos, SLAs, pools de ejecución y Secrets Backends'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'occipital-visualizacion',
+    name: 'Lóbulo Occipital',
+    subname: 'Visualización de Datos & Power BI',
+    anat: 'Corteza visual primaria (V1) y áreas de asociación visual (Broadmann 17, 18, 19). Traduce datos numéricos complejos en patrones comprensibles.',
+    color: '#f43f5e',
+    coords: { x: 0, y: 0.1, z: -2.4 },
+    count: 5,
+    travelUrl: 'bi/',
+    travelText: '🚀 Ver BI & Analítica Dimensional',
+    note: {
+      title: 'Percepción & Negocio',
+      text: 'Creación de capas semánticas de reporte empresarial, modelos de datos dimensionales y cuadros de mando interactivos.'
+    },
+    books: [
+      {
+        title: 'The Definitive Guide to DAX (2nd Edition)',
+        author: 'Marco Russo & Alberto Ferrari',
+        desc: 'El manual supremo de DAX: evaluación de contexto, filter propagation, CALCULATE internals y optimización con DAX Studio.'
+      },
+      {
+        title: 'The Data Warehouse Toolkit (3rd Edition)',
+        author: 'Ralph Kimball & Margy Ross',
+        desc: 'Modelado dimensional clásico: esquemas en estrella, dimensiones conformadas y tablas de hechos acumulativas.'
+      }
+    ],
+    labs: [
+      { name: 'Tablero Power BI con DAX & Formato TMDL / PBIP', url: 'cursos/sena-ia-integracion-datos/aa2-ev03-powerbi/' },
+      { name: 'Modelado Dimensional y Reportes en Microsoft Fabric', url: 'microsoft-fabric/' }
+    ],
+    subs: [
+      {
+        title: 'Power BI Enterprise & DAX',
+        items: [
+          'Modelado dimensional Star Schema (Tablas de Hechos y Dimensiones)',
+          'Medidas calculadas con DAX (Time Intelligence, CALCULATE, agregaciones)',
+          'Formato PBIP y código TMDL para control de versiones en Git y CI/CD',
+          'Diseño responsivo centrado en UX y toma de decisiones ejecutivas'
+        ]
+      }
+    ]
+  }
+];
+
+/* ==========================================================================
+   THREE.JS 3D SCENE INITIALIZATION WITH VIBRANT LIGHTING
+   ========================================================================== */
+const container = document.getElementById('canvas-container');
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x060608, 0.045);
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+camera.position.set(0, 1.6, 7.8);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.25;
+container.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
+controls.minDistance = 3.5;
+controls.maxDistance = 14.0;
+controls.target.set(0, 0.2, 0);
+
+/* LIGHTS */
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.95);
+scene.add(ambientLight);
+
+const dirLight1 = new THREE.DirectionalLight(0xf59e0b, 1.6);
+dirLight1.position.set(6, 8, 6);
+scene.add(dirLight1);
+
+const dirLight2 = new THREE.DirectionalLight(0x06b6d4, 1.4);
+dirLight2.position.set(-6, -4, -6);
+scene.add(dirLight2);
+
+const dirLight3 = new THREE.DirectionalLight(0xc084fc, 1.2);
+dirLight3.position.set(0, 8, -6);
+scene.add(dirLight3);
+
+/* ==========================================================================
+   BRAIN PROCEDURAL GENERATION: NEURAL CLUSTERS & HOLOGRAPHIC CORTEX
+   ========================================================================== */
+const brainGroup = new THREE.Group();
+scene.add(brainGroup);
+
+// 1. NEURAL PARTICLES CLOUD
+const particleCount = 2800;
+const positions = new Float32Array(particleCount * 3);
+const colors = new Float32Array(particleCount * 3);
+
+const baseColorA = new THREE.Color(0xf59e0b); // Gold
+const baseColorB = new THREE.Color(0x06b6d4); // Cyan
+const baseColorC = new THREE.Color(0xc084fc); // Purple
+const baseColorD = new THREE.Color(0x10b981); // Emerald
+
+let pIdx = 0;
+for (let i = 0; i < particleCount; i++) {
+  const side = Math.random() > 0.5 ? 1 : -1;
+  const u = Math.random();
+  const v = Math.random();
+  const theta = u * 2.0 * Math.PI;
+  const phi = Math.acos(2.0 * v - 1.0);
+
+  const radBase = 1.8 + 0.35 * Math.sin(theta * 3.0) * Math.cos(phi * 4.0);
+  let x = side * (0.35 + Math.abs(Math.sin(phi) * Math.cos(theta)) * radBase * 1.1);
+  let y = Math.cos(phi) * radBase * 1.05 + 0.2;
+  let z = Math.sin(phi) * Math.sin(theta) * radBase * 1.35;
+
+  const depthFactor = 0.4 + 0.6 * Math.random();
+  x *= depthFactor;
+  y *= depthFactor;
+  z *= depthFactor;
+
+  positions[pIdx] = x;
+  positions[pIdx + 1] = y;
+  positions[pIdx + 2] = z;
+
+  const mixedColor = new THREE.Color();
+  if (z > 0.8) {
+    mixedColor.lerpColors(baseColorA, baseColorC, (z - 0.8) / 1.6);
+  } else if (y < -0.3) {
+    mixedColor.setHex(0x14b8a6);
+  } else if (x > 1.2 || x < -1.2) {
+    mixedColor.lerpColors(baseColorB, baseColorD, Math.abs(x) / 2.2);
+  } else {
+    mixedColor.lerpColors(baseColorA, baseColorB, Math.abs(x) / 1.8);
+  }
+
+  colors[pIdx] = mixedColor.r;
+  colors[pIdx + 1] = mixedColor.g;
+  colors[pIdx + 2] = mixedColor.b;
+
+  pIdx += 3;
+}
+
+const pGeom = new THREE.BufferGeometry();
+pGeom.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+pGeom.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+const pMat = new THREE.PointsMaterial({
+  size: 0.055,
+  vertexColors: true,
+  transparent: true,
+  opacity: 0.9,
+  blending: THREE.AdditiveBlending
+});
+const particleSystem = new THREE.Points(pGeom, pMat);
+brainGroup.add(particleSystem);
+
+// 2. SYNAPTIC CONNECTIONS
+const linePositions = [];
+const lineColors = [];
+const maxConnectDistance = 0.45;
+const step = 4;
+for (let i = 0; i < particleCount; i += step) {
+  const x1 = positions[i * 3];
+  const y1 = positions[i * 3 + 1];
+  const z1 = positions[i * 3 + 2];
+
+  for (let j = i + step; j < Math.min(i + 80, particleCount); j += step) {
+    const x2 = positions[j * 3];
+    const y2 = positions[j * 3 + 1];
+    const z2 = positions[j * 3 + 2];
+    const distSq = (x1 - x2) ** 2 + (y1 - y2) ** 2 + (z1 - z2) ** 2;
+
+    if (distSq < maxConnectDistance ** 2) {
+      linePositions.push(x1, y1, z1, x2, y2, z2);
+      lineColors.push(colors[i * 3], colors[i * 3 + 1], colors[i * 3 + 2]);
+      lineColors.push(colors[j * 3], colors[j * 3 + 1], colors[j * 3 + 2]);
+    }
+  }
+}
+
+const lineGeom = new THREE.BufferGeometry();
+lineGeom.setAttribute('position', new THREE.Float32BufferAttribute(linePositions, 3));
+lineGeom.setAttribute('color', new THREE.Float32BufferAttribute(lineColors, 3));
+const lineMat = new THREE.LineBasicMaterial({
+  vertexColors: true,
+  transparent: true,
+  opacity: 0.32,
+  blending: THREE.AdditiveBlending
+});
+const synapticLines = new THREE.LineSegments(lineGeom, lineMat);
+brainGroup.add(synapticLines);
+
+// 3. TRANSLUCENT HOLOGRAPHIC CORTEX
+const cortexMat = new THREE.MeshPhysicalMaterial({
+  color: 0x94a3b8,
+  roughness: 0.15,
+  metalness: 0.1,
+  transmission: 0.85,
+  ior: 1.25,
+  transparent: true,
+  opacity: 0.22,
+  wireframe: false,
+  depthWrite: false
+});
+
+const cortexWireMat = new THREE.MeshBasicMaterial({
+  color: 0xf59e0b,
+  wireframe: true,
+  transparent: true,
+  opacity: 0.08
+});
+
+function createHemisphere(side) {
+  const hemiGroup = new THREE.Group();
+  const sphereGeom = new THREE.SphereGeometry(1.9, 36, 36);
+  const pos = sphereGeom.attributes.position;
+
+  for (let i = 0; i < pos.count; i++) {
+    let x = pos.getX(i);
+    let y = pos.getY(i);
+    let z = pos.getZ(i);
+
+    if (side > 0 && x < 0) x *= 0.12;
+    if (side < 0 && x > 0) x *= 0.12;
+
+    z *= 1.32;
+    y *= 1.08;
+    x *= 1.15;
+
+    const sulcus = 0.08 * Math.sin(x * 7.0) * Math.sin(y * 8.0) * Math.cos(z * 6.0);
+    x += sulcus;
+    y += sulcus;
+    z += sulcus;
+
+    pos.setXYZ(i, x, y, z);
+  }
+  pos.needsUpdate = true;
+  sphereGeom.computeVertexNormals();
+
+  const mesh = new THREE.Mesh(sphereGeom, cortexMat);
+  mesh.position.x = side * 0.28;
+  hemiGroup.add(mesh);
+
+  const wireMesh = new THREE.Mesh(sphereGeom, cortexWireMat);
+  wireMesh.position.x = side * 0.28;
+  hemiGroup.add(wireMesh);
+
+  return hemiGroup;
+}
+
+const leftHemi = createHemisphere(-1);
+const rightHemi = createHemisphere(1);
+brainGroup.add(leftHemi);
+brainGroup.add(rightHemi);
+
+// 4. STEM & CEREBELLUM ANATOMICAL ACCENTS
+const stemGeom = new THREE.CylinderGeometry(0.35, 0.22, 1.8, 16);
+const stemMat = new THREE.MeshBasicMaterial({ color: 0x14b8a6, wireframe: true, transparent: true, opacity: 0.2 });
+const stemMesh = new THREE.Mesh(stemGeom, stemMat);
+stemMesh.position.set(0, -2.1, -0.6);
+stemMesh.rotation.x = 0.25;
+brainGroup.add(stemMesh);
+
+/* ==========================================================================
+   INTERACTIVE ZONE NODES (GLOWING SPHERES & ORBITS)
+   ========================================================================== */
+const zoneObjects = [];
+const labelElements = [];
+const labelsLayer = document.getElementById('labels-layer');
+
+ZONES.forEach(z => {
+  const nodeGroup = new THREE.Group();
+  nodeGroup.position.set(z.coords.x, z.coords.y, z.coords.z);
+
+  const coreGeom = new THREE.SphereGeometry(0.18, 24, 24);
+  const coreMat = new THREE.MeshStandardMaterial({
+    color: new THREE.Color(z.color),
+    emissive: new THREE.Color(z.color),
+    emissiveIntensity: 1.8,
+    roughness: 0.15
+  });
+  const core = new THREE.Mesh(coreGeom, coreMat);
+  core.userData = { zone: z, isCore: true };
+  nodeGroup.add(core);
+
+  const ringGeom = new THREE.RingGeometry(0.26, 0.30, 32);
+  const ringMat = new THREE.MeshBasicMaterial({
+    color: new THREE.Color(z.color),
+    side: THREE.DoubleSide,
+    transparent: true,
+    opacity: 0.75
+  });
+  const ring = new THREE.Mesh(ringGeom, ringMat);
+  ring.rotation.x = Math.PI / 2;
+  nodeGroup.add(ring);
+
+  const pLight = new THREE.PointLight(new THREE.Color(z.color), 1.8, 2.8);
+  nodeGroup.add(pLight);
+
+  brainGroup.add(nodeGroup);
+  zoneObjects.push({ group: nodeGroup, core, ring, pLight, zone: z });
+
+  const lbl = document.createElement('div');
+  lbl.className = 'node-label';
+  lbl.style.setProperty('--z-color', z.color);
+  lbl.textContent = z.name;
+  labelsLayer.appendChild(lbl);
+  labelElements.push({ el: lbl, pos: nodeGroup.position, zone: z });
+});
+
+/* ==========================================================================
+   UI RENDERING: LEGEND & INTERACTION
+   ========================================================================== */
+const zonesContainer = document.getElementById('zones');
+const panel = document.getElementById('panel');
+const tooltip = document.getElementById('tooltip');
+
+let activeZoneId = null;
+let autoRotate = true;
+
+// Build Left Sidebar Zone List
+ZONES.forEach(z => {
+  const item = document.createElement('button');
+  item.type = 'button';
+  item.className = 'zone-item';
+  item.dataset.id = z.id;
+  item.style.setProperty('--z-color', z.color);
+
+  item.innerHTML = `
+    <div class="zone-dot"></div>
+    <div class="zone-text">
+      <div class="zone-title">${z.name}</div>
+      <div class="zone-sub">${z.subname}</div>
+    </div>
+    <div class="zone-count">${z.count}</div>
+  `;
+
+  item.addEventListener('click', () => selectZone(z.id));
+  zonesContainer.appendChild(item);
+});
+
+// Select Zone Function
+function selectZone(id) {
+  if (activeZoneId === id) return;
+  activeZoneId = id;
+  const z = ZONES.find(item => item.id === id);
+  if (!z) return;
+
+  // Update Left Sidebar
+  document.querySelectorAll('.zone-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.id === id);
+  });
+
+  // Update Floating Labels
+  labelElements.forEach(item => {
+    item.el.classList.toggle('highlight', item.zone.id === id);
+  });
+
+  // Open & Populate Right Panel
+  panel.style.setProperty('--z-color', z.color);
+  document.getElementById('p-kicker').textContent = `ZONA ANATÓMICA · ${z.name.toUpperCase()}`;
+  document.getElementById('p-title').textContent = z.subname;
+  document.getElementById('p-meta').textContent = `Dominio Clave · ${z.count} Habilidades Estructuradas`;
+
+  // Update Travel Button
+  const travelBtn = document.getElementById('p-travel-btn');
+  const fullUrl = SITE_ROOT + z.travelUrl;
+  travelBtn.href = fullUrl;
+  document.getElementById('p-travel-text').textContent = z.travelText;
+
+  document.getElementById('p-anat').textContent = z.anat;
+  document.getElementById('p-note-title').textContent = z.note.title;
+  document.getElementById('p-note-text').textContent = z.note.text;
+
+  // Populate Books List
+  const booksContainer = document.getElementById('p-books-list');
+  booksContainer.innerHTML = '';
+  z.books.forEach(b => {
+    const item = document.createElement('div');
+    item.className = 'book-item';
+    item.innerHTML = `
+      <strong>${b.title}</strong>
+      <span>${b.author} · ${b.desc}</span>
+    `;
+    booksContainer.appendChild(item);
+  });
+
+  // Populate Labs List
+  const labsContainer = document.getElementById('p-labs-list');
+  labsContainer.innerHTML = '';
+  z.labs.forEach(l => {
+    const link = document.createElement('a');
+    link.className = 'lab-link';
+    link.href = SITE_ROOT + l.url;
+    link.target = '_top';
+    link.innerHTML = `<span>${l.name}</span> <span>→</span>`;
+    labsContainer.appendChild(link);
+  });
+
+  // Build Sub-skills list
+  const subsContainer = document.getElementById('p-subs');
+  subsContainer.innerHTML = '';
+  z.subs.forEach(s => {
+    const grp = document.createElement('div');
+    grp.className = 'sub-group';
+    grp.innerHTML = `
+      <div class="sub-title">${s.title}</div>
+      <div class="con-list">
+        ${s.items.map(it => `<div class="con-item">${it}</div>`).join('')}
+      </div>
+    `;
+    subsContainer.appendChild(grp);
+  });
+
+  panel.classList.add('show');
+
+  // Smooth Camera Pan towards the Zone Coordinates
+  targetLookAt.set(z.coords.x * 0.3, z.coords.y * 0.3, z.coords.z * 0.3);
+  targetCameraPos.set(
+    z.coords.x * 1.5 + (z.coords.x === 0 ? 0 : Math.sign(z.coords.x) * 1.5),
+    z.coords.y * 1.2 + 0.8,
+    z.coords.z * 1.8 + 2.6
+  );
+  autoRotate = false;
+  document.getElementById('btn-autorotate').textContent = 'Giro: Off';
+}
+
+// Close Panel Button
+document.getElementById('panel-close').addEventListener('click', () => {
+  panel.classList.remove('show');
+  activeZoneId = null;
+  document.querySelectorAll('.zone-item').forEach(el => el.classList.remove('active'));
+  labelElements.forEach(item => item.el.classList.remove('highlight'));
+  resetCamera();
+});
+
+// Reset Camera Button
+const targetCameraPos = new THREE.Vector3().copy(camera.position);
+const targetLookAt = new THREE.Vector3(0, 0.2, 0);
+
+function resetCamera() {
+  targetLookAt.set(0, 0.2, 0);
+  targetCameraPos.set(0, 1.6, 7.8);
+  autoRotate = true;
+  document.getElementById('btn-autorotate').textContent = 'Giro: On';
+}
+document.getElementById('btn-reset').addEventListener('click', resetCamera);
+
+// Toggle Auto-rotate Button
+document.getElementById('btn-autorotate').addEventListener('click', () => {
+  autoRotate = !autoRotate;
+  document.getElementById('btn-autorotate').textContent = autoRotate ? 'Giro: On' : 'Giro: Off';
+});
+
+// Cortex Opacity Segmented Control
+document.querySelectorAll('#cortex-seg .seg-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    document.querySelectorAll('#cortex-seg .seg-btn').forEach(b => b.classList.remove('on'));
+    e.target.classList.add('on');
+    const op = parseFloat(e.target.dataset.op);
+    cortexMat.opacity = op;
+    cortexWireMat.opacity = op > 0 ? 0.08 : 0;
+  });
+});
+
+/* ==========================================================================
+   RAYCASTING & HOVER INTERACTION
+   ========================================================================== */
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2(-999, -999);
+const coreMeshes = zoneObjects.map(z => z.core);
+
+window.addEventListener('mousemove', e => {
+  mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+
+  tooltip.style.left = `${e.clientX + 14}px`;
+  tooltip.style.top = `${e.clientY + 14}px`;
+});
+
+window.addEventListener('click', e => {
+  if (e.target.closest('#legend') || e.target.closest('#panel') || e.target.closest('#header-bar')) return;
+
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(coreMeshes);
+  if (intersects.length > 0) {
+    const zone = intersects[0].object.userData.zone;
+    selectZone(zone.id);
+  }
+});
+
+/* ==========================================================================
+   ANIMATION LOOP
+   ========================================================================== */
+const clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  const elapsedTime = clock.getElapsedTime();
+
+  const pulseScale = 1.0 + 0.012 * Math.sin(elapsedTime * 2.5);
+  particleSystem.scale.set(pulseScale, pulseScale, pulseScale);
+
+  zoneObjects.forEach((zo, i) => {
+    zo.ring.rotation.z += 0.02 * (i % 2 === 0 ? 1 : -1);
+    zo.pLight.intensity = 1.4 + 0.6 * Math.sin(elapsedTime * 3.0 + i);
+
+    const isHovered = (hoveredZone === zo.zone);
+    const isSelected = (activeZoneId === zo.zone.id);
+    const targetScale = isSelected ? 1.4 : (isHovered ? 1.25 : 1.0);
+    zo.core.scale.lerp(new THREE.Vector3(targetScale, targetScale, targetScale), 0.1);
+  });
+
+  if (autoRotate) {
+    brainGroup.rotation.y += 0.0035;
+  }
+
+  camera.position.lerp(targetCameraPos, 0.05);
+  controls.target.lerp(targetLookAt, 0.05);
+  controls.update();
+
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(coreMeshes);
+  let hoveredZone = null;
+
+  if (intersects.length > 0) {
+    hoveredZone = intersects[0].object.userData.zone;
+    container.style.cursor = 'pointer';
+    tooltip.innerHTML = `<strong>${hoveredZone.name}</strong><div class="tip-sub">${hoveredZone.subname}</div>`;
+    tooltip.style.display = 'block';
+  } else {
+    container.style.cursor = 'grab';
+    tooltip.style.display = 'none';
+  }
+
+  const camDir = new THREE.Vector3();
+  camera.getWorldDirection(camDir);
+
+  labelElements.forEach(item => {
+    const worldPos = new THREE.Vector3();
+    worldPos.copy(item.pos).applyEuler(brainGroup.rotation);
+
+    const toNode = worldPos.clone().sub(camera.position).normalize();
+    const isFacing = toNode.dot(camDir) > 0.3;
+
+    if (isFacing) {
+      const screenPos = worldPos.clone().project(camera);
+      const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
+      const y = (-(screenPos.y * 0.5) + 0.5) * window.innerHeight;
+
+      item.el.style.left = `${x}px`;
+      item.el.style.top = `${y - 12}px`;
+      item.el.classList.add('visible');
+    } else {
+      item.el.classList.remove('visible');
+    }
+  });
+
+  renderer.render(scene, camera);
+}
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+});
+
+animate();
+</script>
+
+</body>
+</html>

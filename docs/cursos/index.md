@@ -4,6 +4,11 @@
   <div class="courses-hero-badge">PLATAFORMA INTEGRAL DE FORMACIÓN TÉCNICA · ERICK SANG</div>
   <h2>Base de Conocimiento y Certificaciones</h2>
   <p>Rutas de aprendizaje completadas y en curso: Ciberseguridad, Inteligencia Artificial, Cloud Computing, Arquitectura de Datos y Desarrollo de Software con enfoque práctico en producción.</p>
+  <div style="margin-top: 1.2rem; display: flex; gap: 10px; flex-wrap: wrap;">
+    <a href="../humano-conocimiento/" class="md-button" style="background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); color: #ffffff !important; backdrop-filter: blur(8px); display: inline-flex; align-items: center; gap: 6px;">
+      <span>🧠 Explorar Mapa Neuro-Cognitivo 3D</span>
+    </a>
+  </div>
 </div>
 
 <div class="courses-controls-wrap">
@@ -36,8 +41,8 @@
       <span>Hardening</span>
     </div>
     <div class="cc-links">
-      <a href="sena-ciberseguridad/index.md" class="cc-btn primary">Ver Curso</a>
-      <a href="sena-ciberseguridad/tablero-interactivo.md" class="cc-btn secondary">🎮 Tablero</a>
+      <a href="sena-ciberseguridad/" class="cc-btn primary">Ver Curso</a>
+      <a href="sena-ciberseguridad/tablero-interactivo/" class="cc-btn secondary">🎮 Tablero</a>
     </div>
   </div>
 
@@ -56,8 +61,8 @@
       <span>Prompt Eng.</span>
     </div>
     <div class="cc-links">
-      <a href="sena-ia-integracion-datos/index.md" class="cc-btn primary">Ver Curso</a>
-      <a href="sena-ia-integracion-datos/aa2-ev03-powerbi.md" class="cc-btn secondary">📊 Tablero</a>
+      <a href="sena-ia-integracion-datos/" class="cc-btn primary">Ver Curso</a>
+      <a href="sena-ia-integracion-datos/aa2-ev03-powerbi/" class="cc-btn secondary">📊 Tablero</a>
     </div>
   </div>
 
@@ -75,7 +80,7 @@
       <span>Responsible AI</span>
     </div>
     <div class="cc-links">
-      <a href="aws-agentes-ia/index.md" class="cc-btn primary">Ver Ruta AWS</a>
+      <a href="aws-agentes-ia/" class="cc-btn primary">Ver Ruta AWS</a>
     </div>
   </div>
 
@@ -93,7 +98,7 @@
       <span>Seguridad Nube</span>
     </div>
     <div class="cc-links">
-      <a href="aws-nube-empresas/index.md" class="cc-btn primary">Ver Ruta AWS</a>
+      <a href="aws-nube-empresas/" class="cc-btn primary">Ver Ruta AWS</a>
     </div>
   </div>
 
@@ -130,7 +135,7 @@
       <span>Enterprise</span>
     </div>
     <div class="cc-links">
-      <a href="google-gear-agentes/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="google-gear-agentes/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -148,7 +153,7 @@
       <span>GSP540 Lab</span>
     </div>
     <div class="cc-links">
-      <a href="google-gear-adk/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="google-gear-adk/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -166,7 +171,7 @@
       <span>Fault Tolerance</span>
     </div>
     <div class="cc-links">
-      <a href="google-gear-produccion/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="google-gear-produccion/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -184,7 +189,7 @@
       <span>Gemini Enterprise</span>
     </div>
     <div class="cc-links">
-      <a href="google-gear-escala/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="google-gear-escala/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -202,7 +207,7 @@
       <span>Benchmarking</span>
     </div>
     <div class="cc-links">
-      <a href="google-gear-multiagente/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="google-gear-multiagente/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -220,7 +225,7 @@
       <span>Governance</span>
     </div>
     <div class="cc-links">
-      <a href="google-gear-gobierno-seguridad/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="google-gear-gobierno-seguridad/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -238,7 +243,7 @@
       <span>Projects</span>
     </div>
     <div class="cc-links">
-      <a href="claude-academy.md" class="cc-btn primary">Ver Academy</a>
+      <a href="claude-academy/" class="cc-btn primary">Ver Academy</a>
     </div>
   </div>
 
@@ -256,7 +261,7 @@
       <span>Token Efficiency</span>
     </div>
     <div class="cc-links">
-      <a href="claude-tips.md" class="cc-btn primary">Ver Guía</a>
+      <a href="claude-tips/" class="cc-btn primary">Ver Guía</a>
     </div>
   </div>
 
@@ -274,7 +279,7 @@
       <span>Connectors</span>
     </div>
     <div class="cc-links">
-      <a href="claude-101/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="claude-101/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -292,7 +297,7 @@
       <span>Context Memory</span>
     </div>
     <div class="cc-links">
-      <a href="claude-code-101/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="claude-code-101/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -309,7 +314,7 @@
       <span>Review Cycles</span>
     </div>
     <div class="cc-links">
-      <a href="claude-cowork/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="claude-cowork/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -327,7 +332,7 @@
       <span>Taxonomies</span>
     </div>
     <div class="cc-links">
-      <a href="claude-tag/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="claude-tag/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -344,7 +349,7 @@
       <span>Code Migration</span>
     </div>
     <div class="cc-links">
-      <a href="claude-code-in-action/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="claude-code-in-action/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -362,7 +367,7 @@
       <span>Cost Controls</span>
     </div>
     <div class="cc-links">
-      <a href="claude-platform-101/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="claude-platform-101/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -380,7 +385,7 @@
       <span>MCP Tools</span>
     </div>
     <div class="cc-links">
-      <a href="mcp-intro/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="mcp-intro/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -398,7 +403,7 @@
       <span>Orchestration</span>
     </div>
     <div class="cc-links">
-      <a href="mcp-advanced/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="mcp-advanced/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -416,7 +421,7 @@
       <span>Security Rules</span>
     </div>
     <div class="cc-links">
-      <a href="mongodb-atlas/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="mongodb-atlas/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
@@ -434,7 +439,7 @@
       <span>Transactions</span>
     </div>
     <div class="cc-links">
-      <a href="mongodb-python-path/index.md" class="cc-btn primary">Ver Ruta MongoDB</a>
+      <a href="mongodb-python-path/" class="cc-btn primary">Ver Ruta MongoDB</a>
     </div>
   </div>
 
@@ -452,7 +457,7 @@
       <span>Future Trends</span>
     </div>
     <div class="cc-links">
-      <a href="ubits-futuro-ia/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="ubits-futuro-ia/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 

@@ -1,5 +1,6 @@
 nav:
   - Inicio: index.md
+  - "🧠 Mapa 3D de Conocimiento": humano-conocimiento.md
 
   # Data & Analytics
   - Data Engineering:
@@ -87,6 +88,7 @@ nav:
 
   - Cursos:
     - Hub de Cursos: cursos/index.md
+    - "🧠 Mapa Neuro-Cognitivo 3D": humano-conocimiento.md
     - "SENA · Formación Técnica":
       - "SENA · Ciberseguridad":
         - Presentación del Programa: cursos/sena-ciberseguridad/index.md

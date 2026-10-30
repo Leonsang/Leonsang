@@ -76,7 +76,7 @@ Las evidencias se construyeron sobre dos escenarios complementarios de alta rele
 ## ⚡ Enlaces Rápidos a Herramientas de Refuerzo
 
 <div class="cyber-quick-grid">
-  <a href="tablero-interactivo.md" class="cyber-quick-card">
+  <a href="tablero-interactivo/" class="cyber-quick-card">
     <div class="cqc-icon">🎮</div>
     <div class="cqc-content">
       <strong>Simulador de Ciberincidentes</strong>
@@ -90,7 +90,7 @@ Las evidencias se construyeron sobre dos escenarios complementarios de alta rele
       <p>Calcula probabilidad × impacto en tiempo real y obtén SLA de respuesta.</p>
     </div>
   </a>
-  <a href="trucos-tips-cheatsheet.md" class="cyber-quick-card">
+  <a href="trucos-tips-cheatsheet/" class="cyber-quick-card">
     <div class="cqc-icon">💻</div>
     <div class="cqc-content">
       <strong>Cheat Sheet de Auditoría & Hardening</strong>
