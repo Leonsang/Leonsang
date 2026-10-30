@@ -1144,12 +1144,10 @@ const synapticLines = new THREE.LineSegments(lineGeom, lineMat);
 brainGroup.add(synapticLines);
 
 // 3. TRANSLUCENT HOLOGRAPHIC CORTEX
-const cortexMat = new THREE.MeshPhysicalMaterial({
+const cortexMat = new THREE.MeshStandardMaterial({
   color: 0x94a3b8,
-  roughness: 0.15,
-  metalness: 0.1,
-  transmission: 0.85,
-  ior: 1.25,
+  roughness: 0.25,
+  metalness: 0.15,
   transparent: true,
   opacity: 0.22,
   wireframe: false,
@@ -1387,8 +1385,9 @@ document.getElementById('panel-close').addEventListener('click', () => {
   resetCamera();
 });
 
-// Reset Camera Button
-const targetCameraPos = new THREE.Vector3().copy(camera.position);
+// Camera Interpolation State
+let hoveredZone = null;
+const targetCameraPos = new THREE.Vector3(0, 1.6, 7.8);
 const targetLookAt = new THREE.Vector3(0, 0.2, 0);
 
 function resetCamera() {
@@ -1455,6 +1454,21 @@ function animate() {
   const pulseScale = 1.0 + 0.012 * Math.sin(elapsedTime * 2.5);
   particleSystem.scale.set(pulseScale, pulseScale, pulseScale);
 
+  // 1. Raycast for Hover detection before updating meshes
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(coreMeshes);
+  hoveredZone = (intersects.length > 0) ? intersects[0].object.userData.zone : null;
+
+  if (hoveredZone) {
+    container.style.cursor = 'pointer';
+    tooltip.innerHTML = `<strong>${hoveredZone.name}</strong><div class="tip-sub">${hoveredZone.subname}</div>`;
+    tooltip.style.display = 'block';
+  } else {
+    container.style.cursor = 'grab';
+    tooltip.style.display = 'none';
+  }
+
+  // 2. Animate zone elements with resolved hoveredZone
   zoneObjects.forEach((zo, i) => {
     zo.ring.rotation.z += 0.02 * (i % 2 === 0 ? 1 : -1);
     zo.pLight.intensity = 1.4 + 0.6 * Math.sin(elapsedTime * 3.0 + i);
@@ -1472,20 +1486,6 @@ function animate() {
   camera.position.lerp(targetCameraPos, 0.05);
   controls.target.lerp(targetLookAt, 0.05);
   controls.update();
-
-  raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(coreMeshes);
-  let hoveredZone = null;
-
-  if (intersects.length > 0) {
-    hoveredZone = intersects[0].object.userData.zone;
-    container.style.cursor = 'pointer';
-    tooltip.innerHTML = `<strong>${hoveredZone.name}</strong><div class="tip-sub">${hoveredZone.subname}</div>`;
-    tooltip.style.display = 'block';
-  } else {
-    container.style.cursor = 'grab';
-    tooltip.style.display = 'none';
-  }
 
   const camDir = new THREE.Vector3();
   camera.getWorldDirection(camDir);
