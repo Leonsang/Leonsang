@@ -2,6 +2,13 @@
 
 Webinar de Diego Casas, Technical Trainer de AWS, de 1 h 25 min. Recorre en ocho módulos los fundamentos de AWS, siempre con la analogía de la cafetería. Es un buen resumen de los temas de **AWS Cloud Practitioner**. Ruta «Fundamentos de Nube AWS para Empresas».
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/02-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## 1. Introducción a AWS
 
 - **Modelo cliente-servidor:** el cliente pide un café a su gusto y el barista lo prepara. En la nube, el cliente envía una solicitud, por ejemplo guardar un archivo, y el servidor la cumple.

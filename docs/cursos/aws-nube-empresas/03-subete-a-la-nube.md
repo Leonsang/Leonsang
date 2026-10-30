@@ -2,6 +2,13 @@
 
 Podcast del diario *El Comercio* (Perú) para pymes, conducido por Bruno Ortiz. Episodio 2: ¿está lista tu pyme para migrar? (26 min). Episodio 3: recomendaciones antes de migrar (16 min). Ruta «Fundamentos de Nube AWS para Empresas».
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/03-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Episodio 2: ¿está lista tu pyme para migrar?
 
 **Señales de que es momento de migrar**

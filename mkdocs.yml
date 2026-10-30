@@ -119,6 +119,18 @@ nav:
         - 01 ¿Qué es la computación en la nube?: cursos/aws-nube-empresas/01-que-es-la-nube.md
         - 02 Webinar ¿Qué es la Nube de AWS?: cursos/aws-nube-empresas/02-webinar-nube-aws.md
         - 03 Podcast Súbete a la Nube: cursos/aws-nube-empresas/03-subete-a-la-nube.md
+      - "AWS Entrena · Cloud Practitioner":
+        - Progreso del curso: cursos/aws-cloud-practitioner/index.md
+        - 01 Introducción a la nube: cursos/aws-cloud-practitioner/01-introduccion-nube.md
+        - 02 Computación en la nube: cursos/aws-cloud-practitioner/02-computacion-nube.md
+        - 03 Servicios de computación: cursos/aws-cloud-practitioner/03-servicios-computacion.md
+        - 04 Hacia la globalización: cursos/aws-cloud-practitioner/04-globalizacion.md
+        - 05 Redes: cursos/aws-cloud-practitioner/05-redes.md
+        - 06 Almacenamiento: cursos/aws-cloud-practitioner/06-almacenamiento.md
+        - 07 Bases de datos: cursos/aws-cloud-practitioner/07-bases-de-datos.md
+        - 08 IA/ML y análisis de datos: cursos/aws-cloud-practitioner/08-ia-ml-analisis-datos.md
+        - 09 Seguridad: cursos/aws-cloud-practitioner/09-seguridad.md
+        - 10 Supervisión, cumplimiento y gobernanza: cursos/aws-cloud-practitioner/10-supervision-cumplimiento-gobernanza.md
     - "Google Skills · GEAR Agentes":
       - "GEAR Agentes":
         - Progreso de la ruta: cursos/google-gear-agentes/index.md

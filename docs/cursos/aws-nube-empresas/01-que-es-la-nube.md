@@ -2,6 +2,13 @@
 
 Video corto de Juan Esteban Gómez, instructor técnico de AWS (Talento Cloud), unos 9 min. Explica la nube con una analogía: **una cafetería**. Ruta «Fundamentos de Nube AWS para Empresas».
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/01-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Modelo cliente-servidor
 
 - En la cafetería, el **cliente** pide un café con ciertas características y quien está en la caja recibe el pedido y le entrega el producto preparado.
