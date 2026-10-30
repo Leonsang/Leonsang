@@ -78,137 +78,83 @@ nav:
       - Driver OOM: databricks/internals/33-Spark_Driver_OOM.md
 
   - Cursos:
-    - SENA · IA en integración de datos:
-      - Presentación: cursos/sena-ia-integracion-datos/index.md
-      - AA1-EV01 Mapa mental: cursos/sena-ia-integracion-datos/aa1-ev01-mapa-mental.md
-      - AA1-EV02 Guía de estudio: cursos/sena-ia-integracion-datos/aa1-ev02-guia-estudio.md
-      - AA2-EV01 Informe de prompts: cursos/sena-ia-integracion-datos/aa2-ev01-informe-prompts.md
-      - AA2-EV02 Foro de modelado: cursos/sena-ia-integracion-datos/aa2-ev02-foro-modelado.md
-      - AA2-EV03 Power BI: cursos/sena-ia-integracion-datos/aa2-ev03-powerbi.md
-    - AWS Entrena · IA sin Límites:
-      - Progreso de la ruta: cursos/aws-agentes-ia/index.md
-      - 01 Introducción a la IA generativa: cursos/aws-agentes-ia/01-intro-ia-generativa.md
-      - 02 AI-Driven Development Lifecycle: cursos/aws-agentes-ia/02-ai-dlc.md
-      - 03 Desarrollo de proyectos de IA generativa: cursos/aws-agentes-ia/03-desarrollo-proyectos-ia-generativa.md
-      - 04 Fundamentos de IA generativa en AWS: cursos/aws-agentes-ia/04-fundamentos-ia-generativa-aws.md
-      - 05 IA responsable: cursos/aws-agentes-ia/05-ia-responsable.md
-      - 06 Fundamentos de la ingeniería de peticiones: cursos/aws-agentes-ia/06-fundamentos-ingenieria-peticiones.md
-      - 07 Ingeniería de peticiones con Claude: cursos/aws-agentes-ia/07-ingenieria-peticiones-claude.md
-      - "08 Taller: la era de los agentes de IA": cursos/aws-agentes-ia/08-taller-agentes-ia.md
-    - AWS Entrena · Nube para Empresas:
-      - Progreso de la ruta: cursos/aws-nube-empresas/index.md
-      - 01 ¿Qué es la computación en la nube?: cursos/aws-nube-empresas/01-que-es-la-nube.md
-      - 02 Webinar ¿Qué es la Nube de AWS?: cursos/aws-nube-empresas/02-webinar-nube-aws.md
-      - 03 Podcast Súbete a la Nube: cursos/aws-nube-empresas/03-subete-a-la-nube.md
-    - Google Skills · GEAR Agentes:
-      - Progreso de la ruta: cursos/google-gear-agentes/index.md
-      - 01 Introducción GEAR: cursos/google-gear-agentes/01-gear-introduccion.md
-      - 02 Conceptos básicos de agentes: cursos/google-gear-agentes/02-conceptos-basicos-agentes.md
-      - 03 Agentes empresariales: cursos/google-gear-agentes/03-agentes-empresariales.md
-      - 04 Primera app Gemini Enterprise: cursos/google-gear-agentes/04-primera-app-gemini-enterprise.md
-      - 05 Resumen: cursos/google-gear-agentes/05-resumen.md
-    - Google Skills · GEAR ADK:
-      - Progreso de la ruta: cursos/google-gear-adk/index.md
-      - 01 Bienvenida – Desarrolla agentes con el Kit de desarrollo de agentes (ADK): cursos/google-gear-adk/01-bienvenida.md
-      - 02 Crea tu primer agente con el Kit de desarrollo de agentes (ADK): cursos/google-gear-adk/02-primer-agente-adk.md
-      - 03 Ingeniería de agentes de IA con el ADK (insignia de habilidad): cursos/google-gear-adk/03-ingenieria-agentes-adk-lab-desafio.md
-      - 04 Optimiza el comportamiento de los agentes: cursos/google-gear-adk/04-optimiza-comportamiento.md
-      - 05 Controla la memoria y el estado de los agentes: cursos/google-gear-adk/05-memoria-y-estado.md
-      - 06 Agrega capacidades de agente con herramientas: cursos/google-gear-adk/06-herramientas.md
-      - 07 Conclusión – Desarrolla agentes con el ADK: cursos/google-gear-adk/07-conclusion.md
-    - Google Skills · GEAR Producción:
-      - Progreso de la ruta: cursos/google-gear-produccion/index.md
-      - 01 Bienvenida – Implementa agentes listos para producción: cursos/google-gear-produccion/01-bienvenida.md
-      - 02 Crea e implementa agentes en producción: cursos/google-gear-produccion/02-crea-e-implementa-agentes-en-produccion.md
-      - 03 Implementa tu primer agente: cursos/google-gear-produccion/03-implementa-tu-primer-agente.md
-      - 05 Cierre – Implementa agentes listos para producción: cursos/google-gear-produccion/05-cierre.md
-    - Google Skills · GEAR Escala empresarial:
-      - Progreso de la ruta: cursos/google-gear-escala/index.md
-      - 01 Bienvenida – Escala agentes en toda la empresa: cursos/google-gear-escala/01-bienvenida.md
-      - 02 Agentes de IA generativa – transforma tu organización: cursos/google-gear-escala/02-agentes-ia-generativa-transforma-tu-organizacion.md
-      - 03 IA centrada en los humanos: cursos/google-gear-escala/03-ia-centrada-en-humanos.md
-      - 04 Organiza flujos de trabajo de varios agentes con Gemini Enterprise: cursos/google-gear-escala/04-organiza-flujos-multiagente-gemini-enterprise.md
-      - 05 Resumen – Escala agentes en toda la empresa: cursos/google-gear-escala/05-resumen.md
-    - Google Skills · GEAR Multiagente:
-      - Progreso de la ruta: cursos/google-gear-multiagente/index.md
-      - 01 Bienvenida – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/01-bienvenida.md
-      - 02 Crea sistemas multiagente colaborativos con el ADK y el MCP: cursos/google-gear-multiagente/02-sistemas-multiagente-colaborativos-adk-mcp.md
-      - 04 Build Agent Skills with Google: cursos/google-gear-multiagente/04-build-agent-skills-with-google.md
-      - 06 Conclusión – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/06-conclusion.md
-    - Google Skills · GEAR Gobierno y seguridad:
-      - Progreso de la ruta: cursos/google-gear-gobierno-seguridad/index.md
-      - 01 Bienvenida – Administra y protege agentes empresariales: cursos/google-gear-gobierno-seguridad/01-bienvenida.md
-      - 02 Agentes de IA empresariales seguros: cursos/google-gear-gobierno-seguridad/02-agentes-ia-empresariales-seguros.md
-      - 03 Google Cloud Agent Governance and Security: cursos/google-gear-gobierno-seguridad/03-agent-governance-and-security.md
-      - 04 Model Armor – protege las implementaciones de IA: cursos/google-gear-gobierno-seguridad/04-model-armor.md
-      - 06 Conclusión – Administra y protege agentes empresariales: cursos/google-gear-gobierno-seguridad/06-conclusion.md
-    - "MongoDB University · Getting Started with MongoDB Atlas":
-      - Progreso del curso: cursos/mongodb-atlas/index.md
-      - 01 Fundamentos de MongoDB: cursos/mongodb-atlas/01-fundamentos-mongodb.md
-      - 02 Arquitectura de MongoDB: cursos/mongodb-atlas/02-arquitectura-mongodb.md
-      - 03 Visión general de MongoDB Atlas: cursos/mongodb-atlas/03-vision-general-atlas.md
-      - 04 Desplegar un cluster en Atlas: cursos/mongodb-atlas/04-desplegar-cluster-atlas.md
-      - 05 Explorar la interfaz de Atlas: cursos/mongodb-atlas/05-explorar-interfaz-atlas.md
-      - 06 Conclusión y repaso: cursos/mongodb-atlas/06-conclusion.md
-    - "MongoDB University · MongoDB Python Developer Path":
-      - Progreso de la ruta: cursos/mongodb-python-path/index.md
-      - "Unidad 3 · MongoDB and the Document Model":
-        - Resumen de la unidad: cursos/mongodb-python-path/03-document-model/index.md
-        - "03.1 Visión general del modelo de documentos": cursos/mongodb-python-path/03-document-model/01-vision-general-modelo-documentos.md
-        - "03.2 Tipos de datos en MongoDB": cursos/mongodb-python-path/03-document-model/02-tipos-de-datos.md
-        - "03.3 Gestionar bases, colecciones y documentos en Atlas": cursos/mongodb-python-path/03-document-model/03-gestionar-datos-en-atlas.md
-        - "03.4 Relaciones entre datos": cursos/mongodb-python-path/03-document-model/04-relaciones-de-datos.md
-        - "03.5 Embeber y referenciar": cursos/mongodb-python-path/03-document-model/05-embeber-y-referenciar.md
-      - "Unidad 4 · Connecting to a MongoDB Database Using the MongoDB Shell":
-        - Resumen de la unidad: cursos/mongodb-python-path/04-mongodb-shell/index.md
-        - "04.1 Connection strings de MongoDB": cursos/mongodb-python-path/04-mongodb-shell/01-connection-strings.md
-        - "04.2 Instalar mongosh y conectarse": cursos/mongodb-python-path/04-mongodb-shell/02-instalar-y-conectar-mongosh.md
-        - "04.3 Resolver errores de conexión": cursos/mongodb-python-path/04-mongodb-shell/03-resolver-errores-de-conexion.md
-        - "04.4 Usar el MongoDB Shell": cursos/mongodb-python-path/04-mongodb-shell/04-usar-mongosh.md
-      - "Unidad 5 · Connecting to MongoDB in Python":
-        - Resumen de la unidad: cursos/mongodb-python-path/05-python-connection/index.md
-        - "05.1 Bibliotecas cliente de MongoDB para Python": cursos/mongodb-python-path/05-python-connection/01-drivers-python.md
-        - "05.2 Conectar una aplicación Python a Atlas": cursos/mongodb-python-path/05-python-connection/02-conectar-atlas-desde-python.md
-        - "05.3 Resolver problemas de conexión en Python": cursos/mongodb-python-path/05-python-connection/03-resolver-conexion-en-python.md
-      - "Unidad 6 · CRUD Operations in MongoDB (insignia)":
-        - Resumen de la unidad: cursos/mongodb-python-path/06-crud-mongodb/index.md
-        - "06.1 Operaciones CRUD": cursos/mongodb-python-path/06-crud-mongodb/01-operaciones-crud.md
-        - "06.2 Diseñar consultas efectivas": cursos/mongodb-python-path/06-crud-mongodb/02-consultas-efectivas.md
-        - "06.3 Modificar los resultados de una consulta": cursos/mongodb-python-path/06-crud-mongodb/03-modificar-resultados.md
-      - "Unidad 7 · MongoDB CRUD Operations in Python":
-        - Resumen de la unidad: cursos/mongodb-python-path/07-crud-python/index.md
-        - "07.1 Documentos BSON en Python": cursos/mongodb-python-path/07-crud-python/01-documentos-bson-en-python.md
-        - "07.2 CRUD con PyMongo": cursos/mongodb-python-path/07-crud-python/02-crud-con-pymongo.md
-        - "07.3 Transacciones multidocumento en Python": cursos/mongodb-python-path/07-crud-python/03-transacciones-en-python.md
-      - "Unidad 8 · Indexing Design Fundamentals (insignia)":
-        - Resumen de la unidad: cursos/mongodb-python-path/08-indexing/index.md
-        - "08.1 Introducción a los índices": cursos/mongodb-python-path/08-indexing/01-fundamentos-indices.md
-        - "08.2 Orden de las claves (ESR) y tamaño del índice": cursos/mongodb-python-path/08-indexing/02-orden-y-tamano-de-indices.md
-        - "08.3 Crear, gestionar y probar índices con explain()": cursos/mongodb-python-path/08-indexing/03-crear-y-probar-indices.md
-      - "Unidad 9 · MongoDB Aggregation":
-        - Resumen de la unidad: cursos/mongodb-python-path/09-aggregation/index.md
-        - "09.1 Introducción a la agregación": cursos/mongodb-python-path/09-aggregation/01-introduccion-agregacion.md
-        - "09.2 Etapas del pipeline de agregación": cursos/mongodb-python-path/09-aggregation/02-etapas-del-pipeline.md
-      - "Unidad 10 · MongoDB Aggregation in Python":
-        - Resumen de la unidad: cursos/mongodb-python-path/10-aggregation-python/index.md
-        - "10.1 Pipelines de agregación con PyMongo": cursos/mongodb-python-path/10-aggregation-python/01-agregacion-con-pymongo.md
-      - "Unidad 11 · MongoDB Transactions (optativa)":
-        - Resumen de la unidad: cursos/mongodb-python-path/11-transactions/index.md
-        - "11.1 Transacciones ACID en MongoDB": cursos/mongodb-python-path/11-transactions/01-transacciones-acid.md
-      - "Unidad 12 · Introduction to Atlas Search (optativa)":
-        - Resumen de la unidad: cursos/mongodb-python-path/12-atlas-search/index.md
-        - "12.1 Fundamentos de Atlas Search, mapeos y tipos de datos": cursos/mongodb-python-path/12-atlas-search/01-indices-y-mapeos.md
-        - "12.2 Operadores de $search y facets": cursos/mongodb-python-path/12-atlas-search/02-operadores-y-facets.md
-    - "UBITS · Explorando el futuro con la inteligencia artificial":
-      - Progreso de la ruta: cursos/ubits-futuro-ia/index.md
-      - "01 AI 2041 (ideas del libro)": cursos/ubits-futuro-ia/01-ai-2041.md
-      - "02 El misterio de la inteligencia artificial": cursos/ubits-futuro-ia/02-misterio-ia.md
-      - "03 Humanización e inteligencia artificial": cursos/ubits-futuro-ia/03-humanizacion-ia.md
-      - "04 La tecnología: ¿reemplazo o futuro?": cursos/ubits-futuro-ia/04-tecnologia-reemplazo-futuro.md
-      - "05 Creatividad e inteligencia artificial": cursos/ubits-futuro-ia/05-creatividad-ia.md
-      - "06 Inteligencia artificial y ética": cursos/ubits-futuro-ia/06-ia-etica.md
-      - "07 Comandos para potenciar tus prompts en ChatGPT": cursos/ubits-futuro-ia/07-comandos-prompts-chatgpt.md
-    - "Claude Academy (Anthropic)":
+    - Hub de Cursos: cursos/index.md
+    - "SENA · Formación Técnica":
+      - "SENA · Ciberseguridad":
+        - Presentación del Programa: cursos/sena-ciberseguridad/index.md
+        - Tablero Interactivo & Simulador: cursos/sena-ciberseguridad/tablero-interactivo.md
+        - Trucos, Tips & Cheatsheet: cursos/sena-ciberseguridad/trucos-tips-cheatsheet.md
+        - AA1-EV01 Informe de activos: cursos/sena-ciberseguridad/aa1-ev01-informe-activos.md
+        - AA2-EV01 Infografía amenazas: cursos/sena-ciberseguridad/aa2-ev01-infografia-amenazas.md
+        - AA3-EV01 Matriz de riesgos: cursos/sena-ciberseguridad/aa3-ev01-matriz-riesgos.md
+        - AA4-EV01 ISO/IEC 27001 SGSI: cursos/sena-ciberseguridad/aa4-ev01-iso27001-sgsi.md
+      - "SENA · IA en integración de datos":
+        - Presentación: cursos/sena-ia-integracion-datos/index.md
+        - AA1-EV01 Mapa mental: cursos/sena-ia-integracion-datos/aa1-ev01-mapa-mental.md
+        - AA1-EV02 Guía de estudio: cursos/sena-ia-integracion-datos/aa1-ev02-guia-estudio.md
+        - AA2-EV01 Informe de prompts: cursos/sena-ia-integracion-datos/aa2-ev01-informe-prompts.md
+        - AA2-EV02 Foro de modelado: cursos/sena-ia-integracion-datos/aa2-ev02-foro-modelado.md
+        - AA2-EV03 Power BI: cursos/sena-ia-integracion-datos/aa2-ev03-powerbi.md
+    - "AWS · Cloud & Generative AI":
+      - "AWS Entrena · IA sin Límites":
+        - Progreso de la ruta: cursos/aws-agentes-ia/index.md
+        - 01 Introducción a la IA generativa: cursos/aws-agentes-ia/01-intro-ia-generativa.md
+        - 02 AI-Driven Development Lifecycle: cursos/aws-agentes-ia/02-ai-dlc.md
+        - 03 Desarrollo de proyectos de IA generativa: cursos/aws-agentes-ia/03-desarrollo-proyectos-ia-generativa.md
+        - 04 Fundamentos de IA generativa en AWS: cursos/aws-agentes-ia/04-fundamentos-ia-generativa-aws.md
+        - 05 IA responsable: cursos/aws-agentes-ia/05-ia-responsable.md
+        - 06 Fundamentos de la ingeniería de peticiones: cursos/aws-agentes-ia/06-fundamentos-ingenieria-peticiones.md
+        - 07 Ingeniería de peticiones con Claude: cursos/aws-agentes-ia/07-ingenieria-peticiones-claude.md
+        - "08 Taller: la era de los agentes de IA": cursos/aws-agentes-ia/08-taller-agentes-ia.md
+      - "AWS Entrena · Nube para Empresas":
+        - Progreso de la ruta: cursos/aws-nube-empresas/index.md
+        - 01 ¿Qué es la computación en la nube?: cursos/aws-nube-empresas/01-que-es-la-nube.md
+        - 02 Webinar ¿Qué es la Nube de AWS?: cursos/aws-nube-empresas/02-webinar-nube-aws.md
+        - 03 Podcast Súbete a la Nube: cursos/aws-nube-empresas/03-subete-a-la-nube.md
+    - "Google Skills · GEAR Agentes":
+      - "GEAR Agentes":
+        - Progreso de la ruta: cursos/google-gear-agentes/index.md
+        - 01 Introducción GEAR: cursos/google-gear-agentes/01-gear-introduccion.md
+        - 02 Conceptos básicos de agentes: cursos/google-gear-agentes/02-conceptos-basicos-agentes.md
+        - 03 Agentes empresariales: cursos/google-gear-agentes/03-agentes-empresariales.md
+        - 04 Primera app Gemini Enterprise: cursos/google-gear-agentes/04-primera-app-gemini-enterprise.md
+        - 05 Resumen: cursos/google-gear-agentes/05-resumen.md
+      - "GEAR ADK":
+        - Progreso de la ruta: cursos/google-gear-adk/index.md
+        - 01 Bienvenida – Desarrolla agentes con el Kit de desarrollo de agentes (ADK): cursos/google-gear-adk/01-bienvenida.md
+        - 02 Crea tu primer agente con el Kit de desarrollo de agentes (ADK): cursos/google-gear-adk/02-primer-agente-adk.md
+        - 03 Ingeniería de agentes de IA con el ADK (insignia de habilidad): cursos/google-gear-adk/03-ingenieria-agentes-adk-lab-desafio.md
+        - 04 Optimiza el comportamiento de los agentes: cursos/google-gear-adk/04-optimiza-comportamiento.md
+        - 05 Controla la memoria y el estado de los agentes: cursos/google-gear-adk/05-memoria-y-estado.md
+        - 06 Agrega capacidades de agente con herramientas: cursos/google-gear-adk/06-herramientas.md
+        - 07 Conclusión – Desarrolla agentes con el ADK: cursos/google-gear-adk/07-conclusion.md
+      - "GEAR Producción":
+        - Progreso de la ruta: cursos/google-gear-produccion/index.md
+        - 01 Bienvenida – Implementa agentes listos para producción: cursos/google-gear-produccion/01-bienvenida.md
+        - 02 Crea e implementa agentes en producción: cursos/google-gear-produccion/02-crea-e-implementa-agentes-en-produccion.md
+        - 03 Implementa tu primer agente: cursos/google-gear-produccion/03-implementa-tu-primer-agente.md
+        - 05 Cierre – Implementa agentes listos para producción: cursos/google-gear-produccion/05-cierre.md
+      - "GEAR Escala empresarial":
+        - Progreso de la ruta: cursos/google-gear-escala/index.md
+        - 01 Bienvenida – Escala agentes en toda la empresa: cursos/google-gear-escala/01-bienvenida.md
+        - 02 Agentes de IA generativa – transforma tu organización: cursos/google-gear-escala/02-agentes-ia-generativa-transforma-tu-organizacion.md
+        - 03 IA centrada en los humanos: cursos/google-gear-escala/03-ia-centrada-en-humanos.md
+        - 04 Organiza flujos de trabajo de varios agentes con Gemini Enterprise: cursos/google-gear-escala/04-organiza-flujos-multiagente-gemini-enterprise.md
+        - 05 Resumen – Escala agentes en toda la empresa: cursos/google-gear-escala/05-resumen.md
+      - "GEAR Multiagente":
+        - Progreso de la ruta: cursos/google-gear-multiagente/index.md
+        - 01 Bienvenida – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/01-bienvenida.md
+        - 02 Crea sistemas multiagente colaborativos con el ADK y el MCP: cursos/google-gear-multiagente/02-sistemas-multiagente-colaborativos-adk-mcp.md
+        - 04 Build Agent Skills with Google: cursos/google-gear-multiagente/04-build-agent-skills-with-google.md
+        - 06 Conclusión – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/06-conclusion.md
+      - "GEAR Gobierno y seguridad":
+        - Progreso de la ruta: cursos/google-gear-gobierno-seguridad/index.md
+        - 01 Bienvenida – Administra y protege agentes empresariales: cursos/google-gear-gobierno-seguridad/01-bienvenida.md
+        - 02 Agentes de IA empresariales seguros: cursos/google-gear-gobierno-seguridad/02-agentes-ia-empresariales-seguros.md
+        - 03 Google Cloud Agent Governance and Security: cursos/google-gear-gobierno-seguridad/03-agent-governance-and-security.md
+        - 04 Model Armor – protege las implementaciones de IA: cursos/google-gear-gobierno-seguridad/04-model-armor.md
+        - 06 Conclusión – Administra y protege agentes empresariales: cursos/google-gear-gobierno-seguridad/06-conclusion.md
+    - "Anthropic · Claude Academy & MCP":
       - Insignias y progreso: cursos/claude-academy.md
       - "Tips & Tricks de Claude": cursos/claude-tips.md
       - "Claude 101":
@@ -224,6 +170,74 @@ nav:
       - "Claude Platform 101": cursos/claude-platform-101/index.md
       - "Introduction to MCP": cursos/mcp-intro/index.md
       - "MCP: Advanced Topics": cursos/mcp-advanced/index.md
+    - "Bases de Datos & Big Data":
+      - "MongoDB University · Atlas":
+        - Progreso del curso: cursos/mongodb-atlas/index.md
+        - 01 Fundamentos de MongoDB: cursos/mongodb-atlas/01-fundamentos-mongodb.md
+        - 02 Arquitectura de MongoDB: cursos/mongodb-atlas/02-arquitectura-mongodb.md
+        - 03 Visión general de MongoDB Atlas: cursos/mongodb-atlas/03-vision-general-atlas.md
+        - 04 Desplegar un cluster en Atlas: cursos/mongodb-atlas/04-desplegar-cluster-atlas.md
+        - 05 Explorar la interfaz de Atlas: cursos/mongodb-atlas/05-explorar-interfaz-atlas.md
+        - 06 Conclusión y repaso: cursos/mongodb-atlas/06-conclusion.md
+      - "MongoDB University · Python Developer Path":
+        - Progreso de la ruta: cursos/mongodb-python-path/index.md
+        - "Unidad 3 · MongoDB and the Document Model":
+          - Resumen de la unidad: cursos/mongodb-python-path/03-document-model/index.md
+          - "03.1 Visión general del modelo de documentos": cursos/mongodb-python-path/03-document-model/01-vision-general-modelo-documentos.md
+          - "03.2 Tipos de datos en MongoDB": cursos/mongodb-python-path/03-document-model/02-tipos-de-datos.md
+          - "03.3 Gestionar bases, colecciones y documentos en Atlas": cursos/mongodb-python-path/03-document-model/03-gestionar-datos-en-atlas.md
+          - "03.4 Relaciones entre datos": cursos/mongodb-python-path/03-document-model/04-relaciones-de-datos.md
+          - "03.5 Embeber y referenciar": cursos/mongodb-python-path/03-document-model/05-embeber-y-referenciar.md
+        - "Unidad 4 · Connecting to a MongoDB Database Using the MongoDB Shell":
+          - Resumen de la unidad: cursos/mongodb-python-path/04-mongodb-shell/index.md
+          - "04.1 Connection strings de MongoDB": cursos/mongodb-python-path/04-mongodb-shell/01-connection-strings.md
+          - "04.2 Instalar mongosh y conectarse": cursos/mongodb-python-path/04-mongodb-shell/02-instalar-y-conectar-mongosh.md
+          - "04.3 Resolver errores de conexión": cursos/mongodb-python-path/04-mongodb-shell/03-resolver-errores-de-conexion.md
+          - "04.4 Usar el MongoDB Shell": cursos/mongodb-python-path/04-mongodb-shell/04-usar-mongosh.md
+        - "Unidad 5 · Connecting to MongoDB in Python":
+          - Resumen de la unidad: cursos/mongodb-python-path/05-python-connection/index.md
+          - "05.1 Bibliotecas cliente de MongoDB para Python": cursos/mongodb-python-path/05-python-connection/01-drivers-python.md
+          - "05.2 Conectar una aplicación Python a Atlas": cursos/mongodb-python-path/05-python-connection/02-conectar-atlas-desde-python.md
+          - "05.3 Resolver problemas de conexión en Python": cursos/mongodb-python-path/05-python-connection/03-resolver-conexion-en-python.md
+        - "Unidad 6 · CRUD Operations in MongoDB (insignia)":
+          - Resumen de la unidad: cursos/mongodb-python-path/06-crud-mongodb/index.md
+          - "06.1 Operaciones CRUD": cursos/mongodb-python-path/06-crud-mongodb/01-operaciones-crud.md
+          - "06.2 Diseñar consultas efectivas": cursos/mongodb-python-path/06-crud-mongodb/02-consultas-efectivas.md
+          - "06.3 Modificar los resultados de una consulta": cursos/mongodb-python-path/06-crud-mongodb/03-modificar-resultados.md
+        - "Unidad 7 · MongoDB CRUD Operations in Python":
+          - Resumen de la unidad: cursos/mongodb-python-path/07-crud-python/index.md
+          - "07.1 Documentos BSON en Python": cursos/mongodb-python-path/07-crud-python/01-documentos-bson-en-python.md
+          - "07.2 CRUD con PyMongo": cursos/mongodb-python-path/07-crud-python/02-crud-con-pymongo.md
+          - "07.3 Transacciones multidocumento en Python": cursos/mongodb-python-path/07-crud-python/03-transacciones-en-python.md
+        - "Unidad 8 · Indexing Design Fundamentals (insignia)":
+          - Resumen de la unidad: cursos/mongodb-python-path/08-indexing/index.md
+          - "08.1 Introducción a los índices": cursos/mongodb-python-path/08-indexing/01-fundamentos-indices.md
+          - "08.2 Orden de las claves (ESR) y tamaño del índice": cursos/mongodb-python-path/08-indexing/02-orden-y-tamano-de-indices.md
+          - "08.3 Crear, gestionar y probar índices con explain()": cursos/mongodb-python-path/08-indexing/03-crear-y-probar-indices.md
+        - "Unidad 9 · MongoDB Aggregation":
+          - Resumen de la unidad: cursos/mongodb-python-path/09-aggregation/index.md
+          - "09.1 Introducción a la agregación": cursos/mongodb-python-path/09-aggregation/01-introduccion-agregacion.md
+          - "09.2 Etapas del pipeline de agregación": cursos/mongodb-python-path/09-aggregation/02-etapas-del-pipeline.md
+        - "Unidad 10 · MongoDB Aggregation in Python":
+          - Resumen de la unidad: cursos/mongodb-python-path/10-aggregation-python/index.md
+          - "10.1 Pipelines de agregación con PyMongo": cursos/mongodb-python-path/10-aggregation-python/01-agregacion-con-pymongo.md
+        - "Unidad 11 · MongoDB Transactions (optativa)":
+          - Resumen de la unidad: cursos/mongodb-python-path/11-transactions/index.md
+          - "11.1 Transacciones ACID en MongoDB": cursos/mongodb-python-path/11-transactions/01-transacciones-acid.md
+        - "Unidad 12 · Introduction to Atlas Search (optativa)":
+          - Resumen de la unidad: cursos/mongodb-python-path/12-atlas-search/index.md
+          - "12.1 Fundamentos de Atlas Search, mapeos y tipos de datos": cursos/mongodb-python-path/12-atlas-search/01-indices-y-mapeos.md
+          - "12.2 Operadores de $search y facets": cursos/mongodb-python-path/12-atlas-search/02-operadores-y-facets.md
+    - "UBITS · Tendencias":
+      - "UBITS · El Futuro de la IA":
+        - Progreso de la ruta: cursos/ubits-futuro-ia/index.md
+        - "01 AI 2041 (ideas del libro)": cursos/ubits-futuro-ia/01-ai-2041.md
+        - "02 El misterio de la inteligencia artificial": cursos/ubits-futuro-ia/02-misterio-ia.md
+        - "03 Humanización e inteligencia artificial": cursos/ubits-futuro-ia/03-humanizacion-ia.md
+        - "04 La tecnología: ¿reemplazo o futuro?": cursos/ubits-futuro-ia/04-tecnologia-reemplazo-futuro.md
+        - "05 Creatividad e inteligencia artificial": cursos/ubits-futuro-ia/05-creatividad-ia.md
+        - "06 Inteligencia artificial y ética": cursos/ubits-futuro-ia/06-ia-etica.md
+        - "07 Comandos para potenciar tus prompts en ChatGPT": cursos/ubits-futuro-ia/07-comandos-prompts-chatgpt.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:
@@ -274,7 +288,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
+    - navigation.indexes
     - navigation.path
     - navigation.top
     - navigation.footer
