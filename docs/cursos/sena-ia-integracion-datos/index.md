@@ -28,3 +28,10 @@ flowchart LR
 | [AA2-EV03 · Analítica en Power BI](aa2-ev03-powerbi.md) | Modelo en estrella, medidas DAX con regresión lineal y tablero |
 
 **Stack:** Polars 2.0 · DuckDB 1.5 · Parquet · Power BI (PBIP/TMDL/PBIR) · Claude como IA generativa evaluada.
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

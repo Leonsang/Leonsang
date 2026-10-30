@@ -40,3 +40,10 @@ Decimos que la IA "piensa" o "aprende", pero en realidad **procesa datos** y aju
     - ChatGPT traduce entre lenguaje humano y matemático; predice lo más probable.
     - Alucinación = respuesta inventada que suena convincente → siempre verificar.
     - Mejor decir "procesa información" que "piensa".
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso de UBITS. Sitios oficiales: [ubits.com](https://ubits.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por UBITS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

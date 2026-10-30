@@ -57,3 +57,10 @@ def read_document(doc_id: str = Field(description="Id of the document to read"))
     - **Tools sirven al modelo, resources a la app, prompts al usuario.**
     - Probar el servidor con el **Inspector** antes de conectarlo a una app.
     - Descripciones claras en herramientas y argumentos: es lo que Claude lee para decidir.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de Model Context Protocol de Anthropic Academy. Sitios oficiales: [anthropic.com/learn](https://www.anthropic.com/learn) · [modelcontextprotocol.io](https://modelcontextprotocol.io).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Anthropic. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

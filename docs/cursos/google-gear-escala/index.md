@@ -26,3 +26,10 @@ Ruta para crear y coordinar agentes de IA que resuelvan desafíos empresariales 
 ## Evidencias
 
 ![Ruta Escala agentes en toda la empresa completada](evidencias/00-progreso-ruta-escala.jpg)
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de la ruta GEAR de Google Cloud Skills Boost. Sitios oficiales: [cloudskillsboost.google](https://www.cloudskillsboost.google) · [cloud.google.com/docs](https://cloud.google.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Google. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

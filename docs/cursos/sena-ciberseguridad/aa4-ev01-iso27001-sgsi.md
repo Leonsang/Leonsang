@@ -50,3 +50,10 @@ Para organizaciones como la Clínica Huellitas, la adopción de ISO 27001 debe s
 2. **Fase 2 (Semanas 5–8):** Implementación de la regla 3-2-1 en copias de seguridad y doble factor (MFA) en correos y accesos remotos.
 3. **Fase 3 (Semanas 9–12):** Firma de acuerdos de confidencialidad (NDA) con empleados y proveedores de software.
 4. **Fase 4 (Continuo):** Simulacros de restauración de copias y talleres de detección de correos de phishing.
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

@@ -25,3 +25,10 @@ Apuntes de la ruta gratuita **MongoDB Python Developer Path** de MongoDB Univers
 - Unidades completadas: **12 de 13**, según el panel de MongoDB University.
 - Cuestionarios: todas las unidades cerraron con 100 % de aciertos.
 - Insignias obtenidas (Credly): **MongoDB Skill · CRUD Operations** y **MongoDB Skill · Indexing Design Fundamentals**, ambas con Skill Check 10/10.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de MongoDB University. Sitios oficiales: [learn.mongodb.com](https://learn.mongodb.com) · [mongodb.com/docs](https://www.mongodb.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por MongoDB. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

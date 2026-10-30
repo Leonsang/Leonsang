@@ -173,3 +173,10 @@ Recursos oficiales enlazados: IA generativa en AWS, Amazon Bedrock, AWS Trainium
 Curso completado al **100 %** el 2026-10-24.
 
 ![Curso Introducción a la IA generativa al 100 %](evidencias/01-intro-ia-generativa-100-completo.jpg)
+
+## Fuentes y aviso legal
+
+- **Fuente:** ruta *IA sin Límites* de AWS Entrena Bogotá (cursos de AWS Skill Builder). Sitios oficiales: [bogota.awsentrena.com](https://bogota.awsentrena.com) · [skillbuilder.aws](https://skillbuilder.aws).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

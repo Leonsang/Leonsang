@@ -23,3 +23,10 @@ Unidad de la ruta *MongoDB Python Developer Path* (formato *skill badge*). Cubre
     - Orden de las claves: **Equality → Sort → Range**. La consulta debe usar el **prefijo**.
     - Baja cardinalidad primero entre igualdades. Índices parciales para filtros fijos.
     - `explain("executionStats")`: IXSCAN y docsExamined ≈ nReturned. Las consultas cubiertas examinan 0 documentos.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de MongoDB University. Sitios oficiales: [learn.mongodb.com](https://learn.mongodb.com) · [mongodb.com/docs](https://www.mongodb.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por MongoDB. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../../aviso-legal.md).

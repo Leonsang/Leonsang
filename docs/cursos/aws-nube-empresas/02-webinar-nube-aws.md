@@ -180,3 +180,10 @@ Webinar de Diego Casas, Technical Trainer de AWS, de 1 h 25 min. Recorre en ocho
     - **CloudWatch** = métricas y alarmas; **CloudTrail** = auditoría de quién hizo qué.
     - **SNS** = publicar/suscribir (*push*); **SQS** = cola (*pull*).
     - Un **TAM designado** solo viene con **Enterprise** (On-Ramp da acceso a un grupo de TAM); todas las verificaciones de Trusted Advisor llegan desde **Business**.
+
+## Fuentes y aviso legal
+
+- **Fuente:** ruta *Fundamentos de Nube AWS para Empresas* de AWS Entrena Bogotá (videos, webinar y podcast enlazados en la ruta). Sitios oficiales: [bogota.awsentrena.com](https://bogota.awsentrena.com) · [aws.amazon.com](https://aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

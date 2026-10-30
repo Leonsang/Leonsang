@@ -56,3 +56,10 @@ Mientras temíamos que las máquinas imitaran a las personas, **las personas nos
     - El riesgo no es solo que la máquina se parezca a nosotros, sino que nosotros nos volvamos máquinas.
     - Empatía, vulnerabilidad y aprendizaje acelerado son la ventaja humana.
     - Adoptar la tecnología sin sacrificar la calidad de vida.
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso de UBITS. Sitios oficiales: [ubits.com](https://ubits.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por UBITS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

@@ -141,3 +141,10 @@ Resultado: **100 %** (se aprueba con 80 %).
     **11.** Un cliente se está trasladando de un entorno en las instalaciones a la nube y decidió utilizar el enfoque del modelo Bring Your Own License (BYOL) para ahorrar costos. Le preocupa la administración de las licencias, quiere una forma de reducir el riesgo de incumplimiento y desea aplicar límites de uso para las licencias. ¿Qué solución se adaptaría mejor a sus necesidades?
 
     ✔ AWS License Manager
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

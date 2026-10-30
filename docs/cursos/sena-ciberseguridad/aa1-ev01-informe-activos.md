@@ -106,3 +106,10 @@ Para el caso ASEGURA se seleccionó formalmente **MAGERIT v3** complementado con
 * **¿Por qué MAGERIT?** Porque fue diseñada específicamente para administraciones públicas y servicios de administración electrónica. Permite modelar dependencias entre activos esenciales (información y servicios) y activos de soporte (servidor, red, edificio).
 * **Propagación del valor:** El servidor en sí mismo no tiene valor intrínseco, pero al sostener los expedientes legales, hereda el valor crítico de la información que procesa.
 * **NIST SP 800-30:** Se conserva como la guía de pasos secuenciales para ejecutar las fases prácticas de evaluación.
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

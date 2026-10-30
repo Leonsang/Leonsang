@@ -52,3 +52,10 @@ Carpetas de **instrucciones, scripts y recursos** que Claude carga dinámicament
     - Nombres de archivo descriptivos y conocimiento actualizado; documentos viejos dan respuestas viejas.
     - Pide "**un one-pager para el comité**", no "resume los resultados": así obtienes un artefacto que se comparte y se sigue editando.
     - RAG en proyectos: hasta **10x** de capacidad sin perder calidad.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de Anthropic Academy (Claude Academy). Sitios oficiales: [anthropic.com/learn](https://www.anthropic.com/learn) · [docs.anthropic.com](https://docs.anthropic.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Anthropic. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

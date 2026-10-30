@@ -133,3 +133,10 @@ Fuentes: [Introduction to MCP](mcp-intro/index.md) · [MCP Advanced Topics](mcp-
     - Si algo debe pasar **siempre**, es un hook; si lo explico **dos veces**, es una skill; si aplica **siempre como convención**, va en CLAUDE.md.
     - Revisar el **diff** y la **evidencia**, no el resumen.
     - Empezar simple: una tarea recurrente de esta semana, probarla, iterar.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de Anthropic Academy (Claude Academy). Sitios oficiales: [anthropic.com/learn](https://www.anthropic.com/learn) · [docs.anthropic.com](https://docs.anthropic.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Anthropic. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../aviso-legal.md).

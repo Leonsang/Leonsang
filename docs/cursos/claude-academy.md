@@ -36,3 +36,10 @@ Lo más práctico de todos los cursos está reunido en **[Tips & Tricks de Claud
 ![Claude Platform 101](claude-platform-101/evidencias/01-insignia-claude-platform-101.jpg){ width="300" }
 
 </div>
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de Anthropic Academy (Claude Academy). Sitios oficiales: [anthropic.com/learn](https://www.anthropic.com/learn) · [docs.anthropic.com](https://docs.anthropic.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Anthropic. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../aviso-legal.md).

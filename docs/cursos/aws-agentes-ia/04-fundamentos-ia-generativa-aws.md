@@ -111,3 +111,10 @@ Curso de AWS Skill Builder *Fundamentos de Inteligencia Artificial Generativa en
 Curso marcado como **Completado** en la ruta el 2026-10-24 (progreso de la ruta: 44,44 %).
 
 ![Ruta IA sin Límites al 44 %](evidencias/ruta-ia-sin-limites-progreso-44.jpg)
+
+## Fuentes y aviso legal
+
+- **Fuente:** ruta *IA sin Límites* de AWS Entrena Bogotá (cursos de AWS Skill Builder). Sitios oficiales: [bogota.awsentrena.com](https://bogota.awsentrena.com) · [skillbuilder.aws](https://skillbuilder.aws).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

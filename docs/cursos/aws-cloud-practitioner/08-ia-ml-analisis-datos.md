@@ -114,3 +114,10 @@ Resultado: **100 %** (se aprueba con 80 %).
     **10.** Los datos pueden provenir de muchas fuentes diferentes. Para proporcionar información, los datos deben estar consolidados en una sola ubicación. Para esto, existen dos opciones de almacenamiento. Los lagos de datos almacenan grandes cantidades de datos sin procesar, mientras que los almacenes de datos están optimizados para la inteligencia empresarial. ¿Qué servicios de AWS se suelen utilizar como lagos y almacenes de datos?
 
     ✔ Amazon S3 es una opción popular para los lagos de datos, mientras que Amazon Redshift es un servicio de almacén de datos.
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

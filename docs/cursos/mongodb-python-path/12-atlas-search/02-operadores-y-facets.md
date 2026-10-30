@@ -165,3 +165,10 @@ db.movies.aggregate(facetedSearchPipeline)
 ![range: estrenos entre 1987 y 1989](evidencias/05-lab-range.png)
 
 ![Conteo por idioma con $searchMeta y facet](evidencias/06-lab-facets.png)
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de MongoDB University. Sitios oficiales: [learn.mongodb.com](https://learn.mongodb.com) · [mongodb.com/docs](https://www.mongodb.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por MongoDB. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../../aviso-legal.md).

@@ -33,3 +33,10 @@ Documentación recomendada por el curso: *Get Started with Atlas*, *Introduction
 ![Unidad completada al 100 %](evidencias/curso-completado-100.png)
 
 *Figura: la unidad aparece en «Completed» del panel de MongoDB University con 100 % y 1,25 horas.*
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de MongoDB University. Sitios oficiales: [learn.mongodb.com](https://learn.mongodb.com) · [mongodb.com/docs](https://www.mongodb.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por MongoDB. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

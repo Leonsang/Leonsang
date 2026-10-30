@@ -74,3 +74,10 @@ Resultado: **2/2 correctas (100 %)**. Las preguntas cubrieron qué tipo de clust
 *Figura: cuestionario de la lección 4 aprobado.*
 
 El laboratorio práctico de la lección (crear la cuenta y desplegar el cluster en Atlas) está **Pendiente**.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de MongoDB University. Sitios oficiales: [learn.mongodb.com](https://learn.mongodb.com) · [mongodb.com/docs](https://www.mongodb.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por MongoDB. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

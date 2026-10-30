@@ -147,3 +147,10 @@ agents-cli run --skill=promo-writer "Draft an alpine tent promo email"
 **Insignia:** *Build Agent Skills with Google* (completion badge).
 
 ![Insignia Build Agent Skills with Google](evidencias/04-insignia-build-agent-skills-with-google.jpg)
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de la ruta GEAR de Google Cloud Skills Boost. Sitios oficiales: [cloudskillsboost.google](https://www.cloudskillsboost.google) · [cloud.google.com/docs](https://cloud.google.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Google. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

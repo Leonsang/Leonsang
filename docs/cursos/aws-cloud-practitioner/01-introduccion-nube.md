@@ -84,3 +84,10 @@ Una tienda en línea de Seattle quiere clientes en Europa y Asia:
     - Región ≥ **3 AZ**; AZ = **1 o más centros de datos** redundantes.
     - Beneficios de la infraestructura global: **alta disponibilidad** y **tolerancia a errores**.
     - Parches del SO y cifrado del cliente → **cliente**. Seguridad física y hardware → **AWS**.
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

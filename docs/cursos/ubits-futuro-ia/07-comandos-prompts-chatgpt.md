@@ -75,3 +75,10 @@ Prueba final superada con **100 % (8 de 8)**; el mínimo para aprobar era 80 %.
     - **Top p** → varias respuestas · **Frequency** → cada cuánto pasa algo.
     - **Max tokens** → longitud máxima · **Best of** → la mejor según tu criterio.
     - Pista: una respuesta corta es **Max tokens**; elegir según un criterio es **Best of**; más creatividad es una **temperatura alta**.
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso de UBITS. Sitios oficiales: [ubits.com](https://ubits.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por UBITS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

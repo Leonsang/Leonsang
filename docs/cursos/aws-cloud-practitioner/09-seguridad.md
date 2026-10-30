@@ -120,3 +120,10 @@ Resultado: **100 %** (se aprueba con 80 %).
     **10.** El equipo de seguridad de una gran empresa de desarrollo de software necesita comprobar si hay vulnerabilidades de seguridad y desviaciones de las prácticas recomendadas de seguridad en varias aplicaciones. Las aplicaciones se ejecutan en Amazon EC2, AWS Lambda y en contenedores. ¿Qué servicio de AWS deberían utilizar para estas evaluaciones de seguridad?
 
     ✔ Amazon Inspector
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

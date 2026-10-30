@@ -93,3 +93,10 @@ Curso de Anthropic (9 lecciones, ~1 h y un quiz) sobre Claude Code en modo avanz
     - Auto mode cuida la **intención**; las pruebas en un Stop hook cuidan la **corrección**.
     - Empezar por rutinas; bajar a `-p`, `--bare` o el Agent SDK solo cuando el trabajo lo pida.
     - Verificar en proporción a cuánto se dejó correr solo: diff, pruebas como compuerta y segunda opinión en frío.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de Anthropic Academy (Claude Academy). Sitios oficiales: [anthropic.com/learn](https://www.anthropic.com/learn) · [docs.anthropic.com](https://docs.anthropic.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Anthropic. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

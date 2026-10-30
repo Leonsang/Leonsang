@@ -47,3 +47,10 @@ Convierte a Claude en un **investigador sistemático** (planes pagos). Trabaja d
     - Los conectores **heredan mis permisos**: no dan acceso a nada que yo no tenga.
     - Research tarda minutos porque hace muchas búsquedas: invertir en el prompt **vale la pena**.
     - Dato puntual → web; razonar → Thinking; muchas fuentes con citas → Research; lo interno → Enterprise Search.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de Anthropic Academy (Claude Academy). Sitios oficiales: [anthropic.com/learn](https://www.anthropic.com/learn) · [docs.anthropic.com](https://docs.anthropic.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Anthropic. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

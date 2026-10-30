@@ -17,3 +17,10 @@ Apuntes de la formación gratuita de **AWS Entrena Bogotá** (plataforma bogota.
 | 9 | Prueba Conocimientos – IA Sin Límites (evaluación) | 45 min | ✅ Completado | 2026-10-25 | — |
 
 ![Progreso de la ruta IA sin Límites](evidencias/ruta-ia-sin-limites-progreso-78.jpg)
+
+## Fuentes y aviso legal
+
+- **Fuente:** ruta *IA sin Límites* de AWS Entrena Bogotá (cursos de AWS Skill Builder). Sitios oficiales: [bogota.awsentrena.com](https://bogota.awsentrena.com) · [skillbuilder.aws](https://skillbuilder.aws).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

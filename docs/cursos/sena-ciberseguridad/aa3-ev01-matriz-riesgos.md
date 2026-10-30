@@ -76,3 +76,10 @@ for row_idx, (cat, activo, c, i, d, es_critico) in enumerate(ACTIVOS, start=10):
     impacto = 4 if val_cid >= 13 else 3 if val_cid >= 10 else 2 if val_cid >= 7 else 1
     # Se multiplica cada amenaza por el impacto asignado
 ```
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

@@ -165,3 +165,10 @@ Resultado: **100 %** (se aprueba con 80 %).
     **15.** EmpresaX Manufactura conserva una gran cantidad de dibujos técnicos y archivos de diseño a los que sus equipos necesitan acceder a diario desde sus aplicaciones en las instalaciones. La empresa desea migrar estos archivos a AWS de manera gradual para reducir sus costos de almacenamiento local y, al mismo tiempo, mantener un acceso de baja latencia para los archivos de uso frecuente. La solución debe cumplir los siguientes criterios:Integrarse con los flujos de trabajo existentes basados en archivos. Proporcionar una ruta fluida hacia el almacenamiento en la nube sin interrumpir las operaciones actuales. Mantener el acceso local y de baja latencia a los archivos de uso frecuente. ¿Qué servicio de almacenamiento de AWS debe usar en función de estos requisitos?
 
     ✔ AWS Storage Gateway: File Gateway
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

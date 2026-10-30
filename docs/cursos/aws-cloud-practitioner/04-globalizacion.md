@@ -92,3 +92,10 @@ Resultado: **100 %** (se aprueba con 80 %).
     **6.** Se asignó a un equipo de una empresa de tecnología biomédica la tarea de implementar una nueva aplicación médica en varias regiones de AWS para ayudar a mantener la alta disponibilidad y la tolerancia a errores. La aplicación consta de varios componentes, incluidos un servidor web, una base de datos y una cola de mensajes. La implementación debe ser uniforme y repetible, y debe minimizar los errores manuales mediante la automatización. ¿Qué enfoque es el MÁS adecuado para implementar esta aplicación de acuerdo con las necesidades de automatización y consistencia?
 
     ✔ Usar un servicio de infraestructura como código (IaC), como AWS CloudFormation, para implementar la aplicación
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

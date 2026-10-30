@@ -1,6 +1,7 @@
 nav:
   - Inicio: index.md
   - "🧠 Mapa 3D de Conocimiento": humano-conocimiento.md
+  - Aviso legal y fuentes: aviso-legal.md
 
   # Data & Analytics
   - Data Engineering:
@@ -133,6 +134,7 @@ nav:
         - 08 IA/ML y análisis de datos: cursos/aws-cloud-practitioner/08-ia-ml-analisis-datos.md
         - 09 Seguridad: cursos/aws-cloud-practitioner/09-seguridad.md
         - 10 Supervisión, cumplimiento y gobernanza: cursos/aws-cloud-practitioner/10-supervision-cumplimiento-gobernanza.md
+        - 11 Precios y soporte: cursos/aws-cloud-practitioner/11-precios-soporte.md
     - "Google Skills · GEAR Agentes":
       - "GEAR Agentes":
         - Progreso de la ruta: cursos/google-gear-agentes/index.md
@@ -298,6 +300,7 @@ site_name: Base de Conocimiento - Erick Sang
 site_description: Repositorio personal de aprendizajes sobre Data, Desarrollo, DevOps y Tecnología
 site_author: Erick Sang
 site_url: https://leonsang.github.io
+copyright: 'Apuntes personales de estudio, sin fines comerciales. Sitio no oficial: las marcas y el material citado pertenecen a sus titulares. <a href="/aviso-legal/">Aviso legal y fuentes</a>'
 
 repo_name: leonsang/leonsang
 repo_url: https://github.com/leonsang/leonsang

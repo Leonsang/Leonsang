@@ -65,3 +65,10 @@ Curso de Anthropic (11 lecciones, ~2,5 h y un quiz) sobre Claude Tag, Claude den
     - Probar una regla en **memoria**; cuando se asiente, pasarla a las **instrucciones del canal**.
     - Rutinas que **no publican nada** si no hay novedades: cada mensaje suyo significa algo.
     - Delegar = meta + insumos + forma de verificar; revisar antes de usar.
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de Anthropic Academy (Claude Academy). Sitios oficiales: [anthropic.com/learn](https://www.anthropic.com/learn) · [docs.anthropic.com](https://docs.anthropic.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Anthropic. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

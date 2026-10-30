@@ -87,3 +87,10 @@ Mario Castro dirige una empresa peruana de software para comercio exterior: agen
     - Antes de migrar: **cultura** primero, luego **controles de seguridad** con el modelo de responsabilidad compartida.
     - NIST CSF: **Identificar, Proteger, Detectar, Responder, Recuperar**.
     - La pyme gana **innovación más barata**, **costos variables** y **foco en su negocio**.
+
+## Fuentes y aviso legal
+
+- **Fuente:** ruta *Fundamentos de Nube AWS para Empresas* de AWS Entrena Bogotá (videos, webinar y podcast enlazados en la ruta). Sitios oficiales: [bogota.awsentrena.com](https://bogota.awsentrena.com) · [aws.amazon.com](https://aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

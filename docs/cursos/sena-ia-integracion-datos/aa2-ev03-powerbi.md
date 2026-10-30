@@ -96,3 +96,10 @@ matriz por producto, ventas por ciudad y ticket mediano por día de la semana.
 - **Tecnología** es la categoría con más ventas ($254,5 millones) y mejor margen (38,1 %).
 - Las ventas crecen hacia fin de año: noviembre y diciembre superan entre 50 % y 70 % el promedio mensual.
 - El segmento **Corporativo** compra con menos frecuencia, pero con el ticket más alto.
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

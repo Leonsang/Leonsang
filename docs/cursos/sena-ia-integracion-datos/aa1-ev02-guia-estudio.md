@@ -94,3 +94,10 @@ Riesgos de la IA sin marco ético: sesgos algorítmicos, violación de la privac
     6. Diagrama de caja; diagrama de dispersión.
     7. Minimización.
     8. No: normalizar lleva los valores a un rango (0 a 1); estandarizar los lleva a media 0 y desviación estándar 1.
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

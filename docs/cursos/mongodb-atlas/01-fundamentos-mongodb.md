@@ -67,3 +67,10 @@ Resultado: **2/2 correctas (100 %)**. Se necesitaba el 50 % para aprobar. Las pr
 ![Resultado del cuestionario de la lección 1](evidencias/01-resultado-quiz.png)
 
 *Figura: cuestionario de la lección 1 aprobado.*
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de MongoDB University. Sitios oficiales: [learn.mongodb.com](https://learn.mongodb.com) · [mongodb.com/docs](https://www.mongodb.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por MongoDB. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

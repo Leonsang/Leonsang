@@ -137,3 +137,10 @@ openssl enc -aes-256-cbc -salt -pbkdf2 -iter 100000 -in backup.zip -out backup_c
     * Tríada base: **C**onfidencialidad, **I**ntegridad, **D**isponibilidad (**CID**).
     * Ampliación MAGERIT v3: Añade **Autenticidad** (certeza de quién emitió el trámite) y **Trazabilidad** (registro imborrable de qué se hizo).
     * Sigla completa: **C-I-D-A-T**.
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

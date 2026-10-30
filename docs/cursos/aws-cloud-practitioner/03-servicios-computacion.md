@@ -97,3 +97,10 @@ Resultado: **100 %** (se aprueba con 80 %).
     **8.** Un desarrollador independiente está creando un blog para un cliente con un tráfico mínimo. El desarrollador busca una solución básica y rentable que incluya almacenamiento y computación en un solo paquete, sin tener que lidiar con configuraciones complejas o problemas de escalamiento. ¿Qué servicio de AWS es el MÁS adecuado?
 
     ✔ Amazon Lightsail
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

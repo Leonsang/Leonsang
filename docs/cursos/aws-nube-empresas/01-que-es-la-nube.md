@@ -53,3 +53,10 @@ Video de testimonios de clientes de AWS en Latinoamérica (unos 4 min):
 - Una empresa resumió su experiencia como «**estamos subidos en los hombros de un gigante**»: AWS resuelve la infraestructura y ellos se dedican a mostrar su producto. Además, aprenden de los servicios nuevos que van apareciendo.
 - Otra organización decidió **centralizar toda su infraestructura** en un solo lugar con un *partner* certificado porque estaba asumiendo demasiado riesgo.
 - Un servicio de salud tuvo un pico de demanda en la pandemia y, gracias a la **elasticidad** de AWS, atendió a todos sus pacientes y generó más ingresos.
+
+## Fuentes y aviso legal
+
+- **Fuente:** ruta *Fundamentos de Nube AWS para Empresas* de AWS Entrena Bogotá (videos, webinar y podcast enlazados en la ruta). Sitios oficiales: [bogota.awsentrena.com](https://bogota.awsentrena.com) · [aws.amazon.com](https://aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

@@ -98,3 +98,10 @@ Resumen de las amenazas de mayor severidad detectadas y los controles implementa
 | **Sismo de alta magnitud** | Natural | Sede en zona sísmica de Quindío; sin respaldo en la nube | 2 | 5 | 🟠 **Alto** | Backup automatizado en la nube (AWS S3 cifrado) para recuperación remota |
 | **Falla de energía prolongada** | Entorno | Servidor sin UPS con autonomía suficiente | 4 | 3 | 🟠 **Alto** | Instalación de UPS inteligente de 2 KVA con apagado automático ordenado |
 | **Extracción no autorizada USB** | Humana | Puertos USB habilitados sin bloqueo por políticas de grupo | 3 | 4 | 🟠 **Alto** | Bloqueo físico y lógico de almacenamiento USB + Firma de cláusulas de confidencialidad |
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

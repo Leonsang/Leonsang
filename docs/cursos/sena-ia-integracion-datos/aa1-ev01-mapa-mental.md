@@ -23,3 +23,10 @@ para IA, con las cuatro ramas que pide la guía: tipos, origen, contenido y crit
 **Idea clave:** la calidad de un análisis o de un modelo de IA nunca supera la calidad de las fuentes que lo alimentan.
 
 El mapa se generó con código (HTML + SVG desde Python), lo que lo hace versionable y reproducible.
+
+## Fuentes y aviso legal
+
+- **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por el SENA. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

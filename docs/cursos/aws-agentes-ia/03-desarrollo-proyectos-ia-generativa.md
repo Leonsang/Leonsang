@@ -67,3 +67,10 @@ Una lista de **procesos o sistemas que se verán afectados**, con la **descripci
 Curso marcado como **Completado** en la ruta el 2026-10-24 (progreso de la ruta: 33,33 %).
 
 ![Ruta IA sin Límites al 33 %](evidencias/ruta-ia-sin-limites-progreso-33.jpg)
+
+## Fuentes y aviso legal
+
+- **Fuente:** ruta *IA sin Límites* de AWS Entrena Bogotá (cursos de AWS Skill Builder). Sitios oficiales: [bogota.awsentrena.com](https://bogota.awsentrena.com) · [skillbuilder.aws](https://skillbuilder.aws).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

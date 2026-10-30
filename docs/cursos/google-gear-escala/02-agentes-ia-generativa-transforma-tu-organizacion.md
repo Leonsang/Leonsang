@@ -206,3 +206,10 @@ Para experimentar con la API de Gemini: Google AI Studio y Vertex AI Studio.
 **Insignia:** *Gen AI Agents: Transform Your Organization* (completion badge).
 
 ![Insignia Gen AI Agents: Transform Your Organization](evidencias/02-insignia-gen-ai-agents-transform-your-organization.jpg)
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de la ruta GEAR de Google Cloud Skills Boost. Sitios oficiales: [cloudskillsboost.google](https://www.cloudskillsboost.google) · [cloud.google.com/docs](https://cloud.google.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por Google. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

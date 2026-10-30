@@ -151,3 +151,10 @@ load('/lab/query.js')   // 3 películas estrenadas el 1999-03-31
 ![Búsqueda por cast con el índice dinámico](evidencias/02-lab-indice-dinamico.png)
 
 ![released mapeado como date y string devuelve 3 películas](evidencias/03-lab-released-multi-type.png)
+
+## Fuentes y aviso legal
+
+- **Fuente:** cursos de MongoDB University. Sitios oficiales: [learn.mongodb.com](https://learn.mongodb.com) · [mongodb.com/docs](https://www.mongodb.com/docs).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por MongoDB. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../../aviso-legal.md).

@@ -16,6 +16,13 @@ Curso oficial de AWS Skill Builder en español (LATAM), unas 12 h 45 min, que se
 | 8 | IA, ML y análisis de datos | ✅ Completado | 100 % | [Ver apuntes](08-ia-ml-analisis-datos.md) |
 | 9 | Seguridad | ✅ Completado | 100 % | [Ver apuntes](09-seguridad.md) |
 | 10 | Monitoreo, cumplimiento y gobernanza | ✅ Completado | 100 % | [Ver apuntes](10-supervision-cumplimiento-gobernanza.md) |
-| 11 | Precios y soporte | Pendiente | — | — |
+| 11 | Precios y soporte | ✅ Completado | 100 % | [Ver apuntes](11-precios-soporte.md) |
 | 12 | Migración a la nube de AWS | Pendiente | — | — |
 | 13 | Soluciones bien diseñadas | Pendiente | — | — |
+
+## Fuentes y aviso legal
+
+- **Fuente:** curso *AWS Cloud Practitioner Essentials* (AWS Skill Builder), ofrecido en AWS Entrena Bogotá. Sitios oficiales: [skillbuilder.aws](https://skillbuilder.aws) · [bogota.awsentrena.com](https://bogota.awsentrena.com) · [docs.aws.amazon.com](https://docs.aws.amazon.com).
+- **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia. Las imágenes del curso son fragmentos breves citados con fines educativos; sus derechos son de sus titulares.
+- **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por AWS. Las marcas pertenecen a sus dueños.
+- Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).
