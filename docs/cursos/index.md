@@ -1,33 +1,33 @@
 # Hub Central de Aprendizajes & Cursos
 
-<div class="cyber-hero-banner" style="background: linear-gradient(135deg, #1e1e38 0%, #303f9f 50%, #1a237e 100%);">
-  <div class="cyber-hero-badge">PLATAFORMA INTEGRAL DE FORMACIÓN TÉCNICA · ERICK SANG</div>
-  <h2 style="color:#fff; border:none; margin:10px 0;">Base de Conocimiento y Certificaciones</h2>
-  <p style="color:rgba(255,255,255,0.9);">Rutas de aprendizaje completadas y en curso: Ciberseguridad, Inteligencia Artificial, Cloud Computing, Arquitectura de Datos y Desarrollo de Software.</p>
+<div class="courses-hero-banner">
+  <div class="courses-hero-badge">PLATAFORMA INTEGRAL DE FORMACIÓN TÉCNICA · ERICK SANG</div>
+  <h2>Base de Conocimiento y Certificaciones</h2>
+  <p>Rutas de aprendizaje completadas y en curso: Ciberseguridad, Inteligencia Artificial, Cloud Computing, Arquitectura de Datos y Desarrollo de Software con enfoque práctico en producción.</p>
 </div>
 
----
-
-## 🧭 Explorar por Categoría
-
-<div class="courses-filter-bar">
-  <button type="button" class="cf-btn active" onclick="filterCourses('all')">Todos (21)</button>
-  <button type="button" class="cf-btn" onclick="filterCourses('sena')">🏛️ SENA (2)</button>
-  <button type="button" class="cf-btn" onclick="filterCourses('aws')">☁️ AWS (2)</button>
-  <button type="button" class="cf-btn" onclick="filterCourses('google')">🤖 Google GEAR (6)</button>
-  <button type="button" class="cf-btn" onclick="filterCourses('anthropic')">🧠 Anthropic & MCP (8)</button>
-  <button type="button" class="cf-btn" onclick="filterCourses('data')">🍃 Bases de Datos (2)</button>
-  <button type="button" class="cf-btn" onclick="filterCourses('ubits')">💡 UBITS (1)</button>
+<div class="courses-controls-wrap">
+  <input type="text" id="courseSearch" class="courses-search-input" placeholder="🔍 Buscar curso, habilidad o tecnología (ej: Spark, ISO 27001, AWS, MCP, Python, Polars...)" oninput="filterAllCourses()">
+  <div class="courses-filter-bar">
+    <button type="button" class="cf-btn active" data-cat="all" onclick="setCategory('all')">Todos (23)</button>
+    <button type="button" class="cf-btn" data-cat="sena" onclick="setCategory('sena')">🏛️ SENA (2)</button>
+    <button type="button" class="cf-btn" data-cat="aws" onclick="setCategory('aws')">☁️ AWS (2)</button>
+    <button type="button" class="cf-btn" data-cat="google" onclick="setCategory('google')">🤖 Google GEAR (6)</button>
+    <button type="button" class="cf-btn" data-cat="anthropic" onclick="setCategory('anthropic')">🧠 Anthropic & MCP (10)</button>
+    <button type="button" class="cf-btn" data-cat="data" onclick="setCategory('data')">🍃 Bases de Datos (2)</button>
+    <button type="button" class="cf-btn" data-cat="ubits" onclick="setCategory('ubits')">💡 UBITS (1)</button>
+  </div>
 </div>
 
 <div class="courses-grid" id="coursesGrid">
 
-  <!-- SENA CIBERSEGURIDAD -->
   <div class="course-card" data-cat="sena">
-    <div class="cc-badge sena">SENA · CIBERSEGURIDAD</div>
-    <div class="cc-status done">Calificado A / En Curso</div>
+    <div class="cc-header">
+      <span class="cc-badge sena">SENA · Ciberseguridad</span>
+      <span class="cc-status done">Calificado A</span>
+    </div>
     <h3>Apropiación de Conceptos en Ciberseguridad</h3>
-    <p>Valuación de activos de información, mapa de amenazas según NIST SP 800-30, matriz formal de riesgo ISO 27001 y tablero interactivo de ciberdefensa.</p>
+    <p>Valuación de activos con MAGERIT/ISO 27005, mapa de amenazas NIST SP 800-30, matriz formal de riesgo ISO 27001 y tablero interactivo de ciberdefensa.</p>
     <div class="cc-skills">
       <span>ISO 27001</span>
       <span>MAGERIT v3</span>
@@ -37,16 +37,17 @@
     </div>
     <div class="cc-links">
       <a href="sena-ciberseguridad/index.md" class="cc-btn primary">Ver Curso</a>
-      <a href="sena-ciberseguridad/tablero-interactivo.md" class="cc-btn secondary">🎮 Tablero Interactivo</a>
+      <a href="sena-ciberseguridad/tablero-interactivo.md" class="cc-btn secondary">🎮 Tablero</a>
     </div>
   </div>
 
-  <!-- SENA IA INTEGRACIÓN DATOS -->
   <div class="course-card" data-cat="sena">
-    <div class="cc-badge sena">SENA · IA & DATOS</div>
-    <div class="cc-status done">Completado 100%</div>
+    <div class="cc-header">
+      <span class="cc-badge sena">SENA · IA & Datos</span>
+      <span class="cc-status done">Completado 100%</span>
+    </div>
     <h3>Aplicación de la IA en la Integración de Datos</h3>
-    <p>Pipeline completo con Polars, DuckDB, generación de prompts verificados, esquema estrella y proyecto de analítica en Power BI (PBIP/TMDL).</p>
+    <p>Pipeline completo con Polars y DuckDB, ingeniería de prompts verificados, modelado estrella y analítica avanzada en Power BI (PBIP/TMDL).</p>
     <div class="cc-skills">
       <span>Polars</span>
       <span>DuckDB</span>
@@ -56,19 +57,20 @@
     </div>
     <div class="cc-links">
       <a href="sena-ia-integracion-datos/index.md" class="cc-btn primary">Ver Curso</a>
-      <a href="sena-ia-integracion-datos/aa2-ev03-powerbi.md" class="cc-btn secondary">📊 Tablero Power BI</a>
+      <a href="sena-ia-integracion-datos/aa2-ev03-powerbi.md" class="cc-btn secondary">📊 Tablero</a>
     </div>
   </div>
 
-  <!-- AWS IA SIN LÍMITES -->
   <div class="course-card" data-cat="aws">
-    <div class="cc-badge aws">AWS · AGENTES & IA</div>
-    <div class="cc-status done">Completado 100%</div>
+    <div class="cc-header">
+      <span class="cc-badge aws">AWS · Generative AI</span>
+      <span class="cc-status done">Completado 100%</span>
+    </div>
     <h3>AWS Entrena · IA sin Límites</h3>
     <p>Fundamentos de IA generativa, ciclo de desarrollo AI-DLC, modelos fundacionales en AWS Bedrock y taller avanzado de agentes de IA.</p>
     <div class="cc-skills">
       <span>AWS Bedrock</span>
-      <span>Claude 3.5</span>
+      <span>Claude 3.5 Sonnet</span>
       <span>AI Agents</span>
       <span>Responsible AI</span>
     </div>
@@ -77,31 +79,34 @@
     </div>
   </div>
 
-  <!-- AWS NUBE EMPRESAS -->
   <div class="course-card" data-cat="aws">
-    <div class="cc-badge aws">AWS · CLOUD COMPUTING</div>
-    <div class="cc-status done">Completado 100%</div>
+    <div class="cc-header">
+      <span class="cc-badge aws">AWS · Cloud Computing</span>
+      <span class="cc-status done">Completado 100%</span>
+    </div>
     <h3>AWS Entrena · Nube para Empresas</h3>
-    <p>Fundamentos de computación en la nube, infraestructura global, modelos de servicio (IaaS, PaaS, SaaS) y webinars de modernización.</p>
+    <p>Fundamentos de computación en la nube, infraestructura global de AWS, modelos de servicio (IaaS, PaaS, SaaS) y modernización empresarial.</p>
     <div class="cc-skills">
-      <span>EC2 / S3</span>
       <span>Cloud Adoption</span>
       <span>Well-Architected</span>
+      <span>EC2 & S3</span>
+      <span>Seguridad Nube</span>
     </div>
     <div class="cc-links">
       <a href="aws-nube-empresas/index.md" class="cc-btn primary">Ver Ruta AWS</a>
     </div>
   </div>
 
-  <!-- GOOGLE GEAR AGENTES -->
   <div class="course-card" data-cat="google">
-    <div class="cc-badge google">GOOGLE · GEAR</div>
-    <div class="cc-status done">Insignia Obtenida</div>
+    <div class="cc-header">
+      <span class="cc-badge google">Google · GEAR</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
     <h3>GEAR Agentes: Fundamentos y Empresas</h3>
     <p>Arquitectura de agentes autónomos con modelos Gemini, razonamiento ReAct, orquestación de herramientas y despliegue empresarial.</p>
     <div class="cc-skills">
-      <span>Gemini 1.5</span>
-      <span>ReAct</span>
+      <span>Gemini 1.5 Pro</span>
+      <span>ReAct Framework</span>
       <span>Tool Calling</span>
       <span>Enterprise</span>
     </div>
@@ -110,82 +115,322 @@
     </div>
   </div>
 
-  <!-- GOOGLE GEAR ADK -->
   <div class="course-card" data-cat="google">
-    <div class="cc-badge google">GOOGLE · AGENT SDK</div>
-    <div class="cc-status done">Insignia GSP540 (100/100)</div>
+    <div class="cc-header">
+      <span class="cc-badge google">Google · Agent SDK</span>
+      <span class="cc-status done">Insignia GSP540 (100/100)</span>
+    </div>
     <h3>GEAR ADK: Kit de Desarrollo de Agentes</h3>
-    <p>Laboratorio de desafío superado con 100 puntos: control de memoria, sesiones de usuario, estado persistente y extensión con APIs externas.</p>
+    <p>Laboratorio de desafío superado con 100 puntos: control de memoria, sesiones de usuario, estado persistente y herramientas externas.</p>
     <div class="cc-skills">
       <span>Agent SDK</span>
-      <span>Memory / State</span>
-      <span>Tools API</span>
-      <span>GSP540</span>
+      <span>Memory & State</span>
+      <span>Custom Tools</span>
+      <span>GSP540 Lab</span>
     </div>
     <div class="cc-links">
       <a href="google-gear-adk/index.md" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
-  <!-- ANTHROPIC CLAUDE CODE -->
-  <div class="course-card" data-cat="anthropic">
-    <div class="cc-badge anthropic">ANTHROPIC · CLAUDE</div>
-    <div class="cc-status done">Completado</div>
-    <h3>Claude Code in Action & Cowork</h3>
-    <p>Desarrollo asistido por agentes en terminal con Claude Code, workflows avanzados de pair-programming, contexto persistente y automatización.</p>
+  <div class="course-card" data-cat="google">
+    <div class="cc-header">
+      <span class="cc-badge google">Google · Producción</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>GEAR Producción: Implementación Real</h3>
+    <p>Implementación de agentes con alta disponibilidad, observabilidad, manejo de latencia, fallbacks y patrones resilientes.</p>
     <div class="cc-skills">
-      <span>Claude Code</span>
-      <span>CLI Workflows</span>
-      <span>Autonomous Refactor</span>
+      <span>Production Readiness</span>
+      <span>Observability</span>
+      <span>Latency Optimization</span>
+      <span>Fault Tolerance</span>
+    </div>
+    <div class="cc-links">
+      <a href="google-gear-produccion/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="google">
+    <div class="cc-header">
+      <span class="cc-badge google">Google · Escala</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>GEAR Escala: Agentes Empresariales</h3>
+    <p>Transformación organizacional con agentes, IA centrada en el humano y flujos de trabajo multiagente con Gemini Enterprise.</p>
+    <div class="cc-skills">
+      <span>Enterprise Scale</span>
+      <span>Human-in-the-Loop</span>
+      <span>Workflows</span>
+      <span>Gemini Enterprise</span>
+    </div>
+    <div class="cc-links">
+      <a href="google-gear-escala/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="google">
+    <div class="cc-header">
+      <span class="cc-badge google">Google · Multiagente</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>GEAR Multiagente: Alto Rendimiento</h3>
+    <p>Sistemas multiagente colaborativos con ADK y MCP, reparto de tareas especializadas, protocolos de comunicación inter-agente y evaluación.</p>
+    <div class="cc-skills">
+      <span>Multiagent Systems</span>
+      <span>ADK + MCP</span>
+      <span>Agent Communication</span>
+      <span>Benchmarking</span>
+    </div>
+    <div class="cc-links">
+      <a href="google-gear-multiagente/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="google">
+    <div class="cc-header">
+      <span class="cc-badge google">Google · Seguridad IA</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>GEAR Gobierno y Seguridad: Protección</h3>
+    <p>Protección de agentes corporativos con Model Armor, mitigación de inyecciones de prompt, prevención de fuga de datos y auditoría.</p>
+    <div class="cc-skills">
+      <span>Model Armor</span>
+      <span>Prompt Injection</span>
+      <span>Data Leak Prevention</span>
+      <span>Governance</span>
+    </div>
+    <div class="cc-links">
+      <a href="google-gear-gobierno-seguridad/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Academy</span>
+      <span class="cc-status done">Ruta Central</span>
+    </div>
+    <h3>Claude Academy: Insignias y Rutas</h3>
+    <p>Centro de insignias oficiales de Anthropic, seguimiento curricular y estándares de ingeniería de software asistida por IA.</p>
+    <div class="cc-skills">
+      <span>Claude 3.5 Sonnet</span>
+      <span>Anthropic API</span>
+      <span>Artifacts</span>
+      <span>Projects</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-academy.md" class="cc-btn primary">Ver Academy</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Tips</span>
+      <span class="cc-status done">Guía Práctica</span>
+    </div>
+    <h3>Tips & Tricks de Claude</h3>
+    <p>Recetario de patrones avanzados de prompting, razonamiento estructurado XML, metaprompts, encadenamiento de tareas y optimización.</p>
+    <div class="cc-skills">
+      <span>XML Prompting</span>
+      <span>Metaprompts</span>
+      <span>Reasoning Chains</span>
+      <span>Token Efficiency</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-tips.md" class="cc-btn primary">Ver Guía</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Fundamentos</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>Claude 101: Conocer y Dominar Claude</h3>
+    <p>Arquitectura de Claude, proyectos colaborativos, artefactos dinámicos, conectores de datos y búsqueda de nivel empresarial.</p>
+    <div class="cc-skills">
+      <span>Claude 101</span>
+      <span>Artifacts</span>
+      <span>Enterprise Search</span>
+      <span>Connectors</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-101/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · CLI Tool</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>Claude Code 101: Terminal & Autonomía</h3>
+    <p>Instalación, configuración y flujos de trabajo terminales con la herramienta oficial Claude Code para desarrollo de software autónomo.</p>
+    <div class="cc-skills">
+      <span>Claude Code CLI</span>
+      <span>Pair Programming</span>
+      <span>Terminal Workflows</span>
+      <span>Context Memory</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-code-101/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Colaboración</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>Introduction to Claude Cowork</h3>
+    <p>Patrones de interacción humano-IA en tiempo real, colaboración en documentos, diseño de software y refactorizaciones conjuntas.</p>
+    <div class="cc-skills">
+      <span>Coworking Patterns</span>
+      <span>Iterative Refinement</span>
+      <span>Review Cycles</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-cowork/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Etiquetado</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>Introduction to Claude Tag</h3>
+    <p>Clasificación y etiquetado masivo de datos mediante Claude, estructuración de metadatos y curaduría automatizada de datasets.</p>
+    <div class="cc-skills">
+      <span>Tagging</span>
+      <span>Data Classification</span>
+      <span>Dataset Curation</span>
+      <span>Taxonomies</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-tag/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Práctica CLI</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>Claude Code in Action: Pair Programming</h3>
+    <p>Desarrollo asistido extremo: depuración de repositorios complejos, creación de pruebas unitarias y migraciones de código completas.</p>
+    <div class="cc-skills">
+      <span>Full-stack Debugging</span>
+      <span>Automated Testing</span>
+      <span>Code Migration</span>
     </div>
     <div class="cc-links">
       <a href="claude-code-in-action/index.md" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
-  <!-- MODEL CONTEXT PROTOCOL -->
   <div class="course-card" data-cat="anthropic">
-    <div class="cc-badge anthropic">ANTHROPIC · MCP</div>
-    <div class="cc-status done">Completado</div>
-    <h3>Model Context Protocol (MCP) · Intro & Advanced</h3>
-    <p>Creación de servidores y clientes MCP para conectar modelos de lenguaje con bases de datos, APIs y herramientas de sistema operativo.</p>
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Plataforma</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>Claude Platform 101: API & Tools</h3>
+    <p>Integración vía API de Anthropic, configuración de tool calling, streaming responses, autenticación y control de costos.</p>
+    <div class="cc-skills">
+      <span>Anthropic API</span>
+      <span>Tool Calling</span>
+      <span>Streaming</span>
+      <span>Cost Controls</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-platform-101/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · MCP</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>Introduction to Model Context Protocol</h3>
+    <p>El protocolo estándar abierto para conectar modelos con herramientas, bases de datos y APIs externas de forma segura.</p>
     <div class="cc-skills">
       <span>MCP Protocol</span>
       <span>JSON-RPC</span>
-      <span>Tools & Resources</span>
+      <span>Resources & Prompts</span>
+      <span>MCP Tools</span>
     </div>
     <div class="cc-links">
-      <a href="mcp-intro/index.md" class="cc-btn primary">Ver Curso MCP</a>
+      <a href="mcp-intro/index.md" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
-  <!-- MONGODB DEVELOPER PATH -->
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · MCP Avanzado</span>
+      <span class="cc-status done">Insignia Obtenida</span>
+    </div>
+    <h3>MCP: Advanced Topics & Orchestration</h3>
+    <p>Orquestación multi-servidor MCP, transporte stdio vs SSE, seguridad perimetral, proxies y control de concurrencia.</p>
+    <div class="cc-skills">
+      <span>Multi-server MCP</span>
+      <span>Transport SSE/Stdio</span>
+      <span>MCP Security</span>
+      <span>Orchestration</span>
+    </div>
+    <div class="cc-links">
+      <a href="mcp-advanced/index.md" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
   <div class="course-card" data-cat="data">
-    <div class="cc-badge mongo">MONGODB UNIVERSITY</div>
-    <div class="cc-status done">Insignias CRUD</div>
-    <h3>MongoDB Python Developer Path</h3>
-    <p>Modelo de documentos, operaciones CRUD avanzadas con PyMongo, índices, pipelines de agregación y conexión segura con MongoDB Atlas.</p>
+    <div class="cc-header">
+      <span class="cc-badge mongo">MongoDB · Atlas</span>
+      <span class="cc-status done">Completado</span>
+    </div>
+    <h3>Getting Started with MongoDB Atlas</h3>
+    <p>Despliegue y configuración de clusters multirregión en Atlas, seguridad de red, gestión de usuarios y monitoreo de rendimiento.</p>
     <div class="cc-skills">
       <span>MongoDB Atlas</span>
-      <span>PyMongo</span>
-      <span>Aggregation</span>
-      <span>Data Modeling</span>
+      <span>Cluster Config</span>
+      <span>Network Peering</span>
+      <span>Security Rules</span>
     </div>
     <div class="cc-links">
-      <a href="mongodb-python-path/index.md" class="cc-btn primary">Ver Curso</a>
+      <a href="mongodb-atlas/index.md" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
-  <!-- UBITS FUTURO IA -->
+  <div class="course-card" data-cat="data">
+    <div class="cc-header">
+      <span class="cc-badge mongo">MongoDB · Python</span>
+      <span class="cc-status done">Insignias CRUD</span>
+    </div>
+    <h3>MongoDB Python Developer Path</h3>
+    <p>Modelo de documentos, operaciones CRUD con PyMongo, índices compuestos (ESR), pipelines de agregación y transacciones ACID.</p>
+    <div class="cc-skills">
+      <span>PyMongo</span>
+      <span>Aggregation Pipeline</span>
+      <span>Indexing (ESR)</span>
+      <span>Transactions</span>
+    </div>
+    <div class="cc-links">
+      <a href="mongodb-python-path/index.md" class="cc-btn primary">Ver Ruta MongoDB</a>
+    </div>
+  </div>
+
   <div class="course-card" data-cat="ubits">
-    <div class="cc-badge ubits">UBITS · TENDENCIAS</div>
-    <div class="cc-status done">Completado 100%</div>
+    <div class="cc-header">
+      <span class="cc-badge ubits">UBITS · Tendencias</span>
+      <span class="cc-status done">Completado 100%</span>
+    </div>
     <h3>El Futuro de la IA: AI 2041 & Ética</h3>
-    <p>Impacto socioeconómico de la inteligencia artificial, casos de estudio hacia el 2041, sustitución laboral, marcos éticos y prompteado estratégico.</p>
+    <p>Visión prospectiva hacia el 2041, impacto en el empleo, gobernanza ética de algoritmos y técnicas de formulación estratégica de prompts.</p>
     <div class="cc-skills">
       <span>AI 2041</span>
       <span>AI Ethics</span>
-      <span>Strategic Prompts</span>
+      <span>Strategic Prompting</span>
+      <span>Future Trends</span>
     </div>
     <div class="cc-links">
       <a href="ubits-futuro-ia/index.md" class="cc-btn primary">Ver Curso</a>
@@ -195,17 +440,35 @@
 </div>
 
 <script>
-function filterCourses(cat) {
-  document.querySelectorAll('.cf-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
+let currentCat = 'all';
 
-  const cards = document.querySelectorAll('.course-card');
-  cards.forEach(c => {
-    if (cat === 'all' || c.getAttribute('data-cat') === cat) {
-      c.style.display = 'flex';
-      c.style.animation = 'fadeInUp 0.3s ease';
+function setCategory(cat) {
+  currentCat = cat;
+  document.querySelectorAll('.cf-btn').forEach(b => {
+    if (b.getAttribute('data-cat') === cat) {
+      b.classList.add('active');
     } else {
-      c.style.display = 'none';
+      b.classList.remove('active');
+    }
+  });
+  filterAllCourses();
+}
+
+function filterAllCourses() {
+  const query = (document.getElementById('courseSearch').value || '').toLowerCase().trim();
+  const cards = document.querySelectorAll('.course-card');
+
+  cards.forEach(card => {
+    const cardCat = card.getAttribute('data-cat');
+    const text = card.textContent.toLowerCase();
+    const matchCat = (currentCat === 'all' || cardCat === currentCat);
+    const matchQuery = (!query || text.includes(query));
+
+    if (matchCat && matchQuery) {
+      card.style.display = 'flex';
+      card.style.animation = 'fadeInUp 0.25s ease';
+    } else {
+      card.style.display = 'none';
     }
   });
 }

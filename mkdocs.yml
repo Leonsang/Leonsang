@@ -32,26 +32,33 @@ nav:
       - Dataflow: gcp/dataflow-streaming.md
     - Azure:
       - Fundamentos: azure/01-Azure_Portal_Subscriptions_ResourceGroups.md
+      - Databricks Integration: azure/00-Azure_Integration_Databricks.md
       - CLI & PowerShell: azure/02-Azure_CLI_Scenarios.md
+      - PowerShell Scenarios: azure/03-Azure_Powershell_Scenarios.md
       - ARM & Bicep: azure/05-Azure_ARM_Templates.md
+      - Bicep Templates: azure/06-Azure_Bicep_Templates.md
+      - Event Grid: azure/34-EventGrid_Integration_Azure.md
       - Storage:
         - Overview: azure/14-Overview_Of_Azure_Storage.md
+        - Blob Fundamentals: databricks/internals/16-Blob_Storage_Fundamentals.md
         - ADLS Gen2: databricks/internals/19-ADLS_Gen2_Overview.md
         - Storage Types: azure/24-Azure_Types_Of_Storage.md
         - Replication: azure/25-Azure_Storage_Replication_Strategies.md
+        - Soft Delete & PITR: azure/26-Soft_Delete_PITR_Azure_Storage.md
         - Lifecycle: azure/29-Azure_Lifetime_Management_Policies.md
       - Security:
         - RBAC: azure/20-Azure_RBAC_ACL.md
         - SAS: azure/28-Azure_Shared_Access_Signature.md
       - Data Factory:
         - Scenarios: ADF_scenarios.md
-        - Activities: azure/adf/activities-pipelines/
-        - Scenarios: azure/adf/scenario-based-pipelines/
+        - Pipeline Activities: azure/adf/activities-pipelines/README.md
+        - Scenario Pipelines: azure/adf/scenario-based-pipelines/README.md
 
   - Databricks Platform:
     - Fundamentos: databricks.md
     - Unity Catalog:
       - Introducción: databricks/internals/07-Databricks_UC_Introduction.md
+      - Creación en Azure: azure/07-Azure_Databricks_UC_Creation.md
       - External Tables: databricks/internals/08-Databricks_Managed_External_Tables_Hive.md
       - Storage Credentials: databricks/internals/08-UC_External_Location_Storage_Credentials.md
       - Catalog Schema: databricks/internals/09-Databricks_Managed_Location_Catalog_Schema_Level.md
@@ -70,6 +77,7 @@ nav:
       - Code Examples: databricks/internals/32-Databricks_DLT_Code_Walkthrough.md
     - Plataforma:
       - Arquitectura: databricks/internals/30-Databricks_ControlPlane_DataPlane.md
+      - RBAC & Service Principals: databricks/internals/11-RBAC_Custom_Roles_ServicePrincipals.md
       - Secrets: databricks/internals/27-Databricks_Secret_Scopes.md
       - Serverless: databricks/internals/35-Databricks_Serverless_Compute.md
       - Warehouses: databricks/internals/36-Databricks_Warehouses.md
@@ -368,7 +376,6 @@ plugins:
       allow_errors: false
       ignore_h1_titles: true
       show_input: true
-      show_output: true
       no_input: false
       include_requirejs: true
       include_source: true
