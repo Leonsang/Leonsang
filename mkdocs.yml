@@ -161,6 +161,7 @@ nav:
         - 05 Controla la memoria y el estado de los agentes: cursos/google-gear-adk/05-memoria-y-estado.md
         - 06 Agrega capacidades de agente con herramientas: cursos/google-gear-adk/06-herramientas.md
         - 07 Conclusión – Desarrolla agentes con el ADK: cursos/google-gear-adk/07-conclusion.md
+        - 08 Lab de desafío GENAI129 – Implementa un agente con el ADK: cursos/google-gear-adk/08-lab-desafio-genai129.md
       - "GEAR Producción":
         - Progreso de la ruta: cursos/google-gear-produccion/index.md
         - 01 Bienvenida – Implementa agentes listos para producción: cursos/google-gear-produccion/01-bienvenida.md

@@ -20,6 +20,12 @@ Ruta técnica para construir agentes que planifican, razonan y ejecutan tareas c
 
 **Progreso de la ruta:** 7 de 8 actividades (88 %).
 
+## Lab adicional
+
+| Lab | Duración | Estado | Fecha | Resultado | Notas |
+|---|---|---|---|---|---|
+| Implementa un agente con el ADK: lab de desafío (GENAI129) | 2 h 30 min | ✅ Completado | 2026-10-31 | **100/100** · Agent Search + estado + Agent Runtime + Chainlit | [Notas](08-lab-desafio-genai129.md) |
+
 ## Insignias obtenidas
 
 - **Build Your First Agent with Agent Development Kit (ADK)**
