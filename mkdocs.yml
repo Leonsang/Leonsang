@@ -271,6 +271,7 @@ nav:
       - Progreso del plan: cursos/ubits-experis-ia/index.md
       - "01 IA generativa": cursos/ubits-experis-ia/01-ia-generativa.md
       - "02 Prompt Engineering: habla el idioma de la IA": cursos/ubits-experis-ia/02-prompt-engineering.md
+      - "03 Modelos de IA generativa": cursos/ubits-experis-ia/03-modelos-ia-generativa.md
       - "17 Business analytics y ciencia de datos con ChatGPT": cursos/ubits-experis-ia/17-business-analytics.md
       - "18 Implementación de proyectos de IA con ChatGPT": cursos/ubits-experis-ia/18-implementacion-proyectos-ia.md
 
