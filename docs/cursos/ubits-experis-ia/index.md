@@ -11,7 +11,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | 1 | IA generativa | 21 ago | 70 | ✅ Aprobado 100 % | [Apuntes](01-ia-generativa.md) |
 | 2 | Prompt Engineering: habla el idioma de la IA | 21 ago | 224 | ✅ Aprobado 100 % | [Apuntes](02-prompt-engineering.md) |
 | 3 | Modelos de IA generativa | 28 ago | 69 | ✅ Aprobado 100 % | [Apuntes](03-modelos-ia-generativa.md) |
-| 4 | Aplicaciones de IA generativa | 28 ago | 62 | ✅ Aprobado 80 % | Pendiente |
+| 4 | Aplicaciones de IA generativa | 28 ago | 62 | ✅ Aprobado 80 % | [Apuntes](04-aplicaciones-ia-generativa.md) |
 | 5 | Crear y publicar agentes con Microsoft Copilot Studio | 4 sep | 294 | ✅ Completado | Pendiente |
 | 6 | Creación de GPT sin programación (ruta de 7 cursos) | 11 sep | 249 | ✅ Completado | Pendiente |
 | 7 | Claude Code: crea apps y webs sin programar | 18 sep | 258 | ✅ Aprobado 100 % | Pendiente |
