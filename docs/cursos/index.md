@@ -18,7 +18,7 @@
     <button type="button" class="cf-btn" data-cat="sena" onclick="setCategory('sena')">🏛️ SENA (2)</button>
     <button type="button" class="cf-btn" data-cat="aws" onclick="setCategory('aws')">☁️ AWS (3)</button>
     <button type="button" class="cf-btn" data-cat="google" onclick="setCategory('google')">🤖 Google GEAR (6)</button>
-    <button type="button" class="cf-btn" data-cat="anthropic" onclick="setCategory('anthropic')">🧠 Anthropic & MCP (10)</button>
+    <button type="button" class="cf-btn" data-cat="anthropic" onclick="setCategory('anthropic')">🧠 Anthropic & MCP (13)</button>
     <button type="button" class="cf-btn" data-cat="data" onclick="setCategory('data')">🍃 Bases de Datos (2)</button>
     <button type="button" class="cf-btn" data-cat="ubits" onclick="setCategory('ubits')">💡 UBITS (2)</button>
   </div>
@@ -404,6 +404,61 @@
     </div>
     <div class="cc-links">
       <a href="mcp-advanced/" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · API 1P</span>
+      <span class="cc-status done">Completado</span>
+    </div>
+    <h3>Building with the Claude API</h3>
+    <p>Messages API, alternancia de roles, ingeniería de prompts, XML tags, CoT (&lt;thinking&gt;), prefill, mitigación de alucinaciones, evals sistemáticos, Tool Use y Prompt Caching.</p>
+    <div class="cc-skills">
+      <span>Messages API</span>
+      <span>Prompt Engineering</span>
+      <span>Prompt Caching</span>
+      <span>Tool Use</span>
+      <span>Evals</span>
+    </div>
+    <div class="cc-links">
+      <a href="building-claude-api/" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · AWS Bedrock</span>
+      <span class="cc-status done">Completado</span>
+    </div>
+    <h3>Claude with Amazon Bedrock</h3>
+    <p>Despliegue empresarial de Claude en AWS: arquitectura VPC, IAM, KMS, SDK AnthropicBedrock, boto3 Converse API, perfiles de inferencia cross-region y toolConfig.</p>
+    <div class="cc-skills">
+      <span>AWS Bedrock</span>
+      <span>Converse API</span>
+      <span>Cross-Region</span>
+      <span>IAM & KMS</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-bedrock/" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="anthropic">
+    <div class="cc-header">
+      <span class="cc-badge anthropic">Anthropic · Google Cloud</span>
+      <span class="cc-status done">Completado</span>
+    </div>
+    <h3>Claude on Google Cloud</h3>
+    <p>Integración de Claude en Vertex AI Model Garden: SDK AnthropicVertex, autenticación ADC y cuentas de servicio, modelos con @, streaming y conexión con BigQuery.</p>
+    <div class="cc-skills">
+      <span>Vertex AI</span>
+      <span>AnthropicVertex</span>
+      <span>GCP ADC</span>
+      <span>BigQuery Integration</span>
+    </div>
+    <div class="cc-links">
+      <a href="claude-google-cloud/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 

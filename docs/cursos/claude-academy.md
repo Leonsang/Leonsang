@@ -20,11 +20,11 @@ Lo más práctico de todos los cursos está reunido en **[Tips & Tricks de Claud
 | AI Fluency: Framework and Foundations | 14 + quiz | Pendiente | — | — | — |
 | AI Capabilities and Limitations | 13 + quiz | Pendiente | — | — | — |
 | Building Effective Human-Agent Teams | 5 + quiz | Pendiente | — | — | — |
-| Building with the Claude API | 67 + 8 quizzes | Pendiente | — | — | — |
-| Claude with Amazon Bedrock | 65 + 8 quizzes | Pendiente | — | — | — |
-| Claude on Google Cloud | 66 + 9 quizzes | Pendiente | — | — | — |
+| Building with the Claude API | 67 + 8 quizzes | Completado | Quizzes aprobados (100 %) | [Notas](../building-claude-api/) | Ruta Oficial 1P |
+| Claude with Amazon Bedrock | 65 + 8 quizzes | Completado | Quizzes aprobados (100 %) | [Notas](../claude-bedrock/) | Ruta AWS |
+| Claude on Google Cloud | 66 + 9 quizzes | Completado | Quizzes aprobados (100 %) | [Notas](../claude-google-cloud/) | Ruta GCP |
 
-**Progreso:** 6 de 15 insignias.
+**Progreso:** 9 de 15 cursos completados.
 
 <div class="grid" markdown>
 

@@ -194,6 +194,9 @@ nav:
       - "Introduction to Claude Tag": cursos/claude-tag/index.md
       - "Claude Code in Action": cursos/claude-code-in-action/index.md
       - "Claude Platform 101": cursos/claude-platform-101/index.md
+      - "Building with the Claude API": cursos/building-claude-api/index.md
+      - "Claude with Amazon Bedrock": cursos/claude-bedrock/index.md
+      - "Claude on Google Cloud": cursos/claude-google-cloud/index.md
       - "Introduction to MCP": cursos/mcp-intro/index.md
       - "MCP: Advanced Topics": cursos/mcp-advanced/index.md
     - "Bases de Datos & Big Data":
