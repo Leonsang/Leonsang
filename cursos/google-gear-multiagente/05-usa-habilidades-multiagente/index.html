@@ -6321,6 +6321,67 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-lo-resolvimos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo lo resolvimos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo lo resolvimos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-validador-de-formato-tarea-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El validador de formato (tarea 3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-organizador-tarea-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El organizador (tarea 4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-mostraron-los-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que mostraron los logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#analisis-de-la-sesion" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6355,10 +6416,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#puntos-de-riesgo-que-anticipamos" class="md-nav__link">
+  <a href="#puntos-de-riesgo-que-anticipamos-antes-de-empezar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Puntos de riesgo que anticipamos
+        Puntos de riesgo que anticipamos (antes de empezar)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fallos-reales-convertidos-en-lecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fallos reales convertidos en lecciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-hariamos-distinto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué haríamos distinto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-nos-llevamos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que nos llevamos
       
     </span>
   </a>
@@ -11557,7 +11651,7 @@
 <h1 id="5-usa-habilidades-de-agentes-con-sistemas-multiagente">5. Usa habilidades de agentes con sistemas multiagente<a class="headerlink" href="#5-usa-habilidades-de-agentes-con-sistemas-multiagente" title="Permanent link">&para;</a></h1>
 <p>Curso con insignia de habilidad de la ruta <strong>GEAR: Crea sistemas multiagente de alto rendimiento</strong> · 1 h 45 min · Avanzado.
 Enlace: <a href="https://www.skills.google/paths/4459/course_templates/1842">https://www.skills.google/paths/4459/course_templates/1842</a></p>
-<p><strong>Estado:</strong> En curso · falta el lab de desafío <strong>GSP541</strong> (1 h 30 min).</p>
+<p><strong>Estado:</strong> Lab de desafío <strong>GSP541</strong> superado con <strong>100/100</strong> (2026-10-31).</p>
 <h2 id="el-desafio">El desafío<a class="headerlink" href="#el-desafio" title="Permanent link">&para;</a></h2>
 <p>Cymbal Group quiere un sistema que <strong>cree cursos automáticamente</strong>. En lugar de una sola instrucción enorme y difícil de mantener, se reparte el trabajo entre microservicios especializados que colaboran:</p>
 <table>
@@ -11606,6 +11700,84 @@ Enlace: <a href="https://www.skills.google/paths/4459/course_templates/1842">htt
 <li><strong>Prueba local:</strong> los 4 servicios en los puertos 8001 a 8004, y cada agente encuentra a los demás por su <strong>tarjeta de agente</strong> (<code>/.well-known/agent-card.json</code>).</li>
 <li><strong>Despliegue en Cloud Run:</strong> primero los especialistas, luego el organizador con sus URLs y al final el frontend.</li>
 </ol>
+<h2 id="resultado">Resultado<a class="headerlink" href="#resultado" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tarea</th>
+<th>Puntos</th>
+<th>Qué se verificó</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Agente con herramientas (investigador)</td>
+<td>15/15</td>
+<td>Skill con reglas + <code>tools=[researcher_toolset]</code></td>
+</tr>
+<tr>
+<td>2. Salida estructurada (evaluador)</td>
+<td>15/15</td>
+<td><code>output_schema=JudgeFeedback</code> y transferencias bloqueadas</td>
+</tr>
+<tr>
+<td>3. Creador de contenido</td>
+<td>15/15</td>
+<td>Script <code>check_format</code> + skill que obliga a usarlo</td>
+</tr>
+<tr>
+<td>4. Conexiones remotas y flujo</td>
+<td>15/15</td>
+<td>Callback, escalamiento, <code>LoopAgent</code> y <code>SequentialAgent</code></td>
+</tr>
+<tr>
+<td>5. Prueba local</td>
+<td>20/20</td>
+<td>Curso generado de punta a punta en <code>localhost</code></td>
+</tr>
+<tr>
+<td>6. Despliegue en Cloud Run</td>
+<td>20/20</td>
+<td>5 servicios desplegados y curso generado desde el frontend en la nube</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Curso generado por el sistema en local" src="../evidencias/05-curso-generado-local.jpg" />
+<em>Prueba local: «La historia del café» → el sistema produjo un curso de 8 módulos.</em></p>
+<p><img alt="Curso generado por el sistema desplegado en Cloud Run" src="../evidencias/05-curso-generado-cloud-run.jpg" />
+<em>Prueba en la nube: «La historia de la computación en la nube», con los 5 servicios en Cloud Run.</em></p>
+<h2 id="como-lo-resolvimos">Cómo lo resolvimos<a class="headerlink" href="#como-lo-resolvimos" title="Permanent link">&para;</a></h2>
+<h3 id="el-validador-de-formato-tarea-3">El validador de formato (tarea 3)<a class="headerlink" href="#el-validador-de-formato-tarea-3" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">check_format</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">has_h1</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"# "</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">has_h2</span> <span class="o">=</span> <span class="s2">"## "</span> <span class="ow">in</span> <span class="n">text</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">if</span> <span class="n">has_h1</span> <span class="ow">and</span> <span class="n">has_h2</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="k">return</span> <span class="p">{</span><span class="s2">"success"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Format OK: H1 and H2 present."</span><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">missing</span> <span class="o">=</span> <span class="p">[</span><span class="n">h</span> <span class="k">for</span> <span class="n">h</span><span class="p">,</span> <span class="n">ok</span> <span class="ow">in</span> <span class="p">((</span><span class="s2">"H1 (# )"</span><span class="p">,</span> <span class="n">has_h1</span><span class="p">),</span> <span class="p">(</span><span class="s2">"H2 (## )"</span><span class="p">,</span> <span class="n">has_h2</span><span class="p">))</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">ok</span><span class="p">]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">"success"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Missing headings: "</span> <span class="o">+</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing</span><span class="p">)}</span>
+</span></code></pre></div>
+<p>Lo probamos con dos casos antes de subirlo: <code>"# T\n## S"</code> → éxito; <code>"hola"</code> → falla y nombra los dos encabezados que faltan. El mensaje dice <strong>qué</strong> falta, para que el agente pueda corregirse solo.</p>
+<h3 id="el-organizador-tarea-4">El organizador (tarea 4)<a class="headerlink" href="#el-organizador-tarea-4" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">judge</span> <span class="o">=</span> <span class="n">RemoteA2aAgent</span><span class="p">(</span><span class="s2">"judge"</span><span class="p">,</span> <span class="n">agent_card</span><span class="o">=</span><span class="n">JUDGE_URL</span><span class="p">,</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                       <span class="n">httpx_client</span><span class="o">=</span><span class="n">create_authenticated_client</span><span class="p">(</span><span class="n">JUDGE_URL</span><span class="p">),</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                       <span class="n">after_agent_callback</span><span class="o">=</span><span class="n">create_save_output_callback</span><span class="p">(</span><span class="s2">"judge_feedback"</span><span class="p">))</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">class</span><span class="w"> </span><span class="nc">EscalationChecker</span><span class="p">(</span><span class="n">BaseAgent</span><span class="p">):</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_run_async_impl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctx</span><span class="p">):</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="o">...</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="k">if</span> <span class="n">is_pass</span><span class="p">:</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>            <span class="k">yield</span> <span class="n">Event</span><span class="p">(</span><span class="n">author</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">actions</span><span class="o">=</span><span class="n">EventActions</span><span class="p">(</span><span class="n">escalate</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>            <span class="k">yield</span> <span class="n">Event</span><span class="p">(</span><span class="n">author</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">research_loop</span> <span class="o">=</span> <span class="n">LoopAgent</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"research_loop"</span><span class="p">,</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>                          <span class="n">sub_agents</span><span class="o">=</span><span class="p">[</span><span class="n">researcher</span><span class="p">,</span> <span class="n">judge</span><span class="p">,</span> <span class="n">escalation_checker</span><span class="p">],</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="n">root_agent</span> <span class="o">=</span> <span class="n">SequentialAgent</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"course_creation_pipeline"</span><span class="p">,</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>                             <span class="n">sub_agents</span><span class="o">=</span><span class="p">[</span><span class="n">research_loop</span><span class="p">,</span> <span class="n">content_builder</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Un <code>RemoteA2aAgent</code> se usa dentro de <code>LoopAgent</code> y <code>SequentialAgent</code> igual que un agente local. La red queda escondida detrás de la <em>agent card</em>.</p>
+<h3 id="lo-que-mostraron-los-logs">Lo que mostraron los logs<a class="headerlink" href="#lo-que-mostraron-los-logs" title="Permanent link">&para;</a></h3>
+<p>En la prueba local la traza confirmó el diseño: el organizador pidió la tarjeta del evaluador (<code>GET :8002/.well-known/agent-card.json</code>), le envió la investigación (<code>POST :8002/a2a/agent</code>) y, tras el veredicto, pasó al creador de contenido (<code>:8003</code>). Este cargó su skill (<code>load_skill</code>) y ejecutó el script (<code>run_skill_script</code>).</p>
 <h2 id="analisis-de-la-sesion">Análisis de la sesión<a class="headerlink" href="#analisis-de-la-sesion" title="Permanent link">&para;</a></h2>
 <h3 id="como-leimos-el-problema">Cómo leímos el problema<a class="headerlink" href="#como-leimos-el-problema" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11641,11 +11813,53 @@ Enlace: <a href="https://www.skills.google/paths/4459/course_templates/1842">htt
 </tr>
 </tbody>
 </table>
-<h3 id="puntos-de-riesgo-que-anticipamos">Puntos de riesgo que anticipamos<a class="headerlink" href="#puntos-de-riesgo-que-anticipamos" title="Permanent link">&para;</a></h3>
+<h3 id="puntos-de-riesgo-que-anticipamos-antes-de-empezar">Puntos de riesgo que anticipamos (antes de empezar)<a class="headerlink" href="#puntos-de-riesgo-que-anticipamos-antes-de-empezar" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Runtime local limpio:</strong> el cargador del ADK puede confundir las carpetas de skills con agentes hermanos. Por eso el lab pide ejecutar la simulación desde un directorio temporal.</li>
 <li><strong>URLs de las tarjetas de agente:</strong> si el organizador apunta a una URL equivocada, el sistema arranca pero el flujo falla en silencio en el primer salto A2A.</li>
 <li><strong>Orden del despliegue:</strong> el organizador necesita las URLs reales de los especialistas, así que se despliega después de ellos.</li>
+</ul>
+<h3 id="fallos-reales-convertidos-en-lecciones">Fallos reales convertidos en lecciones<a class="headerlink" href="#fallos-reales-convertidos-en-lecciones" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Causa</th>
+<th>Arreglo</th>
+<th>Lección</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>El frontend local mostró <code>404 NOT_FOUND: Publisher model .../us-central1/.../gemini-3.6-flash was not found</code></td>
+<td>El modelo más reciente solo está publicado en la ubicación <strong><code>global</code></strong></td>
+<td>Un script de 10 líneas probó cada par modelo/región y confirmó que <code>global</code> funciona; cambiamos <code>GOOGLE_CLOUD_LOCATION</code></td>
+<td>Disponibilidad de modelos ≠ región del proyecto. <strong>Probar con una llamada mínima antes de culpar al código</strong></td>
+</tr>
+<tr>
+<td>El organizador no arrancó en Cloud Run: <code>container failed to start ... PORT=8080</code></td>
+<td>En los logs: <code>failed to load /app/run.sh: permission denied</code>. El script perdió el permiso de ejecución al copiarse desde un bucket</td>
+<td><code>chmod +x run.sh</code> y volver a desplegar</td>
+<td>El mensaje de Cloud Run es genérico; <strong>la causa está en los logs de la revisión</strong></td>
+</tr>
+<tr>
+<td>El frontend cayó con <code>AGENT_SERVER_URL environment variable not set</code></td>
+<td><strong>Fallo en cascada:</strong> como el organizador no existía, su URL salió vacía</td>
+<td>Redesplegar el frontend solo si la URL no está vacía (<code>[ -n "$URL" ] &amp;&amp; deploy</code>)</td>
+<td>En despliegues encadenados, <strong>validar cada dato que pasa de un paso al siguiente</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="que-hariamos-distinto">Qué haríamos distinto<a class="headerlink" href="#que-hariamos-distinto" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Verificar el modelo y la región con una llamada mínima <strong>antes</strong> de la prueba de punta a punta.</li>
+<li>Agregar <code>chmod +x</code> (o <code>CMD ["sh","run.sh"]</code> en el Dockerfile) como paso fijo del despliegue.</li>
+<li>Desplegar los 3 especialistas <strong>en paralelo</strong>, porque cada <code>--source</code> tarda unos 5 minutos en Cloud Build.</li>
+</ul>
+<h3 id="lo-que-nos-llevamos">Lo que nos llevamos<a class="headerlink" href="#lo-que-nos-llevamos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El código final quedó guardado como proyecto de referencia, con el README del lab.</li>
+<li>Con todo lo aprendido armamos una <strong>skill reutilizable de ADK multiagente</strong>: patrones, código base, checklist y la tabla de errores de esta sesión.</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Para recordar</p>
