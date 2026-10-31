@@ -207,6 +207,9 @@ nav:
       - "Introduction to MCP": cursos/mcp-intro/index.md
       - "MCP: Advanced Topics": cursos/mcp-advanced/index.md
       - "Building Effective Human-Agent Teams": cursos/human-agent-teams/index.md
+      - "Deploying Claude Enterprise": cursos/claude-enterprise/index.md
+      - "AI Fluency: Framework & Foundations": cursos/ai-fluency/index.md
+      - "AI Capabilities and Limitations": cursos/ai-capabilities-limitations/index.md
     - "Bases de Datos & Big Data":
       - "MongoDB University · Atlas":
         - Progreso del curso: cursos/mongodb-atlas/index.md
