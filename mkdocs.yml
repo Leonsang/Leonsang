@@ -274,6 +274,7 @@ nav:
       - "03 Modelos de IA generativa": cursos/ubits-experis-ia/03-modelos-ia-generativa.md
       - "04 Aplicaciones de IA generativa": cursos/ubits-experis-ia/04-aplicaciones-ia-generativa.md
       - "05 Crear y publicar agentes con Microsoft Copilot Studio": cursos/ubits-experis-ia/05-copilot-studio.md
+      - "06 Creación de GPT sin programación": cursos/ubits-experis-ia/06-gpt-sin-programacion.md
       - "17 Business analytics y ciencia de datos con ChatGPT": cursos/ubits-experis-ia/17-business-analytics.md
       - "18 Implementación de proyectos de IA con ChatGPT": cursos/ubits-experis-ia/18-implementacion-proyectos-ia.md
 
