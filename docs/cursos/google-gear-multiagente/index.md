@@ -13,10 +13,10 @@ Esta ruta va del diseño de una sola instrucción a la orquestación de sistemas
 | 2 | [Crea sistemas multiagente colaborativos con el ADK y el MCP](https://www.skills.google/paths/4459/course_templates/1833) | 30 min | ✅ Completado | 2026-10-25 | Insignia *Build Collaborative Multi-Agent Systems with ADK & MCP* | [Notas](02-sistemas-multiagente-colaborativos-adk-mcp.md) |
 | 3 | Crea sistemas multiagente con el ADK (lab) | 1 h 30 min | Pendiente | — | — | — |
 | 4 | [Build Agent Skills with Google](https://www.skills.google/paths/4459/course_templates/1832) | 2 h 15 min | ✅ Completado | 2026-10-25 | Quiz 100 % · insignia *Build Agent Skills with Google* | [Notas](04-build-agent-skills-with-google.md) |
-| 5 | [Usa habilidades de agentes con sistemas multiagente](https://www.skills.google/paths/4459/course_templates/1842) (insignia de habilidad) | 1 h 45 min | En curso | — | Lab de desafío GSP541 pendiente | [Notas](05-usa-habilidades-multiagente.md) |
+| 5 | [Usa habilidades de agentes con sistemas multiagente](https://www.skills.google/paths/4459/course_templates/1842) (insignia de habilidad) | 1 h 45 min | ✅ Completado | 2026-10-31 | Lab de desafío GSP541: **100/100** | [Notas](05-usa-habilidades-multiagente.md) |
 | 6 | [Conclusión: Crea sistemas multiagente de alto rendimiento](https://www.skills.google/paths/4459/course_templates/1885) | 10 min | ✅ Completado | 2026-10-25 | — | [Notas](06-conclusion.md) |
 
-**Progreso de la ruta:** 4 de 6 actividades.
+**Progreso de la ruta:** 5 de 6 actividades.
 
 ## Insignias obtenidas
 
