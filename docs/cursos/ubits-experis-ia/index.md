@@ -25,7 +25,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | 15 | Automatización empresarial con ChatGPT | 30 oct | 127 | ✅ Aprobado 100 % | Pendiente |
 | 16 | Innovación y futuro de la IA con ChatGPT | 30 oct | 112 | ✅ Aprobado 100 % | Pendiente |
 | 17 | Business analytics y ciencia de datos con ChatGPT | 6 nov | 126 | ✅ Aprobado 100 % | [Apuntes](17-business-analytics.md) |
-| 18 | Implementación de proyectos de IA con ChatGPT | 6 nov | 142 | ⏳ En curso | — |
+| 18 | Implementación de proyectos de IA con ChatGPT | 6 nov | 142 | ✅ Aprobado 100 % | [Apuntes](18-implementacion-proyectos-ia.md) |
 | 19 | Ética, seguridad y regulación en el uso de ChatGPT | 13 nov | 94 | ⏳ Pendiente | — |
 | 20 | Aplicaciones especializadas de ChatGPT en sectores clave | 13 nov | 137 | ⏳ Pendiente | — |
 
