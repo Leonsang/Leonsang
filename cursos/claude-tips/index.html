@@ -6532,6 +6532,8 @@
       
         
       
+        
+      
     
     
     
@@ -6826,6 +6828,17 @@
     <span class="md-ellipsis">
       
         MCP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equipos-con-agentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equipos con agentes
       
     </span>
   </a>
@@ -7288,6 +7301,34 @@
     
   
     MCP: Advanced Topics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human-agent-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Effective Human-Agent Teams
   
 
     
@@ -11634,9 +11675,23 @@
 <li><code>mcp dev server.py</code> abre el Inspector para probar sin app.</li>
 <li>En la API: <code>mcp_servers</code> + <code>mcp_toolset</code>; para solo lectura, <code>default_config: {"enabled": false}</code> y activar herramientas puntuales.</li>
 <li>Si funciona en stdio y falla en HTTP: revisar <code>stateless_http</code> y <code>json_response</code>.</li>
-<li>Sampling traslada el costo del modelo al cliente (servidores públicos).</li>
+<li>
+<p>Sampling traslada el costo del modelo al cliente (servidores públicos).</p>
+</li>
+<li>
+<p>SDK de Python 2.x: <code>FastMCP</code> ahora es <code>MCPServer</code> (<code>from mcp.server.mcpserver import MCPServer</code>); lanzar <code>ToolError</code> para errores que el modelo debe leer.</p>
+</li>
+<li>La revisión 2026-07-28 depreca logging, sampling y roots: siguen andando, pero revisar la migración en código nuevo.</li>
 </ul>
 <p>Fuentes: <a href="../mcp-intro/">Introduction to MCP</a> · <a href="../mcp-advanced/">MCP Advanced Topics</a></p>
+<h2 id="equipos-con-agentes">Equipos con agentes<a class="headerlink" href="#equipos-con-agentes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Si no está escrito donde el agente lo lee, <strong>no existe</strong>: publicar el mismo día lo decidido en reuniones o DMs.</li>
+<li>Una <strong>estrella polar medible</strong> fijada por personas ("80 % completa el onboarding"), no "hacerlo mejor".</li>
+<li>Primer trabajo visible y revisado (resumen matutino); ampliar autonomía <strong>por tipo de tarea</strong> tras varias entregas buenas.</li>
+<li>Darle al agente una <strong>rúbrica</strong> de "aprobado" para cada tarea.</li>
+</ul>
+<p>Fuente: <a href="../human-agent-teams/">Building Effective Human-Agent Teams</a></p>
 <div class="admonition tip">
 <p class="admonition-title">Para recordar</p>
 <ul>

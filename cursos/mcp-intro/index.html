@@ -6532,6 +6532,8 @@
       
         
       
+        
+      
     
     
     
@@ -7160,6 +7162,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#practica-mi-propio-servidor-mcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Práctica: mi propio servidor MCP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-77" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación (7/7)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evidencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fuentes-y-aviso-legal" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7194,6 +7229,34 @@
     
   
     MCP: Advanced Topics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human-agent-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Effective Human-Agent Teams
   
 
     
@@ -11361,7 +11424,7 @@
 
 <h1 id="claude-academy-introduction-to-model-context-protocol">Claude Academy · Introduction to Model Context Protocol<a class="headerlink" href="#claude-academy-introduction-to-model-context-protocol" title="Permanent link">&para;</a></h1>
 <p>Curso de Anthropic (10 lecciones, ~1 h y un quiz) para construir un servidor y un cliente MCP con el SDK de Python: herramientas, el inspector, recursos y prompts, sobre un chatbot de línea de comandos que gestiona documentos.</p>
-<p><strong>Estado:</strong> En curso · Lecciones leídas · Quiz final pendiente</p>
+<p><strong>Estado:</strong> Completado · Quiz final 7/7 (100 %) · <a href="https://academy.claude.com/badges/4cf85cb9-0c5d-469f-a968-ddb0f3f68c6c">Insignia</a></p>
 <h2 id="que-resuelve-mcp">Qué resuelve MCP<a class="headerlink" href="#que-resuelve-mcp" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Una <strong>capa de comunicación</strong> que mueve la definición y ejecución de herramientas desde mi servidor a <strong>servidores MCP especializados</strong>. Ejemplo: en vez de escribir decenas de esquemas para la API de GitHub, me conecto al servidor MCP de GitHub.</li>
@@ -11437,6 +11500,128 @@
 <li>Descripciones claras en herramientas y argumentos: es lo que Claude lee para decidir.</li>
 </ul>
 </div>
+<h2 id="practica-mi-propio-servidor-mcp">Práctica: mi propio servidor MCP<a class="headerlink" href="#practica-mi-propio-servidor-mcp" title="Permanent link">&para;</a></h2>
+<p>Para comprobar lo aprendido construí un servidor de <strong>apuntes de estudio</strong> con el SDK de Python. Uso la versión 2, en la que <code>FastMCP</code> pasó a llamarse <code>MCPServer</code>. También escribí un cliente por stdio que lo recorre de punta a punta.</p>
+<p>El servidor tiene los tres primitivos:</p>
+<ul>
+<li>dos herramientas;</li>
+<li>un recurso directo y otro con plantilla;</li>
+<li>un prompt.</li>
+</ul>
+<details class="example">
+<summary>server.py</summary>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="sd">"""Servidor MCP de práctica: apuntes de estudio.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="sd">Ejercita lo visto en los cursos de MCP de Claude Academy:</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="sd">herramientas (tools), recursos directos y con plantilla (resources),</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="sd">prompts, y desde el curso avanzado: logging y notificaciones de progreso.</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="sd">"""</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">Field</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mcp.server.mcpserver</span><span class="w"> </span><span class="kn">import</span> <span class="n">MCPServer</span><span class="p">,</span> <span class="n">Context</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mcp.server.mcpserver.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToolError</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">mcp</span> <span class="o">=</span> <span class="n">MCPServer</span><span class="p">(</span><span class="s2">"ApuntesMCP"</span><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">notas</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="s2">"mcp"</span><span class="p">:</span> <span class="s2">"MCP conecta modelos con herramientas, recursos y prompts de servidores externos."</span><span class="p">,</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="s2">"primitivos"</span><span class="p">:</span> <span class="s2">"Tools las controla el modelo, resources la app y prompts el usuario."</span><span class="p">,</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="s2">"transporte"</span><span class="p">:</span> <span class="s2">"stdio para el mismo equipo; StreamableHTTP con SSE para servidores remotos."</span><span class="p">,</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="s2">"sampling"</span><span class="p">:</span> <span class="s2">"El servidor pide al cliente que llame al modelo; el costo lo asume el cliente."</span><span class="p">,</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="p">}</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="nd">@mcp</span><span class="o">.</span><span class="n">tool</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"buscar_notas"</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Busca una palabra en los apuntes y devuelve las notas que la contienen."</span><span class="p">)</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">buscar_notas</span><span class="p">(</span><span class="n">texto</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">"Palabra o frase a buscar"</span><span class="p">),</span> <span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Buscando '</span><span class="si">{</span><span class="n">texto</span><span class="si">}</span><span class="s2">' en </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span><span class="si">}</span><span class="s2"> notas"</span><span class="p">)</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="n">hallazgos</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">clave</span><span class="p">,</span> <span class="n">contenido</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">notas</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">report_progress</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">notas</span><span class="p">))</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>        <span class="k">if</span> <span class="n">texto</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">contenido</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>            <span class="n">hallazgos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">clave</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">contenido</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>    <span class="k">return</span> <span class="n">hallazgos</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="nd">@mcp</span><span class="o">.</span><span class="n">tool</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"editar_nota"</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Reemplaza un texto dentro de una nota existente."</span><span class="p">)</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="k">def</span><span class="w"> </span><span class="nf">editar_nota</span><span class="p">(</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>    <span class="n">nota_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">"Id de la nota"</span><span class="p">),</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    <span class="n">viejo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">"Texto a reemplazar"</span><span class="p">),</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="n">nuevo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">"Texto nuevo"</span><span class="p">),</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    <span class="k">if</span> <span class="n">nota_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">notas</span><span class="p">:</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>        <span class="c1"># ToolError devuelve un mensaje claro al modelo en lugar de un fallo inesperado</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>        <span class="k">raise</span> <span class="n">ToolError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No existe la nota </span><span class="si">{</span><span class="n">nota_id</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>    <span class="n">notas</span><span class="p">[</span><span class="n">nota_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">notas</span><span class="p">[</span><span class="n">nota_id</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">viejo</span><span class="p">,</span> <span class="n">nuevo</span><span class="p">)</span>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>    <span class="k">return</span> <span class="n">notas</span><span class="p">[</span><span class="n">nota_id</span><span class="p">]</span>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="nd">@mcp</span><span class="o">.</span><span class="n">resource</span><span class="p">(</span><span class="s2">"notas://lista"</span><span class="p">,</span> <span class="n">mime_type</span><span class="o">=</span><span class="s2">"application/json"</span><span class="p">)</span>
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="k">def</span><span class="w"> </span><span class="nf">lista_notas</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span>
+</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>
+</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>
+</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="nd">@mcp</span><span class="o">.</span><span class="n">resource</span><span class="p">(</span><span class="s2">"notas://lista/</span><span class="si">{nota_id}</span><span class="s2">"</span><span class="p">,</span> <span class="n">mime_type</span><span class="o">=</span><span class="s2">"text/plain"</span><span class="p">)</span>
+</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="k">def</span><span class="w"> </span><span class="nf">leer_nota</span><span class="p">(</span><span class="n">nota_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>    <span class="k">if</span> <span class="n">nota_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">notas</span><span class="p">:</span>
+</span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No existe la nota </span><span class="si">{</span><span class="n">nota_id</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>    <span class="k">return</span> <span class="n">notas</span><span class="p">[</span><span class="n">nota_id</span><span class="p">]</span>
+</span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>
+</span><span id="__span-1-56"><a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>
+</span><span id="__span-1-57"><a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a><span class="nd">@mcp</span><span class="o">.</span><span class="n">prompt</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"tarjeta"</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Convierte una nota en una tarjeta de estudio pregunta/respuesta."</span><span class="p">)</span>
+</span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="k">def</span><span class="w"> </span><span class="nf">tarjeta</span><span class="p">(</span><span class="n">nota_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">"Id de la nota"</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>    <span class="k">return</span> <span class="p">(</span>
+</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>        <span class="sa">f</span><span class="s2">"Lee la nota &lt;nota&gt;</span><span class="si">{</span><span class="n">notas</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">nota_id</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">)</span><span class="si">}</span><span class="s2">&lt;/nota&gt; y escribe una tarjeta de estudio: "</span>
+</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>        <span class="s2">"una pregunta corta en el anverso y la respuesta en una frase en el reverso."</span>
+</span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>    <span class="p">)</span>
+</span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>
+</span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>
+</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+</span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>    <span class="n">mcp</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">transport</span><span class="o">=</span><span class="s2">"stdio"</span><span class="p">)</span>
+</span></code></pre></div>
+</details>
+<p>El cliente usa <code>ClientSession</code> y <code>stdio_client</code>. En orden, hace esto:</p>
+<ol>
+<li>inicializa la conexión;</li>
+<li>lista todo lo que ofrece el servidor;</li>
+<li>llama a las herramientas;</li>
+<li>lee el recurso con plantilla;</li>
+<li>pide el prompt.</li>
+</ol>
+<p>Esta es la traza real:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>1. Conectado a ApuntesMCP (protocolo 2025-11-25)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>2. Herramientas: ['buscar_notas', 'editar_nota']
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>3. Recursos: ['notas://lista'] | plantillas: ['notas://lista/{nota_id}']
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>4. Prompts: ['tarjeta']
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  [log del servidor] info: Buscando 'cliente' en 4 notas
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  [progreso] 1/4
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  [progreso] 2/4
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  [progreso] 3/4
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  [progreso] 4/4
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>5. buscar_notas('cliente') -&gt; ['sampling: El servidor pide al cliente que llame al modelo; el costo lo asume el cliente.']
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>6. editar_nota -&gt; stdio para el mismo equipo; StreamableHTTP con SSE para servidores remotos o en la nube.
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>7. recurso con plantilla notas://lista/transporte -&gt; stdio para el mismo equipo; StreamableHTTP con SSE para servidores remotos o en la nube.
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>8. error controlado -&gt; True Error executing tool editar_nota: No existe la nota no-existe
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>9. prompt 'tarjeta' -&gt; user : Lee la nota &lt;nota&gt;Tools las controla el modelo, resources la app y prompts el usuario.&lt;/nota&gt; y escribe una tarjeta de estudio: una pregunta corta en el anverso y la respuesta en una frase en el reverso.
+</span></code></pre></div>
+<p><strong>Lo que confirma la práctica:</strong></p>
+<ul>
+<li><strong>El decorador basta:</strong> el SDK genera el esquema JSON a partir de las anotaciones de tipo y de <code>Field</code>.</li>
+<li><strong><code>notas://lista/{nota_id}</code> aparece como plantilla</strong>, no como recurso. El parámetro llega como argumento de la función.</li>
+<li><strong>El estado vive en el servidor:</strong> el paso 7 lee el cambio hecho en el paso 6.</li>
+<li><strong>Errores:</strong> un <code>ValueError</code> se reporta como fallo inesperado. Con <code>ToolError</code> el modelo recibe un mensaje útil (paso 8).</li>
+</ul>
+<h2 id="evaluacion-77">Evaluación (7/7)<a class="headerlink" href="#evaluacion-77" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Saber qué herramientas ofrece un servidor → <strong><code>ListToolsRequest</code></strong>.</li>
+<li>Las dos piezas de un cliente MCP → <strong>una clase cliente propia y la <code>ClientSession</code></strong>.</li>
+<li>La forma más fácil de definir una herramienta en Python → <strong>el decorador <code>@mcp.tool()</code></strong>.</li>
+<li>Un botón «resumir documento» que el usuario dispara → <strong>un prompt</strong>, porque lo controla el usuario.</li>
+<li>El problema de integrar GitHub sin MCP → <strong>escribir y mantener yo todo el código de las herramientas</strong>.</li>
+<li>Probar el servidor antes de conectarlo → <strong>el Inspector, con <code>mcp dev mcp_server.py</code></strong>.</li>
+<li>Leer documentos por ID (<code>docs://documents/report.pdf</code>) → <strong>un recurso con plantilla</strong>.</li>
+</ol>
+<h2 id="evidencia">Evidencia<a class="headerlink" href="#evidencia" title="Permanent link">&para;</a></h2>
+<p><img alt="Quiz aprobado 7/7" src="evidencias/02-quiz-mcp-intro.png" width="480" /></p>
+<p><img alt="Insignia Introduction to MCP" src="evidencias/01-insignia-mcp-intro.png" width="420" /></p>
 <h2 id="fuentes-y-aviso-legal">Fuentes y aviso legal<a class="headerlink" href="#fuentes-y-aviso-legal" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Fuente:</strong> cursos de Model Context Protocol de Anthropic Academy. Sitios oficiales: <a href="https://www.anthropic.com/learn">anthropic.com/learn</a> · <a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a>.</li>

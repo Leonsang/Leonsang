@@ -18,7 +18,7 @@
         <link rel="prev" href="../mcp-intro/">
       
       
-        <link rel="next" href="../mongodb-atlas/">
+        <link rel="next" href="../human-agent-teams/">
       
       
         
@@ -6532,6 +6532,8 @@
       
         
       
+        
+      
     
     
     
@@ -7177,6 +7179,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#practica-progreso-y-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Práctica: progreso y logging
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluacion-1010" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluación (10/10)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evidencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fuentes-y-aviso-legal" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7191,6 +7226,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human-agent-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Effective Human-Agent Teams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -11350,7 +11413,7 @@
 
 <h1 id="claude-academy-model-context-protocol-advanced-topics">Claude Academy · Model Context Protocol: Advanced Topics<a class="headerlink" href="#claude-academy-model-context-protocol-advanced-topics" title="Permanent link">&para;</a></h1>
 <p>Curso de Anthropic (11 lecciones, ~1,5 h y un quiz) sobre MCP avanzado: sampling, logging y notificaciones de progreso, roots, tipos de mensajes JSON y transportes (stdio y Streamable HTTP), con estado y sin estado.</p>
-<p><strong>Estado:</strong> En curso · Lecciones leídas · Quiz final pendiente</p>
+<p><strong>Estado:</strong> Completado · Quiz final 10/10 (100 %) · <a href="https://academy.claude.com/badges/f3770dcb-f1cf-4dcc-9640-a3a94b3410cc">Insignia</a></p>
 <div class="admonition note">
 <p class="admonition-title">Versión de la especificación</p>
 <p>El curso enseña MCP como funcionaba antes de la revisión <strong>2026-07-28</strong>, que deprecia sampling, logging y roots y elimina el handshake <code>initialize</code> y los IDs de sesión. Todo sigue funcionando en la versión 1 del SDK de Python.</p>
@@ -11406,6 +11469,49 @@
 <li>Probar con <strong>el mismo transporte que se usará en producción</strong>.</li>
 </ul>
 </div>
+<h2 id="practica-progreso-y-logging">Práctica: progreso y logging<a class="headerlink" href="#practica-progreso-y-logging" title="Permanent link">&para;</a></h2>
+<p>Uso el servidor de apuntes de la <a href="../mcp-intro/#practica-mi-propio-servidor-mcp">práctica del curso de introducción</a>. Ahí, la herramienta <code>buscar_notas</code> recibe un <code>Context</code>. Emite un log al empezar y una notificación de progreso por cada nota revisada:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@mcp</span><span class="o">.</span><span class="n">tool</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"buscar_notas"</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Busca una palabra en los apuntes..."</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">buscar_notas</span><span class="p">(</span><span class="n">texto</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">"Palabra o frase a buscar"</span><span class="p">),</span> <span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Buscando '</span><span class="si">{</span><span class="n">texto</span><span class="si">}</span><span class="s2">' en </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">notas</span><span class="p">)</span><span class="si">}</span><span class="s2"> notas"</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">clave</span><span class="p">,</span> <span class="n">contenido</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">notas</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">report_progress</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">notas</span><span class="p">))</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="o">...</span>
+</span></code></pre></div>
+<p><strong>Del lado del cliente:</strong></p>
+<ul>
+<li><code>logging_callback</code>, definido en la sesión, recibe los logs;</li>
+<li><code>progress_callback</code>, pasado a <code>call_tool</code>, recibe el progreso.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1. Conectado a ApuntesMCP (protocolo 2025-11-25)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  [log del servidor] info: Buscando 'cliente' en 4 notas
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  [progreso] 1/4
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  [progreso] 2/4
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  [progreso] 3/4
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  [progreso] 4/4
+</span></code></pre></div>
+<p><strong>Lo que se ve en la práctica:</strong></p>
+<ul>
+<li><strong>El handshake:</strong> <code>initialize</code> → resultado → <code>initialized</code>.</li>
+<li><strong>El patrón petición-resultado</strong> de <code>call_tool</code>, con notificaciones intercaladas que no esperan respuesta.</li>
+<li><strong>Logging está deprecado:</strong> con la versión 2.2 del SDK, <code>ctx.info</code> emite un <code>MCPDeprecationWarning</code>, porque la revisión 2026-07-28 lo deprecó (ver la nota de arriba). Sigue funcionando, pero para código nuevo conviene revisar la guía de migración.</li>
+</ul>
+<h2 id="evaluacion-1010">Evaluación (10/10)<a class="headerlink" href="#evaluacion-1010" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Claude no sabe dónde está <code>video.mp4</code> → <strong>roots</strong>.</li>
+<li>Cómo hace StreamableHTTP para que el servidor envíe mensajes → <strong>abre conexiones Server-Sent Events (SSE)</strong>.</li>
+<li>Qué son los roots → <strong>lo que le indica al servidor a qué archivos y carpetas puede acceder</strong>.</li>
+<li>Respuestas HTTP simples, solo con el JSON final → <strong><code>json_response=True</code></strong>.</li>
+<li>Que el servidor use Claude sin asumir el costo de la API → <strong>sampling</strong>.</li>
+<li>El transporte que exige cliente y servidor en el mismo equipo → <strong>stdio</strong>.</li>
+<li>Un <code>CallToolRequest</code> que espera resultado → <strong>un mensaje de petición-resultado</strong>.</li>
+<li>La secuencia de inicio → <strong>Initialize Request → Initialize Result → Initialized Notification</strong>.</li>
+<li>Qué es sampling → <strong>la forma en que el servidor accede al modelo a través del cliente conectado</strong>.</li>
+<li>El transporte más simple para probar en local → <strong>stdio</strong>.</li>
+</ol>
+<h2 id="evidencia">Evidencia<a class="headerlink" href="#evidencia" title="Permanent link">&para;</a></h2>
+<p><img alt="Quiz aprobado 10/10" src="evidencias/02-quiz-mcp-advanced.png" width="480" /></p>
+<p><img alt="Insignia MCP Advanced Topics" src="evidencias/01-insignia-mcp-advanced.png" width="420" /></p>
 <h2 id="fuentes-y-aviso-legal">Fuentes y aviso legal<a class="headerlink" href="#fuentes-y-aviso-legal" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Fuente:</strong> cursos de Model Context Protocol de Anthropic Academy. Sitios oficiales: <a href="https://www.anthropic.com/learn">anthropic.com/learn</a> · <a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a>.</li>
@@ -11467,13 +11573,13 @@
         
         
           
-          <a href="../mongodb-atlas/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Progreso del curso">
+          <a href="../human-agent-teams/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Building Effective Human-Agent Teams">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                Progreso del curso
+                Building Effective Human-Agent Teams
               </div>
             </div>
             <div class="md-footer__button md-icon">
