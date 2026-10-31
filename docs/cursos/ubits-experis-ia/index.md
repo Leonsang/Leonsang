@@ -20,7 +20,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | 10 | Fundamentos de la IA y ChatGPT en negocios y finanzas | 2 oct | 173 | ✅ Aprobado 100 % | [Apuntes](10-fundamentos-ia-negocios-finanzas.md) |
 | 11 | Técnicas avanzadas de ingeniería de prompts con ChatGPT | 9 oct | 150 | ✅ Aprobado 100 % | [Apuntes](11-tecnicas-avanzadas-prompts.md) |
 | 12 | Análisis financiero con ChatGPT | 16 oct | 151 | ✅ Aprobado 100 % | [Apuntes](12-analisis-financiero.md) |
-| 13 | Generación de contenidos y branding con ChatGPT | 23 oct | 129 | ✅ Aprobado 100 % | Pendiente |
+| 13 | Generación de contenidos y branding con ChatGPT | 23 oct | 129 | ✅ Aprobado 100 % | [Apuntes](13-contenidos-branding.md) |
 | 14 | Investigación de mercados y análisis competitivo con ChatGPT | 23 oct | 135 | ✅ Aprobado 100 % | Pendiente |
 | 15 | Automatización empresarial con ChatGPT | 30 oct | 127 | ✅ Aprobado 100 % | Pendiente |
 | 16 | Innovación y futuro de la IA con ChatGPT | 30 oct | 112 | ✅ Aprobado 100 % | Pendiente |
