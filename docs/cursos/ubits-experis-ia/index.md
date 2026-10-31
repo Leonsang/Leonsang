@@ -8,7 +8,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 
 | # | Curso | Fin del cronograma | Min | Estado | Apuntes |
 |---|---|---|---|---|---|
-| 1 | IA generativa | 21 ago | 70 | ✅ Aprobado 100 % | Pendiente |
+| 1 | IA generativa | 21 ago | 70 | ✅ Aprobado 100 % | [Apuntes](01-ia-generativa.md) |
 | 2 | Prompt Engineering: habla el idioma de la IA | 21 ago | 224 | ✅ Aprobado 100 % | Pendiente |
 | 3 | Modelos de IA generativa | 28 ago | 69 | ✅ Aprobado 100 % | Pendiente |
 | 4 | Aplicaciones de IA generativa | 28 ago | 62 | ✅ Aprobado 80 % | Pendiente |
