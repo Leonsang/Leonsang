@@ -264,6 +264,9 @@ nav:
         - "05 Creatividad e inteligencia artificial": cursos/ubits-futuro-ia/05-creatividad-ia.md
         - "06 Inteligencia artificial y ética": cursos/ubits-futuro-ia/06-ia-etica.md
         - "07 Comandos para potenciar tus prompts en ChatGPT": cursos/ubits-futuro-ia/07-comandos-prompts-chatgpt.md
+    - "UBITS · Plan Experis IA":
+      - Progreso del plan: cursos/ubits-experis-ia/index.md
+      - "17 Business analytics y ciencia de datos con ChatGPT": cursos/ubits-experis-ia/17-business-analytics.md
 
   # Notebooks & Experimentos
   - Spark Notebooks:

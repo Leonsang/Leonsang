@@ -14,13 +14,13 @@
 <div class="courses-controls-wrap">
   <input type="text" id="courseSearch" class="courses-search-input" placeholder="🔍 Buscar curso, habilidad o tecnología (ej: Spark, ISO 27001, AWS, MCP, Python, Polars...)" oninput="filterAllCourses()">
   <div class="courses-filter-bar">
-    <button type="button" class="cf-btn active" data-cat="all" onclick="setCategory('all')">Todos (24)</button>
+    <button type="button" class="cf-btn active" data-cat="all" onclick="setCategory('all')">Todos (25)</button>
     <button type="button" class="cf-btn" data-cat="sena" onclick="setCategory('sena')">🏛️ SENA (2)</button>
     <button type="button" class="cf-btn" data-cat="aws" onclick="setCategory('aws')">☁️ AWS (3)</button>
     <button type="button" class="cf-btn" data-cat="google" onclick="setCategory('google')">🤖 Google GEAR (6)</button>
     <button type="button" class="cf-btn" data-cat="anthropic" onclick="setCategory('anthropic')">🧠 Anthropic & MCP (10)</button>
     <button type="button" class="cf-btn" data-cat="data" onclick="setCategory('data')">🍃 Bases de Datos (2)</button>
-    <button type="button" class="cf-btn" data-cat="ubits" onclick="setCategory('ubits')">💡 UBITS (1)</button>
+    <button type="button" class="cf-btn" data-cat="ubits" onclick="setCategory('ubits')">💡 UBITS (2)</button>
   </div>
 </div>
 
@@ -458,6 +458,24 @@
     </div>
     <div class="cc-links">
       <a href="ubits-futuro-ia/" class="cc-btn primary">Ver Curso</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-cat="ubits">
+    <div class="cc-header">
+      <span class="cc-badge ubits">UBITS · Plan Experis IA</span>
+      <span class="cc-status progress">En curso</span>
+    </div>
+    <h3>Plan de formación en IA generativa 2026</h3>
+    <p>32 cursos: IA generativa, prompt engineering, agentes, ChatGPT aplicado a negocios, finanzas y analítica, y habilidades de comunicación y gestión de conflictos.</p>
+    <div class="cc-skills">
+      <span>GenAI</span>
+      <span>Prompting</span>
+      <span>Business Analytics</span>
+      <span>Soft Skills</span>
+    </div>
+    <div class="cc-links">
+      <a href="ubits-experis-ia/" class="cc-btn primary">Ver Curso</a>
     </div>
   </div>
 
