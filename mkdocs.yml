@@ -178,6 +178,7 @@ nav:
         - Progreso de la ruta: cursos/google-gear-multiagente/index.md
         - 01 Bienvenida – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/01-bienvenida.md
         - 02 Crea sistemas multiagente colaborativos con el ADK y el MCP: cursos/google-gear-multiagente/02-sistemas-multiagente-colaborativos-adk-mcp.md
+        - 03 Crea sistemas multiagente con el ADK (lab GENAI106): cursos/google-gear-multiagente/03-crea-sistemas-multiagente-adk.md
         - 04 Build Agent Skills with Google: cursos/google-gear-multiagente/04-build-agent-skills-with-google.md
         - 05 Usa habilidades de agentes con sistemas multiagente: cursos/google-gear-multiagente/05-usa-habilidades-multiagente.md
         - 06 Conclusión – Crea sistemas multiagente de alto rendimiento: cursos/google-gear-multiagente/06-conclusion.md
