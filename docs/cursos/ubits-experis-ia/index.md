@@ -14,7 +14,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | 4 | Aplicaciones de IA generativa | 28 ago | 62 | ✅ Aprobado 80 % | [Apuntes](04-aplicaciones-ia-generativa.md) |
 | 5 | Crear y publicar agentes con Microsoft Copilot Studio | 4 sep | 294 | ✅ Completado | [Apuntes](05-copilot-studio.md) |
 | 6 | Creación de GPT sin programación (ruta de 7 cursos) | 11 sep | 249 | ✅ Completado | [Apuntes](06-gpt-sin-programacion.md) |
-| 7 | Claude Code: crea apps y webs sin programar | 18 sep | 258 | ✅ Aprobado 100 % | Pendiente |
+| 7 | Claude Code: crea apps y webs sin programar | 18 sep | 258 | ✅ Aprobado 100 % | [Apuntes](07-claude-code.md) |
 | 8 | Proyecto de integración con ChatGPT | 25 sep | 68 | ✅ Completado | Pendiente |
 | 9 | Ética, seguridad y buenas prácticas en el uso de IA | 25 sep | 100 | ✅ Aprobado 100 % | Pendiente |
 | 10 | Fundamentos de la IA y ChatGPT en negocios y finanzas | 2 oct | 173 | ✅ Aprobado 100 % | Pendiente |
