@@ -206,6 +206,7 @@ nav:
       - "Claude on Google Cloud": cursos/claude-google-cloud/index.md
       - "Introduction to MCP": cursos/mcp-intro/index.md
       - "MCP: Advanced Topics": cursos/mcp-advanced/index.md
+      - "Building Effective Human-Agent Teams": cursos/human-agent-teams/index.md
     - "Bases de Datos & Big Data":
       - "MongoDB University · Atlas":
         - Progreso del curso: cursos/mongodb-atlas/index.md

@@ -2,7 +2,7 @@
 
 Curso de Anthropic (11 lecciones, ~1,5 h y un quiz) sobre MCP avanzado: sampling, logging y notificaciones de progreso, roots, tipos de mensajes JSON y transportes (stdio y Streamable HTTP), con estado y sin estado.
 
-**Estado:** En curso · Lecciones leídas · Quiz final pendiente
+**Estado:** Completado · Quiz final 10/10 (100 %) · [Insignia](https://academy.claude.com/badges/f3770dcb-f1cf-4dcc-9640-a3a94b3410cc)
 
 !!! note "Versión de la especificación"
     El curso enseña MCP como funcionaba antes de la revisión **2026-07-28**, que deprecia sampling, logging y roots y elimina el handshake `initialize` y los IDs de sesión. Todo sigue funcionando en la versión 1 del SDK de Python.
@@ -38,6 +38,58 @@ Curso de Anthropic (11 lecciones, ~1,5 h y un quiz) sobre MCP avanzado: sampling
     - Las roots ayudan a encontrar archivos, pero **la restricción de acceso la implementa uno**.
     - Si funciona en stdio y falla al desplegar en HTTP, revisar `stateless_http` y `json_response`.
     - Probar con **el mismo transporte que se usará en producción**.
+
+## Práctica: progreso y logging
+
+Uso el servidor de apuntes de la [práctica del curso de introducción](../mcp-intro/index.md#practica-mi-propio-servidor-mcp). Ahí, la herramienta `buscar_notas` recibe un `Context`. Emite un log al empezar y una notificación de progreso por cada nota revisada:
+
+```python
+@mcp.tool(name="buscar_notas", description="Busca una palabra en los apuntes...")
+async def buscar_notas(texto: str = Field(description="Palabra o frase a buscar"), ctx: Context = None) -> list[str]:
+    await ctx.info(f"Buscando '{texto}' en {len(notas)} notas")
+    for i, (clave, contenido) in enumerate(notas.items(), start=1):
+        await ctx.report_progress(i, len(notas))
+        ...
+```
+
+**Del lado del cliente:**
+
+- `logging_callback`, definido en la sesión, recibe los logs;
+- `progress_callback`, pasado a `call_tool`, recibe el progreso.
+
+```text
+1. Conectado a ApuntesMCP (protocolo 2025-11-25)
+  [log del servidor] info: Buscando 'cliente' en 4 notas
+  [progreso] 1/4
+  [progreso] 2/4
+  [progreso] 3/4
+  [progreso] 4/4
+```
+
+**Lo que se ve en la práctica:**
+
+- **El handshake:** `initialize` → resultado → `initialized`.
+- **El patrón petición-resultado** de `call_tool`, con notificaciones intercaladas que no esperan respuesta.
+- **Logging está deprecado:** con la versión 2.2 del SDK, `ctx.info` emite un `MCPDeprecationWarning`, porque la revisión 2026-07-28 lo deprecó (ver la nota de arriba). Sigue funcionando, pero para código nuevo conviene revisar la guía de migración.
+
+## Evaluación (10/10)
+
+1. Claude no sabe dónde está `video.mp4` → **roots**.
+2. Cómo hace StreamableHTTP para que el servidor envíe mensajes → **abre conexiones Server-Sent Events (SSE)**.
+3. Qué son los roots → **lo que le indica al servidor a qué archivos y carpetas puede acceder**.
+4. Respuestas HTTP simples, solo con el JSON final → **`json_response=True`**.
+5. Que el servidor use Claude sin asumir el costo de la API → **sampling**.
+6. El transporte que exige cliente y servidor en el mismo equipo → **stdio**.
+7. Un `CallToolRequest` que espera resultado → **un mensaje de petición-resultado**.
+8. La secuencia de inicio → **Initialize Request → Initialize Result → Initialized Notification**.
+9. Qué es sampling → **la forma en que el servidor accede al modelo a través del cliente conectado**.
+10. El transporte más simple para probar en local → **stdio**.
+
+## Evidencia
+
+![Quiz aprobado 10/10](evidencias/02-quiz-mcp-advanced.png){ width="480" }
+
+![Insignia MCP Advanced Topics](evidencias/01-insignia-mcp-advanced.png){ width="420" }
 
 ## Fuentes y aviso legal
 

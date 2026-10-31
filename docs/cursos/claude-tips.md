@@ -127,7 +127,19 @@ Fuente: [Claude Platform 101](../claude-platform-101/)
 - Si funciona en stdio y falla en HTTP: revisar `stateless_http` y `json_response`.
 - Sampling traslada el costo del modelo al cliente (servidores públicos).
 
+- SDK de Python 2.x: `FastMCP` ahora es `MCPServer` (`from mcp.server.mcpserver import MCPServer`); lanzar `ToolError` para errores que el modelo debe leer.
+- La revisión 2026-07-28 depreca logging, sampling y roots: siguen andando, pero revisar la migración en código nuevo.
+
 Fuentes: [Introduction to MCP](../mcp-intro/) · [MCP Advanced Topics](../mcp-advanced/)
+
+## Equipos con agentes
+
+- Si no está escrito donde el agente lo lee, **no existe**: publicar el mismo día lo decidido en reuniones o DMs.
+- Una **estrella polar medible** fijada por personas ("80 % completa el onboarding"), no "hacerlo mejor".
+- Primer trabajo visible y revisado (resumen matutino); ampliar autonomía **por tipo de tarea** tras varias entregas buenas.
+- Darle al agente una **rúbrica** de "aprobado" para cada tarea.
+
+Fuente: [Building Effective Human-Agent Teams](../human-agent-teams/)
 
 !!! tip "Para recordar"
     - Si algo debe pasar **siempre**, es un hook; si lo explico **dos veces**, es una skill; si aplica **siempre como convención**, va en CLAUDE.md.
