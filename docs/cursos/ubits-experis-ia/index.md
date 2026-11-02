@@ -31,20 +31,20 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 
 ## Habilidades blandas: comunicación y gestión de conflictos
 
-| # | Curso | Fin del cronograma | Min | Estado |
-|---|---|---|---|---|
-| 21 | Comunicación clara y asertiva para interacciones exitosas | 20 nov | 207 | ⏳ Pendiente |
-| 22 | Problemas comunes en los equipos | 27 nov | 30 | ⏳ Pendiente |
-| 23 | Comunicación al interior del equipo de trabajo | 27 nov | 30 | ⏳ Pendiente |
-| 24 | El trabajo en equipo y la gestión de conflictos | 27 nov | 60 | ⏳ Pendiente |
-| 25 | Comunicación que destruye a los equipos de trabajo | 27 nov | 60 | ⏳ Pendiente |
-| 26 | Comunicación laboral: resolución de conflictos | 27 nov | 30 | ⏳ Pendiente |
-| 27 | Comunicación y resolución de conflictos laborales | 27 nov | 45 | ⏳ Pendiente |
-| 28 | Gestiona los conflictos laborales según la Guía de HBR | 4 dic | 30 | ⏳ Pendiente |
-| 29 | Aprende cómo resolver un conflicto con la guía HBR | 4 dic | 30 | ⏳ Pendiente |
-| 30 | Manejo de conversaciones difíciles en el trabajo | 4 dic | 30 | ⏳ Pendiente |
-| 31 | Gestión del conflicto desde el liderazgo | 11 dic | 90 | ⏳ Pendiente |
-| 32 | Resolver las disfunciones del equipo desde el liderazgo | 11 dic | 60 | ⏳ Pendiente |
+| # | Curso | Fin del cronograma | Min | Estado | Apuntes |
+|---|---|---|---|---|---|
+| 21 | Comunicación clara y asertiva para interacciones exitosas | 20 nov | 207 | ✅ Aprobado 100 % | [Apuntes](21-comunicacion-clara-asertiva.md) |
+| 22 | Problemas comunes en los equipos | 27 nov | 30 | ⏳ Pendiente | — |
+| 23 | Comunicación al interior del equipo de trabajo | 27 nov | 30 | ⏳ Pendiente | — |
+| 24 | El trabajo en equipo y la gestión de conflictos | 27 nov | 60 | ⏳ Pendiente | — |
+| 25 | Comunicación que destruye a los equipos de trabajo | 27 nov | 60 | ⏳ Pendiente | — |
+| 26 | Comunicación laboral: resolución de conflictos | 27 nov | 30 | ⏳ Pendiente | — |
+| 27 | Comunicación y resolución de conflictos laborales | 27 nov | 45 | ⏳ Pendiente | — |
+| 28 | Gestiona los conflictos laborales según la Guía de HBR | 4 dic | 30 | ⏳ Pendiente | — |
+| 29 | Aprende cómo resolver un conflicto con la guía HBR | 4 dic | 30 | ⏳ Pendiente | — |
+| 30 | Manejo de conversaciones difíciles en el trabajo | 4 dic | 30 | ⏳ Pendiente | — |
+| 31 | Gestión del conflicto desde el liderazgo | 11 dic | 90 | ⏳ Pendiente | — |
+| 32 | Resolver las disfunciones del equipo desde el liderazgo | 11 dic | 60 | ⏳ Pendiente | — |
 
 ## Fuentes y aviso legal
 
