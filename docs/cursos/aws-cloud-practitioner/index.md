@@ -22,7 +22,7 @@ Curso oficial de AWS Skill Builder en español (LATAM), unas 12 h 45 min, que se
 
 **Curso completado:** los 13 módulos, todos con 100 % en la evaluación. Cada módulo abre con una tarjeta de estudio para repasar sin volver a ver los videos.
 
-**Examen tipo certificación:** presentado el 2 nov 2026 (30 preguntas, 40 min). Quedó como [simulacro con respuestas explicadas](simulacro.md) para practicar.
+**Examen tipo certificación:** presentado el 2 nov 2026 (30 preguntas, 40 min): **100 / 100**. Quedó como [simulacro con respuestas explicadas](simulacro.md) para practicar.
 
 ## Fuentes y aviso legal
 
