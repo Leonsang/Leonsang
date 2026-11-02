@@ -144,6 +144,7 @@ nav:
         - 11 Precios y soporte: cursos/aws-cloud-practitioner/11-precios-soporte.md
         - 12 Migración a la nube: cursos/aws-cloud-practitioner/12-migracion.md
         - 13 Soluciones Well-Architected: cursos/aws-cloud-practitioner/13-well-architected.md
+        - Simulacro examen tipo: cursos/aws-cloud-practitioner/simulacro.md
     - "Google Skills · GEAR Agentes":
       - "GEAR Agentes":
         - Progreso de la ruta: cursos/google-gear-agentes/index.md

@@ -20,7 +20,9 @@ Curso oficial de AWS Skill Builder en español (LATAM), unas 12 h 45 min, que se
 | 12 | Migración a la nube de AWS | ✅ Completado | 100 % | [Ver apuntes](12-migracion.md) |
 | 13 | Soluciones bien diseñadas | ✅ Completado | 100 % | [Ver apuntes](13-well-architected.md) |
 
-**Curso completado:** los 13 módulos, todos con 100 % en la evaluación. Los módulos 10 a 13 abren con una tarjeta de estudio para repasar sin volver a ver los videos.
+**Curso completado:** los 13 módulos, todos con 100 % en la evaluación. Cada módulo abre con una tarjeta de estudio para repasar sin volver a ver los videos.
+
+**Examen tipo certificación:** presentado el 2 nov 2026 (30 preguntas, 40 min). Quedó como [simulacro con respuestas explicadas](simulacro.md) para practicar.
 
 ## Fuentes y aviso legal
 
