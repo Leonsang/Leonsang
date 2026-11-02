@@ -2,6 +2,13 @@
 
 *AWS Cloud Practitioner Essentials*, módulo 8: la pila de IA y ML de AWS, IA generativa (Bedrock, JumpStart, Amazon Q) y canalizaciones de datos para análisis.
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/08-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Conceptos
 
 - **IA:** sistemas que hacen tareas parecidas a las humanas.

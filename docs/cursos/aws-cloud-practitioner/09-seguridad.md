@@ -2,6 +2,13 @@
 
 *AWS Cloud Practitioner Essentials*, módulo 9: autenticación y autorización, IAM y mínimo privilegio, protección frente a DDoS, cifrado, y detección y respuesta a incidentes.
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/09-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Conceptos base
 
 - **Autenticación:** verifica **quién eres**, por ejemplo con usuario y contraseña.
