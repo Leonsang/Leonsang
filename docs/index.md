@@ -4,25 +4,6 @@ hide:
   - toc
 ---
 
-<!-- ETIQUETA ESCOLAR DE CUADERNO DE APUNTES -->
-<div class="notebook-cover-sticker">
-  <div class="sticker-header">Cuaderno de Apuntes & Laboratorio Técnico</div>
-  <div class="sticker-fields">
-    <div class="sticker-row">
-      <span class="sticker-label">Estudiante / Autor:</span>
-      <span class="sticker-value">Erick Sang Cifuentes (Leonsang)</span>
-    </div>
-    <div class="sticker-row">
-      <span class="sticker-label">Asignatura:</span>
-      <span class="sticker-value">Big Data Lakehouse, Cloud & Agentes de IA</span>
-    </div>
-    <div class="sticker-row">
-      <span class="sticker-label">Año Escolar:</span>
-      <span class="sticker-value">2026 · Segunda Memoria Digital</span>
-    </div>
-  </div>
-</div>
-
 <!-- PORTADA PRINCIPAL DEL CUADERNO -->
 <div class="hero-section">
   <div class="hero-content">

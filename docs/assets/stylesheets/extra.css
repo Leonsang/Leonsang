@@ -4,7 +4,7 @@
    Anillas de Espiral, Notas Blancas y Alto Contraste de Tinta Oscura.
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Patrick+Hand&family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* ==========================================================================
    VARIABLES DE SISTEMA: HOJAS BLANCAS Y TINTA DE ALTO CONTRASTE
@@ -400,7 +400,7 @@ body,
 }
 
 .handwritten {
-  font-family: 'Caveat', cursive !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 1.35rem !important;
   font-weight: 600;
   color: #1d4ed8;
@@ -420,14 +420,14 @@ mark,
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-family: 'Patrick Hand', 'Caveat', cursive;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 3px 10px;
   border-radius: 4px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  transform: rotate(-1.5deg);
+  transform: none;
   border: 2px solid;
   line-height: 1.2;
 }
@@ -459,22 +459,10 @@ mark,
   color: #1e293b !important;
 }
 
-/* Cinta adhesiva superior (Washi Tape) */
+/* Sin cintas adhesivas infantiles en las notas */
 .md-typeset .admonition::before,
 .md-typeset details::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 68px;
-  height: 16px;
-  background: rgba(226, 232, 240, 0.65);
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
-  border-left: 2px dashed rgba(100, 116, 139, 0.25);
-  border-right: 2px dashed rgba(100, 116, 139, 0.25);
-  pointer-events: none;
-  z-index: 3;
+  display: none !important;
 }
 
 .md-typeset .admonition-title,
@@ -591,7 +579,7 @@ mark,
 
 .sticker-header {
   text-align: center;
-  font-family: 'Patrick Hand', 'Caveat', cursive;
+  font-family: 'Inter', sans-serif;
   font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -625,7 +613,7 @@ mark,
 }
 
 .sticker-value {
-  font-family: 'Caveat', cursive;
+  font-family: 'Inter', sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
   color: #0f172a !important;
@@ -870,17 +858,7 @@ mark,
 }
 
 .eco-card::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 24px;
-  width: 50px;
-  height: 15px;
-  background: rgba(226, 232, 240, 0.7);
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
-  border-radius: 2px;
-  border-left: 1px dashed rgba(100, 116, 139, 0.25);
-  border-right: 1px dashed rgba(100, 116, 139, 0.25);
+  display: none !important;
 }
 
 .eco-card:hover {
