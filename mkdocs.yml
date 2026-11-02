@@ -392,23 +392,10 @@ theme:
     - content.action.view
 
   palette:
-    # Modo claro (predeterminado) - esquema Material original
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    # Cuaderno escolar blanco (siempre hojas blancas)
+    - scheme: default
       primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Cambiar a modo oscuro
-
-    # Modo oscuro
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Cambiar a modo claro
+      accent: blue
 
   font:
     text: Roboto
@@ -451,7 +438,7 @@ plugins:
       no_input: false
       include_requirejs: true
       include_source: true
-      theme: dark
+      theme: light
       kernel_name: python3
 
 markdown_extensions:

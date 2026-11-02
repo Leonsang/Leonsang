@@ -5,7 +5,7 @@
   <h2>Base de Conocimiento y Certificaciones</h2>
   <p>Rutas de aprendizaje completadas y en curso: Ciberseguridad, Inteligencia Artificial, Cloud Computing, Arquitectura de Datos y Desarrollo de Software con enfoque práctico en producción.</p>
   <div style="margin-top: 1.2rem; display: flex; gap: 10px; flex-wrap: wrap;">
-    <a href="../humano-conocimiento/" class="md-button" style="background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); color: #ffffff !important; backdrop-filter: blur(8px); display: inline-flex; align-items: center; gap: 6px;">
+    <a href="../humano-conocimiento/" class="md-button" style="background: #2563eb; border: 1px solid #1d4ed8; color: #ffffff !important; border-radius: 8px; padding: 0.55rem 1.1rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(37,99,235,0.25);">
       <span>🧠 Explorar Mapa Neuro-Cognitivo 3D</span>
     </a>
   </div>
