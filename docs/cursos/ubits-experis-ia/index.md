@@ -37,7 +37,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | 22 | Problemas comunes en los equipos | 27 nov | 30 | ✅ Aprobado 100 % | [Apuntes](22-problemas-comunes-equipos.md) |
 | 23 | Comunicación al interior del equipo de trabajo | 27 nov | 30 | ✅ Completado 100 % | [Apuntes](23-comunicacion-interior-equipo.md) |
 | 24 | El trabajo en equipo y la gestión de conflictos | 27 nov | 60 | ✅ Aprobado 100 % | [Apuntes](24-trabajo-equipo-gestion-conflictos.md) |
-| 25 | Comunicación que destruye a los equipos de trabajo | 27 nov | 60 | ⏳ Pendiente | — |
+| 25 | Comunicación que destruye a los equipos de trabajo | 27 nov | 60 | ✅ Aprobado 100 % | [Apuntes](25-comunicacion-destruye-equipos.md) |
 | 26 | Comunicación laboral: resolución de conflictos | 27 nov | 30 | ⏳ Pendiente | — |
 | 27 | Comunicación y resolución de conflictos laborales | 27 nov | 45 | ⏳ Pendiente | — |
 | 28 | Gestiona los conflictos laborales según la Guía de HBR | 4 dic | 30 | ⏳ Pendiente | — |
