@@ -41,7 +41,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | 26 | Comunicación laboral: resolución de conflictos | 27 nov | 30 | ✅ Aprobado 100 % | [Apuntes](26-comunicacion-laboral-resolucion-conflictos.md) |
 | 27 | Comunicación y resolución de conflictos laborales | 27 nov | 45 | ✅ Completado 100 % | [Apuntes](27-comunicacion-resolucion-conflictos-laborales.md) |
 | 28 | Gestiona los conflictos laborales según la Guía de HBR | 4 dic | 30 | ✅ Aprobado | [Apuntes](28-gestiona-conflictos-guia-hbr.md) |
-| 29 | Aprende cómo resolver un conflicto con la guía HBR | 4 dic | 30 | ⏳ Pendiente | — |
+| 29 | Aprende cómo resolver un conflicto con la guía HBR | 4 dic | 30 | ✅ Aprobado 100 % | [Apuntes](29-resolver-conflicto-guia-hbr.md) |
 | 30 | Manejo de conversaciones difíciles en el trabajo | 4 dic | 30 | ⏳ Pendiente | — |
 | 31 | Gestión del conflicto desde el liderazgo | 11 dic | 90 | ⏳ Pendiente | — |
 | 32 | Resolver las disfunciones del equipo desde el liderazgo | 11 dic | 60 | ⏳ Pendiente | — |
