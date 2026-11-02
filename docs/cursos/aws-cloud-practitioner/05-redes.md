@@ -2,6 +2,13 @@
 
 *AWS Cloud Practitioner Essentials*, módulo 5: VPC y subredes, puertas de enlace, conexión con la red propia, grupos de seguridad y ACL de red, y redes globales (Route 53, CloudFront y Global Accelerator).
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/05-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Amazon VPC y subredes
 
 - Los clientes deben hablar con la **cajera** (pública), no ir directo al **barista** (privado).

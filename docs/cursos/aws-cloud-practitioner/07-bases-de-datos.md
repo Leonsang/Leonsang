@@ -2,6 +2,13 @@
 
 *AWS Cloud Practitioner Essentials*, módulo 7: bases de datos relacionales y NoSQL, caché en memoria, bases especializadas, copias de seguridad y migración.
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/07-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Responsabilidad compartida en bases de datos
 
 | Modelo | Ejemplo | Qué hace el cliente |

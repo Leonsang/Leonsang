@@ -2,6 +2,13 @@
 
 *AWS Cloud Practitioner Essentials*, módulo 6: almacenamiento en bloque, de objetos y de archivos, almacenamiento híbrido y recuperación ante desastres.
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/06-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Tres tipos de almacenamiento
 
 | Tipo | Servicios | Idea |

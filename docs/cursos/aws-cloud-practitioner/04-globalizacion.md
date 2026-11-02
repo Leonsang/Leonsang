@@ -8,6 +8,13 @@ La cafetería se internacionaliza:
 - **Carritos de café** en aeropuertos y mercados, con solo lo más pedido = **ubicaciones periféricas**.
 - **Recetas y máquinas programables iguales** en todas partes = **infraestructura como código**.
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/04-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Cómo elegir una región
 
 Cada región está **aislada**: los datos no salen de ella sin permiso explícito, y quedan sujetos a las leyes del país donde está la región. Hay cuatro factores, en este orden:

@@ -2,6 +2,13 @@
 
 *AWS Cloud Practitioner Essentials*, módulo 3: servicios no administrados, administrados y sin servidor; Lambda, contenedores y servicios de computación especializados.
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/03-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## No administrado, administrado y sin servidor
 
 | Modelo | Ejemplo | Qué hace el cliente | En la cafetería |
