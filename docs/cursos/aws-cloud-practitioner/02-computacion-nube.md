@@ -2,6 +2,13 @@
 
 *AWS Cloud Practitioner Essentials*, módulo 2: Amazon EC2, sus tipos y precios, escalado, balanceo de carga y mensajería.
 
+
+## Tarjeta de estudio
+
+![Tarjeta de estudio: resumen del módulo con notas a mano](evidencias/02-tarjeta.jpg)
+
+*Repaso rápido: la imagen del curso rayada con lo esencial y las pistas para el examen.*
+
 ## Amazon EC2
 
 - **Amazon Elastic Compute Cloud (EC2):** servidores virtuales, llamados **instancias**, que se lanzan en minutos, se detienen o terminan cuando se quiera y se pagan solo **mientras están en ejecución**.
@@ -106,6 +113,8 @@ Después se elige el **tamaño**, buscando el equilibrio entre rendimiento y cos
 ## Evaluación del módulo
 
 Resultado: **100 %** (se aprueba con 80 %).
+
+![Resultado de la evaluación](evidencias/02-evaluacion-100.jpg)
 
 ??? note "Preguntas y respuestas correctas"
 
