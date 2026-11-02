@@ -34,7 +34,7 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | # | Curso | Fin del cronograma | Min | Estado | Apuntes |
 |---|---|---|---|---|---|
 | 21 | Comunicación clara y asertiva para interacciones exitosas | 20 nov | 207 | ✅ Aprobado 100 % | [Apuntes](21-comunicacion-clara-asertiva.md) |
-| 22 | Problemas comunes en los equipos | 27 nov | 30 | ⏳ Pendiente | — |
+| 22 | Problemas comunes en los equipos | 27 nov | 30 | ✅ Aprobado 100 % | [Apuntes](22-problemas-comunes-equipos.md) |
 | 23 | Comunicación al interior del equipo de trabajo | 27 nov | 30 | ⏳ Pendiente | — |
 | 24 | El trabajo en equipo y la gestión de conflictos | 27 nov | 60 | ⏳ Pendiente | — |
 | 25 | Comunicación que destruye a los equipos de trabajo | 27 nov | 60 | ⏳ Pendiente | — |
