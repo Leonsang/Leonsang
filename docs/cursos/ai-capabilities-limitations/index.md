@@ -2,7 +2,7 @@
 
 Curso de Anthropic con 13 lecciones, videos cortos y un quiz. El marco 4D de AI Fluency describe las **competencias humanas** para colaborar con la IA. Este curso describe las **propiedades de la máquina** a las que responden esas competencias. Juntos forman un solo sistema.
 
-**Estado:** Lecciones leídas · Quiz pendiente
+**Estado:** ✅ Completado · Quiz 10/10 (1 nov 2026) · [Insignia](https://academy.claude.com/verify/7ca9cf740af829262d601880698a4987)
 
 ## Qué entendemos por IA
 
@@ -87,6 +87,25 @@ El curso pide listar tareas reales, ubicarlas en cada propiedad y decidir un cam
     - Lo crítico va al principio y al final.
     - Dar **meta más formato**, no solo formato.
     - Ante una falla, nombrar el **par de propiedades**, y el arreglo sale solo.
+
+## Evaluación (10/10)
+
+1. Qué hace en el fondo al escribir → **predice el texto que sigue, fragmento a fragmento**.
+2. Acorta un correo y quita el punto clave → **decir qué debe lograr el correo y repetir**: meta, no solo formato.
+3. Pierde un dato del medio de un informe de 40 páginas → **poner esa parte arriba o trabajar por secciones**.
+4. Algo de la semana pasada, sin búsqueda web → **puede no saberlo: tiene fecha de corte**.
+5. Una cita que no aparece en ninguna parte → **verificarla o usar una herramienta que muestre fuentes**.
+6. Dónde se concentran las alucinaciones → **en lo específico: nombres, fechas, citas y URL**.
+7. Lo contradigo y me da la razón al instante → **tiende a ceder porque lo entrenaron para ser útil** (complacencia).
+8. Tono seguro y pulido → **dice poco: suena igual de seguro cuando se equivoca**.
+9. Chat nuevo sin memoria → **empieza de cero**.
+10. Fecha de corte → **sus datos de entrenamiento terminan en una fecha y no sabe lo posterior sin otra fuente**.
+
+## Evidencia
+
+![Quiz aprobado 10/10](evidencias/02-quiz-capabilities.png){ width="480" }
+
+![Insignia AI Capabilities and Limitations](evidencias/01-insignia-capabilities.png){ width="420" }
 
 ## Fuentes y aviso legal
 

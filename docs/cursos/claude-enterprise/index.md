@@ -2,7 +2,7 @@
 
 Es un curso de Anthropic con 14 lecciones y un quiz, pensado para quien administra el despliegue de Claude Enterprise, en concreto con el rol **Owner**. No enseña clics, sino **criterio**: las cinco decisiones de todo despliegue, en el orden en que hay que tomarlas. Lo acompaña un plan de despliegue, el *work-along companion*, que se llena lección a lección. El ejemplo que recorre todo el curso es **Pluto**, una fintech ficticia con cinco unidades de negocio, una de ellas regulada (Payments & Trust).
 
-**Estado:** Lecciones leídas · Quiz pendiente
+**Estado:** ✅ Completado · Quiz 10/10 (1 nov 2026) · [Insignia](https://academy.claude.com/verify/1bc99a34f518eb647b2cee9355c944da)
 
 ## El marco
 
@@ -281,6 +281,25 @@ Llené el *work-along companion* para **Andina**, una distribuidora ficticia (la
     - Antes de subir un tope, **revisar el modelo por defecto**.
     - **Visibilidad antes del acceso.** La retención corta es irreversible para lo que ya se borró.
     - Las métricas de adopción son diagnósticos, no cuotas.
+
+## Evaluación (10/10)
+
+1. Mucho uso total concentrado en un solo grupo → **la adopción está concentrada, no repartida**. Es un diagnóstico, no un éxito.
+2. Lo que justifica varias organizaciones → **dos unidades con proveedores de identidad distintos y sin inicio de sesión compartido**.
+3. Dos grupos piden una superficie especializada y solo uno la necesita claramente → **darla al caso claro ahora y sumar al otro cuando su trabajo lo pida**.
+4. Lo que no se puede revertir → **reclamar el dominio**.
+5. El conector aparece pero no funciona → **la puerta del miembro**: no ha conectado su propia cuenta.
+6. Excepción por miembro de 100 con tope de grupo de 40 → **100**: la excepción manda.
+7. Construcción libre y difusión revisada: ¿dónde está la puerta? → **en la publicación a toda la organización**.
+8. Por qué la visibilidad va antes del acceso → **lo que pasó sin registro no se puede reconstruir**.
+9. Un grupo llega al tope por usar el modelo más caro en tareas rutinarias → **cambiar el modelo o el esfuerzo por defecto del rol**.
+10. Miembro con rol personalizado en dos grupos, uno con conector y otro sin él → **recibe el conector**: regla de la unión.
+
+## Evidencia
+
+![Quiz aprobado 10/10](evidencias/02-quiz-enterprise.png){ width="480" }
+
+![Insignia Deploying Claude Enterprise with Confidence](evidencias/01-insignia-enterprise.png){ width="420" }
 
 ## Fuentes y aviso legal
 

@@ -16,15 +16,15 @@ Lo más práctico de todos los cursos está reunido en **[Tips & Tricks de Claud
 | Claude Code in Action | 9 + quiz | Completado | Quiz 8/8 | [Notas](../claude-code-in-action/) | [Ver](https://academy.claude.com/badges/f3bd2e65-d980-49f9-b6fe-e94e6cef89a5) |
 | Introduction to Model Context Protocol | 10 + quiz | Completado | Quiz 7/7 + servidor propio | [Notas](../mcp-intro/) | [Ver](https://academy.claude.com/badges/4cf85cb9-0c5d-469f-a968-ddb0f3f68c6c) |
 | Model Context Protocol: Advanced Topics | 11 + quiz | Completado | Quiz 10/10 + práctica | [Notas](../mcp-advanced/) | [Ver](https://academy.claude.com/badges/f3770dcb-f1cf-4dcc-9640-a3a94b3410cc) |
-| Deploying Claude Enterprise with Confidence | 14 + quiz | En curso | Lecciones leídas + plan de despliegue | [Notas](../claude-enterprise/) | — |
-| AI Fluency: Framework and Foundations | 14 + quiz | En curso | Lecciones leídas + plan de delegación | [Notas](../ai-fluency/) | — |
-| AI Capabilities and Limitations | 13 + quiz | En curso | Lecciones leídas + mapa de tareas | [Notas](../ai-capabilities-limitations/) | — |
+| Deploying Claude Enterprise with Confidence | 14 + quiz | Completado | Quiz 10/10 | [Notas](../claude-enterprise/) | [Ver](https://academy.claude.com/verify/1bc99a34f518eb647b2cee9355c944da) |
+| AI Fluency: Framework and Foundations | 14 + quiz | Completado | Quiz 10/10 | [Notas](../ai-fluency/) | [Ver](https://academy.claude.com/verify/e0665d61e3c707b7a06003978c981bc5) |
+| AI Capabilities and Limitations | 13 + quiz | Completado | Quiz 10/10 | [Notas](../ai-capabilities-limitations/) | [Ver](https://academy.claude.com/verify/7ca9cf740af829262d601880698a4987) |
 | Building Effective Human-Agent Teams | 5 + quiz | Completado | Quiz 5/5 | [Notas](../human-agent-teams/) | [Ver](https://academy.claude.com/badges/8a0bd08e-1e81-4efa-a652-1e713ee11519) |
 | Building with the Claude API | 67 + 8 quizzes | Completado | Quizzes aprobados (100 %) | [Notas](../building-claude-api/) | Ruta Oficial 1P |
 | Claude with Amazon Bedrock | 65 + 8 quizzes | Completado | Quizzes aprobados (100 %) | [Notas](../claude-bedrock/) | Ruta AWS |
 | Claude on Google Cloud | 66 + 9 quizzes | Completado | Quizzes aprobados (100 %) | [Notas](../claude-google-cloud/) | Ruta GCP |
 
-**Progreso:** 12 de 15 cursos completados.
+**Progreso:** 15 de 15 cursos completados.
 
 <div class="grid" markdown>
 
@@ -37,6 +37,9 @@ Lo más práctico de todos los cursos está reunido en **[Tips & Tricks de Claud
 ![Introduction to MCP](mcp-intro/evidencias/01-insignia-mcp-intro.png){ width="300" }
 ![MCP Advanced Topics](mcp-advanced/evidencias/01-insignia-mcp-advanced.png){ width="300" }
 ![Human-agent teams](human-agent-teams/evidencias/01-insignia-human-agent-teams.png){ width="300" }
+![Claude Enterprise](claude-enterprise/evidencias/01-insignia-enterprise.png){ width="300" }
+![AI Fluency](ai-fluency/evidencias/01-insignia-ai-fluency.png){ width="300" }
+![AI Capabilities and Limitations](ai-capabilities-limitations/evidencias/01-insignia-capabilities.png){ width="300" }
 
 </div>
 

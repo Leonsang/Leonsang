@@ -2,7 +2,7 @@
 
 Es un curso de Anthropic con 14 lecciones, videos, ejercicios con Claude y un quiz de 10 preguntas (se aprueba con 80 %). No enseña trucos pasajeros: enseña un **marco durable** para colaborar con la IA de forma **eficaz, eficiente, ética y segura**.
 
-**Estado:** Lecciones leídas · Quiz pendiente
+**Estado:** ✅ Completado · Quiz 10/10 (1 nov 2026) · [Insignia](https://academy.claude.com/verify/e0665d61e3c707b7a06003978c981bc5)
 
 ## Tres formas de trabajar con IA
 
@@ -81,6 +81,25 @@ Es un curso de Anthropic con 14 lecciones, videos, ejercicios con Claude y un qu
     - Producto, proceso y desempeño valen tanto al **describir** como al **discernir**.
     - La IA es un **socio de conversación**, no una máquina expendedora.
     - Lo que comparto con otros lo verifico y respondo por ello.
+
+## Evaluación (10/10)
+
+1. Evaluar con ojo crítico salidas, procesos y comportamientos → **Discernimiento**.
+2. Comunicar qué quiero, cómo lo quiero y cómo interactuar → **Descripción**.
+3. Foco de la Diligencia → **uso responsable, transparencia y rendición de cuentas**.
+4. Descripción del producto → **definir con claridad qué quiero que cree o entregue**.
+5. Qué es AI Fluency → **trabajar con IA de forma eficaz, eficiente, ética y segura**.
+6. Decidir qué hace la IA y qué hago yo → **Delegación**.
+7. Las 4D → **Delegación, Descripción, Discernimiento y Diligencia**.
+8. Diligencia de transparencia → **ser claro sobre el papel de la IA con quien deba saberlo**.
+9. Conciencia del problema → **definir metas y el trabajo necesario antes de involucrar a la IA**.
+10. Discernimiento del proceso → **evaluar si su razonamiento y su enfoque son eficaces**.
+
+## Evidencia
+
+![Quiz aprobado 10/10](evidencias/02-quiz-ai-fluency.png){ width="480" }
+
+![Insignia AI Fluency: Framework and Foundations](evidencias/01-insignia-ai-fluency.png){ width="420" }
 
 ## Fuentes y aviso legal
 
