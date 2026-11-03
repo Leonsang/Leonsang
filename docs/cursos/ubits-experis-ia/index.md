@@ -43,8 +43,8 @@ Cada página de curso tiene apuntes propios hechos a partir de los videos vistos
 | 28 | Gestiona los conflictos laborales según la Guía de HBR | 4 dic | 30 | ✅ Aprobado | [Apuntes](28-gestiona-conflictos-guia-hbr.md) |
 | 29 | Aprende cómo resolver un conflicto con la guía HBR | 4 dic | 30 | ✅ Aprobado 100 % | [Apuntes](29-resolver-conflicto-guia-hbr.md) |
 | 30 | Manejo de conversaciones difíciles en el trabajo | 4 dic | 30 | ✅ Aprobado 100 % | [Apuntes](30-conversaciones-dificiles.md) |
-| 31 | Gestión del conflicto desde el liderazgo | 11 dic | 90 | ⏳ Pendiente | — |
-| 32 | Resolver las disfunciones del equipo desde el liderazgo | 11 dic | 60 | ⏳ Pendiente | — |
+| 31 | Gestión del conflicto desde el liderazgo | 11 dic | 90 | ✅ Aprobado 100 % | [Apuntes](31-gestion-conflicto-liderazgo.md) |
+| 32 | Resolver las disfunciones del equipo desde el liderazgo | 11 dic | 60 | ✅ Aprobado 100 % | [Apuntes](32-disfunciones-equipo-liderazgo.md) |
 
 ## Fuentes y aviso legal
 
