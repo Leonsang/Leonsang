@@ -111,7 +111,6 @@ En la corrida de Ada Lovelace, el orden de los eventos fue `researcher → scree
 |---|---|---|---|
 | La prueba de estado funcionó (la lista mostraba la Esfinge), pero la tarea 2 no aprobó | `adk run` terminó apenas se acabó la entrada y el log de Cloud Logging no alcanzó a enviarse: `CloudLoggingHandler shutting down... Failed to send 2 pending logs` | Mantener vivo el proceso: `(printf '...'; sleep 90; echo exit) \| adk run ...` | **El verificador mira los logs, no la pantalla.** Si algo «funciona» pero no aparece, revisar primero si los datos de observabilidad llegaron |
 | Lo mismo en la tarea 4 (bucle) | La misma causa, en el flujo largo | `sleep 300` antes de `exit` y la salida a un archivo | Aplicar el arreglo a **todas** las pruebas una vez identificado el patrón |
-| El primer intento de parcheo falló con `unexpected EOF while looking for matching '` | Un heredoc de bash con comillas triples de Python dentro | Escribir el script como archivo y ejecutarlo con `python -I` | Código con comillas mezcladas → archivo, no línea de comandos |
 
 ### Qué haríamos distinto
 

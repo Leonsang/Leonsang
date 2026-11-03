@@ -178,7 +178,7 @@ La guía *Mejora tu comunicación en el entorno laboral* tiene ejercicios de aut
 
 ## Fuentes y aviso legal
 
-- **Fuente:** ruta «Comunicación clara y asertiva para interacciones exitosas» de [UBITS](https://www.ubits.com), con charlas de [TED](https://www.ted.com), asignada dentro de un plan de formación empresarial. Para las charlas de Aguiar y Wiltfong consulté la transcripción pública en ted.com.
+- **Fuente:** ruta «Comunicación clara y asertiva para interacciones exitosas» de [UBITS](https://www.ubits.com), con charlas de [TED](https://www.ted.com), asignada dentro de un plan de formación empresarial.
 - **Uso:** apuntes personales de estudio, sin fines comerciales y con redacción propia.
 - **Sin afiliación:** sitio no oficial, no afiliado ni respaldado por UBITS ni por TED. Las marcas pertenecen a sus dueños.
 - Más detalles y cómo pedir el retiro de contenido en el [aviso legal](../../aviso-legal.md).

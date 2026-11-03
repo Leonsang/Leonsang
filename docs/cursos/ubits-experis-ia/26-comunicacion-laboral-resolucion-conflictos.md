@@ -2,7 +2,7 @@
 
 **Plataforma:** UBITS · **Presentadora:** Manuela Díaz · **Duración:** 30 min · **Resultado:** prueba final 10/10 (100 %) · **Fecha:** 2 nov 2026
 
-5 videos, 2 lecturas («Planear bien = trabajar bien» y «Comité de convivencia») y dos foros opcionales. En los foros no publiqué nada. Va en tres pasos: entender el conflicto, prevenirlo y resolverlo con mediación.
+5 videos, 2 lecturas («Planear bien = trabajar bien» y «Comité de convivencia») y dos foros. Va en tres pasos: entender el conflicto, prevenirlo y resolverlo con mediación.
 
 ## Microbit 1 · ¿Qué es el conflicto?
 

@@ -2,7 +2,7 @@
 
 **Plataforma:** UBITS · **Base:** *HBR Guide to Dealing with Conflict* (Amy Gallo, 2017) · **Duración:** 30 min · **Resultado:** prueba final aprobada, curso al 100 % con certificado · **Fecha:** 2 nov 2026
 
-4 videos, un recurso sobre tipos de conflicto, una reseña del libro y una prueba final de 5 preguntas. La plataforma no muestra la nota de esta prueba, pero el certificado solo se emite si se aprueba. Cada video trata un escenario distinto.
+4 videos, un recurso sobre tipos de conflicto, una reseña del libro y una prueba final de 5 preguntas. Cada video trata un escenario distinto.
 
 ## 1. Conflicto con tu jefe
 

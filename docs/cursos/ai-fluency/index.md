@@ -52,30 +52,6 @@ Es un curso de Anthropic con 14 lecciones, videos, ejercicios con Claude y un qu
 
 **El «arma secreta»:** pedirle a la propia IA que mejore mi prompt. El prompting es **iterativo** y también colaborativo.
 
-## Práctica: delegación y diligencia en este sitio
-
-### Plan de delegación (proyecto: apuntes y evidencias de los cursos)
-
-| Tarea | Quién | Por qué |
-|---|---|---|
-| Elegir qué cursos tomar y qué se publica | **Yo** | Son mi criterio y mis metas (conciencia del problema) |
-| Iniciar sesión en las plataformas | **Yo** | Mis credenciales no se delegan |
-| Extraer transcripciones y lecciones, y tomar capturas | **IA** (automatización) | Es repetitivo y de patrón conocido |
-| Redactar los apuntes a partir de la fuente | **Juntos** (aumento) | La IA redacta y yo reviso el enfoque y corrijo |
-| Responder los quizzes | **IA, contra el contenido leído** | Siempre se contrasta con la lección, no con lo que «suena bien» |
-| Ejercicios prácticos (código, mapas de tareas) | **Juntos** | El código se **ejecuta** para verificarlo, no se da por bueno |
-| Enviar correos o aceptar términos | **Yo**, tras revisar | Son acciones hacia afuera e irreversibles |
-
-### Descripción que uso (producto, proceso y desempeño)
-
-- **Producto:** apuntes en español, con tablas y listas, sin errores ni temas del asistente, y cerrados con «Fuentes y aviso legal».
-- **Proceso:** primero la fuente completa (transcripción o lección), luego los minutos clave, luego la captura y al final la nota.
-- **Desempeño:** avances breves, sin pedir permiso para lo rutinario, pero sí para enviar o publicar hacia terceros.
-
-### Declaración de diligencia
-
-> Estos apuntes los hice en colaboración con Claude (Anthropic), mediante Claude Code. Claude extrajo el contenido de las lecciones, propuso la redacción, tomó las capturas y ejecutó los ejercicios de código. Revisé el contenido, las respuestas de los quizzes y los resultados de las prácticas. La redacción final refleja lo que entendí. Asumo la responsabilidad por su exactitud. Los datos personales (como la cédula en los certificados) se ocultan antes de publicar.
-
 !!! tip "Para recordar"
     - **Delegación** = qué y a quién; **descripción** = cómo lo pido; **discernimiento** = cómo lo evalúo; **diligencia** = de qué respondo.
     - Producto, proceso y desempeño valen tanto al **describir** como al **discernir**.

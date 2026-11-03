@@ -8,11 +8,11 @@
 - tipos de conflicto en el mundo laboral;
 - ¿eres evitador o buscador de conflictos?
 
-The thread running through the course is that a team's quality depends on the quality of its conversations.
+La idea que atraviesa el curso: la calidad de un equipo depende de la calidad de sus conversaciones.
 
 ## 1. La comunicación en los equipos de alto desempeño
 
-**Teamwork is learned.** For consultant Tom Peters, high-performance teams develop the **5C**:
+**El trabajo en equipo se aprende.** Para el consultor Tom Peters, los equipos de alto desempeño desarrollan las **5C**:
 
 - coordinación;
 - comunicación;
@@ -20,9 +20,9 @@ The thread running through the course is that a team's quality depends on the qu
 - colaboración;
 - compromiso.
 
-**Soft skills involved:** besides technical skills you need active listening, keeping promises, argumentation, assertiveness and empathy, among others.
+**Habilidades blandas que entran en juego:** además de las técnicas, hacen falta escucha activa, cumplimiento de promesas, argumentación, asertividad y empatía, entre otras.
 
-**Marcial Losada's *Meta Learning*.** It classifies a team's interactions along three bipolar dimensions:
+**El *Meta Learning* de Marcial Losada.** Clasifica las interacciones de un equipo en tres dimensiones bipolares:
 
 | Dimensión | Polos | Tasa en equipos de alto desempeño |
 |---|---|---|
@@ -33,19 +33,19 @@ The thread running through the course is that a team's quality depends on the qu
 ![Tasas de Losada](evidencias/23-v01-losada.png)
 *Video 1, min 2:30: proporciones de interacción en un equipo de alto desempeño.*
 
-**Clear goals:** without positive communication there are no consistent results, and neither are there any without **SMART** goals (George Doran): specific, measurable, achievable, realistic and time-bound.
+**Metas claras:** sin comunicación positiva no hay resultados consistentes, y tampoco sin metas **SMART** (George Doran): específicas, medibles, alcanzables, realistas y con plazo.
 
-**Organisations are interpretive settings.** As Rafael Echeverría (*Ontología del lenguaje*) puts it: «No sabemos cómo las cosas son; solo cómo las observamos». Each member sees through their own filters:
+**Las organizaciones son escenarios interpretativos.** Como dice Rafael Echeverría (*Ontología del lenguaje*): «No sabemos cómo las cosas son; solo cómo las observamos». Cada integrante ve a través de sus propios filtros:
 
 - **emociones**;
 - **cuerpo**;
 - **lenguaje**.
 
-To work as a team, you have to question how you observe and actively listen to the other observers of the same reality.
+Para trabajar en equipo hay que cuestionar cómo se observa y escuchar activamente a los demás observadores de la misma realidad.
 
 ## 2. Actos del habla y promesas
 
-We live in a conversational world, and every speech act carries a commitment:
+Vivimos en un mundo conversacional, y cada acto del habla conlleva un compromiso:
 
 | Acto | Compromiso |
 |---|---|
@@ -54,27 +54,27 @@ We live in a conversational world, and every speech act carries a commitment:
 | **Juicio** (interpreta) | Fundamentarlo |
 | **Petición, oferta, promesa** | Coordinar acciones y cumplir las condiciones de satisfacción |
 
-**Why promises change reality:** whoever receives one starts acting on it. Example: if someone promises you a payment at the end of the month, you plan counting on that money.
+**Por qué las promesas cambian la realidad:** quien la recibe empieza a actuar en función de ella. Ejemplo: si te prometen un pago a fin de mes, planeas contando con ese dinero.
 
-**Before you promise, ask yourself:**
+**Antes de prometer, pregúntate:**
 
 - ¿Soy sincero?
 - ¿Soy competente para hacerlo?
 - ¿Estoy en condiciones de cumplir?
 
-**If you can't keep it:** declining, postponing or making a counter-offer is better than promising something you won't deliver. Being responsible also means cancelling in time and repairing the damage. **Trust is built by keeping your word, and also by how you act when you can't.**
+**Si no puedes cumplir:** es mejor rechazar, posponer o hacer una contrapropuesta que prometer algo que no vas a entregar. Ser responsable también es cancelar a tiempo y reparar el daño. **La confianza se construye cumpliendo, y también por cómo actúas cuando no puedes.**
 
 ## 3. Conversaciones para gestionar conflictos
 
-**The three conversations that, according to Echeverría, a high-performance team needs:**
+**Las tres conversaciones que, según Echeverría, necesita un equipo de alto desempeño:**
 
 1. Para **coordinar acciones**: alcanzar objetivos.
 2. Para **posibles acciones**: innovar y mejorar.
 3. Para **futuras conversaciones**: preparar el terreno.
 
-**The company as a network of conversations:** effective teams *declare breakdowns*, face them and set up conversations to resolve them. For example, if you're going to be late for a client meeting, you call, explain and ask them to wait.
+**La empresa como red de conversaciones:** los equipos efectivos *declaran quiebres*, los enfrentan y arman conversaciones para resolverlos. Por ejemplo, si vas a llegar tarde a una reunión con un cliente, llamas, explicas y pides que te esperen.
 
-**Difficult conversations** (asking for a raise, letting someone go, an aggressive client) are faced with **stronger argumentation and more empathy**.
+Las **conversaciones difíciles** (pedir un aumento, despedir a alguien, un cliente agresivo) se enfrentan con **más fuerza argumentativa y más empatía**.
 
 ![Fuerza argumentativa](evidencias/23-v03-argumentacion.png)
 *Video 3, min 3:25: seis pasos para fortalecer la argumentación.*

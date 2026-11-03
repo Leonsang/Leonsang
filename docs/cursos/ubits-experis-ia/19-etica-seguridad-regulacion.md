@@ -2,7 +2,7 @@
 
 **Plataforma:** UBITS · **Duración:** 94 min · **Nivel:** intermedio · **Resultado:** test aprobado con 10/10 (100 %) · **Fecha:** 2 nov 2026
 
-The course has 9 videos (about 39 min), 3 exercises and 2 readings. The first 5 videos are theory and cover ethics, regulation, security, dilemmas and risks. Videos 6 and 7 are hands-on with ChatGPT: a security protocol and a code of ethics for a fictional company called "XYZ". The last two cover risk analysis and a case from the financial sector. Each section gives the video minute where the key idea appears.
+El curso tiene 9 videos (unos 39 min), 3 ejercicios y 2 lecturas. Los 5 primeros videos son teoría: ética, regulación, seguridad, dilemas y riesgos. Los videos 6 y 7 son prácticos con ChatGPT: un protocolo de seguridad y un código de ética para una empresa ficticia llamada «XYZ». Los dos últimos tratan el análisis de riesgos y un caso del sector financiero. Cada sección indica el minuto del video donde está la idea clave.
 
 ## 1. Fundamentos de ética en la IA
 

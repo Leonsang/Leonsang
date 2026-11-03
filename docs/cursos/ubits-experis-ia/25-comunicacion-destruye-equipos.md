@@ -1,24 +1,24 @@
 # 25 · Comunicación que destruye a los equipos de trabajo
 
-**Plataforma:** UBITS · **Experto:** Germán Normandía Vélez · **Duración:** 60 min · **Resultado:** prueba final 5/5 (100 %, en el segundo intento) · **Fecha:** 2 nov 2026
+**Plataforma:** UBITS · **Experto:** Germán Normandía Vélez · **Duración:** 60 min · **Resultado:** prueba final 5/5 (100 %) · **Fecha:** 2 nov 2026
 
-The course has 5 videos, 2 infographics and a UBITSLab practice case, split into three micro-modules:
+El curso tiene 5 videos, 2 infografías y un caso práctico UBITSLab, en tres microbits:
 
-1. Thinking outside the box (collaborative intelligence).
-2. Causes of conflict.
-3. Value dialogues (metalanguage and active listening).
+1. Pensar fuera de la caja (inteligencia colaborativa).
+2. Causas de los conflictos.
+3. Diálogos de valor (metalenguaje y escucha activa).
 
 ## Microbit 1 · Piensa fuera de la caja: sumar frente a multiplicar
 
-**The arithmetic of teamwork:**
+**La aritmética del trabajo en equipo:**
 
-- **Summing:** three collaborators who each give 5 make **15**. Coaching them all up to 10 makes 30.
-- **Multiplying:** if you change the sign, the same people make **125** (5×5×5) or **1,000** (10×10×10).
-- **Conclusion:** summing efforts is outdated; today you multiply. You do it by complementing each person's talent and passion through **empathetic leadership**.
+- **Sumar:** tres colaboradores que dan 5 cada uno suman **15**. Si los llevas a todos a 10, suman 30.
+- **Multiplicar:** si cambias el signo, las mismas personas dan **125** (5×5×5) o **1000** (10×10×10).
+- **Conclusión:** sumar esfuerzos quedó rebasado; hoy se multiplica, complementando el talento y la pasión de cada persona con **liderazgo de la empatía**.
 
 > «El talento gana partidos, pero el trabajo en equipo y la inteligencia ganan campeonatos» (Michael Jordan).
 
-**The «where is north?» exercise:** with their eyes closed, each person points north and almost everyone points somewhere different. The same thing happens with goals inside a team.
+**El ejercicio de «¿dónde está el norte?»:** con los ojos cerrados, cada persona señala el norte y casi todos apuntan a un lugar distinto. Lo mismo pasa con las metas dentro de un equipo.
 
 **Harris Group data:**
 
@@ -29,11 +29,11 @@ The course has 5 videos, 2 infographics and a UBITSLab practice case, split into
 | Dedicaban su tiempo a cosas sin importancia | 49 % |
 | No sabían qué hacer para ayudar a lograr las metas | 51 % |
 
-**Suggested test:** ask each collaborator to write down, without talking to anyone or checking anything, the organisation's goals and their area's three priorities. Then compare the answers to see whether everyone is heading the same way.
+**Prueba sugerida:** pide a cada colaborador que escriba, sin hablar con nadie ni consultar nada, las metas de la organización y las tres prioridades de su área. Luego compara las respuestas para ver si todos van en la misma dirección.
 
 ## Microbit 2 · Las siete causas de los conflictos
 
-A conflict is a difficulty between people with opposing interests, values or thoughts. It can turn into something positive, depending on your ability to understand what's behind it.
+Un conflicto es una dificultad entre personas con intereses, valores o pensamientos contrapuestos. Puede volverse algo positivo, según la capacidad de entender qué hay detrás.
 
 | Conflicto | Qué es |
 |---|---|
@@ -45,18 +45,18 @@ A conflict is a difficulty between people with opposing interests, values or tho
 | **Interpersonal** | Personas que no se caen bien o con estilos incompatibles |
 | **De poder** | Juegos de ganar-perder, «servirse del poder en vez de servir con el poder» |
 
-All of them are preventable with **clear messages suited to the audience**.
+Todos se pueden evitar con **mensajes claros y adecuados al público**.
 
 ![Germán Normandía en el Microbit 2](evidencias/25-v03-experto.png)
 *Video 3, min 1:00: el experto explica los conflictos de roles y de objetivos.*
 
 ## Microbit 3 · Diálogos de valor: el metalenguaje
 
-**Value dialogues** are the ability to exchange, complete and secure the flow of meaningful messages. They're called **metalanguage** because they go beyond words.
+Los **diálogos de valor** son la habilidad de intercambiar, completar y asegurar el flujo de mensajes significativos. Se llaman **metalenguaje** porque van más allá de las palabras.
 
-**The mechanic example:** once he tells you «it's a noise like two spoons knocking together», you can hear it too. Without *distinctions*, we fall into mental traps.
+**El ejemplo del mecánico:** cuando te dice «es un ruido como de dos cucharas que chocan», tú también lo empiezas a oír. Sin *distinciones* caemos en trampas mentales.
 
-**The three filters of verbal communication:**
+**Los tres filtros de la comunicación verbal:**
 
 | Filtro | Ejemplo | Cómo responder |
 |---|---|---|
@@ -64,30 +64,28 @@ All of them are preventable with **clear messages suited to the audience**.
 | **Eliminación** | «Soy incapaz» | «¿Incapaz de qué?»: ayuda a completar lo que falta |
 | **Distorsión** | «Conozco tus intenciones» | «¿Cuáles son mis intenciones?»: aclara el significado |
 
-**Active listening:**
+**Escucha activa:**
 
-- In Zeno's words, we have two ears and one tongue.
-- Treat everyone as if they carried a sign saying «quiero sentirme importante».
-- Speak only when necessary and ask open questions.
-- **Paraphrase** and show openness.
+- Como decía Zenón, tenemos dos oídos y una lengua.
+- Trata a cada persona como si llevara un cartel que dice «quiero sentirme importante».
+- Habla solo lo necesario y haz preguntas abiertas.
+- **Parafrasea** y muestra apertura.
 
 ## UBITSLab · El caso de José Luis
 
-**The case:** a centralist supervisor who doesn't share information and goes round in circles. His team is bureaucratic, a client complained, and his emergency meeting ended in mutual blame.
+**El caso:** un supervisor centralista que no comparte información y le da vueltas a todo. Su equipo es burocrático, un cliente se quejó y su reunión de emergencia terminó en culpas cruzadas.
 
-**The expert's answer:**
+**La respuesta del experto:**
 
-1. **Make José Luis aware** that the challenge is there and that «the ball is in his court».
-2. Once the resistance and blame have passed, work on these points:
-    - brief, clear and simple communication, adapted to the audience;
-    - acting as a **facilitator** rather than an instructor;
-    - backing up messages with facts and evidence, not emotional speeches;
-    - using feedback to adjust on time;
-    - managing his own emotions and the team's.
+1. **Que José Luis tome conciencia** de que el reto existe y de que «el balón está en su cancha».
+2. Superadas la resistencia y la culpa, trabajar estos puntos:
+    - comunicación breve, clara y sencilla, adaptada al público;
+    - actuar como **facilitador** más que como instructor;
+    - respaldar los mensajes con hechos y evidencias, no con discursos emocionales;
+    - usar la retroalimentación para ajustar a tiempo;
+    - gestionar sus emociones y las del equipo.
 
 ## Evaluación (5/5)
-
-The questions come from a random pool; I give the ones from the two attempts.
 
 - **Conflicto de roles** (Gerardo y dos vendedores) → **una reunión que aclare el rol, las funciones y las expectativas de cada uno**.
 - **Confusión que lleva a decisiones equivocadas** con un equipo competente → **conflicto de información**.
@@ -99,7 +97,6 @@ The questions come from a random pool; I give the ones from the two attempts.
     - interpersonal → no se caen bien;
     - distribución → reparto percibido como injusto.
 - **Inteligencia colaborativa** (Juan) → **alinear los objetivos hacia una visión común**.
-- **Filtros de la comunicación** (María: «ya saben lo que quiero») → en el primer intento marqué «distorsionó» y fue incorrecto. En el segundo intento esa pregunta no salió, así que la respuesta correcta queda sin confirmar. La otra opción que no probé es «usó palabras poco claras que generan ambigüedad».
 
 ## Evidencia
 

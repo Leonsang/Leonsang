@@ -5,7 +5,7 @@ Preguntas del **examen tipo** de la ruta *AWS Cloud Practitioner Essentials* en 
 **Cómo usarlo:** cronometra 40 minutos, responde las 30 en papel y luego abre cada respuesta. Apunta las que fallaste y vuelve a la tarjeta de estudio del módulo indicado.
 
 !!! success "Resultado: 100 / 100"
-    La plataforma no muestra la nota al enviar, pero AWS Entrena la mandó por correo: **puntaje 100.00**. Las 30 respuestas de abajo son correctas.
+    Puntaje **100.00**. Las 30 respuestas de abajo son correctas.
 
     ![Notificación de AWS Entrena con puntaje 100](evidencias/examen-puntaje-100.jpg){ width="420" }
 

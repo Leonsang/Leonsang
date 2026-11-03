@@ -2,17 +2,17 @@
 
 **Plataforma:** UBITS (programa *Equipos efectivos*) · **Experto:** Iván Edwin Rodríguez · **Duración:** 30 min · **Nivel:** avanzado · **Resultado:** 2 quizzes 3/3 y prueba final 6/6 (100 %) · **Fecha:** 2 nov 2026
 
-The last *bit* of the *Equipos efectivos* programme. It has 5 videos and 3 micro-modules, and follows three teams from a fictional company called GreenFoodX:
+Último *bit* del programa *Equipos efectivos*. Tiene 5 videos y 3 microbits, y sigue a tres equipos de una empresa ficticia, GreenFoodX:
 
-- **Zenit**, in an intense "storm" stage;
-- **Máxima**, with performance and accountability problems;
-- **Supernova**, with interpersonal conflicts.
+- **Zenit**, en una etapa de «tormenta» muy intensa;
+- **Máxima**, con problemas de desempeño y rendición de cuentas;
+- **Supernova**, con conflictos interpersonales.
 
-The teams' problems split into **relationship** problems (about people) and **performance** problems (about the work). Having problems is normal; what isn't acceptable is leaving them unresolved.
+Los problemas de un equipo se dividen en problemas de **relación** (sobre las personas) y de **desempeño** (sobre el trabajo). Tener problemas es normal; lo que no es aceptable es dejarlos sin resolver.
 
 ## Microbit 1 · Gestión de los problemas (la etapa de tormenta)
 
-After a pleasant but superficial integration, the first differences show up. There are two possible responses:
+Tras una integración agradable pero superficial aparecen las primeras diferencias. Hay dos respuestas posibles:
 
 | Respuesta | Qué pasa |
 |---|---|
@@ -38,7 +38,7 @@ After a pleasant but superficial integration, the first differences show up. The
 
 ## Microbit 2 · Problemas de desempeño
 
-The "falta de liderazgo" argument doesn't work for self-directed teams: the team's performance is in its members' hands.
+El argumento de la «falta de liderazgo» no sirve en equipos autodirigidos: el desempeño del equipo está en manos de sus integrantes.
 
 | Problema | Solución |
 |---|---|
