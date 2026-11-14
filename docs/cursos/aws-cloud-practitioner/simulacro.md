@@ -221,22 +221,6 @@ A) Entrega bajo demanda de potencia de cómputo · B) Enormes economías de esca
 ??? success "Respuesta"
     **C.** Es al revés: la nube cambia gastos de capital por gastos **variables** ([M1](01-introduccion-nube.md)).
 
-## Evidencia
-
-Capturas del examen con las respuestas marcadas antes de enviarlo, y la revisión final.
-
-![Examen, preguntas 1 a 3](evidencias/examen-01.jpg)
-![Examen, preguntas 3 a 6](evidencias/examen-02.jpg)
-![Examen, preguntas 6 a 9](evidencias/examen-03.jpg)
-![Examen, preguntas 10 a 13](evidencias/examen-04.jpg)
-![Examen, preguntas 13 a 16](evidencias/examen-05.jpg)
-![Examen, preguntas 16 a 19](evidencias/examen-06.jpg)
-![Examen, preguntas 19 a 23](evidencias/examen-07.jpg)
-![Examen, preguntas 23 a 26](evidencias/examen-08.jpg)
-![Examen, preguntas 26 a 29](evidencias/examen-09.jpg)
-![Examen, preguntas 28 a 30](evidencias/examen-10.jpg)
-![Revisión después de enviar](evidencias/examen-11.jpg)
-
 ## Fuentes y aviso legal
 
 - **Fuente:** examen tipo de la ruta *AWS Cloud Practitioner Essentials* en [AWS Entrena Bogotá](https://bogota.awsentrena.com) y el curso de [AWS Skill Builder](https://skillbuilder.aws). Las explicaciones son mías, a partir de los apuntes del curso y de [docs.aws.amazon.com](https://docs.aws.amazon.com).
