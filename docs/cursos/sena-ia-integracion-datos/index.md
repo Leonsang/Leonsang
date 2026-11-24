@@ -29,6 +29,14 @@ flowchart LR
 
 **Stack:** Polars 2.0 · DuckDB 1.5 · Parquet · Power BI (PBIP/TMDL/PBIR) · Claude como IA generativa evaluada.
 
+## Certificado y constancia de notas
+
+Curso aprobado con calificación **Apto (A) · 4,5 / 5,0** (48 horas, ficha `3635322`, registro `117122148` del 11 de noviembre de 2026 · Centro Textil y de Gestión Industrial, Regional Antioquia).
+
+![Certificado SENA · Aplicación de la IA en la integración de datos](archivos/certificado-sena-ia-integracion-datos.png)
+
+![Constancia de evaluación y notas · Aplicación de la IA en la integración de datos](archivos/constancia-notas-sena-ia-integracion-datos.png){ width="560" }
+
 ## Fuentes y aviso legal
 
 - **Fuente:** formación del SENA en la plataforma Zajuna; las evidencias son trabajos propios del aprendiz. Sitios oficiales: [sena.edu.co](https://www.sena.edu.co).

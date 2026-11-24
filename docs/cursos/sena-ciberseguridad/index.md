@@ -67,9 +67,19 @@ Las evidencias se construyeron sobre dos escenarios complementarios de alta rele
 | [**Tablero Interactivo & Simulador**](tablero-interactivo.md) | 🟢 **Activo** | Simulador de ataques vs defensas, calculadora dinámica 5x5 y flashcards 3D | Herramienta Web |
 | [**Trucos, Tips & Cheat Sheet**](trucos-tips-cheatsheet.md) | 🟢 **Activo** | Comandos reales de Hardening Linux, Nmap, Wireshark, UFW e iptables | Guía Técnica |
 | [**AA1-EV01 · Valuación de Activos**](aa1-ev01-informe-activos.md) | 🟢 **Calificado A** | Inventario tangible/intangible, escala 4 niveles y valuación CID | [PDF APA](archivos/AA1_EV01_Informe_analisis_valuacion_activos.pdf) |
-| [**AA2-EV01 · Mapa de Amenazas**](aa2-ev01-infografia-amenazas.md) | 🟢 **Enviado** | Metodología NIST SP 800-30, 3 categorías de amenazas y vulnerabilidades | [PDF Infografía](archivos/AA2_EV01_Infografia_amenazas_vulnerabilidades.pdf) |
-| [**AA3-EV01 · Matriz de Riesgos**](aa3-ev01-matriz-riesgos.md) | 🟢 **Enviado** | Matriz formal en Excel (Anexo 1 SENA), 17 activos × 35 amenazas y fórmulas | [Excel XLSX](archivos/AA3_EV01_Formato_matriz_de_riesgo.xlsx) |
-| [**AA4-EV01 · Norma ISO 27001**](aa4-ev01-iso27001-sgsi.md) | 🟢 **En Ruta** | Estructura del SGSI, ciclo PHVA y controles del Anexo A (ISO 27001:2022) | Mapa & Resumen |
+| [**AA2-EV01 · Mapa de Amenazas**](aa2-ev01-infografia-amenazas.md) | 🟢 **Calificado A** | Metodología NIST SP 800-30, 3 categorías de amenazas y vulnerabilidades | [PDF Infografía](archivos/AA2_EV01_Infografia_amenazas_vulnerabilidades.pdf) |
+| [**AA3-EV01 · Matriz de Riesgos**](aa3-ev01-matriz-riesgos.md) | 🟢 **Calificado A** | Matriz formal en Excel (Anexo 1 SENA), 17 activos × 35 amenazas y fórmulas | [Excel XLSX](archivos/AA3_EV01_Formato_matriz_de_riesgo.xlsx) |
+| [**AA4-EV01 · Norma ISO 27001**](aa4-ev01-iso27001-sgsi.md) | 🟢 **Calificado A** | Estructura del SGSI, ciclo PHVA y controles del Anexo A (ISO 27001:2022) | Mapa & Resumen |
+
+---
+
+## 🏆 Certificado y Constancia de Notas
+
+Curso aprobado y certificado con evaluación **Apto (A) · 4,5 / 5,0** (48 horas, ficha `3640188`, registro `117258731` del 18 de noviembre de 2026 · Centro de Comercio y Turismo, Regional Quindío).
+
+![Certificado SENA · Apropiación de los conceptos en ciberseguridad](archivos/certificado-sena-ciberseguridad.png)
+
+![Constancia de evaluación y notas · Apropiación de los conceptos en ciberseguridad](archivos/constancia-notas-sena-ciberseguridad.png){ width="560" }
 
 ---
 
